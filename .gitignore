@@ -1,0 +1,121 @@
+#Doxygen
+Doxygen/output
+
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Bb]uild/
+/[Bb]uilds/
+/[Rr]ecordings/
+ProjectSettings/EditorBuildSettings.asset
+Assets/AssetStoreTools*
+Assets/PlayMaker/Editor/Resources/EditorStartupPrefs*
+Assets/*/PlayMaker/Editor/Resources/EditorStartupPrefs*
+Logs/IncrementalCompiler/*
+Logs/*
+AssetBundles/*
+Assets/StreamingAssets/bundles*
+UserSettings/*
+
+#Project Specific
+TestResults*.csv
+
+# Visual Studio / Mono Behaviour
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.xcf*
+.vs/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== #
+# WWISE #
+# ===== #
+GreyKnights_WwiseProject/.backup/
+GreyKnights_WwiseProject/.cache/
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData*.asset*
+.vscode/settings.json
+.vscode/launch.json
+Assets/codeandweb.com/Editor/SettingsTexturePackerImporter.txt*
+Assets/codeandweb.com/Editor.meta
+Assets/codeandweb.com.meta
+*.prof
+*.validationcache
+GreyKnights_WwiseProject/GreyKnights_WwiseProject.Complex\ Games.validationcache
+GreyKnights_WwiseProject/GreyKnights_WwiseProject.Complex\ Games.wsettings
+*.wsettings
+
+*.mp4
+Assets/ArtAssets/Environments/EpicHero.meta
+Assets/ArtAssets/Environments/EpicHero/Prefabs.meta
+Assets/ArtAssets/Environments/EpicHero/Textures.meta
+Assets/ArtAssets/Cinematics/CinematicsModelViewer/CinematicsModelViewer.meta
+Assets/ArtAssets/Cinematics/Assets/Actors/Ectar/Prefabs.meta
+Assets/ArtAssets/Actors.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene.unity
+Assets/_GameScenes/Current Sprint Demos/DanTestScene.unity.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 1.asset
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 1.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes.asset
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes.asset.meta
+Assets/_GameScenes/DanSeekritFolder.meta
+Assets/_GameScenes/PlayableLevels_Sprint/PlayableLevels_WIP/Cleansing/CathedralSinkhole_Jungle_Cleansing_DroppedSection.unity
+Assets/_GameScenes/PlayableLevels_Sprint/PlayableLevels_WIP/Cleansing/CathedralSinkhole_Jungle_Cleansing_DroppedSection.unity.meta
+ProjectSettings/EditorBuildSettings.asset
+
+# Articy Plugin
+# =====================================
+Assets/ArticyImporter/Content/Generated/
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 2.asset
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 2.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 3.asset
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-NavMeshes 3.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestSceneSettings.lighting
+Assets/_GameScenes/Current Sprint Demos/DanTestSceneSettings.lighting.meta
+Assets/AssetBundles/Levels/DanTestScene_Export.meta
+Assets/AssetBundles/Levels/DanTestScene_Export.unity
+Assets/AssetBundles/Levels/DanTestScene_Export.unity.meta
+Assets/AssetBundles/Levels/DanTestScene_Export/DanTestScene_config.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/DanTestScene_config.asset.meta
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-NavMeshes 1.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-NavMeshes 1.asset.meta
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-NavMeshes.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-NavMeshes.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-2x2.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-2x2.asset
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-1x1.asset.meta
+Assets/_GameScenes/Current Sprint Demos/DanTestScene/NavMesh-1x1.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-2x2.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-1x1.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-2x2.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-1x1.asset
+Assets/AssetBundles/Levels/Resources/MissionConfigs/DanTestScene.asset
+Assets/AssetBundles/Levels/Resources/MissionConfigs/DanTestScene.asset.meta
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-1x1.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-2x2.asset
+Assets/AssetBundles/Levels/DanTestScene_Export/NavMesh-4x4.asset
+/URP
+Assets/AddressableAssets/BuildMetaData/build_version_number.txt
+Assets/AddressableAssets/BuildMetaData
+Assets/AddressableAssets/BuildMetaData.meta
+Assets/AddressableAssetsData/link.xml
+Assets/AddressableAssetsData/link.xml.meta
