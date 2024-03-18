@@ -307,6 +307,7 @@ MonoBehaviour:
   - {fileID: 1673163661}
   - {fileID: 1488744876}
   - {fileID: 235750745}
+  hazardousAdjacencies: []
   zoneValue: 13
 --- !u!1001 &6855545
 PrefabInstance:
@@ -556,6 +557,7 @@ MonoBehaviour:
   - {fileID: 1137129029}
   - {fileID: 1877494140}
   - {fileID: 1232698926}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &12305154
 PrefabInstance:
@@ -1010,12 +1012,13 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1689926898}
   - {fileID: 35587632}
-  - {fileID: 1714752526}
   - {fileID: 568911226}
   - {fileID: 80270586}
   - {fileID: 1793325658}
   - {fileID: 1378342898}
   - {fileID: 1816831525}
+  hazardousAdjacencies:
+  - {fileID: 1714752526}
   zoneValue: 2
 --- !u!1001 &32557717
 PrefabInstance:
@@ -1245,6 +1248,7 @@ MonoBehaviour:
   - {fileID: 1908652260}
   - {fileID: 1714752526}
   - {fileID: 29577908}
+  hazardousAdjacencies: []
   zoneValue: 6
 --- !u!1 &42136101
 GameObject:
@@ -1461,6 +1465,7 @@ MonoBehaviour:
   - {fileID: 722570991}
   - {fileID: 1139583637}
   - {fileID: 1806297546}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &43232840
 GameObject:
@@ -1996,6 +2001,7 @@ MonoBehaviour:
   - {fileID: 1607069495}
   - {fileID: 1159015163}
   - {fileID: 458543186}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &49886026
 PrefabInstance:
@@ -2501,8 +2507,9 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 2136000749}
   - {fileID: 168139163}
-  - {fileID: 470968861}
   - {fileID: 925176431}
+  hazardousAdjacencies:
+  - {fileID: 470968861}
   zoneValue: 3
 --- !u!1001 &74290041
 PrefabInstance:
@@ -2728,6 +2735,7 @@ MonoBehaviour:
   - {fileID: 568911226}
   - {fileID: 1670454462}
   - {fileID: 1455576718}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &81352382
 GameObject:
@@ -2833,6 +2841,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1023412347}
   - {fileID: 646617008}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &83481685
 GameObject:
@@ -2896,7 +2905,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 646b05b5976552c4ea3034d4d6ace688, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4445,6 +4454,7 @@ MonoBehaviour:
   - {fileID: 2145458064}
   - {fileID: 733496911}
   - {fileID: 1793325658}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &131798172
 GameObject:
@@ -4880,6 +4890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1555020286}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &134340575
 PrefabInstance:
@@ -5764,6 +5775,7 @@ MonoBehaviour:
   - {fileID: 1621179553}
   - {fileID: 1853642824}
   - {fileID: 1617405413}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &145943019
 PrefabInstance:
@@ -6176,11 +6188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies:
-  - {fileID: 588441353}
   - {fileID: 208626551}
   - {fileID: 538586215}
-  - {fileID: 1001610957}
   - {fileID: 1085732318}
+  hazardousAdjacencies:
+  - {fileID: 1001610957}
+  - {fileID: 588441353}
   zoneValue: 3
 --- !u!1 &156100349
 GameObject:
@@ -6392,6 +6405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 631874842}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &168139160
 GameObject:
@@ -6499,6 +6513,7 @@ MonoBehaviour:
   - {fileID: 2136000749}
   - {fileID: 70010734}
   - {fileID: 470968861}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &175152141
 PrefabInstance:
@@ -7169,9 +7184,10 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 1896941746}
   - {fileID: 1680693509}
-  - {fileID: 1321431099}
   - {fileID: 1852740752}
   - {fileID: 538586215}
+  hazardousAdjacencies:
+  - {fileID: 1321431099}
   zoneValue: 2
 --- !u!1001 &186398594
 PrefabInstance:
@@ -7581,6 +7597,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1154899171}
   - {fileID: 1490200032}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &206599340
 GameObject:
@@ -7690,6 +7707,7 @@ MonoBehaviour:
   - {fileID: 1908652260}
   - {fileID: 1852734472}
   - {fileID: 2100885970}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &207017136
 PrefabInstance:
@@ -7934,6 +7952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 722570991}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &208626548
 GameObject:
@@ -8039,11 +8058,12 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1801945333}
   - {fileID: 1029685239}
-  - {fileID: 588441353}
   - {fileID: 155416522}
   - {fileID: 562000659}
   - {fileID: 1896941746}
   - {fileID: 538586215}
+  hazardousAdjacencies:
+  - {fileID: 588441353}
   zoneValue: 2
 --- !u!1001 &208936673
 PrefabInstance:
@@ -8265,6 +8285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 930799483}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &214490400
 PrefabInstance:
@@ -8491,6 +8512,7 @@ MonoBehaviour:
   - {fileID: 365601908}
   - {fileID: 1324186042}
   - {fileID: 1223089111}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &224236472
 GameObject:
@@ -8598,6 +8620,7 @@ MonoBehaviour:
   - {fileID: 930799483}
   - {fileID: 1800863641}
   - {fileID: 1586604158}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &226643950
 PrefabInstance:
@@ -8955,6 +8978,7 @@ MonoBehaviour:
   - {fileID: 378828830}
   - {fileID: 997667274}
   - {fileID: 659987464}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &235750742
 GameObject:
@@ -9061,6 +9085,7 @@ MonoBehaviour:
   - {fileID: 1849376802}
   - {fileID: 5402248}
   - {fileID: 1488744876}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &239451126
 PrefabInstance:
@@ -9290,6 +9315,7 @@ MonoBehaviour:
   - {fileID: 1167121046}
   - {fileID: 1995453105}
   - {fileID: 1402003136}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &244443722
 GameObject:
@@ -9396,6 +9422,7 @@ MonoBehaviour:
   - {fileID: 1857445612}
   - {fileID: 726660340}
   - {fileID: 1583198232}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &250665254
 PrefabInstance:
@@ -9641,6 +9668,7 @@ MonoBehaviour:
   - {fileID: 794631071}
   - {fileID: 1806297546}
   - {fileID: 626343100}
+  hazardousAdjacencies: []
   zoneValue: 24
 --- !u!1 &251020198
 GameObject:
@@ -9745,6 +9773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1775261581}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &251500372
 PrefabInstance:
@@ -11324,7 +11353,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 025a4a7d47fc64b4883c3aec1a136d64, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11366,6 +11395,7 @@ MonoBehaviour:
   - {fileID: 1418680278}
   - {fileID: 1190265379}
   - {fileID: 358586971}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &284086675
 GameObject:
@@ -11808,6 +11838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1309641532}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &292637449
 PrefabInstance:
@@ -12152,6 +12183,7 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 1775261581}
   - {fileID: 1483701558}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &296423780
 PrefabInstance:
@@ -12373,12 +12405,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 568911226}
-  - {fileID: 1607069495}
   - {fileID: 1877805610}
   - {fileID: 1159015163}
   - {fileID: 547724441}
   - {fileID: 550694658}
   - {fileID: 1372819624}
+  hazardousAdjacencies:
+  - {fileID: 1607069495}
   zoneValue: 1
 --- !u!1 &302453756
 GameObject:
@@ -12488,6 +12521,7 @@ MonoBehaviour:
   - {fileID: 1884228966}
   - {fileID: 1139583637}
   - {fileID: 626343100}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &302823974
 GameObject:
@@ -12592,6 +12626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1473100116}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &306318275
 PrefabInstance:
@@ -13316,6 +13351,7 @@ MonoBehaviour:
   - {fileID: 1309641532}
   - {fileID: 1621087412}
   - {fileID: 1659069460}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &313298631
 GameObject:
@@ -13419,6 +13455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1835715483}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &314080404
 PrefabInstance:
@@ -14287,6 +14324,7 @@ MonoBehaviour:
   - {fileID: 1995453105}
   - {fileID: 1294512289}
   - {fileID: 1402003136}
+  hazardousAdjacencies: []
   zoneValue: 7
 --- !u!1001 &337862694
 PrefabInstance:
@@ -15199,7 +15237,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c6a74ec23e168064ca50db315bd97d55, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15245,6 +15283,7 @@ MonoBehaviour:
   - {fileID: 5402248}
   - {fileID: 1726013692}
   - {fileID: 281058234}
+  hazardousAdjacencies: []
   zoneValue: 12
 --- !u!1 &360255496
 GameObject:
@@ -15353,6 +15392,7 @@ MonoBehaviour:
   - {fileID: 1620480474}
   - {fileID: 675555518}
   - {fileID: 2092264152}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &361529515
 GameObject:
@@ -15686,6 +15726,7 @@ MonoBehaviour:
   - {fileID: 1324186042}
   - {fileID: 217331728}
   - {fileID: 1223089111}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &366509027
 PrefabInstance:
@@ -15868,6 +15909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 868335651}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &370049207
 PrefabInstance:
@@ -16052,6 +16094,7 @@ MonoBehaviour:
   - {fileID: 1154899171}
   - {fileID: 1001778919}
   - {fileID: 1490200032}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &371817891
 PrefabInstance:
@@ -16475,6 +16518,7 @@ MonoBehaviour:
   - {fileID: 232159064}
   - {fileID: 1680742543}
   - {fileID: 997667274}
+  hazardousAdjacencies: []
   zoneValue: 6
 --- !u!1 &380042841
 GameObject:
@@ -16583,6 +16627,7 @@ MonoBehaviour:
   - {fileID: 232159064}
   - {fileID: 659987464}
   - {fileID: 1419490669}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &389845308
 GameObject:
@@ -16690,6 +16735,7 @@ MonoBehaviour:
   - {fileID: 454557739}
   - {fileID: 2145458064}
   - {fileID: 733496911}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &391752625
 PrefabInstance:
@@ -17086,6 +17132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 521017382}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &397778884
 PrefabInstance:
@@ -18166,6 +18213,7 @@ MonoBehaviour:
   - {fileID: 626343100}
   - {fileID: 1439553828}
   - {fileID: 1800863641}
+  hazardousAdjacencies: []
   zoneValue: 9
 --- !u!1001 &424256046
 PrefabInstance:
@@ -19030,6 +19078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 132668088}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &446522551
 PrefabInstance:
@@ -19256,6 +19305,7 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 389845311}
   - {fileID: 2145458064}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &457878040
 GameObject:
@@ -19359,6 +19409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 152414846}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &458543183
 GameObject:
@@ -19422,7 +19473,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 10d5f98f94faba14faf1ee142c3a3ca3, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19466,6 +19517,7 @@ MonoBehaviour:
   - {fileID: 1190265379}
   - {fileID: 1607069495}
   - {fileID: 47973028}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1001 &462253799
 PrefabInstance:
@@ -19942,10 +19994,11 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 515003172}
   - {fileID: 156100352}
-  - {fileID: 70010734}
-  - {fileID: 925176431}
   - {fileID: 168139163}
   - {fileID: 1814227951}
+  hazardousAdjacencies:
+  - {fileID: 925176431}
+  - {fileID: 70010734}
   zoneValue: 3
 --- !u!1001 &471949183
 PrefabInstance:
@@ -21149,6 +21202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1473100116}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &493320318
 GameObject:
@@ -22710,6 +22764,7 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 733496911}
   - {fileID: 1793325658}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &515003169
 GameObject:
@@ -23039,6 +23094,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 733623558}
   - {fileID: 982195404}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &521017379
 GameObject:
@@ -23645,6 +23701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 868335651}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &532523490
 PrefabInstance:
@@ -23890,6 +23947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 27338225}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &537093037
 GameObject:
@@ -23993,6 +24051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1053456217}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &538275094
 PrefabInstance:
@@ -24243,6 +24302,7 @@ MonoBehaviour:
   - {fileID: 155416522}
   - {fileID: 1085732318}
   - {fileID: 1852740752}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &542487822
 PrefabInstance:
@@ -24696,6 +24756,7 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 550694658}
   - {fileID: 1159015163}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &548805500
 PrefabInstance:
@@ -24882,6 +24943,7 @@ MonoBehaviour:
   - {fileID: 1372819624}
   - {fileID: 554174516}
   - {fileID: 547724441}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &550863598
 PrefabInstance:
@@ -25237,6 +25299,7 @@ MonoBehaviour:
   - {fileID: 1835715483}
   - {fileID: 1372819624}
   - {fileID: 550694658}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &556953919
 PrefabInstance:
@@ -25461,6 +25524,7 @@ MonoBehaviour:
   - {fileID: 208626551}
   - {fileID: 1896941746}
   - {fileID: 993834609}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &568911223
 GameObject:
@@ -25566,11 +25630,12 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 29577908}
   - {fileID: 80270586}
-  - {fileID: 1714752526}
-  - {fileID: 1607069495}
   - {fileID: 300139912}
   - {fileID: 1877805610}
   - {fileID: 1670454462}
+  hazardousAdjacencies:
+  - {fileID: 1607069495}
+  - {fileID: 1714752526}
   zoneValue: 1
 --- !u!1001 &570492293
 PrefabInstance:
@@ -26501,10 +26566,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c5f5e3a7d93b04f9a4558cd2c0735f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencies:
-  - {fileID: 1801945333}
+  adjacencies: []
+  hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 155416522}
+  - {fileID: 1801945333}
   - {fileID: 208626551}
   zoneValue: 1
 --- !u!1001 &590010623
@@ -26727,6 +26793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &607170086
 PrefabInstance:
@@ -27150,6 +27217,7 @@ MonoBehaviour:
   - {fileID: 2100885970}
   - {fileID: 1592914596}
   - {fileID: 2077180176}
+  hazardousAdjacencies: []
   zoneValue: 6
 --- !u!1001 &616152455
 PrefabInstance:
@@ -27910,6 +27978,7 @@ MonoBehaviour:
   - {fileID: 1806297546}
   - {fileID: 250677183}
   - {fileID: 423567087}
+  hazardousAdjacencies: []
   zoneValue: 20
 --- !u!1 &631165427
 GameObject:
@@ -28017,6 +28086,7 @@ MonoBehaviour:
   - {fileID: 1689926898}
   - {fileID: 868035802}
   - {fileID: 1383039573}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &631874839
 GameObject:
@@ -28231,6 +28301,7 @@ MonoBehaviour:
   - {fileID: 1979200558}
   - {fileID: 1816831525}
   - {fileID: 1100151794}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &640319030
 PrefabInstance:
@@ -29817,6 +29888,7 @@ MonoBehaviour:
   - {fileID: 997667274}
   - {fileID: 1680693509}
   - {fileID: 1419490669}
+  hazardousAdjacencies:
   - {fileID: 2068111323}
   zoneValue: 4
 --- !u!1 &661283122
@@ -30153,6 +30225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1309641532}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &666402005
 PrefabInstance:
@@ -30598,6 +30671,7 @@ MonoBehaviour:
   - {fileID: 1488744876}
   - {fileID: 2092264152}
   - {fileID: 360255499}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1001 &676558592
 PrefabInstance:
@@ -30975,6 +31049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1190265379}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &685542101
 PrefabInstance:
@@ -31418,11 +31493,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies:
-  - {fileID: 1001610957}
   - {fileID: 802919240}
-  - {fileID: 1979812466}
   - {fileID: 1813642506}
   - {fileID: 1514151603}
+  hazardousAdjacencies:
+  - {fileID: 1001610957}
+  - {fileID: 1979812466}
   zoneValue: 1
 --- !u!1 &695290768
 GameObject:
@@ -32924,6 +33000,7 @@ MonoBehaviour:
   - {fileID: 389845311}
   - {fileID: 1793325658}
   - {fileID: 125643079}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &733623555
 GameObject:
@@ -33336,6 +33413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 972415835}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &738848960
 PrefabInstance:
@@ -34682,6 +34760,7 @@ MonoBehaviour:
   - {fileID: 893213730}
   - {fileID: 2100885970}
   - {fileID: 206599343}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &774387385
 GameObject:
@@ -35771,6 +35850,7 @@ MonoBehaviour:
   - {fileID: 694162057}
   - {fileID: 1514151603}
   - {fileID: 893213730}
+  hazardousAdjacencies: []
   zoneValue: 7
 --- !u!1 &803066578
 GameObject:
@@ -36390,6 +36470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 909723955}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &816731254
 PrefabInstance:
@@ -37030,6 +37111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &824623044
 GameObject:
@@ -37136,10 +37218,11 @@ MonoBehaviour:
   - {fileID: 1583198232}
   - {fileID: 1769966068}
   - {fileID: 1419490669}
-  - {fileID: 1264706729}
-  - {fileID: 2068111323}
   - {fileID: 1551751528}
   - {fileID: 1790853570}
+  hazardousAdjacencies:
+  - {fileID: 2068111323}
+  - {fileID: 1264706729}
   zoneValue: 9
 --- !u!1 &824907276
 GameObject:
@@ -37244,6 +37327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 712650878}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &827297703
 PrefabInstance:
@@ -37489,6 +37573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1555020286}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &836657729
 PrefabInstance:
@@ -38201,7 +38286,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bf05a3ca9e3636e488772932bea647ad, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38241,6 +38326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1418680278}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &868035799
 GameObject:
@@ -38350,6 +38436,7 @@ MonoBehaviour:
   - {fileID: 1383039573}
   - {fileID: 631165430}
   - {fileID: 1908652260}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &868335648
 GameObject:
@@ -39299,6 +39386,7 @@ MonoBehaviour:
   - {fileID: 1166595878}
   - {fileID: 1823749635}
   - {fileID: 802919240}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &887491142
 PrefabInstance:
@@ -39488,6 +39576,7 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 772246919}
   - {fileID: 2100885970}
+  hazardousAdjacencies: []
   zoneValue: 7
 --- !u!1 &904355962
 GameObject:
@@ -39592,6 +39681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 156100352}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &908450863
 PrefabInstance:
@@ -40330,8 +40420,9 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 1248191076}
   - {fileID: 70010734}
-  - {fileID: 470968861}
   - {fileID: 1814227951}
+  hazardousAdjacencies:
+  - {fileID: 470968861}
   zoneValue: 2
 --- !u!1001 &925845545
 PrefabInstance:
@@ -41643,6 +41734,7 @@ MonoBehaviour:
   - {fileID: 2046348846}
   - {fileID: 1558976840}
   - {fileID: 1884228966}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &952398842
 PrefabInstance:
@@ -43337,6 +43429,7 @@ MonoBehaviour:
   - {fileID: 1983437265}
   - {fileID: 1680742543}
   - {fileID: 1896941746}
+  hazardousAdjacencies: []
   zoneValue: 6
 --- !u!1 &997667271
 GameObject:
@@ -43445,6 +43538,7 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 1680693509}
   - {fileID: 659987464}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &1001610954
 GameObject:
@@ -43547,7 +43641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c5f5e3a7d93b04f9a4558cd2c0735f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencies:
+  adjacencies: []
+  hazardousAdjacencies:
   - {fileID: 588441353}
   - {fileID: 155416522}
   - {fileID: 1085732318}
@@ -44377,6 +44472,7 @@ MonoBehaviour:
   - {fileID: 993834609}
   - {fileID: 562000659}
   - {fileID: 208626551}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!21 &1030039036
 Material:
@@ -45372,6 +45468,7 @@ MonoBehaviour:
   - {fileID: 952352065}
   - {fileID: 1884228966}
   - {fileID: 302453759}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &1046916712
 GameObject:
@@ -45705,6 +45802,7 @@ MonoBehaviour:
   - {fileID: 733496911}
   - {fileID: 389845311}
   - {fileID: 454557739}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &1053456214
 GameObject:
@@ -45918,6 +46016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 43232843}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1069985293
 PrefabInstance:
@@ -46281,6 +46380,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1827317943}
   - {fileID: 2001942856}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1078583081
 PrefabInstance:
@@ -46788,6 +46888,7 @@ MonoBehaviour:
   - {fileID: 1989431170}
   - {fileID: 380042844}
   - {fileID: 1419490669}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &1085732315
 GameObject:
@@ -46893,10 +46994,11 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 538586215}
   - {fileID: 155416522}
-  - {fileID: 1001610957}
   - {fileID: 1979812466}
   - {fileID: 802919240}
   - {fileID: 1852740752}
+  hazardousAdjacencies:
+  - {fileID: 1001610957}
   zoneValue: 4
 --- !u!1001 &1087114005
 PrefabInstance:
@@ -47396,6 +47498,7 @@ MonoBehaviour:
   - {fileID: 1816831525}
   - {fileID: 638003774}
   - {fileID: 1378342898}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1101697637
 PrefabInstance:
@@ -48162,6 +48265,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 351281033}
   - {fileID: 1857445612}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1001 &1120373552
 PrefabInstance:
@@ -49034,6 +49138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1621087412}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1134421635
 PrefabInstance:
@@ -49368,6 +49473,7 @@ MonoBehaviour:
   - {fileID: 302453759}
   - {fileID: 626343100}
   - {fileID: 1806297546}
+  hazardousAdjacencies: []
   zoneValue: 6
 --- !u!1001 &1141857663
 PrefabInstance:
@@ -49592,6 +49698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 42136104}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1145501799
 PrefabInstance:
@@ -50082,6 +50189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1455683086}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &1154899168
 GameObject:
@@ -50295,10 +50403,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1835715483}
-  - {fileID: 1607069495}
   - {fileID: 300139912}
   - {fileID: 547724441}
   - {fileID: 47973028}
+  hazardousAdjacencies:
+  - {fileID: 1607069495}
   zoneValue: 1
 --- !u!1001 &1159618987
 PrefabInstance:
@@ -50480,11 +50589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies:
-  - {fileID: 1264706729}
   - {fileID: 1790853570}
   - {fileID: 886585190}
   - {fileID: 1823749635}
   - {fileID: 772246919}
+  hazardousAdjacencies:
+  - {fileID: 1264706729}
   zoneValue: 2
 --- !u!1 &1167121043
 GameObject:
@@ -50594,6 +50704,7 @@ MonoBehaviour:
   - {fileID: 1308422817}
   - {fileID: 1995453105}
   - {fileID: 244147201}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &1169728900
 PrefabInstance:
@@ -50979,6 +51090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1979200558}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1175873104
 PrefabInstance:
@@ -51679,6 +51791,7 @@ MonoBehaviour:
   - {fileID: 335612204}
   - {fileID: 1995453105}
   - {fileID: 1167121046}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &1190265376
 GameObject:
@@ -51757,7 +51870,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300000, guid: 8c37fa568fc9181479696c983d734e31, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51896,6 +52009,7 @@ MonoBehaviour:
   - {fileID: 1730290421}
   - {fileID: 1774359350}
   - {fileID: 1620480474}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1001 &1192720473
 PrefabInstance:
@@ -52267,6 +52381,7 @@ MonoBehaviour:
   - {fileID: 2046348846}
   - {fileID: 952352065}
   - {fileID: 302453759}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1195573247
 GameObject:
@@ -52987,6 +53102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 43232843}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1206359780
 PrefabInstance:
@@ -53590,6 +53706,7 @@ MonoBehaviour:
   - {fileID: 954460081}
   - {fileID: 365601908}
   - {fileID: 217331728}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1 &1224092134
 GameObject:
@@ -53694,6 +53811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1769966068}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1224741781
 PrefabInstance:
@@ -53939,6 +54057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1228047204
 PrefabInstance:
@@ -54163,6 +54282,7 @@ MonoBehaviour:
   - {fileID: 12023282}
   - {fileID: 1877494140}
   - {fileID: 1801945333}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1236594974
 PrefabInstance:
@@ -54450,7 +54570,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: cf9f87463775ba3478173198dbc014b4, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -54605,6 +54725,7 @@ MonoBehaviour:
   - {fileID: 1620480474}
   - {fileID: 675555518}
   - {fileID: 1775729498}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &1248191073
 GameObject:
@@ -55381,11 +55502,12 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1852740752}
   - {fileID: 886585190}
-  - {fileID: 1321431099}
+  hazardousAdjacencies:
   - {fileID: 2068111323}
-  - {fileID: 824623047}
   - {fileID: 1790853570}
   - {fileID: 1166595878}
+  - {fileID: 824623047}
+  - {fileID: 1321431099}
   zoneValue: 2
 --- !u!1 &1269033549
 GameObject:
@@ -55492,6 +55614,7 @@ MonoBehaviour:
   - {fileID: 1621087412}
   - {fileID: 1618081577}
   - {fileID: 132668088}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1269603184
 PrefabInstance:
@@ -56673,6 +56796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1454570506}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1290582510
 PrefabInstance:
@@ -57007,6 +57131,7 @@ MonoBehaviour:
   - {fileID: 335612204}
   - {fileID: 1995453105}
   - {fileID: 1402003136}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1297218975
 PrefabInstance:
@@ -57351,6 +57476,7 @@ MonoBehaviour:
   - {fileID: 909723955}
   - {fileID: 1586604158}
   - {fileID: 1167121046}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &1309641529
 GameObject:
@@ -57802,6 +57928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 2017862715}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &1321431096
 GameObject:
@@ -57904,12 +58031,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c5f5e3a7d93b04f9a4558cd2c0735f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencies:
+  adjacencies: []
+  hazardousAdjacencies:
+  - {fileID: 2068111323}
+  - {fileID: 1264706729}
+  - {fileID: 1852740752}
   - {fileID: 184140875}
   - {fileID: 1680693509}
-  - {fileID: 1852740752}
-  - {fileID: 1264706729}
-  - {fileID: 2068111323}
   zoneValue: 1
 --- !u!1001 &1322560806
 PrefabInstance:
@@ -58135,6 +58263,7 @@ MonoBehaviour:
   - {fileID: 1813642506}
   - {fileID: 365601908}
   - {fileID: 217331728}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1325554475
 PrefabInstance:
@@ -59184,6 +59313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 553295152}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1349170310
 PrefabInstance:
@@ -59405,6 +59535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 545721185}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1356652538
 PrefabInstance:
@@ -60445,6 +60576,7 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 554174516}
   - {fileID: 550694658}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1378342895
 GameObject:
@@ -60554,6 +60686,7 @@ MonoBehaviour:
   - {fileID: 1100151794}
   - {fileID: 512687574}
   - {fileID: 1793325658}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1383039570
 GameObject:
@@ -60661,6 +60794,7 @@ MonoBehaviour:
   - {fileID: 2136430391}
   - {fileID: 868035802}
   - {fileID: 631165430}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1387141225
 PrefabInstance:
@@ -61109,6 +61243,7 @@ MonoBehaviour:
   - {fileID: 1884228966}
   - {fileID: 423567087}
   - {fileID: 626343100}
+  hazardousAdjacencies: []
   zoneValue: 20
 --- !u!1 &1402003133
 GameObject:
@@ -61217,6 +61352,7 @@ MonoBehaviour:
   - {fileID: 1995453105}
   - {fileID: 1294512289}
   - {fileID: 244147201}
+  hazardousAdjacencies: []
   zoneValue: 7
 --- !u!1001 &1402411700
 PrefabInstance:
@@ -61748,7 +61884,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: f3ad612fb6f694448ae921e87757e7a6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -61887,9 +62023,10 @@ MonoBehaviour:
   - {fileID: 1082479210}
   - {fileID: 380042844}
   - {fileID: 659987464}
-  - {fileID: 2068111323}
   - {fileID: 1551751528}
   - {fileID: 824623047}
+  hazardousAdjacencies:
+  - {fileID: 2068111323}
   zoneValue: 5
 --- !u!1001 &1421430450
 PrefabInstance:
@@ -62705,6 +62842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 545721185}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &1430997633
 GameObject:
@@ -62809,6 +62947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 2136000749}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &1431896233
 GameObject:
@@ -63216,6 +63355,7 @@ MonoBehaviour:
   - {fileID: 1621087412}
   - {fileID: 1714752526}
   - {fileID: 1607069495}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1001 &1440489594
 PrefabInstance:
@@ -63422,11 +63562,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -63975,7 +64115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300000, guid: f9e000227dea0de4cb1b9bdb7b1038c8, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -64111,6 +64251,7 @@ MonoBehaviour:
   - {fileID: 1793325658}
   - {fileID: 80270586}
   - {fileID: 1670454462}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1455683083
 GameObject:
@@ -66231,6 +66372,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1480298224}
   - {fileID: 295176100}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1484090659
 GameObject:
@@ -66334,6 +66476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1239364470}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1486207513
 PrefabInstance:
@@ -66715,6 +66858,7 @@ MonoBehaviour:
   - {fileID: 1673163661}
   - {fileID: 2060614656}
   - {fileID: 235750745}
+  hazardousAdjacencies: []
   zoneValue: 20
 --- !u!1 &1490200029
 GameObject:
@@ -67924,6 +68068,7 @@ MonoBehaviour:
   - {fileID: 2084964403}
   - {fileID: 1774359350}
   - {fileID: 893213730}
+  hazardousAdjacencies: []
   zoneValue: 9
 --- !u!1001 &1515577391
 PrefabInstance:
@@ -68985,8 +69130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1419490669}
-  - {fileID: 2068111323}
   - {fileID: 824623047}
+  hazardousAdjacencies:
+  - {fileID: 2068111323}
   zoneValue: 1
 --- !u!1001 &1552575645
 PrefabInstance:
@@ -70263,6 +70409,7 @@ MonoBehaviour:
   - {fileID: 1188944136}
   - {fileID: 1167121046}
   - {fileID: 1308422817}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &1589278268
 PrefabInstance:
@@ -70653,6 +70800,7 @@ MonoBehaviour:
   - {fileID: 613544436}
   - {fileID: 1730290421}
   - {fileID: 2077180176}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1594592016
 PrefabInstance:
@@ -71555,13 +71703,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1190265379}
-  - {fileID: 568911226}
   - {fileID: 1714752526}
   - {fileID: 1439797109}
   - {fileID: 458543186}
+  - {fileID: 47973028}
+  hazardousAdjacencies:
   - {fileID: 1159015163}
   - {fileID: 300139912}
-  - {fileID: 47973028}
+  - {fileID: 568911226}
   zoneValue: 5
 --- !u!1001 &1607086424
 PrefabInstance:
@@ -72465,6 +72614,7 @@ MonoBehaviour:
   - {fileID: 1248153068}
   - {fileID: 675555518}
   - {fileID: 360255499}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &1621087409
 GameObject:
@@ -72944,6 +73094,7 @@ MonoBehaviour:
   - {fileID: 1586604158}
   - {fileID: 1712472191}
   - {fileID: 1188944136}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &1633834837
 GameObject:
@@ -73741,6 +73892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 361529518}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1651283031
 PrefabInstance:
@@ -74648,6 +74800,7 @@ MonoBehaviour:
   - {fileID: 2092264152}
   - {fileID: 1673163661}
   - {fileID: 5402248}
+  hazardousAdjacencies: []
   zoneValue: 13
 --- !u!1001 &1660512963
 PrefabInstance:
@@ -75146,6 +75299,7 @@ MonoBehaviour:
   - {fileID: 1455576718}
   - {fileID: 568911226}
   - {fileID: 1877805610}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1671257672
 PrefabInstance:
@@ -75394,6 +75548,7 @@ MonoBehaviour:
   - {fileID: 1659069460}
   - {fileID: 5402248}
   - {fileID: 1488744876}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1680693506
 GameObject:
@@ -75500,9 +75655,10 @@ MonoBehaviour:
   - {fileID: 997667274}
   - {fileID: 1680742543}
   - {fileID: 184140875}
-  - {fileID: 1321431099}
   - {fileID: 659987464}
+  hazardousAdjacencies:
   - {fileID: 2068111323}
+  - {fileID: 1321431099}
   zoneValue: 3
 --- !u!1 &1680742540
 GameObject:
@@ -75613,6 +75769,7 @@ MonoBehaviour:
   - {fileID: 1896941746}
   - {fileID: 184140875}
   - {fileID: 1680693509}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1001 &1680903809
 PrefabInstance:
@@ -76469,6 +76626,7 @@ MonoBehaviour:
   - {fileID: 1053456217}
   - {fileID: 1712472191}
   - {fileID: 1188944136}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1702814917
 PrefabInstance:
@@ -77244,6 +77402,7 @@ MonoBehaviour:
   - {fileID: 1626788674}
   - {fileID: 1698399872}
   - {fileID: 1188944136}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1713402736
 PrefabInstance:
@@ -77427,10 +77586,11 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1621087412}
   - {fileID: 35587632}
-  - {fileID: 29577908}
-  - {fileID: 568911226}
   - {fileID: 1439797109}
   - {fileID: 1607069495}
+  hazardousAdjacencies:
+  - {fileID: 568911226}
+  - {fileID: 29577908}
   zoneValue: 5
 --- !u!1001 &1715809803
 PrefabInstance:
@@ -77980,7 +78140,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 16c1a829f76269b48a3b3b2a3c8e0365, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -78023,6 +78183,7 @@ MonoBehaviour:
   - {fileID: 1418680278}
   - {fileID: 1247481557}
   - {fileID: 358586971}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1729242401
 PrefabInstance:
@@ -78327,6 +78488,7 @@ MonoBehaviour:
   - {fileID: 1190632379}
   - {fileID: 1620480474}
   - {fileID: 360255499}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1001 &1734341791
 PrefabInstance:
@@ -78550,6 +78712,7 @@ MonoBehaviour:
   - {fileID: 1247481557}
   - {fileID: 1827317943}
   - {fileID: 1849376802}
+  hazardousAdjacencies: []
   zoneValue: 14
 --- !u!1001 &1736440524
 PrefabInstance:
@@ -79147,6 +79310,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 930799483}
   - {fileID: 794631071}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1754461937
 PrefabInstance:
@@ -79275,11 +79439,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -79508,6 +79672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 42136104}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1001 &1764265566
 PrefabInstance:
@@ -79983,6 +80148,7 @@ MonoBehaviour:
   - {fileID: 1775729498}
   - {fileID: 1248153068}
   - {fileID: 1620480474}
+  hazardousAdjacencies: []
   zoneValue: 7
 --- !u!1 &1775261578
 GameObject:
@@ -80202,6 +80368,7 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 2084964403}
   - {fileID: 1248153068}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1776269261
 PrefabInstance:
@@ -81221,10 +81388,11 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1769966068}
   - {fileID: 1979200558}
-  - {fileID: 1264706729}
   - {fileID: 824623047}
   - {fileID: 1166595878}
   - {fileID: 772246919}
+  hazardousAdjacencies:
+  - {fileID: 1264706729}
   zoneValue: 2
 --- !u!1001 &1791102420
 PrefabInstance:
@@ -81618,6 +81786,7 @@ MonoBehaviour:
   - {fileID: 125643079}
   - {fileID: 1455576718}
   - {fileID: 80270586}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1795085114
 PrefabInstance:
@@ -81983,6 +82152,7 @@ MonoBehaviour:
   - {fileID: 930799483}
   - {fileID: 423567087}
   - {fileID: 224236475}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &1801945330
 GameObject:
@@ -82090,6 +82260,7 @@ MonoBehaviour:
   - {fileID: 1232698926}
   - {fileID: 1029685239}
   - {fileID: 208626551}
+  hazardousAdjacencies:
   - {fileID: 588441353}
   zoneValue: 2
 --- !u!1001 &1802604136
@@ -82318,6 +82489,7 @@ MonoBehaviour:
   - {fileID: 1139583637}
   - {fileID: 626343100}
   - {fileID: 250677183}
+  hazardousAdjacencies: []
   zoneValue: 28
 --- !u!1001 &1809037589
 PrefabInstance:
@@ -82743,6 +82915,7 @@ MonoBehaviour:
   - {fileID: 365601908}
   - {fileID: 2084964403}
   - {fileID: 1514151603}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1 &1814227948
 GameObject:
@@ -82850,6 +83023,7 @@ MonoBehaviour:
   - {fileID: 515003172}
   - {fileID: 925176431}
   - {fileID: 470968861}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1 &1816831522
 GameObject:
@@ -82958,6 +83132,7 @@ MonoBehaviour:
   - {fileID: 638003774}
   - {fileID: 1100151794}
   - {fileID: 1378342898}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1818561973
 PrefabInstance:
@@ -83445,6 +83620,7 @@ MonoBehaviour:
   - {fileID: 886585190}
   - {fileID: 802919240}
   - {fileID: 772246919}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1825227713
 PrefabInstance:
@@ -84027,6 +84203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 631874842}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1831365919
 PrefabInstance:
@@ -84331,7 +84508,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -12
   m_Sprite: {fileID: 21300000, guid: 65af2fc902b7e16428a88c2b1fd72569, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -85200,6 +85377,7 @@ MonoBehaviour:
   - {fileID: 206599343}
   - {fileID: 2100885970}
   - {fileID: 1908652260}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1 &1852740749
 GameObject:
@@ -85309,6 +85487,7 @@ MonoBehaviour:
   - {fileID: 802919240}
   - {fileID: 886585190}
   - {fileID: 1264706729}
+  hazardousAdjacencies:
   - {fileID: 1321431099}
   zoneValue: 2
 --- !u!1 &1853642821
@@ -85886,6 +86065,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 712650878}
   - {fileID: 1857445612}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &1868999634
 PrefabInstance:
@@ -86505,6 +86685,7 @@ MonoBehaviour:
   - {fileID: 1250806086}
   - {fileID: 1137129029}
   - {fileID: 1232698926}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &1877805607
 GameObject:
@@ -86614,6 +86795,7 @@ MonoBehaviour:
   - {fileID: 1670454462}
   - {fileID: 300139912}
   - {fileID: 1372819624}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1877830422
 PrefabInstance:
@@ -86859,6 +87041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1775261581}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &1879183931
 PrefabInstance:
@@ -87111,6 +87294,7 @@ MonoBehaviour:
   - {fileID: 1392588553}
   - {fileID: 626343100}
   - {fileID: 302453759}
+  hazardousAdjacencies: []
   zoneValue: 9
 --- !u!1001 &1886579568
 PrefabInstance:
@@ -87458,6 +87642,7 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 538586215}
   - {fileID: 184140875}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1899567397
 PrefabInstance:
@@ -87942,6 +88127,7 @@ MonoBehaviour:
   - {fileID: 868035802}
   - {fileID: 1852734472}
   - {fileID: 35587632}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1912084714
 PrefabInstance:
@@ -88695,6 +88881,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 712650878}
   - {fileID: 232159064}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1931756591
 PrefabInstance:
@@ -89757,6 +89944,7 @@ MonoBehaviour:
   - {fileID: 1473100116}
   - {fileID: 655868731}
   - {fileID: 1490200032}
+  hazardousAdjacencies: []
   zoneValue: 16
 --- !u!1001 &1966600804
 PrefabInstance:
@@ -90821,9 +91009,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies:
-  - {fileID: 1001610957}
   - {fileID: 1085732318}
   - {fileID: 802919240}
+  hazardousAdjacencies:
+  - {fileID: 1001610957}
   - {fileID: 694162057}
   zoneValue: 2
 --- !u!1001 &1979979238
@@ -91191,6 +91380,7 @@ MonoBehaviour:
   - {fileID: 1473100116}
   - {fileID: 1029685239}
   - {fileID: 993834609}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1001 &1986925653
 PrefabInstance:
@@ -91535,6 +91725,7 @@ MonoBehaviour:
   - {fileID: 712650878}
   - {fileID: 1583198232}
   - {fileID: 1082479210}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &1991240054
 PrefabInstance:
@@ -91980,6 +92171,7 @@ MonoBehaviour:
   - {fileID: 1294512289}
   - {fileID: 1402003136}
   - {fileID: 244147201}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1 &1997836284
 GameObject:
@@ -92171,6 +92363,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1827317943}
   - {fileID: 1075510098}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &2010618279
 PrefabInstance:
@@ -92408,6 +92601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 655868731}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1001 &2013652263
 PrefabInstance:
@@ -92642,11 +92836,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -94361,6 +94555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1137129029}
+  hazardousAdjacencies: []
   zoneValue: 0
 --- !u!1 &2046348843
 GameObject:
@@ -94468,6 +94663,7 @@ MonoBehaviour:
   - {fileID: 1250806086}
   - {fileID: 1558976840}
   - {fileID: 952352065}
+  hazardousAdjacencies: []
   zoneValue: 3
 --- !u!1001 &2048044064
 PrefabInstance:
@@ -95062,6 +95258,7 @@ MonoBehaviour:
   - {fileID: 1849376802}
   - {fileID: 493320321}
   - {fileID: 1488744876}
+  hazardousAdjacencies: []
   zoneValue: 4
 --- !u!1001 &2063846076
 PrefabInstance:
@@ -95283,14 +95480,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c5f5e3a7d93b04f9a4558cd2c0735f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencies:
+  adjacencies: []
+  hazardousAdjacencies:
+  - {fileID: 1264706729}
+  - {fileID: 1321431099}
   - {fileID: 1680693509}
   - {fileID: 659987464}
   - {fileID: 1419490669}
-  - {fileID: 1264706729}
-  - {fileID: 1321431099}
-  - {fileID: 1551751528}
   - {fileID: 824623047}
+  - {fileID: 1551751528}
   zoneValue: 1
 --- !u!1001 &2070242374
 PrefabInstance:
@@ -95737,6 +95935,7 @@ MonoBehaviour:
   - {fileID: 360255499}
   - {fileID: 2092264152}
   - {fileID: 1659069460}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &2083759743
 PrefabInstance:
@@ -95963,6 +96162,7 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 365601908}
   - {fileID: 1775729498}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1 &2092264149
 GameObject:
@@ -96072,6 +96272,7 @@ MonoBehaviour:
   - {fileID: 1488744876}
   - {fileID: 1673163661}
   - {fileID: 1659069460}
+  hazardousAdjacencies: []
   zoneValue: 5
 --- !u!1001 &2096634783
 PrefabInstance:
@@ -96680,6 +96881,7 @@ MonoBehaviour:
   - {fileID: 893213730}
   - {fileID: 1592914596}
   - {fileID: 613544436}
+  hazardousAdjacencies: []
   zoneValue: 8
 --- !u!1 &2101081791
 GameObject:
@@ -97478,6 +97680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 27338225}
+  hazardousAdjacencies: []
   zoneValue: 1
 --- !u!1 &2124971340
 GameObject:
@@ -99001,6 +99204,7 @@ MonoBehaviour:
   - {fileID: 389845311}
   - {fileID: 733496911}
   - {fileID: 125643079}
+  hazardousAdjacencies: []
   zoneValue: 2
 --- !u!1001 &528543380150620472
 PrefabInstance:

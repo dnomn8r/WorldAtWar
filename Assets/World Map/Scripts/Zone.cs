@@ -40,16 +40,16 @@ public abstract class Zone : MonoBehaviour {
 		ToggleAdjacencyHighlights(toggle);
 	}
 
-	private void ToggleHighlight(bool toggle) {
+	protected void ToggleHighlight(bool toggle, bool isHazard = false) {
 
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in renderers) {
-			ren.color = toggle ? Color.yellow : BaseColor;
+			ren.color = toggle ? (isHazard ? Color.red : Color.yellow) : BaseColor;
 		}
 	}
 
-	private void ToggleAdjacencyHighlights(bool toggle) {
+	protected virtual void ToggleAdjacencyHighlights(bool toggle) {
 
 		foreach (Zone zone in adjacencies) {
 	
