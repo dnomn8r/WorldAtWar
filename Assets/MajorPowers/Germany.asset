@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: Germany
   m_EditorClassIdentifier: 
   ownershipColor: {r: 0.27044016, g: 0.27044016, b: 0.27044016, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
+  - {fileID: 11400000, guid: a88de290b9f571c4e94ab80c7333726b, type: 2}
+  - {fileID: 11400000, guid: 71dc7bfef6e4d1a41804829db7fe6c45, type: 2}

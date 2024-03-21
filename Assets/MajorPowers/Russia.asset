@@ -13,3 +13,26 @@ MonoBehaviour:
   m_Name: Russia
   m_EditorClassIdentifier: 
   ownershipColor: {r: 0.37106913, g: 0.2195017, b: 0.08518248, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: 133332e20b0376d48822cf9bdd520887, type: 2}
+  - {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}
+  - {fileID: 11400000, guid: d2b17d69ef027fb44924b1bbaadd73c3, type: 2}
+  - {fileID: 11400000, guid: 80e5a7cfe2ade0c4c8c3c7c0f7c2abe7, type: 2}
+  - {fileID: 11400000, guid: f89e9539e60739f4fa64e80e333892b6, type: 2}
+  - {fileID: 11400000, guid: 5335ff156f3cc21468ac12bd39dbe0bb, type: 2}
+  - {fileID: 11400000, guid: 29d5a90cd21de194eb04e257b3ed75f6, type: 2}
+  - {fileID: 11400000, guid: 10cf45cf29ee074468b334a3fdaa4739, type: 2}
+  - {fileID: 11400000, guid: 624a8a18698cf32418fa5dcc26477969, type: 2}
+  - {fileID: 11400000, guid: e86262c2e4ff6354fa7b02ae9b109e17, type: 2}
+  - {fileID: 11400000, guid: d2bdf4b5eead31f4ea4d870750fc4cab, type: 2}
+  - {fileID: 11400000, guid: 8a572ede56798fa41a087bad5ff38b48, type: 2}
+  - {fileID: 11400000, guid: 403727592cf29884ebfe13326d253f87, type: 2}
+  - {fileID: 11400000, guid: 0232ac5b276d69e478a3073157ab9ae2, type: 2}
+  - {fileID: 11400000, guid: 85cd783fa1314734595f30f56db6a18a, type: 2}
+  - {fileID: 11400000, guid: 58f1a321120d4ef49bba4a94b35aaaaa, type: 2}
+  - {fileID: 11400000, guid: 1b491e4adcfe72e4fa63c869d9d1f499, type: 2}
+  - {fileID: 11400000, guid: 1f4fc4ad53507db41ab3f8aa81dc40cf, type: 2}
+  - {fileID: 11400000, guid: 8c195cc5b9845eb469222b97251f0b7a, type: 2}
+  - {fileID: 11400000, guid: 8b206dff2035668499461becd1084016, type: 2}
+  - {fileID: 11400000, guid: 5efe711569fac174bb60a29a169fb759, type: 2}
+  - {fileID: 11400000, guid: ce92c63bd715cd84f8fd5d18c34282dc, type: 2}

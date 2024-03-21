@@ -13,3 +13,20 @@ MonoBehaviour:
   m_Name: USA
   m_EditorClassIdentifier: 
   ownershipColor: {r: 0.03106699, g: 0.38364768, b: 0, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: 2952559bae781e544b787e25156ab0d7, type: 2}
+  - {fileID: 11400000, guid: a7cc09f8308052e439450b8828f4f027, type: 2}
+  - {fileID: 11400000, guid: 898b675736dbeb24882813f27dd99017, type: 2}
+  - {fileID: 11400000, guid: f450524fb7be773498c5bd17c4b8c82f, type: 2}
+  - {fileID: 11400000, guid: 625edf33a186f124795f212c4c8cf6aa, type: 2}
+  - {fileID: 11400000, guid: f791469a0e66a424ba028d9a0e7e1882, type: 2}
+  - {fileID: 11400000, guid: eba8ea1f9d1868845949efc60a8e0043, type: 2}
+  - {fileID: 11400000, guid: e201de71cc8791e4d9f3cf00ca0230e8, type: 2}
+  - {fileID: 11400000, guid: 7e51c4f470040fe48bbb5289a5100290, type: 2}
+  - {fileID: 11400000, guid: 96e07edcf10d57741a92367795957b69, type: 2}
+  - {fileID: 11400000, guid: 1f2747f9199507844ab0ae4a6bb4ec4d, type: 2}
+  - {fileID: 11400000, guid: c36a533ed28a54245858826860774f63, type: 2}
+  - {fileID: 11400000, guid: 97ec26ad13538144ea065b20e1a7a5eb, type: 2}
+  - {fileID: 11400000, guid: 9a2efae9a851d5941b22c39c416f36f5, type: 2}
+  - {fileID: 11400000, guid: c910901b567bd6d4fb98462c7427203a, type: 2}
+  - {fileID: 11400000, guid: dae07549ff9536c498931511782676b5, type: 2}

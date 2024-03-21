@@ -1,17 +1,28 @@
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class LandZone : Zone{
+
+	[SerializeField] private LandTerritory landTerritory;
+
+	public LandTerritory LandTerritory {
+
+		get { return landTerritory; }
+#if UNITY_EDITOR
+
+		set { landTerritory = value; }
+#endif
+	}
 
 	[SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
 	public List<LandZone> HazardousAdjacencies {
 		get { return hazardousAdjacencies; }
 	}
 
-	[SerializeField]private int zoneValue = 0;
-
-	public int Value { get { return zoneValue; } }
+	public int Value { get { return landTerritory.Value ; } }
 
 
 	public override Color BaseColor {

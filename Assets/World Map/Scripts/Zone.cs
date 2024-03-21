@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -17,6 +19,42 @@ public abstract class Zone : MonoBehaviour {
 		}
 	}
 
+
+	[MenuItem("Zones/Make Scriptables")]
+	static void MakeScriptables() {
+
+		LandZone[] landZones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+
+		foreach (LandZone zone in landZones) {
+
+			LandTerritory territory = ScriptableObject.CreateInstance<LandTerritory>();
+
+			territory.Value = zone.Value;
+
+			string path = "Assets/Definitions/LandTerritories/" + zone.name + ".asset";
+
+			AssetDatabase.CreateAsset(territory, path);
+			AssetDatabase.SaveAssets();
+			AssetDatabase.Refresh();
+
+			zone.LandTerritory = territory;
+		}
+
+		SeaZone[] seaZones = FindObjectsByType<SeaZone>(FindObjectsSortMode.None);
+
+		foreach (SeaZone zone in seaZones) {
+
+			WaterTerritory territory = ScriptableObject.CreateInstance<WaterTerritory>();
+
+			string path = "Assets/Definitions/WaterTerritories/" + zone.name + ".asset";
+
+			AssetDatabase.CreateAsset(territory, path);
+			AssetDatabase.SaveAssets();
+			AssetDatabase.Refresh();
+
+			zone.WaterTerritory = territory;
+		}
+	}
 
 
 	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();

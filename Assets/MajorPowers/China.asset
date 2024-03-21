@@ -13,3 +13,16 @@ MonoBehaviour:
   m_Name: China
   m_EditorClassIdentifier: 
   ownershipColor: {r: 0.54088044, g: 0.16480026, b: 0, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: 8324eee171b0fb142bdc64e2b97d7725, type: 2}
+  - {fileID: 11400000, guid: aacdd521d834e7940bf6f7883ea89c76, type: 2}
+  - {fileID: 11400000, guid: c365da39ac2104349b1ab3a286f86b8a, type: 2}
+  - {fileID: 11400000, guid: ab349642adc583a47ad6b000372568d8, type: 2}
+  - {fileID: 11400000, guid: 525127421b88ad446a9a346b771cc274, type: 2}
+  - {fileID: 11400000, guid: 7b5656b18945b144cb03e211dbbcd716, type: 2}
+  - {fileID: 11400000, guid: 5ff31bebcd794a74f8db1c46d5d5174f, type: 2}
+  - {fileID: 11400000, guid: f174a1d206a15a34b8d58c6852acc368, type: 2}
+  - {fileID: 11400000, guid: cb6613644ab6f1042b9f9dc8a8efabc0, type: 2}
+  - {fileID: 11400000, guid: 96404b7ab7c0d0244976f631af5a6461, type: 2}
+  - {fileID: 11400000, guid: 8abde5a687f0cb84db33229acd7311f4, type: 2}
+  - {fileID: 11400000, guid: b79f8e16b2b3eae47a870ed7efe50844, type: 2}

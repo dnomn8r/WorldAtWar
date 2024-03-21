@@ -307,8 +307,8 @@ MonoBehaviour:
   - {fileID: 1673163661}
   - {fileID: 1488744876}
   - {fileID: 235750745}
+  landTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 13
 --- !u!1001 &6855545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -557,8 +557,8 @@ MonoBehaviour:
   - {fileID: 1137129029}
   - {fileID: 1877494140}
   - {fileID: 1232698926}
+  landTerritory: {fileID: 11400000, guid: 5efe711569fac174bb60a29a169fb759, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &12305154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +908,7 @@ MonoBehaviour:
   - {fileID: 2017862715}
   - {fileID: 2121317581}
   - {fileID: 533204722}
+  waterTerritory: {fileID: 11400000, guid: 5c05a84b40c58764c8b597dc5b943222, type: 2}
 --- !u!1 &29577905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,9 +1018,9 @@ MonoBehaviour:
   - {fileID: 1793325658}
   - {fileID: 1378342898}
   - {fileID: 1816831525}
+  landTerritory: {fileID: 11400000, guid: 9c1ba546a64ada440ad1df2e6e64c902, type: 2}
   hazardousAdjacencies:
   - {fileID: 1714752526}
-  zoneValue: 2
 --- !u!1001 &32557717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1248,8 +1249,8 @@ MonoBehaviour:
   - {fileID: 1908652260}
   - {fileID: 1714752526}
   - {fileID: 29577908}
+  landTerritory: {fileID: 11400000, guid: 1b22ba0ef97df524f9ad868ec193320d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 6
 --- !u!1 &42136101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1359,7 @@ MonoBehaviour:
   - {fileID: 1402003136}
   - {fileID: 1143603213}
   - {fileID: 1759053285}
+  waterTerritory: {fileID: 11400000, guid: 8822f7904e9dc684cace30bf6fb13edd, type: 2}
 --- !u!1 &42375402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,8 +1467,8 @@ MonoBehaviour:
   - {fileID: 722570991}
   - {fileID: 1139583637}
   - {fileID: 1806297546}
+  landTerritory: {fileID: 11400000, guid: 1aa7245a8d9a2ab499d6208869890a4e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &43232840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,6 +1577,7 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 1203689822}
   - {fileID: 1066360219}
+  waterTerritory: {fileID: 11400000, guid: db9c0c1d7bc0e62478f498ad3c02106e, type: 2}
 --- !u!1001 &43328047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2001,8 +2004,8 @@ MonoBehaviour:
   - {fileID: 1607069495}
   - {fileID: 1159015163}
   - {fileID: 458543186}
+  landTerritory: {fileID: 11400000, guid: 7b04cc432abda99478862335c0fb04ef, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &49886026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2508,9 +2511,9 @@ MonoBehaviour:
   - {fileID: 2136000749}
   - {fileID: 168139163}
   - {fileID: 925176431}
+  landTerritory: {fileID: 11400000, guid: 82c1b628543cf4a4586f1ce156ba55e2, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
-  zoneValue: 3
 --- !u!1001 &74290041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2735,8 +2738,8 @@ MonoBehaviour:
   - {fileID: 568911226}
   - {fileID: 1670454462}
   - {fileID: 1455576718}
+  landTerritory: {fileID: 11400000, guid: 067c90c253ae35f4080f88ac0df7b3f6, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &81352382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,8 +2844,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1023412347}
   - {fileID: 646617008}
+  landTerritory: {fileID: 11400000, guid: 9e80c497228e0844b8b578b21eab3773, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &83481685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,6 +2953,7 @@ MonoBehaviour:
   - {fileID: 1247481557}
   - {fileID: 774387388}
   - {fileID: 1853642824}
+  waterTerritory: {fileID: 11400000, guid: fd6c58b55133a7349b484a5f4962b4d6, type: 2}
 --- !u!1001 &98941599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3870,6 +3874,7 @@ MonoBehaviour:
   - {fileID: 1439553828}
   - {fileID: 437910166}
   - {fileID: 687746188}
+  waterTerritory: {fileID: 11400000, guid: 7853685a232832145a28bf8deba5e694, type: 2}
 --- !u!1 &114588730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,6 +3977,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 802919240}
   - {fileID: 886585190}
+  waterTerritory: {fileID: 11400000, guid: d542c8142f3bc284bb949a1801842f46, type: 2}
 --- !u!1001 &115525011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4454,8 +4460,8 @@ MonoBehaviour:
   - {fileID: 2145458064}
   - {fileID: 733496911}
   - {fileID: 1793325658}
+  landTerritory: {fileID: 11400000, guid: be5ba55f18bb73c49aad5c0e997eccb7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &131798172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,6 +4569,7 @@ MonoBehaviour:
   - {fileID: 1633834840}
   - {fileID: 909723955}
   - {fileID: 1357559691}
+  waterTerritory: {fileID: 11400000, guid: 382b183d79065bb44afb71647c72e69e, type: 2}
 --- !u!1 &132668085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,6 +4678,7 @@ MonoBehaviour:
   - {fileID: 1908652260}
   - {fileID: 35587632}
   - {fileID: 446066021}
+  waterTerritory: {fileID: 11400000, guid: 203db4efdc5a9754cac761fdf2c808ee, type: 2}
 --- !u!1001 &132812932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4890,8 +4898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1555020286}
+  landTerritory: {fileID: 11400000, guid: 48830a24e20e8fd479f105eeda15695e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &134340575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5775,8 +5783,8 @@ MonoBehaviour:
   - {fileID: 1621179553}
   - {fileID: 1853642824}
   - {fileID: 1617405413}
+  landTerritory: {fileID: 11400000, guid: 18f5610afb5d54041992869b9ed3225d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &145943019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5965,6 +5973,7 @@ MonoBehaviour:
   - {fileID: 125643079}
   - {fileID: 1793325658}
   - {fileID: 457878043}
+  waterTerritory: {fileID: 11400000, guid: f44752d12edd40a4f91c6aa9acd0dde9, type: 2}
 --- !u!1001 &154764974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6191,10 +6200,10 @@ MonoBehaviour:
   - {fileID: 208626551}
   - {fileID: 538586215}
   - {fileID: 1085732318}
+  landTerritory: {fileID: 11400000, guid: 0232ac5b276d69e478a3073157ab9ae2, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 588441353}
-  zoneValue: 3
 --- !u!1 &156100349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,6 +6311,7 @@ MonoBehaviour:
   - {fileID: 904355965}
   - {fileID: 2017862715}
   - {fileID: 2136000749}
+  waterTerritory: {fileID: 11400000, guid: c10814f4da9b61046a4f85cf2ea034f7, type: 2}
 --- !u!1 &160811844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6405,8 +6415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 631874842}
+  landTerritory: {fileID: 11400000, guid: 4e2d0ebb06ba82d4696aa28b7c851984, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &168139160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,8 +6523,8 @@ MonoBehaviour:
   - {fileID: 2136000749}
   - {fileID: 70010734}
   - {fileID: 470968861}
+  landTerritory: {fileID: 11400000, guid: 9644cbe2a1bcc844096b4ace44ddbc9f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &175152141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7186,9 +7196,9 @@ MonoBehaviour:
   - {fileID: 1680693509}
   - {fileID: 1852740752}
   - {fileID: 538586215}
+  landTerritory: {fileID: 11400000, guid: ab349642adc583a47ad6b000372568d8, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
-  zoneValue: 2
 --- !u!1001 &186398594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7597,8 +7607,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1154899171}
   - {fileID: 1490200032}
+  landTerritory: {fileID: 11400000, guid: bd1a95da2fdf78e41a2d5ad821a2076d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &206599340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7707,8 +7717,8 @@ MonoBehaviour:
   - {fileID: 1908652260}
   - {fileID: 1852734472}
   - {fileID: 2100885970}
+  landTerritory: {fileID: 11400000, guid: 7f8567f95a1679e4ca49218011dc1f30, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &207017136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7719,11 +7729,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -7952,8 +7962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 722570991}
+  landTerritory: {fileID: 11400000, guid: 5c7645f4381a3f14abe06f75e2d116b8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &208626548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8062,9 +8072,9 @@ MonoBehaviour:
   - {fileID: 562000659}
   - {fileID: 1896941746}
   - {fileID: 538586215}
+  landTerritory: {fileID: 11400000, guid: 58f1a321120d4ef49bba4a94b35aaaaa, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
-  zoneValue: 2
 --- !u!1001 &208936673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8285,8 +8295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 930799483}
+  landTerritory: {fileID: 11400000, guid: 5fe2c4fd98394c145a8ae5991ebd023d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &214490400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8466,7 +8476,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: d1323db965d372940866c1e165b30661, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8512,8 +8522,8 @@ MonoBehaviour:
   - {fileID: 365601908}
   - {fileID: 1324186042}
   - {fileID: 1223089111}
+  landTerritory: {fileID: 11400000, guid: b5794a97d94caa846995e1fe0233f21b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &224236472
 GameObject:
   m_ObjectHideFlags: 0
@@ -8620,8 +8630,8 @@ MonoBehaviour:
   - {fileID: 930799483}
   - {fileID: 1800863641}
   - {fileID: 1586604158}
+  landTerritory: {fileID: 11400000, guid: b7c0405938e149441a2c3dbc4a8456ba, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &226643950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8870,6 +8880,7 @@ MonoBehaviour:
   - {fileID: 521017382}
   - {fileID: 2116957814}
   - {fileID: 1490200032}
+  waterTerritory: {fileID: 11400000, guid: 063ddcb525bdf284ca30c0f93c92e97f, type: 2}
 --- !u!1 &232159061
 GameObject:
   m_ObjectHideFlags: 0
@@ -8978,8 +8989,8 @@ MonoBehaviour:
   - {fileID: 378828830}
   - {fileID: 997667274}
   - {fileID: 659987464}
+  landTerritory: {fileID: 11400000, guid: f174a1d206a15a34b8d58c6852acc368, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &235750742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9085,8 +9096,8 @@ MonoBehaviour:
   - {fileID: 1849376802}
   - {fileID: 5402248}
   - {fileID: 1488744876}
+  landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &239451126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9315,8 +9326,8 @@ MonoBehaviour:
   - {fileID: 1167121046}
   - {fileID: 1995453105}
   - {fileID: 1402003136}
+  landTerritory: {fileID: 11400000, guid: c5a1f39af0afbbe498201e111c78602d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &244443722
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,8 +9433,8 @@ MonoBehaviour:
   - {fileID: 1857445612}
   - {fileID: 726660340}
   - {fileID: 1583198232}
+  landTerritory: {fileID: 11400000, guid: 7ba096ff2609a954e8f4b658cdc5f173, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &250665254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9668,8 +9679,8 @@ MonoBehaviour:
   - {fileID: 794631071}
   - {fileID: 1806297546}
   - {fileID: 626343100}
+  landTerritory: {fileID: 11400000, guid: c910901b567bd6d4fb98462c7427203a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 24
 --- !u!1 &251020198
 GameObject:
   m_ObjectHideFlags: 0
@@ -9773,8 +9784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1775261581}
+  landTerritory: {fileID: 11400000, guid: 5101250d01c365a429f77d1a7c0ed22f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &251500372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11395,8 +11406,8 @@ MonoBehaviour:
   - {fileID: 1418680278}
   - {fileID: 1190265379}
   - {fileID: 358586971}
+  landTerritory: {fileID: 11400000, guid: 59b81c06ec0df604697d1f1913596132, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &284086675
 GameObject:
   m_ObjectHideFlags: 0
@@ -11501,6 +11512,7 @@ MonoBehaviour:
   - {fileID: 1023035154}
   - {fileID: 1324186042}
   - {fileID: 1813642506}
+  waterTerritory: {fileID: 11400000, guid: 2f48ef6427faaa1449b399da1ae494bf, type: 2}
 --- !u!1001 &285871247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11838,8 +11850,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1309641532}
+  landTerritory: {fileID: 11400000, guid: 2bf6dab9faf4fd949854a25e2d45bfe4, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &292637449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12183,8 +12195,8 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 1775261581}
   - {fileID: 1483701558}
+  landTerritory: {fileID: 11400000, guid: 9502a97e8a4180f478df83ced7ca7684, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &296423780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12410,9 +12422,9 @@ MonoBehaviour:
   - {fileID: 547724441}
   - {fileID: 550694658}
   - {fileID: 1372819624}
+  landTerritory: {fileID: 11400000, guid: 040b2b3b73ba639479d8b0cf1f976195, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
-  zoneValue: 1
 --- !u!1 &302453756
 GameObject:
   m_ObjectHideFlags: 0
@@ -12521,8 +12533,8 @@ MonoBehaviour:
   - {fileID: 1884228966}
   - {fileID: 1139583637}
   - {fileID: 626343100}
+  landTerritory: {fileID: 11400000, guid: 586434589bc09574a914bf7c737f01ce, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &302823974
 GameObject:
   m_ObjectHideFlags: 0
@@ -12626,8 +12638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1473100116}
+  landTerritory: {fileID: 11400000, guid: e554e931458ba104084a3edf12a6b5fc, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &306318275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13351,8 +13363,8 @@ MonoBehaviour:
   - {fileID: 1309641532}
   - {fileID: 1621087412}
   - {fileID: 1659069460}
+  landTerritory: {fileID: 11400000, guid: 3fc4841501d058d44a533426bbd0f0ac, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &313298631
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,8 +13467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1835715483}
+  landTerritory: {fileID: 11400000, guid: c2b171ecdebedb441b392cb893022915, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &314080404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14324,8 +14336,8 @@ MonoBehaviour:
   - {fileID: 1995453105}
   - {fileID: 1294512289}
   - {fileID: 1402003136}
+  landTerritory: {fileID: 11400000, guid: 418c97dd340e93a469adcaddabcdbb55, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 7
 --- !u!1001 &337862694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14933,6 +14945,7 @@ MonoBehaviour:
   - {fileID: 1480298224}
   - {fileID: 43232843}
   - {fileID: 1119183262}
+  waterTerritory: {fileID: 11400000, guid: c9d4e5759e003d74cbd9a5cfd12660db, type: 2}
 --- !u!1001 &355343894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15283,8 +15296,8 @@ MonoBehaviour:
   - {fileID: 5402248}
   - {fileID: 1726013692}
   - {fileID: 281058234}
+  landTerritory: {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 12
 --- !u!1 &360255496
 GameObject:
   m_ObjectHideFlags: 0
@@ -15392,8 +15405,8 @@ MonoBehaviour:
   - {fileID: 1620480474}
   - {fileID: 675555518}
   - {fileID: 2092264152}
+  landTerritory: {fileID: 11400000, guid: 2f6e94909cf75c74a8e9a9e00b5d981b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &361529515
 GameObject:
   m_ObjectHideFlags: 0
@@ -15501,6 +15514,7 @@ MonoBehaviour:
   - {fileID: 1646684086}
   - {fileID: 545721185}
   - {fileID: 1775261581}
+  waterTerritory: {fileID: 11400000, guid: 566fb2c163252f44d9126ae6b09c513e, type: 2}
 --- !u!1001 &363505366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15680,7 +15694,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ec36020748f144a42b87320e0a727825, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15726,8 +15740,8 @@ MonoBehaviour:
   - {fileID: 1324186042}
   - {fileID: 217331728}
   - {fileID: 1223089111}
+  landTerritory: {fileID: 11400000, guid: 97a62afae5b5bae4297b6e72c7a2892c, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &366509027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15909,8 +15923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 868335651}
+  landTerritory: {fileID: 11400000, guid: 566b8f0c74d5b7544a05da425c0866d8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &370049207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16094,8 +16108,8 @@ MonoBehaviour:
   - {fileID: 1154899171}
   - {fileID: 1001778919}
   - {fileID: 1490200032}
+  landTerritory: {fileID: 11400000, guid: 8c195cc5b9845eb469222b97251f0b7a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &371817891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16518,8 +16532,8 @@ MonoBehaviour:
   - {fileID: 232159064}
   - {fileID: 1680742543}
   - {fileID: 997667274}
+  landTerritory: {fileID: 11400000, guid: 96404b7ab7c0d0244976f631af5a6461, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 6
 --- !u!1 &380042841
 GameObject:
   m_ObjectHideFlags: 0
@@ -16627,8 +16641,8 @@ MonoBehaviour:
   - {fileID: 232159064}
   - {fileID: 659987464}
   - {fileID: 1419490669}
+  landTerritory: {fileID: 11400000, guid: ae35e03394f9ac643bba8ce901635d21, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &389845308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16735,8 +16749,8 @@ MonoBehaviour:
   - {fileID: 454557739}
   - {fileID: 2145458064}
   - {fileID: 733496911}
+  landTerritory: {fileID: 11400000, guid: dfcec3022e9a8914b9a68818450d4ff6, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &391752625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17132,8 +17146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 521017382}
+  landTerritory: {fileID: 11400000, guid: f450524fb7be773498c5bd17c4b8c82f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &397778884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18213,8 +18227,8 @@ MonoBehaviour:
   - {fileID: 626343100}
   - {fileID: 1439553828}
   - {fileID: 1800863641}
+  landTerritory: {fileID: 11400000, guid: 863a2f1586178c04f8e81d1de7b76310, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 9
 --- !u!1001 &424256046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18838,6 +18852,7 @@ MonoBehaviour:
   - {fileID: 1439553828}
   - {fileID: 2101081794}
   - {fileID: 972415835}
+  waterTerritory: {fileID: 11400000, guid: ecccd4547d123f04c88a62605398d1fd, type: 2}
 --- !u!1001 &446042874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19078,8 +19093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 132668088}
+  landTerritory: {fileID: 11400000, guid: 34d383266d8421b4596e8421ed4c9ae4, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &446522551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19305,8 +19320,8 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 389845311}
   - {fileID: 2145458064}
+  landTerritory: {fileID: 11400000, guid: 675e3b8270d200e4fa36151b4d57ebb7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &457878040
 GameObject:
   m_ObjectHideFlags: 0
@@ -19409,8 +19424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 152414846}
+  landTerritory: {fileID: 11400000, guid: 6ced6213a2ebc084a8b85b98c320e57a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &458543183
 GameObject:
   m_ObjectHideFlags: 0
@@ -19517,8 +19532,8 @@ MonoBehaviour:
   - {fileID: 1190265379}
   - {fileID: 1607069495}
   - {fileID: 47973028}
+  landTerritory: {fileID: 11400000, guid: c8e5e9fa6105ecd48b7177207f05b4b0, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1001 &462253799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19996,10 +20011,10 @@ MonoBehaviour:
   - {fileID: 156100352}
   - {fileID: 168139163}
   - {fileID: 1814227951}
+  landTerritory: {fileID: 11400000, guid: dcbb8c6d4dace2f4e91150ca057a4450, type: 2}
   hazardousAdjacencies:
   - {fileID: 925176431}
   - {fileID: 70010734}
-  zoneValue: 3
 --- !u!1001 &471949183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20229,11 +20244,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -20962,6 +20977,7 @@ MonoBehaviour:
   - {fileID: 1053456217}
   - {fileID: 993511050}
   - {fileID: 1454570506}
+  waterTerritory: {fileID: 11400000, guid: 4617c97eb3e6f974eaecaf574cfb6284, type: 2}
 --- !u!1001 &492113063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21202,8 +21218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1473100116}
+  landTerritory: {fileID: 11400000, guid: 0de3e6b3b2207a346a2a344c31677c65, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &493320318
 GameObject:
   m_ObjectHideFlags: 0
@@ -21314,6 +21330,7 @@ MonoBehaviour:
   - {fileID: 1248153068}
   - {fileID: 1775729498}
   - {fileID: 954460081}
+  waterTerritory: {fileID: 11400000, guid: 1924caa48565f0943a8dffbacedf3933, type: 2}
 --- !u!1001 &493378732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22536,6 +22553,7 @@ MonoBehaviour:
   - {fileID: 1046916715}
   - {fileID: 2017862715}
   - {fileID: 1431896236}
+  waterTerritory: {fileID: 11400000, guid: 19576dcad784ff148a31cb404e1bf15c, type: 2}
 --- !u!1001 &511306902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22764,8 +22782,8 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 733496911}
   - {fileID: 1793325658}
+  landTerritory: {fileID: 11400000, guid: 58ab61d3a114eec4e932b145deebac52, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &515003169
 GameObject:
   m_ObjectHideFlags: 0
@@ -22873,6 +22891,7 @@ MonoBehaviour:
   - {fileID: 1814227951}
   - {fileID: 156100352}
   - {fileID: 470968861}
+  waterTerritory: {fileID: 11400000, guid: 003c1c25628beb6409e35c6784cf403e, type: 2}
 --- !u!1001 &517439323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23094,8 +23113,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 733623558}
   - {fileID: 982195404}
+  landTerritory: {fileID: 11400000, guid: 56590e332f678ec408f97a8ad43c674e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &521017379
 GameObject:
   m_ObjectHideFlags: 0
@@ -23203,6 +23222,7 @@ MonoBehaviour:
   - {fileID: 361529518}
   - {fileID: 972415835}
   - {fileID: 397479228}
+  waterTerritory: {fileID: 11400000, guid: a09c43483306cfc4eb921de4ac92c64a, type: 2}
 --- !u!1001 &521750243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23701,8 +23721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 868335651}
+  landTerritory: {fileID: 11400000, guid: 898b675736dbeb24882813f27dd99017, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &532523490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23947,8 +23967,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 27338225}
+  landTerritory: {fileID: 11400000, guid: 7e00875f789038d47b49d40f5ab5e5bb, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &537093037
 GameObject:
   m_ObjectHideFlags: 0
@@ -24051,8 +24071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1053456217}
+  landTerritory: {fileID: 11400000, guid: 416059b485b625c4eb5d1a22d51473ad, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &538275094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24302,8 +24322,8 @@ MonoBehaviour:
   - {fileID: 155416522}
   - {fileID: 1085732318}
   - {fileID: 1852740752}
+  landTerritory: {fileID: 11400000, guid: a023ceb9678c50b43a0ee53bd4cc6c31, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &542487822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24650,6 +24670,7 @@ MonoBehaviour:
   - {fileID: 27338225}
   - {fileID: 1354318834}
   - {fileID: 1429211056}
+  waterTerritory: {fileID: 11400000, guid: 6a59bcde71f8c1b43aa7ae66a75c75da, type: 2}
 --- !u!1 &547724438
 GameObject:
   m_ObjectHideFlags: 0
@@ -24756,8 +24777,8 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 550694658}
   - {fileID: 1159015163}
+  landTerritory: {fileID: 11400000, guid: bc5f76073a8a9e240ac95c617c39a5f2, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &548805500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24943,8 +24964,8 @@ MonoBehaviour:
   - {fileID: 1372819624}
   - {fileID: 554174516}
   - {fileID: 547724441}
+  landTerritory: {fileID: 11400000, guid: c26398f1cb404bd488829df91dfce25c, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &550863598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25193,6 +25214,7 @@ MonoBehaviour:
   - {fileID: 631874842}
   - {fileID: 1346924378}
   - {fileID: 1357559691}
+  waterTerritory: {fileID: 11400000, guid: d725c07541d4dce4fa65349e72b08a0f, type: 2}
 --- !u!1 &554174513
 GameObject:
   m_ObjectHideFlags: 0
@@ -25299,8 +25321,8 @@ MonoBehaviour:
   - {fileID: 1835715483}
   - {fileID: 1372819624}
   - {fileID: 550694658}
+  landTerritory: {fileID: 11400000, guid: b24f7cb7b610c844baf4f63633d226c6, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &556953919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25524,8 +25546,8 @@ MonoBehaviour:
   - {fileID: 208626551}
   - {fileID: 1896941746}
   - {fileID: 993834609}
+  landTerritory: {fileID: 11400000, guid: df387eace65e9e64f89cdd1045e7aed9, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &568911223
 GameObject:
   m_ObjectHideFlags: 0
@@ -25633,10 +25655,10 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 1877805610}
   - {fileID: 1670454462}
+  landTerritory: {fileID: 11400000, guid: 5e99dca4332864e44bde6c9e1e0dffc6, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
   - {fileID: 1714752526}
-  zoneValue: 1
 --- !u!1001 &570492293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26567,12 +26589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies: []
+  landTerritory: {fileID: 11400000, guid: 85cd783fa1314734595f30f56db6a18a, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 155416522}
   - {fileID: 1801945333}
   - {fileID: 208626551}
-  zoneValue: 1
 --- !u!1001 &590010623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26793,8 +26815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  landTerritory: {fileID: 11400000, guid: 7225ecc4abd2d49489d784d2b6c06e8b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &607170086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27217,8 +27239,8 @@ MonoBehaviour:
   - {fileID: 2100885970}
   - {fileID: 1592914596}
   - {fileID: 2077180176}
+  landTerritory: {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 6
 --- !u!1001 &616152455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27978,8 +28000,8 @@ MonoBehaviour:
   - {fileID: 1806297546}
   - {fileID: 250677183}
   - {fileID: 423567087}
+  landTerritory: {fileID: 11400000, guid: 97ec26ad13538144ea065b20e1a7a5eb, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 20
 --- !u!1 &631165427
 GameObject:
   m_ObjectHideFlags: 0
@@ -28086,8 +28108,8 @@ MonoBehaviour:
   - {fileID: 1689926898}
   - {fileID: 868035802}
   - {fileID: 1383039573}
+  landTerritory: {fileID: 11400000, guid: 5b567aa499c0e6a47af173d3223ba805, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &631874839
 GameObject:
   m_ObjectHideFlags: 0
@@ -28196,6 +28218,7 @@ MonoBehaviour:
   - {fileID: 2017862715}
   - {fileID: 1830960677}
   - {fileID: 160811847}
+  waterTerritory: {fileID: 11400000, guid: 8150f5453638da943a7b82471ffa7211, type: 2}
 --- !u!1001 &634231630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28411,8 +28434,8 @@ MonoBehaviour:
   - {fileID: 1979200558}
   - {fileID: 1816831525}
   - {fileID: 1100151794}
+  landTerritory: {fileID: 11400000, guid: a6245a3a4ac3c024990ac71d2bc174ec, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &640319030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29122,6 +29145,7 @@ MonoBehaviour:
   - {fileID: 722570991}
   - {fileID: 1621179553}
   - {fileID: 1853642824}
+  waterTerritory: {fileID: 11400000, guid: 7b9529949da94444a97ca575124499d6, type: 2}
 --- !u!1001 &647247431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29370,6 +29394,7 @@ MonoBehaviour:
   - {fileID: 726660340}
   - {fileID: 1516872156}
   - {fileID: 1239364470}
+  waterTerritory: {fileID: 11400000, guid: 7189afd64e3b5d54e9804293eae1339e, type: 2}
 --- !u!1001 &655139810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29555,6 +29580,7 @@ MonoBehaviour:
   - {fileID: 1490200032}
   - {fileID: 1965616863}
   - {fileID: 2013178269}
+  waterTerritory: {fileID: 11400000, guid: 7d708722b91f4b047b3e2f71c1838b98, type: 2}
 --- !u!1001 &656640336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29998,9 +30024,9 @@ MonoBehaviour:
   - {fileID: 997667274}
   - {fileID: 1680693509}
   - {fileID: 1419490669}
+  landTerritory: {fileID: 11400000, guid: 7b5656b18945b144cb03e211dbbcd716, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  zoneValue: 4
 --- !u!1 &661283122
 GameObject:
   m_ObjectHideFlags: 0
@@ -30107,6 +30133,7 @@ MonoBehaviour:
   - {fileID: 1045739320}
   - {fileID: 1961727115}
   - {fileID: 42136104}
+  waterTerritory: {fileID: 11400000, guid: 0a06f77f66fd41f49917b9fe70f20714, type: 2}
 --- !u!1001 &662578271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30335,8 +30362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1309641532}
+  landTerritory: {fileID: 11400000, guid: 8997fe21230f0a647bed70ff558b4efd, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &666402005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30781,8 +30808,8 @@ MonoBehaviour:
   - {fileID: 1488744876}
   - {fileID: 2092264152}
   - {fileID: 360255499}
+  landTerritory: {fileID: 11400000, guid: 118ca21e713aa2542a2653b9c18ecc0f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1001 &676558592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31159,8 +31186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1190265379}
+  landTerritory: {fileID: 11400000, guid: 0f16845d7f6754943ac8027c4d2ef18f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &685542101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31384,6 +31411,7 @@ MonoBehaviour:
   - {fileID: 437910166}
   - {fileID: 521017382}
   - {fileID: 228519852}
+  waterTerritory: {fileID: 11400000, guid: 72d05f05513ba7945b949e416f351a25, type: 2}
 --- !u!1001 &691246022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31606,10 +31634,10 @@ MonoBehaviour:
   - {fileID: 802919240}
   - {fileID: 1813642506}
   - {fileID: 1514151603}
+  landTerritory: {fileID: 11400000, guid: 29d5a90cd21de194eb04e257b3ed75f6, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 1979812466}
-  zoneValue: 1
 --- !u!1 &695290768
 GameObject:
   m_ObjectHideFlags: 0
@@ -31715,6 +31743,7 @@ MonoBehaviour:
   - {fileID: 42136104}
   - {fileID: 335612204}
   - {fileID: 2124971343}
+  waterTerritory: {fileID: 11400000, guid: ba3b0905e78036c40ac61c2ae47beefe, type: 2}
 --- !u!1001 &696429089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32135,6 +32164,7 @@ MonoBehaviour:
   - {fileID: 1857445612}
   - {fileID: 1866816339}
   - {fileID: 351281033}
+  waterTerritory: {fileID: 11400000, guid: 332711403e2c8c04992cf814b20fc8a2, type: 2}
 --- !u!1001 &715502704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32618,6 +32648,7 @@ MonoBehaviour:
   - {fileID: 42375405}
   - {fileID: 207710145}
   - {fileID: 1621179553}
+  waterTerritory: {fileID: 11400000, guid: 436ef7902be110c4f8ac76713ede4bdd, type: 2}
 --- !u!1001 &723821053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32803,6 +32834,7 @@ MonoBehaviour:
   - {fileID: 244443725}
   - {fileID: 1583198232}
   - {fileID: 1516872156}
+  waterTerritory: {fileID: 11400000, guid: f37b41f7885545e4186e0a3aa2523437, type: 2}
 --- !u!1001 &729473669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33110,8 +33142,8 @@ MonoBehaviour:
   - {fileID: 389845311}
   - {fileID: 1793325658}
   - {fileID: 125643079}
+  landTerritory: {fileID: 11400000, guid: ea5de9472bc66bd4a8226449fdabc0cf, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &733623555
 GameObject:
   m_ObjectHideFlags: 0
@@ -33221,6 +33253,7 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 982195404}
   - {fileID: 518233203}
+  waterTerritory: {fileID: 11400000, guid: 95fd1ddb935a9164dbc88789a893f38e, type: 2}
 --- !u!1001 &735763397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33523,8 +33556,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 972415835}
+  landTerritory: {fileID: 11400000, guid: 625edf33a186f124795f212c4c8cf6aa, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &738848960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34870,8 +34903,8 @@ MonoBehaviour:
   - {fileID: 893213730}
   - {fileID: 2100885970}
   - {fileID: 206599343}
+  landTerritory: {fileID: 11400000, guid: ec8501ea4bb36514cbd06b1b06bf0ea8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &774387385
 GameObject:
   m_ObjectHideFlags: 0
@@ -34979,6 +35012,7 @@ MonoBehaviour:
   - {fileID: 1617405413}
   - {fileID: 1555020286}
   - {fileID: 1827317943}
+  waterTerritory: {fileID: 11400000, guid: 8155e10fdb9bed34aa28af52db0612a5, type: 2}
 --- !u!1001 &780782708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35629,6 +35663,7 @@ MonoBehaviour:
   - {fileID: 250677183}
   - {fileID: 626343100}
   - {fileID: 423567087}
+  waterTerritory: {fileID: 11400000, guid: 65b06c313c9be5849904688088318e1a, type: 2}
 --- !u!1001 &798473206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35960,8 +35995,8 @@ MonoBehaviour:
   - {fileID: 694162057}
   - {fileID: 1514151603}
   - {fileID: 893213730}
+  landTerritory: {fileID: 11400000, guid: 10cf45cf29ee074468b334a3fdaa4739, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 7
 --- !u!1 &803066578
 GameObject:
   m_ObjectHideFlags: 0
@@ -36580,8 +36615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 909723955}
+  landTerritory: {fileID: 11400000, guid: e0cf9f20138fbe44b8671da18ec9eb56, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &816731254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37221,8 +37256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  landTerritory: {fileID: 11400000, guid: 0404bf6726e42144c9ef8d7eafd4a3d1, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &824623044
 GameObject:
   m_ObjectHideFlags: 0
@@ -37330,10 +37365,10 @@ MonoBehaviour:
   - {fileID: 1419490669}
   - {fileID: 1551751528}
   - {fileID: 1790853570}
+  landTerritory: {fileID: 11400000, guid: e353a4f94d034be49801ed8394622ef5, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1264706729}
-  zoneValue: 9
 --- !u!1 &824907276
 GameObject:
   m_ObjectHideFlags: 0
@@ -37437,8 +37472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 712650878}
+  landTerritory: {fileID: 11400000, guid: cb6613644ab6f1042b9f9dc8a8efabc0, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &827297703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37683,8 +37718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1555020286}
+  landTerritory: {fileID: 11400000, guid: c0443681829dd7c439cc84d1a8c7de16, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &836657729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38546,8 +38581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1418680278}
+  landTerritory: {fileID: 11400000, guid: 89c79d26946caa5418309cf268399f00, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &868035799
 GameObject:
   m_ObjectHideFlags: 0
@@ -38656,8 +38691,8 @@ MonoBehaviour:
   - {fileID: 1383039573}
   - {fileID: 631165430}
   - {fileID: 1908652260}
+  landTerritory: {fileID: 11400000, guid: 5209463ab1a2ef5408ed8584ee2693aa, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &868335648
 GameObject:
   m_ObjectHideFlags: 0
@@ -38765,6 +38800,7 @@ MonoBehaviour:
   - {fileID: 1775261581}
   - {fileID: 369570906}
   - {fileID: 530188557}
+  waterTerritory: {fileID: 11400000, guid: ab58348ab2724f743817fd2f6ac4a592, type: 2}
 --- !u!1001 &873391369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39606,8 +39642,8 @@ MonoBehaviour:
   - {fileID: 1166595878}
   - {fileID: 1823749635}
   - {fileID: 802919240}
+  landTerritory: {fileID: 11400000, guid: 624a8a18698cf32418fa5dcc26477969, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &887491142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39796,8 +39832,8 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 772246919}
   - {fileID: 2100885970}
+  landTerritory: {fileID: 11400000, guid: 290ee5f2f6e925840ac0df1921a0c5f1, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 7
 --- !u!1 &904355962
 GameObject:
   m_ObjectHideFlags: 0
@@ -39901,8 +39937,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 156100352}
+  landTerritory: {fileID: 11400000, guid: 14c89ba4abba19348bb6d95604f6842d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &908450863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40132,6 +40168,7 @@ MonoBehaviour:
   - {fileID: 1308422817}
   - {fileID: 1167121046}
   - {fileID: 814128876}
+  waterTerritory: {fileID: 11400000, guid: 88f4fea12346edb4a99393f9491435a2, type: 2}
 --- !u!1001 &911094093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40641,9 +40678,9 @@ MonoBehaviour:
   - {fileID: 1248191076}
   - {fileID: 70010734}
   - {fileID: 1814227951}
+  landTerritory: {fileID: 11400000, guid: c34df85aa2afd85499b7c098ef25cf1b, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
-  zoneValue: 2
 --- !u!1001 &925845545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40952,7 +40989,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -12
   m_Sprite: {fileID: 21300000, guid: 2e8edb9d275f089458ed7f0407a76a45, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40987,6 +41024,7 @@ MonoBehaviour:
   - {fileID: 1455683086}
   - {fileID: 1751404472}
   - {fileID: 208955202}
+  waterTerritory: {fileID: 11400000, guid: e942fe8d1fe54f645bf812a340a94ab9, type: 2}
 --- !u!1001 &930821432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41954,8 +41992,8 @@ MonoBehaviour:
   - {fileID: 2046348846}
   - {fileID: 1558976840}
   - {fileID: 1884228966}
+  landTerritory: {fileID: 11400000, guid: ef635bf2d9b165944b0ea906e1af38ee, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &952398842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42151,7 +42189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 2ea361f132ac6c543b8e2fb48ed96348, type: 3}
-  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42179,6 +42217,7 @@ MonoBehaviour:
   - {fileID: 2084964403}
   - {fileID: 365601908}
   - {fileID: 1223089111}
+  waterTerritory: {fileID: 11400000, guid: 115591a998961364e86d52eb9a2a958b, type: 2}
 --- !u!1 &955523283
 GameObject:
   m_ObjectHideFlags: 0
@@ -42289,6 +42328,7 @@ MonoBehaviour:
   - {fileID: 224236475}
   - {fileID: 1586604158}
   - {fileID: 1439553828}
+  waterTerritory: {fileID: 11400000, guid: 62ae0a02138fb5c43ac84243b08202ef, type: 2}
 --- !u!1001 &960744354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42654,6 +42694,7 @@ MonoBehaviour:
   - {fileID: 553295152}
   - {fileID: 545721185}
   - {fileID: 738241354}
+  waterTerritory: {fileID: 11400000, guid: 09f7eb255a8a74647b7549941bc53ecd, type: 2}
 --- !u!1001 &974191652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43043,6 +43084,7 @@ MonoBehaviour:
   - {fileID: 1052228754}
   - {fileID: 454557739}
   - {fileID: 1290949315}
+  waterTerritory: {fileID: 11400000, guid: 18fb7b3ad47eb8e41add0ef5f9f05aed, type: 2}
 --- !u!1001 &984540747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43512,7 +43554,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300000, guid: c2f2ca53c9e33ac45b846eca1ac506aa, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43541,6 +43583,7 @@ MonoBehaviour:
   - {fileID: 1023412347}
   - {fileID: 1390596253}
   - {fileID: 1454570506}
+  waterTerritory: {fileID: 11400000, guid: 358601ea403308747b428f66ab9d92d6, type: 2}
 --- !u!1 &993834606
 GameObject:
   m_ObjectHideFlags: 0
@@ -43649,8 +43692,8 @@ MonoBehaviour:
   - {fileID: 1983437265}
   - {fileID: 1680742543}
   - {fileID: 1896941746}
+  landTerritory: {fileID: 11400000, guid: b03775523a51add428636c8efb3a85fb, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 6
 --- !u!1 &997667271
 GameObject:
   m_ObjectHideFlags: 0
@@ -43758,8 +43801,8 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 1680693509}
   - {fileID: 659987464}
+  landTerritory: {fileID: 11400000, guid: 5ff31bebcd794a74f8db1c46d5d5174f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &1001610954
 GameObject:
   m_ObjectHideFlags: 0
@@ -43862,13 +43905,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies: []
+  landTerritory: {fileID: 11400000, guid: 8a572ede56798fa41a087bad5ff38b48, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
   - {fileID: 155416522}
   - {fileID: 1085732318}
   - {fileID: 1979812466}
   - {fileID: 694162057}
-  zoneValue: 1
 --- !u!1 &1001778916
 GameObject:
   m_ObjectHideFlags: 0
@@ -43977,6 +44020,7 @@ MonoBehaviour:
   - {fileID: 1232698926}
   - {fileID: 12023282}
   - {fileID: 1490200032}
+  waterTerritory: {fileID: 11400000, guid: 006b2a0899d6bce41a679e53e98400ab, type: 2}
 --- !u!1001 &1005082427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44395,6 +44439,7 @@ MonoBehaviour:
   - {fileID: 284086678}
   - {fileID: 217331728}
   - {fileID: 1324186042}
+  waterTerritory: {fileID: 11400000, guid: dbcde5f9d4a63034898980e0d0492d79, type: 2}
 --- !u!1 &1023412344
 GameObject:
   m_ObjectHideFlags: 0
@@ -44457,7 +44502,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: a9f2fec958a5640418dc72c5dd845a50, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44505,6 +44550,7 @@ MonoBehaviour:
   - {fileID: 646617008}
   - {fileID: 1853642824}
   - {fileID: 1390596253}
+  waterTerritory: {fileID: 11400000, guid: 962793387421ad3459ede7bb9361585c, type: 2}
 --- !u!1001 &1024975248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44692,8 +44738,8 @@ MonoBehaviour:
   - {fileID: 993834609}
   - {fileID: 562000659}
   - {fileID: 208626551}
+  landTerritory: {fileID: 11400000, guid: 1f4fc4ad53507db41ab3f8aa81dc40cf, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!21 &1030039036
 Material:
   serializedVersion: 8
@@ -45582,6 +45628,7 @@ MonoBehaviour:
   - {fileID: 152414846}
   - {fileID: 1780608782}
   - {fileID: 1961727115}
+  waterTerritory: {fileID: 11400000, guid: 00ca1638f8bae384cbce449fcf0e0498, type: 2}
 --- !u!1 &1046377511
 GameObject:
   m_ObjectHideFlags: 0
@@ -45688,8 +45735,8 @@ MonoBehaviour:
   - {fileID: 952352065}
   - {fileID: 1884228966}
   - {fileID: 302453759}
+  landTerritory: {fileID: 11400000, guid: a49ef9aaabd383345a27d7104ae14cb9, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &1046916712
 GameObject:
   m_ObjectHideFlags: 0
@@ -45797,6 +45844,7 @@ MonoBehaviour:
   - {fileID: 1357559691}
   - {fileID: 131798175}
   - {fileID: 1431896236}
+  waterTerritory: {fileID: 11400000, guid: 69d08729ffaa04f4ca5787ef9e02825d, type: 2}
 --- !u!1001 &1048020101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46022,8 +46070,8 @@ MonoBehaviour:
   - {fileID: 733496911}
   - {fileID: 389845311}
   - {fileID: 454557739}
+  landTerritory: {fileID: 11400000, guid: dd24b6e343e62ca4eb142aeb0506608c, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &1053456214
 GameObject:
   m_ObjectHideFlags: 0
@@ -46101,7 +46149,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 712db4777b0981f4e94246e73ab1b35f, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46133,6 +46181,7 @@ MonoBehaviour:
   - {fileID: 1626788674}
   - {fileID: 1712472191}
   - {fileID: 1698399872}
+  waterTerritory: {fileID: 11400000, guid: 8b0c7b6ab30104d44a393838043d1157, type: 2}
 --- !u!1 &1066360216
 GameObject:
   m_ObjectHideFlags: 0
@@ -46236,8 +46285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 43232843}
+  landTerritory: {fileID: 11400000, guid: a7cc09f8308052e439450b8828f4f027, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1069985293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46600,8 +46649,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1827317943}
   - {fileID: 2001942856}
+  landTerritory: {fileID: 11400000, guid: c17ba4bf7664ccd44a5557ea312c551b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1078583081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46870,11 +46919,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -47108,8 +47157,8 @@ MonoBehaviour:
   - {fileID: 1989431170}
   - {fileID: 380042844}
   - {fileID: 1419490669}
+  landTerritory: {fileID: 11400000, guid: 16d155d97baccf74299531764a71f140, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &1085732315
 GameObject:
   m_ObjectHideFlags: 0
@@ -47217,9 +47266,9 @@ MonoBehaviour:
   - {fileID: 1979812466}
   - {fileID: 802919240}
   - {fileID: 1852740752}
+  landTerritory: {fileID: 11400000, guid: 403727592cf29884ebfe13326d253f87, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
-  zoneValue: 4
 --- !u!1001 &1087114005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47718,8 +47767,8 @@ MonoBehaviour:
   - {fileID: 1816831525}
   - {fileID: 638003774}
   - {fileID: 1378342898}
+  landTerritory: {fileID: 11400000, guid: 668d3c1904cf4da458c2a55bd0cfdf15, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1101697637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48485,8 +48534,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 351281033}
   - {fileID: 1857445612}
+  landTerritory: {fileID: 11400000, guid: 2952559bae781e544b787e25156ab0d7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1001 &1120373552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49358,8 +49407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1621087412}
+  landTerritory: {fileID: 11400000, guid: 1ea0cc1cb045845478bd79cc7457efaf, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1134421635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49585,6 +49634,7 @@ MonoBehaviour:
   - {fileID: 228519852}
   - {fileID: 1490200032}
   - {fileID: 2041148150}
+  waterTerritory: {fileID: 11400000, guid: c4c9ff76436ab974d96f95979edce013, type: 2}
 --- !u!1 &1139583634
 GameObject:
   m_ObjectHideFlags: 0
@@ -49693,8 +49743,8 @@ MonoBehaviour:
   - {fileID: 302453759}
   - {fileID: 626343100}
   - {fileID: 1806297546}
+  landTerritory: {fileID: 11400000, guid: 151dea2e50604d745ae29cd1c6cd0de6, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 6
 --- !u!1001 &1141857663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49918,8 +49968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 42136104}
+  landTerritory: {fileID: 11400000, guid: 383e3881fd1ac75468e34beb8ce7e337, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1145501799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50166,6 +50216,7 @@ MonoBehaviour:
   - {fileID: 1473100116}
   - {fileID: 1680742543}
   - {fileID: 993834609}
+  waterTerritory: {fileID: 11400000, guid: 8e69b8c36ca94954e9eeba55b2177279, type: 2}
 --- !u!1001 &1149953657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50385,7 +50436,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1708a893ba8164b489effed6edd9955e, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -50409,8 +50460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1455683086}
+  landTerritory: {fileID: 11400000, guid: dae07549ff9536c498931511782676b5, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &1154899168
 GameObject:
   m_ObjectHideFlags: 0
@@ -50520,6 +50571,7 @@ MonoBehaviour:
   - {fileID: 1965616863}
   - {fileID: 1473100116}
   - {fileID: 1983437265}
+  waterTerritory: {fileID: 11400000, guid: a3d02f8f538695045a812d9d2aecb303, type: 2}
 --- !u!1 &1159015160
 GameObject:
   m_ObjectHideFlags: 0
@@ -50626,9 +50678,9 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 547724441}
   - {fileID: 47973028}
+  landTerritory: {fileID: 11400000, guid: 6100fc4976b3166468c9627cdc1e78b1, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
-  zoneValue: 1
 --- !u!1001 &1159618987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50813,9 +50865,9 @@ MonoBehaviour:
   - {fileID: 886585190}
   - {fileID: 1823749635}
   - {fileID: 772246919}
+  landTerritory: {fileID: 11400000, guid: 8933d88b0b1049343b774e1fdd9948fc, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
-  zoneValue: 2
 --- !u!1 &1167121043
 GameObject:
   m_ObjectHideFlags: 0
@@ -50924,8 +50976,8 @@ MonoBehaviour:
   - {fileID: 1308422817}
   - {fileID: 1995453105}
   - {fileID: 244147201}
+  landTerritory: {fileID: 11400000, guid: 4fb44771d94487c4184d37cd987bfefa, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &1169728900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51077,11 +51129,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -51310,8 +51362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1979200558}
+  landTerritory: {fileID: 11400000, guid: c629dc9624bf5a3449b56f87541ea53a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1175873104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52011,8 +52063,8 @@ MonoBehaviour:
   - {fileID: 335612204}
   - {fileID: 1995453105}
   - {fileID: 1167121046}
+  landTerritory: {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &1190265376
 GameObject:
   m_ObjectHideFlags: 0
@@ -52122,6 +52174,7 @@ MonoBehaviour:
   - {fileID: 358586971}
   - {fileID: 5402248}
   - {fileID: 684068798}
+  waterTerritory: {fileID: 11400000, guid: 77dcee5a0637cf84da6d9ed7d832b2c5, type: 2}
 --- !u!1 &1190632376
 GameObject:
   m_ObjectHideFlags: 0
@@ -52229,8 +52282,8 @@ MonoBehaviour:
   - {fileID: 1730290421}
   - {fileID: 1774359350}
   - {fileID: 1620480474}
+  landTerritory: {fileID: 11400000, guid: f89e9539e60739f4fa64e80e333892b6, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1001 &1192720473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52601,8 +52654,8 @@ MonoBehaviour:
   - {fileID: 2046348846}
   - {fileID: 952352065}
   - {fileID: 302453759}
+  landTerritory: {fileID: 11400000, guid: 42ef1caefe1a62c4bbdfe15c47071962, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1195573247
 GameObject:
   m_ObjectHideFlags: 0
@@ -53082,6 +53135,7 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1139583637}
   - {fileID: 1806297546}
+  waterTerritory: {fileID: 11400000, guid: d26e1eb5d6952bc4d8a1dfcf9332719e, type: 2}
 --- !u!1001 &1202104409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53322,8 +53376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 43232843}
+  landTerritory: {fileID: 11400000, guid: 2b4d4e4d4670a424399d905c2b1e095b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1206359780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53882,7 +53936,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fc8bec3275061be4da275d9ec826c5f3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53926,8 +53980,8 @@ MonoBehaviour:
   - {fileID: 954460081}
   - {fileID: 365601908}
   - {fileID: 217331728}
+  landTerritory: {fileID: 11400000, guid: 541e8fadbb1300448a076ff289cd8085, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1 &1224092134
 GameObject:
   m_ObjectHideFlags: 0
@@ -54031,8 +54085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1769966068}
+  landTerritory: {fileID: 11400000, guid: 9f45466722bf77a46b14f3994855e9f5, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1224741781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54277,8 +54331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1857445612}
+  landTerritory: {fileID: 11400000, guid: 835391758eca15b4796ddfdbe5bb300d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1228047204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54502,8 +54556,8 @@ MonoBehaviour:
   - {fileID: 12023282}
   - {fileID: 1877494140}
   - {fileID: 1801945333}
+  landTerritory: {fileID: 11400000, guid: 8b206dff2035668499461becd1084016, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1236594974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54728,6 +54782,7 @@ MonoBehaviour:
   - {fileID: 982195404}
   - {fileID: 733623558}
   - {fileID: 1516872156}
+  waterTerritory: {fileID: 11400000, guid: 20c5c0c06d3aa3d439ff89f58e3942aa, type: 2}
 --- !u!1 &1247481554
 GameObject:
   m_ObjectHideFlags: 0
@@ -54838,6 +54893,7 @@ MonoBehaviour:
   - {fileID: 1849376802}
   - {fileID: 1827317943}
   - {fileID: 774387388}
+  waterTerritory: {fileID: 11400000, guid: 02e472065cea0b3498720f9a66667538, type: 2}
 --- !u!1 &1248153065
 GameObject:
   m_ObjectHideFlags: 0
@@ -54945,8 +55001,8 @@ MonoBehaviour:
   - {fileID: 1620480474}
   - {fileID: 675555518}
   - {fileID: 1775729498}
+  landTerritory: {fileID: 11400000, guid: 71dc7bfef6e4d1a41804829db7fe6c45, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &1248191073
 GameObject:
   m_ObjectHideFlags: 0
@@ -55055,6 +55111,7 @@ MonoBehaviour:
   - {fileID: 515003172}
   - {fileID: 1814227951}
   - {fileID: 925176431}
+  waterTerritory: {fileID: 11400000, guid: f56125e7e95336d4aa17cc3578982a7f, type: 2}
 --- !u!1001 &1249093499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55286,6 +55343,7 @@ MonoBehaviour:
   - {fileID: 1558976840}
   - {fileID: 1137129029}
   - {fileID: 1877494140}
+  waterTerritory: {fileID: 11400000, guid: b7bc97020bb833544a02dcf9e1aca9d6, type: 2}
 --- !u!1001 &1254957112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55722,13 +55780,13 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1852740752}
   - {fileID: 886585190}
+  landTerritory: {fileID: 11400000, guid: 8324eee171b0fb142bdc64e2b97d7725, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1790853570}
   - {fileID: 1166595878}
   - {fileID: 824623047}
   - {fileID: 1321431099}
-  zoneValue: 2
 --- !u!1 &1269033549
 GameObject:
   m_ObjectHideFlags: 0
@@ -55834,8 +55892,8 @@ MonoBehaviour:
   - {fileID: 1621087412}
   - {fileID: 1618081577}
   - {fileID: 132668088}
+  landTerritory: {fileID: 11400000, guid: d32410d164858304f8d756d291b25980, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1269603184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57016,8 +57074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1454570506}
+  landTerritory: {fileID: 11400000, guid: 0015b8ca78be0bc4fbd01805a54c5983, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1290582510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57246,6 +57304,7 @@ MonoBehaviour:
   - {fileID: 454557739}
   - {fileID: 1971510715}
   - {fileID: 661283125}
+  waterTerritory: {fileID: 11400000, guid: 9be5d5ce19cf9044a93d1027d9d075fc, type: 2}
 --- !u!1 &1294512286
 GameObject:
   m_ObjectHideFlags: 0
@@ -57351,8 +57410,8 @@ MonoBehaviour:
   - {fileID: 335612204}
   - {fileID: 1995453105}
   - {fileID: 1402003136}
+  landTerritory: {fileID: 11400000, guid: 6c6d879fdc8f905468c1b070c3360353, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1297218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57696,8 +57755,8 @@ MonoBehaviour:
   - {fileID: 909723955}
   - {fileID: 1586604158}
   - {fileID: 1167121046}
+  landTerritory: {fileID: 11400000, guid: c1f94d84c5576b94b9bac279d9fc4875, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &1309641529
 GameObject:
   m_ObjectHideFlags: 0
@@ -57807,6 +57866,7 @@ MonoBehaviour:
   - {fileID: 1621087412}
   - {fileID: 1618081577}
   - {fileID: 2077180176}
+  waterTerritory: {fileID: 11400000, guid: 0d55c54a0d64b564aa1ce93aeeb4c77f, type: 2}
 --- !u!1001 &1310660355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58148,8 +58208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 2017862715}
+  landTerritory: {fileID: 11400000, guid: 9c67fac2d31b3c2498ac5f87eafa25c7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &1321431096
 GameObject:
   m_ObjectHideFlags: 0
@@ -58252,13 +58312,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies: []
+  landTerritory: {fileID: 11400000, guid: c365da39ac2104349b1ab3a286f86b8a, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1264706729}
   - {fileID: 1852740752}
   - {fileID: 184140875}
   - {fileID: 1680693509}
-  zoneValue: 1
 --- !u!1001 &1322560806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58438,7 +58498,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 51cb3105176753e4a9de81a309ed96d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -58483,8 +58543,8 @@ MonoBehaviour:
   - {fileID: 1813642506}
   - {fileID: 365601908}
   - {fileID: 217331728}
+  landTerritory: {fileID: 11400000, guid: 133332e20b0376d48822cf9bdd520887, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1325554475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59533,8 +59593,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 553295152}
+  landTerritory: {fileID: 11400000, guid: f791469a0e66a424ba028d9a0e7e1882, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1349170310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59755,8 +59815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 545721185}
+  landTerritory: {fileID: 11400000, guid: eba8ea1f9d1868845949efc60a8e0043, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1356652538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59998,6 +60058,7 @@ MonoBehaviour:
   - {fileID: 909723955}
   - {fileID: 955523286}
   - {fileID: 131798175}
+  waterTerritory: {fileID: 11400000, guid: ef7b272706a223d478fc5f4e202214a6, type: 2}
 --- !u!1001 &1358259140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60796,8 +60857,8 @@ MonoBehaviour:
   - {fileID: 300139912}
   - {fileID: 554174516}
   - {fileID: 550694658}
+  landTerritory: {fileID: 11400000, guid: c8a4a9d6b62d929479845334940ad400, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1376015407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61016,8 +61077,8 @@ MonoBehaviour:
   - {fileID: 1100151794}
   - {fileID: 512687574}
   - {fileID: 1793325658}
+  landTerritory: {fileID: 11400000, guid: f10627d7660102540882ce078258d256, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1383039570
 GameObject:
   m_ObjectHideFlags: 0
@@ -61124,8 +61185,8 @@ MonoBehaviour:
   - {fileID: 2136430391}
   - {fileID: 868035802}
   - {fileID: 631165430}
+  landTerritory: {fileID: 11400000, guid: b76153708cc31bf4cb1d7b168c013d34, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1387141225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61360,6 +61421,7 @@ MonoBehaviour:
   - {fileID: 893213730}
   - {fileID: 772246919}
   - {fileID: 1823749635}
+  waterTerritory: {fileID: 11400000, guid: c925d728123be4e42ad0034127fa662a, type: 2}
 --- !u!1 &1390596250
 GameObject:
   m_ObjectHideFlags: 0
@@ -61466,6 +61528,7 @@ MonoBehaviour:
   - {fileID: 1023412347}
   - {fileID: 1853642824}
   - {fileID: 83481688}
+  waterTerritory: {fileID: 11400000, guid: adbf3b14d62870b4784182c14e7cc5de, type: 2}
 --- !u!1 &1392588550
 GameObject:
   m_ObjectHideFlags: 0
@@ -61573,8 +61636,8 @@ MonoBehaviour:
   - {fileID: 1884228966}
   - {fileID: 423567087}
   - {fileID: 626343100}
+  landTerritory: {fileID: 11400000, guid: c36a533ed28a54245858826860774f63, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 20
 --- !u!1 &1402003133
 GameObject:
   m_ObjectHideFlags: 0
@@ -61682,8 +61745,8 @@ MonoBehaviour:
   - {fileID: 1995453105}
   - {fileID: 1294512289}
   - {fileID: 244147201}
+  landTerritory: {fileID: 11400000, guid: ef298fb767496524e845307c20f80ed7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 7
 --- !u!1001 &1402411700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62247,6 +62310,7 @@ MonoBehaviour:
   - {fileID: 281058234}
   - {fileID: 1190265379}
   - {fileID: 458543186}
+  waterTerritory: {fileID: 11400000, guid: 3239bbe313e51064884581243a1e4ac2, type: 2}
 --- !u!1 &1419490666
 GameObject:
   m_ObjectHideFlags: 0
@@ -62355,9 +62419,9 @@ MonoBehaviour:
   - {fileID: 659987464}
   - {fileID: 1551751528}
   - {fileID: 824623047}
+  landTerritory: {fileID: 11400000, guid: b915ce2b3a830134995f46ea29aa22ad, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  zoneValue: 5
 --- !u!1001 &1421430450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63172,8 +63236,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 545721185}
+  landTerritory: {fileID: 11400000, guid: 14d5148594db70e428af1d2599c0a9f1, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &1430997633
 GameObject:
   m_ObjectHideFlags: 0
@@ -63277,8 +63341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 2136000749}
+  landTerritory: {fileID: 11400000, guid: ffa4a24934285534d8dd7481026523a8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &1431896233
 GameObject:
   m_ObjectHideFlags: 0
@@ -63386,6 +63450,7 @@ MonoBehaviour:
   - {fileID: 131798175}
   - {fileID: 1633834840}
   - {fileID: 244147201}
+  waterTerritory: {fileID: 11400000, guid: 62991ae1e65ed2f45b98de75e6203411, type: 2}
 --- !u!1 &1432752355
 GameObject:
   m_ObjectHideFlags: 0
@@ -63580,6 +63645,7 @@ MonoBehaviour:
   - {fileID: 423567087}
   - {fileID: 955523286}
   - {fileID: 2101081794}
+  waterTerritory: {fileID: 11400000, guid: 3b397be6bc852e342b6c53dc4e9723b1, type: 2}
 --- !u!1 &1439797106
 GameObject:
   m_ObjectHideFlags: 0
@@ -63685,8 +63751,8 @@ MonoBehaviour:
   - {fileID: 1621087412}
   - {fileID: 1714752526}
   - {fileID: 1607069495}
+  landTerritory: {fileID: 11400000, guid: 662cd12311e473445b5e87b35e188b1a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1001 &1440489594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64475,6 +64541,7 @@ MonoBehaviour:
   - {fileID: 83481688}
   - {fileID: 1390596253}
   - {fileID: 1288917955}
+  waterTerritory: {fileID: 11400000, guid: 2e6589cb2745ba44b911fdd99daf223a, type: 2}
 --- !u!1 &1455576715
 GameObject:
   m_ObjectHideFlags: 0
@@ -64581,8 +64648,8 @@ MonoBehaviour:
   - {fileID: 1793325658}
   - {fileID: 80270586}
   - {fileID: 1670454462}
+  landTerritory: {fileID: 11400000, guid: 17813a0fd5733214387756a698494b33, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1455683083
 GameObject:
   m_ObjectHideFlags: 0
@@ -64660,7 +64727,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 4d8a160c31a0c5e44921328d4522fef2, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -64689,6 +64756,7 @@ MonoBehaviour:
   - {fileID: 1023412347}
   - {fileID: 993511050}
   - {fileID: 1153163134}
+  waterTerritory: {fileID: 11400000, guid: 310ed7bab4b0cbc4d88a466772df3a0a, type: 2}
 --- !u!1001 &1461502666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64993,6 +65061,7 @@ MonoBehaviour:
   - {fileID: 652486379}
   - {fileID: 1239364470}
   - {fileID: 1290949315}
+  waterTerritory: {fileID: 11400000, guid: cbde8452779ed83498d8e02535d48da7, type: 2}
 --- !u!1001 &1464803849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65904,6 +65973,7 @@ MonoBehaviour:
   - {fileID: 1965616863}
   - {fileID: 1147483863}
   - {fileID: 1154899171}
+  waterTerritory: {fileID: 11400000, guid: 5d06523f191f27b42a6cc00f3c0d6520, type: 2}
 --- !u!1 &1475628614
 GameObject:
   m_ObjectHideFlags: 0
@@ -66010,6 +66080,7 @@ MonoBehaviour:
   - {fileID: 1730290421}
   - {fileID: 1190632379}
   - {fileID: 893213730}
+  waterTerritory: {fileID: 11400000, guid: 28ed7b6752852b1488e4818b8ac9d5a6, type: 2}
 --- !u!1001 &1477757455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66379,6 +66450,7 @@ MonoBehaviour:
   - {fileID: 925176431}
   - {fileID: 70010734}
   - {fileID: 2136000749}
+  waterTerritory: {fileID: 11400000, guid: e67835f245f4a014ea12fd70f9522742, type: 2}
 --- !u!1001 &1481239987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66702,8 +66774,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1480298224}
   - {fileID: 295176100}
+  landTerritory: {fileID: 11400000, guid: da54204796c90e14ba1574338033e06e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1484090659
 GameObject:
   m_ObjectHideFlags: 0
@@ -66806,8 +66878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1239364470}
+  landTerritory: {fileID: 11400000, guid: b994b62668e688a48ab67988edd0a1b9, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1486207513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67188,8 +67260,8 @@ MonoBehaviour:
   - {fileID: 1673163661}
   - {fileID: 2060614656}
   - {fileID: 235750745}
+  landTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 20
 --- !u!1 &1490200029
 GameObject:
   m_ObjectHideFlags: 0
@@ -67301,6 +67373,7 @@ MonoBehaviour:
   - {fileID: 655868731}
   - {fileID: 2116957814}
   - {fileID: 228519852}
+  waterTerritory: {fileID: 11400000, guid: 9f93612df3136454d93baff988c5ea14, type: 2}
 --- !u!1001 &1493030928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68398,8 +68471,8 @@ MonoBehaviour:
   - {fileID: 2084964403}
   - {fileID: 1774359350}
   - {fileID: 893213730}
+  landTerritory: {fileID: 11400000, guid: 5335ff156f3cc21468ac12bd39dbe0bb, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 9
 --- !u!1001 &1515577391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68625,6 +68698,7 @@ MonoBehaviour:
   - {fileID: 1769966068}
   - {fileID: 1979200558}
   - {fileID: 733623558}
+  waterTerritory: {fileID: 11400000, guid: 3a641c5240cbfb643b0527c4d2e0df5c, type: 2}
 --- !u!1001 &1521524615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69461,9 +69535,9 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1419490669}
   - {fileID: 824623047}
+  landTerritory: {fileID: 11400000, guid: 988807367332b7b418cd8d534a1551fb, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  zoneValue: 1
 --- !u!1001 &1552575645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69680,6 +69754,7 @@ MonoBehaviour:
   - {fileID: 836165999}
   - {fileID: 132875712}
   - {fileID: 1023035154}
+  waterTerritory: {fileID: 11400000, guid: 67abcb0e9b321734f9f169c240617289, type: 2}
 --- !u!1 &1555377694
 GameObject:
   m_ObjectHideFlags: 0
@@ -69874,6 +69949,7 @@ MonoBehaviour:
   - {fileID: 687746188}
   - {fileID: 228519852}
   - {fileID: 1137129029}
+  waterTerritory: {fileID: 11400000, guid: 889027ae396630a43a65bbab560dc2b6, type: 2}
 --- !u!1001 &1559014781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70508,6 +70584,7 @@ MonoBehaviour:
   - {fileID: 824623047}
   - {fileID: 1769966068}
   - {fileID: 1516872156}
+  waterTerritory: {fileID: 11400000, guid: 520cca5f0a4204942a1d1d39c55d1506, type: 2}
 --- !u!1001 &1584419976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70739,8 +70816,8 @@ MonoBehaviour:
   - {fileID: 1188944136}
   - {fileID: 1167121046}
   - {fileID: 1308422817}
+  landTerritory: {fileID: 11400000, guid: 3793da7221b640a42a156a4c08e0e399, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &1589278268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71130,8 +71207,8 @@ MonoBehaviour:
   - {fileID: 613544436}
   - {fileID: 1730290421}
   - {fileID: 2077180176}
+  landTerritory: {fileID: 11400000, guid: d934dce7a0aa9ec4c9831137c07dd69a, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1594592016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72037,11 +72114,11 @@ MonoBehaviour:
   - {fileID: 1439797109}
   - {fileID: 458543186}
   - {fileID: 47973028}
+  landTerritory: {fileID: 11400000, guid: e7b00c24e53f1d847810c1447280279b, type: 2}
   hazardousAdjacencies:
   - {fileID: 1159015163}
   - {fileID: 300139912}
   - {fileID: 568911226}
-  zoneValue: 5
 --- !u!1001 &1607086424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72612,6 +72689,7 @@ MonoBehaviour:
   - {fileID: 145583174}
   - {fileID: 1555020286}
   - {fileID: 774387388}
+  waterTerritory: {fileID: 11400000, guid: b9052bd981f423c4095767d4afa2e7dc, type: 2}
 --- !u!1001 &1618046674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72836,6 +72914,7 @@ MonoBehaviour:
   - {fileID: 613544436}
   - {fileID: 1269033552}
   - {fileID: 132668088}
+  waterTerritory: {fileID: 0}
 --- !u!1 &1620480471
 GameObject:
   m_ObjectHideFlags: 0
@@ -72944,8 +73023,8 @@ MonoBehaviour:
   - {fileID: 1248153068}
   - {fileID: 675555518}
   - {fileID: 360255499}
+  landTerritory: {fileID: 11400000, guid: 9a6e39e348d44f1479d3c4a8cf29b1aa, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &1621087409
 GameObject:
   m_ObjectHideFlags: 0
@@ -73056,6 +73135,7 @@ MonoBehaviour:
   - {fileID: 132668088}
   - {fileID: 1269033552}
   - {fileID: 1618081577}
+  waterTerritory: {fileID: 11400000, guid: bb3959052aefe8844b334236e21cf04a, type: 2}
 --- !u!1 &1621179550
 GameObject:
   m_ObjectHideFlags: 0
@@ -73161,6 +73241,7 @@ MonoBehaviour:
   - {fileID: 722570991}
   - {fileID: 145583174}
   - {fileID: 1853642824}
+  waterTerritory: {fileID: 11400000, guid: 951d2c4ad4e357546b2f6510da8c0c75, type: 2}
 --- !u!1001 &1622527727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73424,8 +73505,8 @@ MonoBehaviour:
   - {fileID: 1586604158}
   - {fileID: 1712472191}
   - {fileID: 1188944136}
+  landTerritory: {fileID: 11400000, guid: 7f60fbcf406d33e429e0c47d10aa0f7d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &1633834837
 GameObject:
   m_ObjectHideFlags: 0
@@ -73530,6 +73611,7 @@ MonoBehaviour:
   - {fileID: 131798175}
   - {fileID: 909723955}
   - {fileID: 244147201}
+  waterTerritory: {fileID: 11400000, guid: 3556f610fcc7818429ccf4e6fd71d0a9, type: 2}
 --- !u!1001 &1637063810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74222,8 +74304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 361529518}
+  landTerritory: {fileID: 11400000, guid: 65f1253f4ec19c54ca2e332d9d6cdd78, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1651283031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75130,8 +75212,8 @@ MonoBehaviour:
   - {fileID: 2092264152}
   - {fileID: 1673163661}
   - {fileID: 5402248}
+  landTerritory: {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 13
 --- !u!1001 &1660512963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75629,8 +75711,8 @@ MonoBehaviour:
   - {fileID: 1455576718}
   - {fileID: 568911226}
   - {fileID: 1877805610}
+  landTerritory: {fileID: 11400000, guid: 7905adadd81c792448ff4c549567b30b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1671257672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75878,8 +75960,8 @@ MonoBehaviour:
   - {fileID: 1659069460}
   - {fileID: 5402248}
   - {fileID: 1488744876}
+  landTerritory: {fileID: 11400000, guid: 00fea1639a4931540bda8378cf11b923, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1680693506
 GameObject:
   m_ObjectHideFlags: 0
@@ -75986,10 +76068,10 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 184140875}
   - {fileID: 659987464}
+  landTerritory: {fileID: 11400000, guid: 525127421b88ad446a9a346b771cc274, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1321431099}
-  zoneValue: 3
 --- !u!1 &1680742540
 GameObject:
   m_ObjectHideFlags: 0
@@ -76099,8 +76181,8 @@ MonoBehaviour:
   - {fileID: 1896941746}
   - {fileID: 184140875}
   - {fileID: 1680693509}
+  landTerritory: {fileID: 11400000, guid: 8abde5a687f0cb84db33229acd7311f4, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1001 &1680903809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76729,6 +76811,7 @@ MonoBehaviour:
   - {fileID: 1816831525}
   - {fileID: 631165430}
   - {fileID: 868035802}
+  waterTerritory: {fileID: 11400000, guid: 6020f3b2851a4a6488b696629970128c, type: 2}
 --- !u!1001 &1692863794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76956,8 +77039,8 @@ MonoBehaviour:
   - {fileID: 1053456217}
   - {fileID: 1712472191}
   - {fileID: 1188944136}
+  landTerritory: {fileID: 11400000, guid: c21e4b9f746936d41bd198a82f5167e4, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1702814917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77732,8 +77815,8 @@ MonoBehaviour:
   - {fileID: 1626788674}
   - {fileID: 1698399872}
   - {fileID: 1188944136}
+  landTerritory: {fileID: 11400000, guid: e72f26098d9daf14bae6cf1fd50dc49c, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1713402736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77918,10 +78001,10 @@ MonoBehaviour:
   - {fileID: 35587632}
   - {fileID: 1439797109}
   - {fileID: 1607069495}
+  landTerritory: {fileID: 11400000, guid: 305eff19ed618d246a537b18ce41782c, type: 2}
   hazardousAdjacencies:
   - {fileID: 568911226}
   - {fileID: 29577908}
-  zoneValue: 5
 --- !u!1001 &1715809803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78513,8 +78596,8 @@ MonoBehaviour:
   - {fileID: 1418680278}
   - {fileID: 1247481557}
   - {fileID: 358586971}
+  landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1729242401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78818,8 +78901,8 @@ MonoBehaviour:
   - {fileID: 1190632379}
   - {fileID: 1620480474}
   - {fileID: 360255499}
+  landTerritory: {fileID: 11400000, guid: 4532cbe1c8af66342ab261bbd1300413, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1001 &1734341791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79042,8 +79125,8 @@ MonoBehaviour:
   - {fileID: 1247481557}
   - {fileID: 1827317943}
   - {fileID: 1849376802}
+  landTerritory: {fileID: 11400000, guid: 1245831c7f207814498f4f4c8b44916d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 14
 --- !u!1001 &1736440524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79640,8 +79723,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 930799483}
   - {fileID: 794631071}
+  landTerritory: {fileID: 11400000, guid: eb4377444ae91864f95475a3cfca3e11, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1754461937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80002,8 +80085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 42136104}
+  landTerritory: {fileID: 11400000, guid: 21f401e25db51f644ac46cc8f4f6db02, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1001 &1764265566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80369,6 +80452,7 @@ MonoBehaviour:
   - {fileID: 824623047}
   - {fileID: 1790853570}
   - {fileID: 1979200558}
+  waterTerritory: {fileID: 11400000, guid: 3d79ecc5fbd5d9e46b0861ea6d56c714, type: 2}
 --- !u!1 &1774359347
 GameObject:
   m_ObjectHideFlags: 0
@@ -80478,8 +80562,8 @@ MonoBehaviour:
   - {fileID: 1775729498}
   - {fileID: 1248153068}
   - {fileID: 1620480474}
+  landTerritory: {fileID: 11400000, guid: 80e5a7cfe2ade0c4c8c3c7c0f7c2abe7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 7
 --- !u!1 &1775261578
 GameObject:
   m_ObjectHideFlags: 0
@@ -80591,6 +80675,7 @@ MonoBehaviour:
   - {fileID: 545721185}
   - {fileID: 27338225}
   - {fileID: 2136000749}
+  waterTerritory: {fileID: 11400000, guid: 69781e9102ce20848af13e6689233e0d, type: 2}
 --- !u!1 &1775729495
 GameObject:
   m_ObjectHideFlags: 0
@@ -80698,8 +80783,8 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 2084964403}
   - {fileID: 1248153068}
+  landTerritory: {fileID: 11400000, guid: ec52214e5816a3545aa7ef2c7098ef49, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1776269261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81070,6 +81155,7 @@ MonoBehaviour:
   - {fileID: 1877805610}
   - {fileID: 1372819624}
   - {fileID: 554174516}
+  waterTerritory: {fileID: 11400000, guid: a9ee4ce18ca469749bd300796cd6b05a, type: 2}
 --- !u!1001 &1782137989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81721,9 +81807,9 @@ MonoBehaviour:
   - {fileID: 824623047}
   - {fileID: 1166595878}
   - {fileID: 772246919}
+  landTerritory: {fileID: 11400000, guid: 00751987a4e497148a79133b120fd61c, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
-  zoneValue: 2
 --- !u!1001 &1791102420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82116,8 +82202,8 @@ MonoBehaviour:
   - {fileID: 125643079}
   - {fileID: 1455576718}
   - {fileID: 80270586}
+  landTerritory: {fileID: 11400000, guid: 50942f76d8fb75b488935905a2c5e47e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1795085114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82128,11 +82214,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -82482,8 +82568,8 @@ MonoBehaviour:
   - {fileID: 930799483}
   - {fileID: 423567087}
   - {fileID: 224236475}
+  landTerritory: {fileID: 11400000, guid: c883ae1569ab3d548901394463e836fc, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &1801945330
 GameObject:
   m_ObjectHideFlags: 0
@@ -82590,9 +82676,9 @@ MonoBehaviour:
   - {fileID: 1232698926}
   - {fileID: 1029685239}
   - {fileID: 208626551}
+  landTerritory: {fileID: 11400000, guid: 1b491e4adcfe72e4fa63c869d9d1f499, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
-  zoneValue: 2
 --- !u!1001 &1802604136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82819,8 +82905,8 @@ MonoBehaviour:
   - {fileID: 1139583637}
   - {fileID: 626343100}
   - {fileID: 250677183}
+  landTerritory: {fileID: 11400000, guid: 9a2efae9a851d5941b22c39c416f36f5, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 28
 --- !u!1001 &1809037589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83199,7 +83285,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 98924d97063c6f74a90a5af4657d70e4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -83245,8 +83331,8 @@ MonoBehaviour:
   - {fileID: 365601908}
   - {fileID: 2084964403}
   - {fileID: 1514151603}
+  landTerritory: {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1 &1814227948
 GameObject:
   m_ObjectHideFlags: 0
@@ -83353,8 +83439,8 @@ MonoBehaviour:
   - {fileID: 515003172}
   - {fileID: 925176431}
   - {fileID: 470968861}
+  landTerritory: {fileID: 11400000, guid: e6231485e53b2a84197fb66adf998f5e, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1 &1816831522
 GameObject:
   m_ObjectHideFlags: 0
@@ -83462,8 +83548,8 @@ MonoBehaviour:
   - {fileID: 638003774}
   - {fileID: 1100151794}
   - {fileID: 1378342898}
+  landTerritory: {fileID: 11400000, guid: c133a24f22232074db1f66d483c8d3a1, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1818561973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83950,8 +84036,8 @@ MonoBehaviour:
   - {fileID: 886585190}
   - {fileID: 802919240}
   - {fileID: 772246919}
+  landTerritory: {fileID: 11400000, guid: e86262c2e4ff6354fa7b02ae9b109e17, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1825227713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84289,6 +84375,7 @@ MonoBehaviour:
   - {fileID: 1735579748}
   - {fileID: 2001942856}
   - {fileID: 1075510098}
+  waterTerritory: {fileID: 11400000, guid: 84ea8876dfd51114aaa75817d3b1f3a0, type: 2}
 --- !u!1001 &1830752353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84533,8 +84620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 631874842}
+  landTerritory: {fileID: 11400000, guid: 89f46606b69288b4490b10ce03897470, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1831365919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84872,6 +84959,7 @@ MonoBehaviour:
   - {fileID: 490160988}
   - {fileID: 1454570506}
   - {fileID: 1418680278}
+  waterTerritory: {fileID: 11400000, guid: 406d026d0d7ad154dab73b97a9e20ff5, type: 2}
 --- !u!1001 &1839173713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85363,6 +85451,7 @@ MonoBehaviour:
   - {fileID: 217331728}
   - {fileID: 1023035154}
   - {fileID: 1555020286}
+  waterTerritory: {fileID: 11400000, guid: 1d2f7aed7b149ad42a2d1350d1904291, type: 2}
 --- !u!1001 &1850339232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85707,8 +85796,8 @@ MonoBehaviour:
   - {fileID: 206599343}
   - {fileID: 2100885970}
   - {fileID: 1908652260}
+  landTerritory: {fileID: 11400000, guid: d21c50a934b0c3c4da09433171de16a0, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1 &1852740749
 GameObject:
   m_ObjectHideFlags: 0
@@ -85817,9 +85906,9 @@ MonoBehaviour:
   - {fileID: 802919240}
   - {fileID: 886585190}
   - {fileID: 1264706729}
+  landTerritory: {fileID: 11400000, guid: aacdd521d834e7940bf6f7883ea89c76, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
-  zoneValue: 2
 --- !u!1 &1853642821
 GameObject:
   m_ObjectHideFlags: 0
@@ -85929,6 +86018,7 @@ MonoBehaviour:
   - {fileID: 145583174}
   - {fileID: 1617405413}
   - {fileID: 774387388}
+  waterTerritory: {fileID: 11400000, guid: 50dd662a555a2b64e996f8a3cf9e0809, type: 2}
 --- !u!1 &1857445609
 GameObject:
   m_ObjectHideFlags: 0
@@ -86041,6 +86131,7 @@ MonoBehaviour:
   - {fileID: 821346923}
   - {fileID: 1226481430}
   - {fileID: 244443725}
+  waterTerritory: {fileID: 11400000, guid: adf65d8e6fc1dc141be06c254439bb86, type: 2}
 --- !u!1001 &1860724465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86395,8 +86486,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 712650878}
   - {fileID: 1857445612}
+  landTerritory: {fileID: 11400000, guid: 5e95b9a7b29c2674692c01585487db12, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &1868999634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87015,8 +87106,8 @@ MonoBehaviour:
   - {fileID: 1250806086}
   - {fileID: 1137129029}
   - {fileID: 1232698926}
+  landTerritory: {fileID: 11400000, guid: ce92c63bd715cd84f8fd5d18c34282dc, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &1877805607
 GameObject:
   m_ObjectHideFlags: 0
@@ -87125,8 +87216,8 @@ MonoBehaviour:
   - {fileID: 1670454462}
   - {fileID: 300139912}
   - {fileID: 1372819624}
+  landTerritory: {fileID: 11400000, guid: 6018a03038b62d340b0524715ed845a0, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1877830422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87371,8 +87462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1775261581}
+  landTerritory: {fileID: 11400000, guid: 87fbe94ea3bb0ba47be92cb5562e1d84, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &1879183931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87624,8 +87715,8 @@ MonoBehaviour:
   - {fileID: 1392588553}
   - {fileID: 626343100}
   - {fileID: 302453759}
+  landTerritory: {fileID: 11400000, guid: 1f2747f9199507844ab0ae4a6bb4ec4d, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 9
 --- !u!1001 &1886579568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87972,8 +88063,8 @@ MonoBehaviour:
   - {fileID: 1680742543}
   - {fileID: 538586215}
   - {fileID: 184140875}
+  landTerritory: {fileID: 11400000, guid: b79f8e16b2b3eae47a870ed7efe50844, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1899567397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88457,8 +88548,8 @@ MonoBehaviour:
   - {fileID: 868035802}
   - {fileID: 1852734472}
   - {fileID: 35587632}
+  landTerritory: {fileID: 11400000, guid: d10e587d572f2154085ac772d6983b99, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1912084714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89211,8 +89302,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 712650878}
   - {fileID: 232159064}
+  landTerritory: {fileID: 11400000, guid: 1f341c28272b5da409c0120e8e17d47c, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1931756591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90085,6 +90176,7 @@ MonoBehaviour:
   - {fileID: 2124971343}
   - {fileID: 695290771}
   - {fileID: 42136104}
+  waterTerritory: {fileID: 11400000, guid: 0807cd144250a1d4e9969630f3f68fcb, type: 2}
 --- !u!1001 &1964773192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90308,8 +90400,8 @@ MonoBehaviour:
   - {fileID: 1473100116}
   - {fileID: 655868731}
   - {fileID: 1490200032}
+  landTerritory: {fileID: 11400000, guid: 01e1134ca660c3849aee35ae892a7b92, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 16
 --- !u!1001 &1966600804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90909,6 +91001,7 @@ MonoBehaviour:
   - {fileID: 152414846}
   - {fileID: 1045739320}
   - {fileID: 661283125}
+  waterTerritory: {fileID: 11400000, guid: 41ca416c694f84d4eb7b3964420b7ccd, type: 2}
 --- !u!1001 &1972505690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91271,6 +91364,7 @@ MonoBehaviour:
   - {fileID: 733623558}
   - {fileID: 1689926898}
   - {fileID: 1174608449}
+  waterTerritory: {fileID: 11400000, guid: 08f17fc485b063f4a9aa365508008ea7, type: 2}
 --- !u!1 &1979812463
 GameObject:
   m_ObjectHideFlags: 0
@@ -91375,10 +91469,10 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1085732318}
   - {fileID: 802919240}
+  landTerritory: {fileID: 11400000, guid: d2bdf4b5eead31f4ea4d870750fc4cab, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 694162057}
-  zoneValue: 2
 --- !u!1001 &1979979238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91744,8 +91838,8 @@ MonoBehaviour:
   - {fileID: 1473100116}
   - {fileID: 1029685239}
   - {fileID: 993834609}
+  landTerritory: {fileID: 11400000, guid: 413a9d6be17dee24985a1e3895b32536, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1001 &1986925653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92089,8 +92183,8 @@ MonoBehaviour:
   - {fileID: 712650878}
   - {fileID: 1583198232}
   - {fileID: 1082479210}
+  landTerritory: {fileID: 11400000, guid: 1c1371a375a16764a813dd629f9c5cd7, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &1991240054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92535,8 +92629,8 @@ MonoBehaviour:
   - {fileID: 1294512289}
   - {fileID: 1402003136}
   - {fileID: 244147201}
+  landTerritory: {fileID: 11400000, guid: d3256e8efd1de41468a19bc185e130d9, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1 &1997836284
 GameObject:
   m_ObjectHideFlags: 0
@@ -92727,8 +92821,8 @@ MonoBehaviour:
   adjacencies:
   - {fileID: 1827317943}
   - {fileID: 1075510098}
+  landTerritory: {fileID: 11400000, guid: dc98d6675ff742049abe312450bb569f, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &2010618279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92965,8 +93059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 655868731}
+  landTerritory: {fileID: 11400000, guid: ec167388830028949a5cf32a6543fa44, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1001 &2013652263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93190,6 +93284,7 @@ MonoBehaviour:
   - {fileID: 631874842}
   - {fileID: 1319387635}
   - {fileID: 508343476}
+  waterTerritory: {fileID: 11400000, guid: 2f2c03e6992dc244aba076c38e324542, type: 2}
 --- !u!1001 &2019162503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93749,7 +93844,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 864e964dd3c2fdf4c8f2698ceb97042c, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.15, g: 0.6, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93778,6 +93873,7 @@ MonoBehaviour:
   - {fileID: 1806297546}
   - {fileID: 1023412347}
   - {fileID: 1455683086}
+  waterTerritory: {fileID: 11400000, guid: 3ca02eaa557f8694f8010659a0b76794, type: 2}
 --- !u!1001 &2026766921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94919,8 +95015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 1137129029}
+  landTerritory: {fileID: 11400000, guid: 7e51c4f470040fe48bbb5289a5100290, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 0
 --- !u!1 &2046348843
 GameObject:
   m_ObjectHideFlags: 0
@@ -95027,8 +95123,8 @@ MonoBehaviour:
   - {fileID: 1250806086}
   - {fileID: 1558976840}
   - {fileID: 952352065}
+  landTerritory: {fileID: 11400000, guid: 96e07edcf10d57741a92367795957b69, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 3
 --- !u!1001 &2048044064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95622,8 +95718,8 @@ MonoBehaviour:
   - {fileID: 1849376802}
   - {fileID: 493320321}
   - {fileID: 1488744876}
+  landTerritory: {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 4
 --- !u!1001 &2063846076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95845,6 +95941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacencies: []
+  landTerritory: {fileID: 11400000, guid: 51490425642e53f48978a1a0c1d272a9, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
   - {fileID: 1321431099}
@@ -95853,7 +95950,6 @@ MonoBehaviour:
   - {fileID: 1419490669}
   - {fileID: 824623047}
   - {fileID: 1551751528}
-  zoneValue: 1
 --- !u!1001 &2070242374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96299,8 +96395,8 @@ MonoBehaviour:
   - {fileID: 360255499}
   - {fileID: 2092264152}
   - {fileID: 1659069460}
+  landTerritory: {fileID: 11400000, guid: 51f660c64344b8341942abcc44450534, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &2083759743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96480,7 +96576,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 80e8d027634a75346bd1c2439835b38c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96526,8 +96622,8 @@ MonoBehaviour:
   - {fileID: 1774359350}
   - {fileID: 365601908}
   - {fileID: 1775729498}
+  landTerritory: {fileID: 11400000, guid: d2b17d69ef027fb44924b1bbaadd73c3, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1 &2092264149
 GameObject:
   m_ObjectHideFlags: 0
@@ -96636,8 +96732,8 @@ MonoBehaviour:
   - {fileID: 1488744876}
   - {fileID: 1673163661}
   - {fileID: 1659069460}
+  landTerritory: {fileID: 11400000, guid: a88de290b9f571c4e94ab80c7333726b, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 5
 --- !u!1001 &2096634783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97245,8 +97341,8 @@ MonoBehaviour:
   - {fileID: 893213730}
   - {fileID: 1592914596}
   - {fileID: 613544436}
+  landTerritory: {fileID: 11400000, guid: 0593b7b710e736d4ebcea8b8ad017350, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 8
 --- !u!1 &2101081791
 GameObject:
   m_ObjectHideFlags: 0
@@ -97354,6 +97450,7 @@ MonoBehaviour:
   - {fileID: 553295152}
   - {fileID: 955523286}
   - {fileID: 1357559691}
+  waterTerritory: {fileID: 11400000, guid: 284bc0cd1bc771c4c9a21abec74d7330, type: 2}
 --- !u!1001 &2114029515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97570,6 +97667,7 @@ MonoBehaviour:
   - {fileID: 655868731}
   - {fileID: 868335651}
   - {fileID: 361529518}
+  waterTerritory: {fileID: 11400000, guid: 64fdda4ff454a774fbed6119b604a070, type: 2}
 --- !u!1001 &2120074988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98044,8 +98142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacencies:
   - {fileID: 27338225}
+  landTerritory: {fileID: 11400000, guid: e201de71cc8791e4d9f3cf00ca0230e8, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 1
 --- !u!1 &2124971340
 GameObject:
   m_ObjectHideFlags: 0
@@ -98155,6 +98253,7 @@ MonoBehaviour:
   - {fileID: 1698399872}
   - {fileID: 1188944136}
   - {fileID: 335612204}
+  waterTerritory: {fileID: 11400000, guid: 1177cde11ea89244db5430340ee2bba0, type: 2}
 --- !u!1001 &2126714018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98399,7 +98498,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
@@ -98407,7 +98506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 642976681994708555, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Name
@@ -99136,6 +99235,7 @@ MonoBehaviour:
   - {fileID: 27338225}
   - {fileID: 2017862715}
   - {fileID: 1430997636}
+  waterTerritory: {fileID: 11400000, guid: 4bcbc2684152b674287d4b97be1ed6f7, type: 2}
 --- !u!1 &2136430388
 GameObject:
   m_ObjectHideFlags: 0
@@ -99242,6 +99342,7 @@ MonoBehaviour:
   - {fileID: 206599343}
   - {fileID: 868035802}
   - {fileID: 1383039573}
+  waterTerritory: {fileID: 11400000, guid: 9de1e65f7d66825488c81091edd399e2, type: 2}
 --- !u!1001 &2136992183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99568,8 +99669,8 @@ MonoBehaviour:
   - {fileID: 389845311}
   - {fileID: 733496911}
   - {fileID: 125643079}
+  landTerritory: {fileID: 11400000, guid: a77bf585e355f3a4da2b0c12f0430917, type: 2}
   hazardousAdjacencies: []
-  zoneValue: 2
 --- !u!1001 &528543380150620472
 PrefabInstance:
   m_ObjectHideFlags: 0

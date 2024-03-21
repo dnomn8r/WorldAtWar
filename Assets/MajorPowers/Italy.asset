@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: Italy
   m_EditorClassIdentifier: 
   ownershipColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
+  - {fileID: 11400000, guid: 3fc4841501d058d44a533426bbd0f0ac, type: 2}
+  - {fileID: 11400000, guid: 2bf6dab9faf4fd949854a25e2d45bfe4, type: 2}
+  - {fileID: 11400000, guid: 305eff19ed618d246a537b18ce41782c, type: 2}
+  - {fileID: 11400000, guid: c133a24f22232074db1f66d483c8d3a1, type: 2}
+  - {fileID: 11400000, guid: 668d3c1904cf4da458c2a55bd0cfdf15, type: 2}
