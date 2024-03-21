@@ -4,7 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MajorPower", menuName = "InitialStates/MajorPower", order = 1)]
 public class MajorPower : Country{
 
-	[SerializeField] private List<LandTerritory> landTerritories;
 
 }
 

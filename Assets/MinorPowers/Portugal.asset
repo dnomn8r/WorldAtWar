@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
+  m_Name: Portugal
+  m_EditorClassIdentifier: 
+  ownershipColor: {r: 1, g: 0.588262, b: 0.34276712, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
+  - {fileID: 11400000, guid: be5ba55f18bb73c49aad5c0e997eccb7, type: 2}
+  - {fileID: 11400000, guid: 0015b8ca78be0bc4fbd01805a54c5983, type: 2}
+  - {fileID: 11400000, guid: dd24b6e343e62ca4eb142aeb0506608c, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
+  m_Name: Belgium
+  m_EditorClassIdentifier: 
+  ownershipColor: {r: 0.058561638, g: 0.49945375, b: 0.8867924, a: 0}
+  landTerritories:
+  - {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
+  - {fileID: 11400000, guid: 50942f76d8fb75b488935905a2c5e47e, type: 2}
+  - {fileID: 11400000, guid: 5e95b9a7b29c2674692c01585487db12, type: 2}
+  - {fileID: 11400000, guid: 835391758eca15b4796ddfdbe5bb300d, type: 2}
+  - {fileID: 11400000, guid: 7225ecc4abd2d49489d784d2b6c06e8b, type: 2}
+  - {fileID: 11400000, guid: da54204796c90e14ba1574338033e06e, type: 2}
+  - {fileID: 11400000, guid: 7ba096ff2609a954e8f4b658cdc5f173, type: 2}
+  - {fileID: 11400000, guid: c21e4b9f746936d41bd198a82f5167e4, type: 2}
+  - {fileID: 11400000, guid: 0404bf6726e42144c9ef8d7eafd4a3d1, type: 2}
