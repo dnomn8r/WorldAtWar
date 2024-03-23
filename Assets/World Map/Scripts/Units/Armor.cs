@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Armor", menuName = "Units/Armor", order = 1)]
-public class Armor : Unit{
+public class Armor : LandUnit{
 
 	public int FirstInfantryRommelBonus {
 		get {

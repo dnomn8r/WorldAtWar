@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f08546b29e17974d8436bd7ed6d1b84, type: 3}
   m_Name: Partisan
   m_EditorClassIdentifier: 
+  unitType: {fileID: 11400000, guid: 2cf4f7887d6d44849baab0273892ad18, type: 2}
+  movement: 1
   attack: 1
   defence: 3
-  movement: 1

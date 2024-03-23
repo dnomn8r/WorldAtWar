@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Artillery", menuName = "Units/Artillery", order = 1)]
-public class Artillery : Unit{
+public class Artillery : LandUnit{
 
 	public bool LowLevelAntiAir {
 		get {

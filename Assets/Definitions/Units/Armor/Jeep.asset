@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c906b95dadab84eb5801e46eaf38cf, type: 3}
   m_Name: Jeep
   m_EditorClassIdentifier: 
+  unitType: {fileID: 11400000, guid: 61a0d62fc870e06469bffe4446a36dea, type: 2}
+  movement: 2
   attack: 4
   defence: 3
-  movement: 2
