@@ -25,3 +25,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2b4d4e4d4670a424399d905c2b1e095b, type: 2}
   - {fileID: 11400000, guid: 566b8f0c74d5b7544a05da425c0866d8, type: 2}
   - {fileID: 11400000, guid: 65f1253f4ec19c54ca2e332d9d6cdd78, type: 2}
+  unitCostModifiers:
+  - unitType: {fileID: 11400000, guid: 2cf4f7887d6d44849baab0273892ad18, type: 2}
+    modifier: 0
+  - unitType: {fileID: 11400000, guid: e1d88fce18dad2e489796e1179f535b4, type: 2}
+    modifier: 1
+  - unitType: {fileID: 11400000, guid: 61a0d62fc870e06469bffe4446a36dea, type: 2}
+    modifier: 1
+  - unitType: {fileID: 11400000, guid: 953f2aa5886fe6648b07cc268ab56912, type: 2}
+    modifier: -2
+  - unitType: {fileID: 11400000, guid: 37f74fa8862c07d41b4a6237fcdc3007, type: 2}
+    modifier: 3
+  - unitType: {fileID: 11400000, guid: c32fb9c3f9c56b44bb07cd6671446da8, type: 2}
+    modifier: 0
+  - unitType: {fileID: 11400000, guid: f53f74f7314a63c4784fc0fca8e41a57, type: 2}
+    modifier: 0
+  - unitType: {fileID: 11400000, guid: 73d94efd89ec67d45bc829866f7e44c8, type: 2}
+    modifier: -4
+  - unitType: {fileID: 11400000, guid: 6224ed48caedca544832ae03eec4c196, type: 2}
+    modifier: 1
+  - unitType: {fileID: 11400000, guid: 45237edfd15e0964e93bcdc847b96cd8, type: 2}
+    modifier: -1
