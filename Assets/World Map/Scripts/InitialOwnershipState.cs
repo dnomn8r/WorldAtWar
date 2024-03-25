@@ -9,7 +9,7 @@ public class InitialOwnershipState : ScriptableObject{
 
 		[SerializeField] public Country country;
 
-		[SerializeField] public List<string> territories;
+		[SerializeField] public List<LandTerritory> territories;
 
 	}
 
