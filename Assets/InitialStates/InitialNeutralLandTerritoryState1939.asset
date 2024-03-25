@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a484b3b11b9a2914f801e9e990e7d043, type: 3}
+  m_Name: InitialNeutralLandTerritoryState1939
+  m_EditorClassIdentifier: 
+  territoryEntries:
+  - landTerritory: {fileID: 11400000, guid: 8933d88b0b1049343b774e1fdd9948fc, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: ef298fb767496524e845307c20f80ed7, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: d3256e8efd1de41468a19bc185e130d9, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 418c97dd340e93a469adcaddabcdbb55, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: d934dce7a0aa9ec4c9831137c07dd69a, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: c883ae1569ab3d548901394463e836fc, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: c5a1f39af0afbbe498201e111c78602d, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 3793da7221b640a42a156a4c08e0e399, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: d32410d164858304f8d756d291b25980, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: eb4377444ae91864f95475a3cfca3e11, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: c1f94d84c5576b94b9bac279d9fc4875, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: c17ba4bf7664ccd44a5557ea312c551b, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: ec52214e5816a3545aa7ef2c7098ef49, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 97a62afae5b5bae4297b6e72c7a2892c, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 4
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: a3269e5f29fea4d42820afda0825a6ce, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 18f5610afb5d54041992869b9ed3225d, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 2f6e94909cf75c74a8e9a9e00b5d981b, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: c0443681829dd7c439cc84d1a8c7de16, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: ec8501ea4bb36514cbd06b1b06bf0ea8, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 7f8567f95a1679e4ca49218011dc1f30, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 863a2f1586178c04f8e81d1de7b76310, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: a023ceb9678c50b43a0ee53bd4cc6c31, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: b5794a97d94caa846995e1fe0233f21b, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: b7c0405938e149441a2c3dbc4a8456ba, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 6c6d879fdc8f905468c1b070c3360353, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 4fb44771d94487c4184d37cd987bfefa, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 9a6e39e348d44f1479d3c4a8cf29b1aa, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 118ca21e713aa2542a2653b9c18ecc0f, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    - unit: {fileID: 11400000, guid: 4773259537dbe9942a30c92e905a5bb8, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: a3269e5f29fea4d42820afda0825a6ce, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 4532cbe1c8af66342ab261bbd1300413, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 5209463ab1a2ef5408ed8584ee2693aa, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 5
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: a3269e5f29fea4d42820afda0825a6ce, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 541e8fadbb1300448a076ff289cd8085, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 00fea1639a4931540bda8378cf11b923, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 16d155d97baccf74299531764a71f140, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 0593b7b710e736d4ebcea8b8ad017350, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 4
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 7f60fbcf406d33e429e0c47d10aa0f7d, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 51f660c64344b8341942abcc44450534, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    factory: {fileID: 0}
