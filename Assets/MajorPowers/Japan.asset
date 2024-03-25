@@ -46,3 +46,8 @@ MonoBehaviour:
     modifier: 1
   - unitType: {fileID: 11400000, guid: 45237edfd15e0964e93bcdc847b96cd8, type: 2}
     modifier: -1
+  factoryCostModifiers:
+  - factoryType: {fileID: 11400000, guid: 9d0db8094fe009247b681231e10f7113, type: 2}
+    modifier: -1
+  - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
+    modifier: -1

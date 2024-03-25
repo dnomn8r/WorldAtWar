@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a3c9c0ab313144f94f608acb3596c0, type: 3}
+  m_Name: Major Sea Factory
+  m_EditorClassIdentifier: 
+  factoryType: {fileID: 11400000, guid: 9d0db8094fe009247b681231e10f7113, type: 2}
+  validUnitTypes:
+  - {fileID: 11400000, guid: c32fb9c3f9c56b44bb07cd6671446da8, type: 2}
+  - {fileID: 11400000, guid: f53f74f7314a63c4784fc0fca8e41a57, type: 2}
+  - {fileID: 11400000, guid: 73d94efd89ec67d45bc829866f7e44c8, type: 2}
+  - {fileID: 11400000, guid: 6224ed48caedca544832ae03eec4c196, type: 2}
+  - {fileID: 11400000, guid: 45237edfd15e0964e93bcdc847b96cd8, type: 2}
+  cost: 11
