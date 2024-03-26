@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
-  m_Name: InitialNeutralWaterTerritoryState1939
+  m_Name: InitialCountryState1939_Belgium
   m_EditorClassIdentifier: 
   territoryEntries:
-  - waterTerritory: {fileID: 11400000, guid: 0d55c54a0d64b564aa1ce93aeeb4c77f, type: 2}
+  - landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
     unitEntries:
-    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
       count: 1
-  - waterTerritory: {fileID: 11400000, guid: 1177cde11ea89244db5430340ee2bba0, type: 2}
-    unitEntries:
-    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
-      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  waterTerritoryEntries: []

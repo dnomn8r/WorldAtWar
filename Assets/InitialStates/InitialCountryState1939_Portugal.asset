@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
+  m_Name: InitialCountryState1939_Portugal
+  m_EditorClassIdentifier: 
+  territoryEntries:
+  - landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 3
+    factory: {fileID: 0}
+  waterTerritoryEntries: []
