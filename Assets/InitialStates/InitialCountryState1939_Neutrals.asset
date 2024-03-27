@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a484b3b11b9a2914f801e9e990e7d043, type: 3}
-  m_Name: InitialNeutralState1939
+  m_Name: InitialCountryState1939_Neutrals
   m_EditorClassIdentifier: 
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: 8933d88b0b1049343b774e1fdd9948fc, type: 2}

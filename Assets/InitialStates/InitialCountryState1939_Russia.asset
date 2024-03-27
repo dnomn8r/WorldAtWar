@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
+  m_Name: InitialCountryState1939_Russia
+  m_EditorClassIdentifier: 
+  territoryEntries:
+  - landTerritory: {fileID: 11400000, guid: 5335ff156f3cc21468ac12bd39dbe0bb, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 4
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 84c75dc354c588a458cd52ce42b76fcd, type: 2}
+  - landTerritory: {fileID: 11400000, guid: d2b17d69ef027fb44924b1bbaadd73c3, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: 4773259537dbe9942a30c92e905a5bb8, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: a3269e5f29fea4d42820afda0825a6ce, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 84c75dc354c588a458cd52ce42b76fcd, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 290ee5f2f6e925840ac0df1921a0c5f1, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 80e5a7cfe2ade0c4c8c3c7c0f7c2abe7, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: f89e9539e60739f4fa64e80e333892b6, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 2
+    factory: {fileID: 11400000, guid: 80f5cf1f5d6690544bc1f4760eaece41, type: 2}
+  - landTerritory: {fileID: 11400000, guid: 58f1a321120d4ef49bba4a94b35aaaaa, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 1b491e4adcfe72e4fa63c869d9d1f499, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 1f4fc4ad53507db41ab3f8aa81dc40cf, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  waterTerritoryEntries:
+  - waterTerritory: {fileID: 11400000, guid: 2f48ef6427faaa1449b399da1ae494bf, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+      count: 1
+  - waterTerritory: {fileID: 11400000, guid: 006b2a0899d6bce41a679e53e98400ab, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+      count: 1

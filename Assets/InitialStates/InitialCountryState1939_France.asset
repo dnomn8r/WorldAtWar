@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
+  m_Name: InitialCountryState1939_France
+  m_EditorClassIdentifier: 
+  territoryEntries:
+  - landTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 5
+    - unit: {fileID: 11400000, guid: 5fde87ab53ded2047b712a5c0582322d, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: 4773259537dbe9942a30c92e905a5bb8, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: a3269e5f29fea4d42820afda0825a6ce, type: 2}
+      count: 1
+    factory: {fileID: 11400000, guid: 84c75dc354c588a458cd52ce42b76fcd, type: 2}
+  - landTerritory: {fileID: 11400000, guid: e7b00c24e53f1d847810c1447280279b, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: ae35e03394f9ac643bba8ce901635d21, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
+  waterTerritoryEntries:
+  - waterTerritory: {fileID: 11400000, guid: 02e472065cea0b3498720f9a66667538, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: 448d8f9ab4f2cf94aaa80e228d3412e9, type: 2}
+      count: 1
+    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+      count: 2
+    - unit: {fileID: 11400000, guid: e17fb082f486920449e47ca203c92dc3, type: 2}
+      count: 2
+  - waterTerritory: {fileID: 11400000, guid: 77dcee5a0637cf84da6d9ed7d832b2c5, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+      count: 1
+  - waterTerritory: {fileID: 11400000, guid: 332711403e2c8c04992cf814b20fc8a2, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: 6d9783fd0ced59f43b002b477f5d3181, type: 2}
+      count: 1
