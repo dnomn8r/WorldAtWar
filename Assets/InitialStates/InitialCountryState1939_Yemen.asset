@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Yemen
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 215f98866063bfa419fe72367035cf6f, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: 5b567aa499c0e6a47af173d3223ba805, type: 2}
     unitEntries: []

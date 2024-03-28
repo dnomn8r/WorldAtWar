@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Portugal
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 474fd154503e9054d855651b84cbd3e4, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
     unitEntries:

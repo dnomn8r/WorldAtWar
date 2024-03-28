@@ -6,7 +6,9 @@ public class InitialGameState : ScriptableObject{
 
 	[SerializeField] private InitialOwnershipState initialLandTerritoryOwnership;
 
-	[SerializeField] private InitialLandTerritoryState initialLandTerritoryState;
+	[SerializeField] private InitialLandTerritoryState initialNeutralState;
+
+	[SerializeField] private List<InitialCountryState> initialCountryStates;
 
 }
 

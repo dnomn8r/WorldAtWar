@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Denmark
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 3c95a22309751774abcf174bbd5a8a7d, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
     unitEntries:

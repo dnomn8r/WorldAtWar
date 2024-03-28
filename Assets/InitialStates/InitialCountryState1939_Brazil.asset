@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Brazil
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 5977ede75a155a743afa6da8b9d8c543, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
     unitEntries:

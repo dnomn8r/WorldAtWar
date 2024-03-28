@@ -13,4 +13,22 @@ MonoBehaviour:
   m_Name: InitialGameState1939
   m_EditorClassIdentifier: 
   initialLandTerritoryOwnership: {fileID: 11400000, guid: d1dac158b75659543af6b10336171a7f, type: 2}
-  initialLandTerritoryState: {fileID: 0}
+  initialNeutralState: {fileID: 11400000, guid: f9d478ec56010544f8d1deac66229406, type: 2}
+  initialCountryStates:
+  - {fileID: 11400000, guid: 78d5d454f945d26478f1971dcb30602f, type: 2}
+  - {fileID: 11400000, guid: e523ef32ba15396438c91bbb57d695cd, type: 2}
+  - {fileID: 11400000, guid: 58821d63e455342448ff7a385a073e7f, type: 2}
+  - {fileID: 11400000, guid: 43d0ac9dec6e6cc498a425bb493d6004, type: 2}
+  - {fileID: 11400000, guid: 12c684bc193e5224ea47a5bf21fa7662, type: 2}
+  - {fileID: 11400000, guid: f5b3fbe4f7b406b4a87eafd7ec86f10a, type: 2}
+  - {fileID: 11400000, guid: cb0976d4b5ba7244d98b8536afbdb932, type: 2}
+  - {fileID: 11400000, guid: 5f989d161678e2d4ea49c5683bd4dde5, type: 2}
+  - {fileID: 11400000, guid: 142c11407f4a23544a91277669336e73, type: 2}
+  - {fileID: 11400000, guid: bb3bd784221b77944a549e98973ff29c, type: 2}
+  - {fileID: 11400000, guid: ce14602313b571f4fbf614c457a62972, type: 2}
+  - {fileID: 11400000, guid: 67a6552d38d5ac24e876ceb3f6db4ff8, type: 2}
+  - {fileID: 11400000, guid: 960c548944d0a274084ec7f0b6d1e59a, type: 2}
+  - {fileID: 11400000, guid: d0a6b6eb3c231f64d99935f59b826d15, type: 2}
+  - {fileID: 11400000, guid: 1dad6bd3138abb04197a11997e48caed, type: 2}
+  - {fileID: 11400000, guid: d207c115b14f70145ac82011666daa73, type: 2}
+  - {fileID: 11400000, guid: 016789e6f63b40c4aa8c4f7e560979b9, type: 2}

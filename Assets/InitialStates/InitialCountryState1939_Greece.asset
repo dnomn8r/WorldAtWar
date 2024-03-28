@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Greece
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 7c40110da3e054d469ebc84390fdf647, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
     unitEntries:

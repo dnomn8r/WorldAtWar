@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Britain
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 755de750aba2351428c3bd9cfccf6147, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: 1245831c7f207814498f4f4c8b44916d, type: 2}
     unitEntries:

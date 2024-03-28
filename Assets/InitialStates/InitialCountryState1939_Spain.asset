@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Spain
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: fb2e147df4aed224b84b413bdfd4d43c, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
     unitEntries:

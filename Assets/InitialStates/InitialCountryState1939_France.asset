@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_France
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}
     unitEntries:

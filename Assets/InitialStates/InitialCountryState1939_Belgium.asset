@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c657fd4c2dd82f49b810c1b335f7747, type: 3}
   m_Name: InitialCountryState1939_Belgium
   m_EditorClassIdentifier: 
+  country: {fileID: 11400000, guid: 0683759dacd5c6d4ea93acd43fb11e1f, type: 2}
   territoryEntries:
   - landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
     unitEntries:

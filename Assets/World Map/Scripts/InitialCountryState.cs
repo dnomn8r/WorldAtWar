@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InitialCountryState", menuName = "InitialStates/InitialCountryState", order = 1)]
 public class InitialCountryState : ScriptableObject{
 
+    [SerializeField] private Country country;
+    public Country Country { get { return country; } }
+
     [SerializeField] private List<LandTerritoryEntry> territoryEntries;
     public List<LandTerritoryEntry> TerritoryEntries { get { return territoryEntries; } }
 
