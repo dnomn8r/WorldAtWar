@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298b7638eb66e7949a18d71d2bb5a493, type: 3}
   m_Name: InitialGameState1939
   m_EditorClassIdentifier: 
-  initialTerritoryOwnership: {fileID: 11400000, guid: b1264778ae645d349b256e4d41c29087, type: 2}
-  initialUnitState: {fileID: 11400000, guid: 5dff38a424f8c8042abce53c01a063ce, type: 2}
+  initialLandTerritoryOwnership: {fileID: 11400000, guid: d1dac158b75659543af6b10336171a7f, type: 2}
+  initialLandTerritoryState: {fileID: 0}
