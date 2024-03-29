@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Russia
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.37106913, g: 0.2195017, b: 0.08518248, a: 0}
+  ownershipColor: {r: 0.37106913, g: 0.2195017, b: 0.08518248, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 133332e20b0376d48822cf9bdd520887, type: 2}
   - {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}

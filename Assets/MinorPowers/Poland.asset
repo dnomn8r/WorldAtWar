@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Poland
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.69506943, g: 0.7106918, b: 0.56542456, a: 0}
+  ownershipColor: {r: 0.69506943, g: 0.7106918, b: 0.56542456, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 9a6e39e348d44f1479d3c4a8cf29b1aa, type: 2}
   - {fileID: 11400000, guid: 118ca21e713aa2542a2653b9c18ecc0f, type: 2}

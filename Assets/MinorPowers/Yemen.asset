@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Yemen
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.94355434, g: 0.9685534, b: 0.43554437, a: 0}
+  ownershipColor: {r: 0.94355434, g: 0.9685534, b: 0.43554437, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 5b567aa499c0e6a47af173d3223ba805, type: 2}
   - {fileID: 11400000, guid: c629dc9624bf5a3449b56f87541ea53a, type: 2}

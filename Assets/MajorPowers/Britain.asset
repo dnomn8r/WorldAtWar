@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Britain
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.64779866, g: 0.5503343, b: 0, a: 0}
+  ownershipColor: {r: 0.8113208, g: 0.732655, b: 0.3393259, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 42ef1caefe1a62c4bbdfe15c47071962, type: 2}
   - {fileID: 11400000, guid: ef635bf2d9b165944b0ea906e1af38ee, type: 2}

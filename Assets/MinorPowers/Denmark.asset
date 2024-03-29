@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Denmark
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.6865099, g: 0, b: 0.7610062, a: 0}
+  ownershipColor: {r: 0.6865099, g: 0, b: 0.7610062, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
   - {fileID: 11400000, guid: 48830a24e20e8fd479f105eeda15695e, type: 2}

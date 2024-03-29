@@ -18,6 +18,11 @@ public class InteractableItemsEditor : Editor {
 		}
 
 		private static void DuringSceneGui(SceneView sceneView) {
+
+			if (Application.isPlaying) {
+				return;
+			}
+
 			Event e = Event.current;
 
 			if (e.type == EventType.KeyDown) {
@@ -87,6 +92,10 @@ public class InteractableItemsEditor : Editor {
 
 		private static Zone currentZone;
 		private static void OnSelectionChanged() {
+
+			if (Application.isPlaying) {
+				return;
+			}
 
 			for (int i = 0; i < Selection.gameObjects.Length; i++) {
 
