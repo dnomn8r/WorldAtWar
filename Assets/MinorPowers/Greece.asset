@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Greece
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.9247844, g: 0.93710685, b: 0.6100034, a: 1}
+  ownershipColor: {r: 0.95668614, g: 0.9622642, b: 0.8079387, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
   - {fileID: 11400000, guid: d32410d164858304f8d756d291b25980, type: 2}

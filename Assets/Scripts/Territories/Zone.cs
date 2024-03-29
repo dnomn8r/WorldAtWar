@@ -2,11 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public abstract class Zone : MonoBehaviour {
 
+#if UNITY_EDITOR
 	[MenuItem("Zones/Clear Adjacencies")]
 	static void ClearAdjacencies() {
 
@@ -55,6 +58,7 @@ public abstract class Zone : MonoBehaviour {
 			zone.WaterTerritory = territory;
 		}
 	}
+#endif
 
 
 	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();

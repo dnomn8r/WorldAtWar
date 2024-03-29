@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Japan
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 1, g: 0.94604003, b: 0, a: 1}
+  ownershipColor: {r: 0.8980393, g: 0.79215693, b: 0.13333334, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 01e1134ca660c3849aee35ae892a7b92, type: 2}
   - {fileID: 11400000, guid: bd1a95da2fdf78e41a2d5ad821a2076d, type: 2}

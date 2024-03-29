@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Portugal
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 1, g: 0.588262, b: 0.34276712, a: 1}
+  ownershipColor: {r: 0.6431373, g: 0.5019608, b: 0.4039216, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
   - {fileID: 11400000, guid: be5ba55f18bb73c49aad5c0e997eccb7, type: 2}

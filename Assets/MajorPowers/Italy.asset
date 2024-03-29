@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Italy
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  ownershipColor: {r: 0.44705886, g: 0.427451, b: 0.41176474, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
   - {fileID: 11400000, guid: 3fc4841501d058d44a533426bbd0f0ac, type: 2}

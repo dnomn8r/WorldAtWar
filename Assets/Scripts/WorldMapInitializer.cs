@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class WorldMapInitializer : MonoBehaviour{
@@ -15,41 +14,57 @@ public class WorldMapInitializer : MonoBehaviour{
 
 	private void InitializeOriginalTerritories() {
 
-		LandZone[] allLandZones = GetComponentsInChildren<LandZone>();
+		List<LandZone> currentLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
 
+		List<LandZone> usedLandZones = new List<LandZone>();
 
-		foreach (LandZone zone in allLandZones) {
+		foreach (MajorPower majorPower in majorPowers) {
 
-			foreach (MajorPower majorPower in majorPowers) {
+			foreach (LandTerritory currentTerritory in majorPower.LandTerritories) {
 
-				foreach (LandTerritory currentTerritory in majorPower.LandTerritories) {
-
-					if (zone.LandTerritory == currentTerritory) {
-
-						SpriteRenderer renderer = zone.GetComponent<SpriteRenderer>();
-
-						renderer.color = majorPower.OwnershipColor;
-						
-					}
-				}
-			}
-
-
-			foreach (MinorPower minorPower in minorPowers) {
-
-				foreach (LandTerritory currentTerritory in minorPower.LandTerritories) {
+				foreach (LandZone zone in currentLandZones) {
 
 					if (zone.LandTerritory == currentTerritory) {
 
-						SpriteRenderer renderer = zone.GetComponent<SpriteRenderer>();
-		  
-						renderer.color = minorPower.OwnershipColor;
-						
+						if (zone.LandTerritory == currentTerritory) {
+
+							GameManager.Instance.SetOwner(zone, majorPower);
+
+							usedLandZones.Add(zone);
+							break;
+						}
 					}
 				}
-
 			}
+		}
 
+		foreach (MinorPower minorPower in minorPowers) {
+
+			foreach (LandTerritory currentTerritory in minorPower.LandTerritories) {
+
+				foreach (LandZone zone in currentLandZones) {
+
+					if (zone.LandTerritory == currentTerritory) {
+
+						GameManager.Instance.SetOwner(zone, minorPower);
+
+						usedLandZones.Add(zone);
+						break;
+					}
+				}
+			}
+		}
+
+		foreach(LandZone zone in usedLandZones) {
+			currentLandZones.Remove(zone);
+		}
+
+		foreach(LandZone zone in currentLandZones) {
+
+			Country newCountry = ScriptableObject.CreateInstance<Country>();
+			newCountry.name = zone.name;
+
+			GameManager.Instance.SetOwner(zone, newCountry);
 		}
 
 	}
