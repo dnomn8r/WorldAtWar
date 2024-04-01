@@ -1,23 +1,12 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class LandZone : Zone{
 
-	[SerializeField] private LandTerritory landTerritory;
-
-	public LandTerritory LandTerritory {
-
-		get { return landTerritory; }
 #if UNITY_EDITOR
 
-		set { landTerritory = value; }
-#endif
-	}
-
-#if UNITY_EDITOR
-	public override Color BaseColor {
+    public override Color BaseColor {
 		get {
 			return Color.white;
 		}
@@ -47,7 +36,18 @@ public class LandZone : Zone{
 	}
 #endif
 
-	[SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
+    [SerializeField] private LandTerritory landTerritory;
+
+    public LandTerritory LandTerritory{
+
+        get { return landTerritory; }
+#if UNITY_EDITOR
+
+        set { landTerritory = value; }
+#endif
+    }
+
+    [SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
 	public List<LandZone> HazardousAdjacencies {
 		get { return hazardousAdjacencies; }
 	}
@@ -58,6 +58,7 @@ public class LandZone : Zone{
 	public Country CurrentOwner { get; private set; }
 
 	private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
+
 
 	private void Awake() {
 
