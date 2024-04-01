@@ -28,7 +28,7 @@ public class WorldMapInitializer : MonoBehaviour{
 
 						if (zone.LandTerritory == currentTerritory) {
 
-							GameManager.Instance.SetOwner(zone, majorPower);
+							zone.SetOriginalOwner(majorPower);
 
 							usedLandZones.Add(zone);
 							break;
@@ -46,7 +46,7 @@ public class WorldMapInitializer : MonoBehaviour{
 
 					if (zone.LandTerritory == currentTerritory) {
 
-						GameManager.Instance.SetOwner(zone, minorPower);
+						zone.SetOriginalOwner(minorPower);
 
 						usedLandZones.Add(zone);
 						break;
@@ -64,7 +64,7 @@ public class WorldMapInitializer : MonoBehaviour{
 			Country newCountry = ScriptableObject.CreateInstance<Country>();
 			newCountry.name = zone.name;
 
-			GameManager.Instance.SetOwner(zone, newCountry);
+			zone.SetOriginalOwner(newCountry);
 		}
 
 	}

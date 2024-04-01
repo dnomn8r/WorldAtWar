@@ -58,18 +58,10 @@ public abstract class Zone : MonoBehaviour {
 			zone.WaterTerritory = territory;
 		}
 	}
-#endif
 
 
-	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();
-
-	public abstract Color BaseColor {get;}
-	public abstract FontStyles FontStyle { get;}
-
-
-	public List<Zone> Adjacencies {
-		get { return adjacencies; }
-	}
+	public abstract Color BaseColor { get; }
+	public abstract FontStyles FontStyle { get; }
 
 	public void ToggleSelection(bool toggle) {
 
@@ -94,7 +86,7 @@ public abstract class Zone : MonoBehaviour {
 	protected virtual void ToggleAdjacencyHighlights(bool toggle) {
 
 		foreach (Zone zone in adjacencies) {
-	
+
 			if (zone != null) {
 
 				zone.ToggleHighlight(toggle);
@@ -104,5 +96,18 @@ public abstract class Zone : MonoBehaviour {
 			}
 		}
 	}
+#endif
+
+
+
+	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();
+
+	public List<Zone> Adjacencies {
+		get { return adjacencies; }
+	}
+
+
+
+
 
 }
