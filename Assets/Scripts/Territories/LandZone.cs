@@ -66,7 +66,7 @@ public class LandZone : Zone{
 
 		foreach (SpriteRenderer renderer in renderers) {
 
-			if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null) {
+			if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
 				landRenderers.Add(renderer);
 			}
 		}
