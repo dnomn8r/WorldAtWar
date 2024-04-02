@@ -309,7 +309,6 @@ MonoBehaviour:
   - {fileID: 235750745}
   landTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &6855545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,7 +559,6 @@ MonoBehaviour:
   - {fileID: 1232698926}
   landTerritory: {fileID: 11400000, guid: 5efe711569fac174bb60a29a169fb759, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &12305154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1023,7 +1021,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 9c1ba546a64ada440ad1df2e6e64c902, type: 2}
   hazardousAdjacencies:
   - {fileID: 1714752526}
-  flagLocation: {fileID: 0}
 --- !u!1001 &32557717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1254,7 +1251,6 @@ MonoBehaviour:
   - {fileID: 29577908}
   landTerritory: {fileID: 11400000, guid: 1b22ba0ef97df524f9ad868ec193320d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &42136101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1469,6 @@ MonoBehaviour:
   - {fileID: 1806297546}
   landTerritory: {fileID: 11400000, guid: 1aa7245a8d9a2ab499d6208869890a4e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &43232840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,7 +2006,6 @@ MonoBehaviour:
   - {fileID: 458543186}
   landTerritory: {fileID: 11400000, guid: 7b04cc432abda99478862335c0fb04ef, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &49886026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2520,7 +2514,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 82c1b628543cf4a4586f1ce156ba55e2, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
-  flagLocation: {fileID: 0}
 --- !u!1001 &74290041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2747,7 +2740,6 @@ MonoBehaviour:
   - {fileID: 1455576718}
   landTerritory: {fileID: 11400000, guid: 067c90c253ae35f4080f88ac0df7b3f6, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &81352382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +2846,6 @@ MonoBehaviour:
   - {fileID: 646617008}
   landTerritory: {fileID: 11400000, guid: 9e80c497228e0844b8b578b21eab3773, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &83481685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,7 +4462,6 @@ MonoBehaviour:
   - {fileID: 1793325658}
   landTerritory: {fileID: 11400000, guid: be5ba55f18bb73c49aad5c0e997eccb7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &131798172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4910,7 +4900,6 @@ MonoBehaviour:
   - {fileID: 1555020286}
   landTerritory: {fileID: 11400000, guid: 48830a24e20e8fd479f105eeda15695e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &134340575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5586,15 +5575,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Thailand
+      value: 'Thailand
+
+        <sprite name="China">'
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
-      value: 12
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSizeBase
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_Pivot.x
@@ -5796,7 +5799,6 @@ MonoBehaviour:
   - {fileID: 1617405413}
   landTerritory: {fileID: 11400000, guid: 18f5610afb5d54041992869b9ed3225d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &145943019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6000,7 +6002,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Germany
+      value: 'Germany
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -6013,6 +6017,14 @@ PrefabInstance:
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSizeBase
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_enableVertexGradient
@@ -6220,7 +6232,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 588441353}
-  flagLocation: {fileID: 0}
 --- !u!1 &156100349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,7 +6445,6 @@ MonoBehaviour:
   - {fileID: 631874842}
   landTerritory: {fileID: 11400000, guid: 4e2d0ebb06ba82d4696aa28b7c851984, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &168139160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6543,7 +6553,6 @@ MonoBehaviour:
   - {fileID: 470968861}
   landTerritory: {fileID: 11400000, guid: 9644cbe2a1bcc844096b4ace44ddbc9f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &175152141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7218,7 +7227,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: ab349642adc583a47ad6b000372568d8, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
-  flagLocation: {fileID: 0}
 --- !u!1001 &186398594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7629,7 +7637,6 @@ MonoBehaviour:
   - {fileID: 1490200032}
   landTerritory: {fileID: 11400000, guid: bd1a95da2fdf78e41a2d5ad821a2076d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &206599340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7740,7 +7747,6 @@ MonoBehaviour:
   - {fileID: 2100885970}
   landTerritory: {fileID: 11400000, guid: 7f8567f95a1679e4ca49218011dc1f30, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &207017136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7986,7 +7992,6 @@ MonoBehaviour:
   - {fileID: 722570991}
   landTerritory: {fileID: 11400000, guid: 5c7645f4381a3f14abe06f75e2d116b8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &208626548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8098,7 +8103,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 58f1a321120d4ef49bba4a94b35aaaaa, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
-  flagLocation: {fileID: 0}
 --- !u!1001 &208936673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8321,7 +8325,6 @@ MonoBehaviour:
   - {fileID: 930799483}
   landTerritory: {fileID: 11400000, guid: 5fe2c4fd98394c145a8ae5991ebd023d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &214490400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8549,7 +8552,6 @@ MonoBehaviour:
   - {fileID: 1223089111}
   landTerritory: {fileID: 11400000, guid: b5794a97d94caa846995e1fe0233f21b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &224236472
 GameObject:
   m_ObjectHideFlags: 0
@@ -8658,7 +8660,6 @@ MonoBehaviour:
   - {fileID: 1586604158}
   landTerritory: {fileID: 11400000, guid: b7c0405938e149441a2c3dbc4a8456ba, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &226643950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9018,7 +9019,6 @@ MonoBehaviour:
   - {fileID: 659987464}
   landTerritory: {fileID: 11400000, guid: f174a1d206a15a34b8d58c6852acc368, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &235750742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,7 +9126,6 @@ MonoBehaviour:
   - {fileID: 1488744876}
   landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &239451126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9357,7 +9356,6 @@ MonoBehaviour:
   - {fileID: 1402003136}
   landTerritory: {fileID: 11400000, guid: c5a1f39af0afbbe498201e111c78602d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &244443722
 GameObject:
   m_ObjectHideFlags: 0
@@ -9465,7 +9463,6 @@ MonoBehaviour:
   - {fileID: 1583198232}
   landTerritory: {fileID: 11400000, guid: 7ba096ff2609a954e8f4b658cdc5f173, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &250665254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9712,7 +9709,6 @@ MonoBehaviour:
   - {fileID: 626343100}
   landTerritory: {fileID: 11400000, guid: c910901b567bd6d4fb98462c7427203a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &251020198
 GameObject:
   m_ObjectHideFlags: 0
@@ -9818,7 +9814,6 @@ MonoBehaviour:
   - {fileID: 1775261581}
   landTerritory: {fileID: 11400000, guid: 5101250d01c365a429f77d1a7c0ed22f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &251500372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11441,7 +11436,6 @@ MonoBehaviour:
   - {fileID: 358586971}
   landTerritory: {fileID: 11400000, guid: 59b81c06ec0df604697d1f1913596132, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &284086675
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,7 +11880,6 @@ MonoBehaviour:
   - {fileID: 1309641532}
   landTerritory: {fileID: 11400000, guid: 2bf6dab9faf4fd949854a25e2d45bfe4, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &292637449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12232,7 +12225,6 @@ MonoBehaviour:
   - {fileID: 1483701558}
   landTerritory: {fileID: 11400000, guid: 9502a97e8a4180f478df83ced7ca7684, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &296423780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12461,7 +12453,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 040b2b3b73ba639479d8b0cf1f976195, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
-  flagLocation: {fileID: 0}
 --- !u!1 &302453756
 GameObject:
   m_ObjectHideFlags: 0
@@ -12572,7 +12563,6 @@ MonoBehaviour:
   - {fileID: 626343100}
   landTerritory: {fileID: 11400000, guid: 586434589bc09574a914bf7c737f01ce, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &302823974
 GameObject:
   m_ObjectHideFlags: 0
@@ -12678,7 +12668,6 @@ MonoBehaviour:
   - {fileID: 1473100116}
   landTerritory: {fileID: 11400000, guid: e554e931458ba104084a3edf12a6b5fc, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &306318275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13404,7 +13393,6 @@ MonoBehaviour:
   - {fileID: 1659069460}
   landTerritory: {fileID: 11400000, guid: 3fc4841501d058d44a533426bbd0f0ac, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &313298631
 GameObject:
   m_ObjectHideFlags: 0
@@ -13509,7 +13497,6 @@ MonoBehaviour:
   - {fileID: 1835715483}
   landTerritory: {fileID: 11400000, guid: c2b171ecdebedb441b392cb893022915, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &314080404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14379,7 +14366,6 @@ MonoBehaviour:
   - {fileID: 1402003136}
   landTerritory: {fileID: 11400000, guid: 418c97dd340e93a469adcaddabcdbb55, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &337862694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15340,7 +15326,6 @@ MonoBehaviour:
   - {fileID: 281058234}
   landTerritory: {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &360255496
 GameObject:
   m_ObjectHideFlags: 0
@@ -15450,7 +15435,6 @@ MonoBehaviour:
   - {fileID: 2092264152}
   landTerritory: {fileID: 11400000, guid: 2f6e94909cf75c74a8e9a9e00b5d981b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &361529515
 GameObject:
   m_ObjectHideFlags: 0
@@ -15786,7 +15770,6 @@ MonoBehaviour:
   - {fileID: 1223089111}
   landTerritory: {fileID: 11400000, guid: 97a62afae5b5bae4297b6e72c7a2892c, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &366509027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15970,7 +15953,6 @@ MonoBehaviour:
   - {fileID: 868335651}
   landTerritory: {fileID: 11400000, guid: 566b8f0c74d5b7544a05da425c0866d8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &370049207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16156,7 +16138,6 @@ MonoBehaviour:
   - {fileID: 1490200032}
   landTerritory: {fileID: 11400000, guid: 8c195cc5b9845eb469222b97251f0b7a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &371817891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16581,7 +16562,6 @@ MonoBehaviour:
   - {fileID: 997667274}
   landTerritory: {fileID: 11400000, guid: 96404b7ab7c0d0244976f631af5a6461, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &380042841
 GameObject:
   m_ObjectHideFlags: 0
@@ -16691,7 +16671,6 @@ MonoBehaviour:
   - {fileID: 1419490669}
   landTerritory: {fileID: 11400000, guid: ae35e03394f9ac643bba8ce901635d21, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &389845308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16800,7 +16779,6 @@ MonoBehaviour:
   - {fileID: 733496911}
   landTerritory: {fileID: 11400000, guid: dfcec3022e9a8914b9a68818450d4ff6, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &391752625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17198,7 +17176,6 @@ MonoBehaviour:
   - {fileID: 521017382}
   landTerritory: {fileID: 11400000, guid: f450524fb7be773498c5bd17c4b8c82f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &397778884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18280,7 +18257,6 @@ MonoBehaviour:
   - {fileID: 1800863641}
   landTerritory: {fileID: 11400000, guid: 863a2f1586178c04f8e81d1de7b76310, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &424256046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19147,7 +19123,6 @@ MonoBehaviour:
   - {fileID: 132668088}
   landTerritory: {fileID: 11400000, guid: 34d383266d8421b4596e8421ed4c9ae4, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &446522551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19375,7 +19350,6 @@ MonoBehaviour:
   - {fileID: 2145458064}
   landTerritory: {fileID: 11400000, guid: 675e3b8270d200e4fa36151b4d57ebb7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &457878040
 GameObject:
   m_ObjectHideFlags: 0
@@ -19480,7 +19454,6 @@ MonoBehaviour:
   - {fileID: 152414846}
   landTerritory: {fileID: 11400000, guid: 6ced6213a2ebc084a8b85b98c320e57a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &458543183
 GameObject:
   m_ObjectHideFlags: 0
@@ -19589,7 +19562,6 @@ MonoBehaviour:
   - {fileID: 47973028}
   landTerritory: {fileID: 11400000, guid: c8e5e9fa6105ecd48b7177207f05b4b0, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &462253799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20079,7 +20051,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 925176431}
   - {fileID: 70010734}
-  flagLocation: {fileID: 0}
 --- !u!1001 &471949183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21285,7 +21256,6 @@ MonoBehaviour:
   - {fileID: 1473100116}
   landTerritory: {fileID: 11400000, guid: 0de3e6b3b2207a346a2a344c31677c65, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &493320318
 GameObject:
   m_ObjectHideFlags: 0
@@ -22850,7 +22820,6 @@ MonoBehaviour:
   - {fileID: 1793325658}
   landTerritory: {fileID: 11400000, guid: 58ab61d3a114eec4e932b145deebac52, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &515003169
 GameObject:
   m_ObjectHideFlags: 0
@@ -23182,7 +23151,6 @@ MonoBehaviour:
   - {fileID: 982195404}
   landTerritory: {fileID: 11400000, guid: 56590e332f678ec408f97a8ad43c674e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &521017379
 GameObject:
   m_ObjectHideFlags: 0
@@ -23791,7 +23759,6 @@ MonoBehaviour:
   - {fileID: 868335651}
   landTerritory: {fileID: 11400000, guid: 898b675736dbeb24882813f27dd99017, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &532523490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24038,7 +24005,6 @@ MonoBehaviour:
   - {fileID: 27338225}
   landTerritory: {fileID: 11400000, guid: 7e00875f789038d47b49d40f5ab5e5bb, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &537093037
 GameObject:
   m_ObjectHideFlags: 0
@@ -24143,7 +24109,6 @@ MonoBehaviour:
   - {fileID: 1053456217}
   landTerritory: {fileID: 11400000, guid: 416059b485b625c4eb5d1a22d51473ad, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &538275094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24395,7 +24360,6 @@ MonoBehaviour:
   - {fileID: 1852740752}
   landTerritory: {fileID: 11400000, guid: a023ceb9678c50b43a0ee53bd4cc6c31, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &542487822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24851,7 +24815,6 @@ MonoBehaviour:
   - {fileID: 1159015163}
   landTerritory: {fileID: 11400000, guid: bc5f76073a8a9e240ac95c617c39a5f2, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &548805500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25039,7 +25002,6 @@ MonoBehaviour:
   - {fileID: 547724441}
   landTerritory: {fileID: 11400000, guid: c26398f1cb404bd488829df91dfce25c, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &550863598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25397,7 +25359,6 @@ MonoBehaviour:
   - {fileID: 550694658}
   landTerritory: {fileID: 11400000, guid: b24f7cb7b610c844baf4f63633d226c6, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &556953919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25623,7 +25584,6 @@ MonoBehaviour:
   - {fileID: 993834609}
   landTerritory: {fileID: 11400000, guid: df387eace65e9e64f89cdd1045e7aed9, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &568911223
 GameObject:
   m_ObjectHideFlags: 0
@@ -25735,7 +25695,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 1607069495}
   - {fileID: 1714752526}
-  flagLocation: {fileID: 0}
 --- !u!1001 &570492293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26672,7 +26631,6 @@ MonoBehaviour:
   - {fileID: 155416522}
   - {fileID: 1801945333}
   - {fileID: 208626551}
-  flagLocation: {fileID: 0}
 --- !u!1001 &590010623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26895,7 +26853,6 @@ MonoBehaviour:
   - {fileID: 1857445612}
   landTerritory: {fileID: 11400000, guid: 7225ecc4abd2d49489d784d2b6c06e8b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &607170086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27320,7 +27277,6 @@ MonoBehaviour:
   - {fileID: 2077180176}
   landTerritory: {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &616152455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28090,7 +28046,6 @@ MonoBehaviour:
   - {fileID: 423567087}
   landTerritory: {fileID: 11400000, guid: 97ec26ad13538144ea065b20e1a7a5eb, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &631165427
 GameObject:
   m_ObjectHideFlags: 0
@@ -28199,7 +28154,6 @@ MonoBehaviour:
   - {fileID: 1383039573}
   landTerritory: {fileID: 11400000, guid: 5b567aa499c0e6a47af173d3223ba805, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &631874839
 GameObject:
   m_ObjectHideFlags: 0
@@ -28526,7 +28480,6 @@ MonoBehaviour:
   - {fileID: 1100151794}
   landTerritory: {fileID: 11400000, guid: a6245a3a4ac3c024990ac71d2bc174ec, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &640319030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29905,7 +29858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Prussia
+      value: Prussia<size=8><sprite name="Russia"></size>
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -30126,7 +30079,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 7b5656b18945b144cb03e211dbbcd716, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  flagLocation: {fileID: 0}
 --- !u!1 &661283122
 GameObject:
   m_ObjectHideFlags: 0
@@ -30460,7 +30412,6 @@ MonoBehaviour:
   - {fileID: 1309641532}
   landTerritory: {fileID: 11400000, guid: 8997fe21230f0a647bed70ff558b4efd, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &666402005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30907,7 +30858,6 @@ MonoBehaviour:
   - {fileID: 360255499}
   landTerritory: {fileID: 11400000, guid: 118ca21e713aa2542a2653b9c18ecc0f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &676558592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31286,7 +31236,6 @@ MonoBehaviour:
   - {fileID: 1190265379}
   landTerritory: {fileID: 11400000, guid: 0f16845d7f6754943ac8027c4d2ef18f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &685542101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31737,7 +31686,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 1979812466}
-  flagLocation: {fileID: 0}
 --- !u!1 &695290768
 GameObject:
   m_ObjectHideFlags: 0
@@ -33244,7 +33192,6 @@ MonoBehaviour:
   - {fileID: 125643079}
   landTerritory: {fileID: 11400000, guid: ea5de9472bc66bd4a8226449fdabc0cf, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &733623555
 GameObject:
   m_ObjectHideFlags: 0
@@ -33659,7 +33606,6 @@ MonoBehaviour:
   - {fileID: 972415835}
   landTerritory: {fileID: 11400000, guid: 625edf33a186f124795f212c4c8cf6aa, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &738848960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35015,7 +34961,6 @@ MonoBehaviour:
   - {fileID: 206599343}
   landTerritory: {fileID: 11400000, guid: ec8501ea4bb36514cbd06b1b06bf0ea8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &774387385
 GameObject:
   m_ObjectHideFlags: 0
@@ -36108,7 +36053,6 @@ MonoBehaviour:
   - {fileID: 893213730}
   landTerritory: {fileID: 11400000, guid: 10cf45cf29ee074468b334a3fdaa4739, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &803066578
 GameObject:
   m_ObjectHideFlags: 0
@@ -36729,7 +36673,6 @@ MonoBehaviour:
   - {fileID: 909723955}
   landTerritory: {fileID: 11400000, guid: e0cf9f20138fbe44b8671da18ec9eb56, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &816731254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37371,7 +37314,6 @@ MonoBehaviour:
   - {fileID: 1857445612}
   landTerritory: {fileID: 11400000, guid: 0404bf6726e42144c9ef8d7eafd4a3d1, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &824623044
 GameObject:
   m_ObjectHideFlags: 0
@@ -37483,7 +37425,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1264706729}
-  flagLocation: {fileID: 0}
 --- !u!1 &824907276
 GameObject:
   m_ObjectHideFlags: 0
@@ -37589,7 +37530,6 @@ MonoBehaviour:
   - {fileID: 712650878}
   landTerritory: {fileID: 11400000, guid: cb6613644ab6f1042b9f9dc8a8efabc0, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &827297703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37836,7 +37776,6 @@ MonoBehaviour:
   - {fileID: 1555020286}
   landTerritory: {fileID: 11400000, guid: c0443681829dd7c439cc84d1a8c7de16, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &836657729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38777,7 +38716,6 @@ MonoBehaviour:
   - {fileID: 1418680278}
   landTerritory: {fileID: 11400000, guid: 89c79d26946caa5418309cf268399f00, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &868035799
 GameObject:
   m_ObjectHideFlags: 0
@@ -38888,7 +38826,6 @@ MonoBehaviour:
   - {fileID: 1908652260}
   landTerritory: {fileID: 11400000, guid: 5209463ab1a2ef5408ed8584ee2693aa, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &868335648
 GameObject:
   m_ObjectHideFlags: 0
@@ -39247,7 +39184,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Ireland
+      value: 'Ireland
+
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -39959,7 +39899,6 @@ MonoBehaviour:
   - {fileID: 802919240}
   landTerritory: {fileID: 11400000, guid: 624a8a18698cf32418fa5dcc26477969, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &887491142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40150,7 +40089,6 @@ MonoBehaviour:
   - {fileID: 2100885970}
   landTerritory: {fileID: 11400000, guid: 290ee5f2f6e925840ac0df1921a0c5f1, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &893284594
 GameObject:
   m_ObjectHideFlags: 0
@@ -40331,7 +40269,6 @@ MonoBehaviour:
   - {fileID: 156100352}
   landTerritory: {fileID: 11400000, guid: 14c89ba4abba19348bb6d95604f6842d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &908450863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41074,7 +41011,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: c34df85aa2afd85499b7c098ef25cf1b, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
-  flagLocation: {fileID: 0}
 --- !u!1001 &925845545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42388,7 +42324,6 @@ MonoBehaviour:
   - {fileID: 1884228966}
   landTerritory: {fileID: 11400000, guid: ef635bf2d9b165944b0ea906e1af38ee, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &952398842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44133,7 +44068,6 @@ MonoBehaviour:
   - {fileID: 1896941746}
   landTerritory: {fileID: 11400000, guid: b03775523a51add428636c8efb3a85fb, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &995437406
 GameObject:
   m_ObjectHideFlags: 0
@@ -44329,7 +44263,6 @@ MonoBehaviour:
   - {fileID: 659987464}
   landTerritory: {fileID: 11400000, guid: 5ff31bebcd794a74f8db1c46d5d5174f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1001610954
 GameObject:
   m_ObjectHideFlags: 0
@@ -44439,7 +44372,6 @@ MonoBehaviour:
   - {fileID: 1085732318}
   - {fileID: 1979812466}
   - {fileID: 694162057}
-  flagLocation: {fileID: 0}
 --- !u!1 &1001778916
 GameObject:
   m_ObjectHideFlags: 0
@@ -44641,7 +44573,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Belarus
+      value: 'Belarus
+
+        <size=8><sprite name="Russia"></size>'
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -45268,7 +45202,6 @@ MonoBehaviour:
   - {fileID: 208626551}
   landTerritory: {fileID: 11400000, guid: 1f4fc4ad53507db41ab3f8aa81dc40cf, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!21 &1030039036
 Material:
   serializedVersion: 8
@@ -46266,7 +46199,6 @@ MonoBehaviour:
   - {fileID: 302453759}
   landTerritory: {fileID: 11400000, guid: a49ef9aaabd383345a27d7104ae14cb9, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1046916712
 GameObject:
   m_ObjectHideFlags: 0
@@ -46602,7 +46534,6 @@ MonoBehaviour:
   - {fileID: 454557739}
   landTerritory: {fileID: 11400000, guid: dd24b6e343e62ca4eb142aeb0506608c, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1053456214
 GameObject:
   m_ObjectHideFlags: 0
@@ -46818,7 +46749,6 @@ MonoBehaviour:
   - {fileID: 43232843}
   landTerritory: {fileID: 11400000, guid: a7cc09f8308052e439450b8828f4f027, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1069985293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47183,7 +47113,6 @@ MonoBehaviour:
   - {fileID: 2001942856}
   landTerritory: {fileID: 11400000, guid: c17ba4bf7664ccd44a5557ea312c551b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1078583081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47692,7 +47621,6 @@ MonoBehaviour:
   - {fileID: 1419490669}
   landTerritory: {fileID: 11400000, guid: 16d155d97baccf74299531764a71f140, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1085732315
 GameObject:
   m_ObjectHideFlags: 0
@@ -47803,7 +47731,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 403727592cf29884ebfe13326d253f87, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1087114005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48304,7 +48231,6 @@ MonoBehaviour:
   - {fileID: 1378342898}
   landTerritory: {fileID: 11400000, guid: 668d3c1904cf4da458c2a55bd0cfdf15, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1101697637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49089,7 +49015,6 @@ MonoBehaviour:
   - {fileID: 1857445612}
   landTerritory: {fileID: 11400000, guid: 2952559bae781e544b787e25156ab0d7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1120373552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49963,7 +49888,6 @@ MonoBehaviour:
   - {fileID: 1621087412}
   landTerritory: {fileID: 11400000, guid: 1ea0cc1cb045845478bd79cc7457efaf, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1134421635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50300,7 +50224,6 @@ MonoBehaviour:
   - {fileID: 1806297546}
   landTerritory: {fileID: 11400000, guid: 151dea2e50604d745ae29cd1c6cd0de6, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1141857663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50526,7 +50449,6 @@ MonoBehaviour:
   - {fileID: 42136104}
   landTerritory: {fileID: 11400000, guid: 383e3881fd1ac75468e34beb8ce7e337, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1145501799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51019,7 +50941,6 @@ MonoBehaviour:
   - {fileID: 1455683086}
   landTerritory: {fileID: 11400000, guid: dae07549ff9536c498931511782676b5, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1154899168
 GameObject:
   m_ObjectHideFlags: 0
@@ -51239,7 +51160,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 6100fc4976b3166468c9627cdc1e78b1, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1159618987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51427,7 +51347,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 8933d88b0b1049343b774e1fdd9948fc, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
-  flagLocation: {fileID: 0}
 --- !u!1 &1167121043
 GameObject:
   m_ObjectHideFlags: 0
@@ -51538,7 +51457,6 @@ MonoBehaviour:
   - {fileID: 244147201}
   landTerritory: {fileID: 11400000, guid: 4fb44771d94487c4184d37cd987bfefa, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1169728900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51925,7 +51843,6 @@ MonoBehaviour:
   - {fileID: 1979200558}
   landTerritory: {fileID: 11400000, guid: c629dc9624bf5a3449b56f87541ea53a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1175873104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52627,7 +52544,6 @@ MonoBehaviour:
   - {fileID: 1167121046}
   landTerritory: {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1190265376
 GameObject:
   m_ObjectHideFlags: 0
@@ -52847,7 +52763,6 @@ MonoBehaviour:
   - {fileID: 1620480474}
   landTerritory: {fileID: 11400000, guid: f89e9539e60739f4fa64e80e333892b6, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1192720473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53220,7 +53135,6 @@ MonoBehaviour:
   - {fileID: 302453759}
   landTerritory: {fileID: 11400000, guid: 42ef1caefe1a62c4bbdfe15c47071962, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1195573247
 GameObject:
   m_ObjectHideFlags: 0
@@ -53943,7 +53857,6 @@ MonoBehaviour:
   - {fileID: 43232843}
   landTerritory: {fileID: 11400000, guid: 2b4d4e4d4670a424399d905c2b1e095b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1206359780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54548,7 +54461,6 @@ MonoBehaviour:
   - {fileID: 217331728}
   landTerritory: {fileID: 11400000, guid: 541e8fadbb1300448a076ff289cd8085, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1224092134
 GameObject:
   m_ObjectHideFlags: 0
@@ -54654,7 +54566,6 @@ MonoBehaviour:
   - {fileID: 1769966068}
   landTerritory: {fileID: 11400000, guid: 9f45466722bf77a46b14f3994855e9f5, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1224741781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54901,7 +54812,6 @@ MonoBehaviour:
   - {fileID: 1857445612}
   landTerritory: {fileID: 11400000, guid: 835391758eca15b4796ddfdbe5bb300d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1228047204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55127,7 +55037,6 @@ MonoBehaviour:
   - {fileID: 1801945333}
   landTerritory: {fileID: 11400000, guid: 8b206dff2035668499461becd1084016, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1236594974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55573,7 +55482,6 @@ MonoBehaviour:
   - {fileID: 1775729498}
   landTerritory: {fileID: 11400000, guid: 71dc7bfef6e4d1a41804829db7fe6c45, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1248191073
 GameObject:
   m_ObjectHideFlags: 0
@@ -56370,7 +56278,6 @@ MonoBehaviour:
   - {fileID: 1166595878}
   - {fileID: 824623047}
   - {fileID: 1321431099}
-  flagLocation: {fileID: 0}
 --- !u!1 &1269033549
 GameObject:
   m_ObjectHideFlags: 0
@@ -56478,7 +56385,6 @@ MonoBehaviour:
   - {fileID: 132668088}
   landTerritory: {fileID: 11400000, guid: d32410d164858304f8d756d291b25980, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1269603184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57661,7 +57567,6 @@ MonoBehaviour:
   - {fileID: 1454570506}
   landTerritory: {fileID: 11400000, guid: 0015b8ca78be0bc4fbd01805a54c5983, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1290582510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57998,7 +57903,6 @@ MonoBehaviour:
   - {fileID: 1402003136}
   landTerritory: {fileID: 11400000, guid: 6c6d879fdc8f905468c1b070c3360353, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1297218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58344,7 +58248,6 @@ MonoBehaviour:
   - {fileID: 1167121046}
   landTerritory: {fileID: 11400000, guid: c1f94d84c5576b94b9bac279d9fc4875, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1309641529
 GameObject:
   m_ObjectHideFlags: 0
@@ -58798,7 +58701,6 @@ MonoBehaviour:
   - {fileID: 2017862715}
   landTerritory: {fileID: 11400000, guid: 9c67fac2d31b3c2498ac5f87eafa25c7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1321431096
 GameObject:
   m_ObjectHideFlags: 0
@@ -58908,7 +58810,6 @@ MonoBehaviour:
   - {fileID: 1852740752}
   - {fileID: 184140875}
   - {fileID: 1680693509}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1322560806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59135,7 +59036,6 @@ MonoBehaviour:
   - {fileID: 217331728}
   landTerritory: {fileID: 11400000, guid: 133332e20b0376d48822cf9bdd520887, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1325554475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60186,7 +60086,6 @@ MonoBehaviour:
   - {fileID: 553295152}
   landTerritory: {fileID: 11400000, guid: f791469a0e66a424ba028d9a0e7e1882, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1349170310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60409,7 +60308,6 @@ MonoBehaviour:
   - {fileID: 545721185}
   landTerritory: {fileID: 11400000, guid: eba8ea1f9d1868845949efc60a8e0043, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1356652538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61460,7 +61358,6 @@ MonoBehaviour:
   - {fileID: 550694658}
   landTerritory: {fileID: 11400000, guid: c8a4a9d6b62d929479845334940ad400, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1376015407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61681,7 +61578,6 @@ MonoBehaviour:
   - {fileID: 1793325658}
   landTerritory: {fileID: 11400000, guid: f10627d7660102540882ce078258d256, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1383039570
 GameObject:
   m_ObjectHideFlags: 0
@@ -61790,7 +61686,6 @@ MonoBehaviour:
   - {fileID: 631165430}
   landTerritory: {fileID: 11400000, guid: b76153708cc31bf4cb1d7b168c013d34, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1387141225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62242,7 +62137,6 @@ MonoBehaviour:
   - {fileID: 626343100}
   landTerritory: {fileID: 11400000, guid: c36a533ed28a54245858826860774f63, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1402003133
 GameObject:
   m_ObjectHideFlags: 0
@@ -62352,7 +62246,6 @@ MonoBehaviour:
   - {fileID: 244147201}
   landTerritory: {fileID: 11400000, guid: ef298fb767496524e845307c20f80ed7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1402411700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63104,7 +62997,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: b915ce2b3a830134995f46ea29aa22ad, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1421430450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63921,7 +63813,6 @@ MonoBehaviour:
   - {fileID: 545721185}
   landTerritory: {fileID: 11400000, guid: 14d5148594db70e428af1d2599c0a9f1, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1430997633
 GameObject:
   m_ObjectHideFlags: 0
@@ -64027,7 +63918,6 @@ MonoBehaviour:
   - {fileID: 2136000749}
   landTerritory: {fileID: 11400000, guid: ffa4a24934285534d8dd7481026523a8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1431896233
 GameObject:
   m_ObjectHideFlags: 0
@@ -64513,7 +64403,6 @@ MonoBehaviour:
   - {fileID: 1607069495}
   landTerritory: {fileID: 11400000, guid: 662cd12311e473445b5e87b35e188b1a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1440489594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65411,7 +65300,6 @@ MonoBehaviour:
   - {fileID: 1670454462}
   landTerritory: {fileID: 11400000, guid: 17813a0fd5733214387756a698494b33, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1455683083
 GameObject:
   m_ObjectHideFlags: 0
@@ -67615,7 +67503,6 @@ MonoBehaviour:
   - {fileID: 295176100}
   landTerritory: {fileID: 11400000, guid: da54204796c90e14ba1574338033e06e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1484090659
 GameObject:
   m_ObjectHideFlags: 0
@@ -67720,7 +67607,6 @@ MonoBehaviour:
   - {fileID: 1239364470}
   landTerritory: {fileID: 11400000, guid: b994b62668e688a48ab67988edd0a1b9, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1486207513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68103,7 +67989,6 @@ MonoBehaviour:
   - {fileID: 235750745}
   landTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1490200029
 GameObject:
   m_ObjectHideFlags: 0
@@ -69315,7 +69200,6 @@ MonoBehaviour:
   - {fileID: 893213730}
   landTerritory: {fileID: 11400000, guid: 5335ff156f3cc21468ac12bd39dbe0bb, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1515577391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70379,7 +70263,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 988807367332b7b418cd8d534a1551fb, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1552575645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71668,7 +71551,6 @@ MonoBehaviour:
   - {fileID: 1308422817}
   landTerritory: {fileID: 11400000, guid: 3793da7221b640a42a156a4c08e0e399, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1589278268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72060,7 +71942,6 @@ MonoBehaviour:
   - {fileID: 2077180176}
   landTerritory: {fileID: 11400000, guid: d934dce7a0aa9ec4c9831137c07dd69a, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1594592016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72971,7 +72852,6 @@ MonoBehaviour:
   - {fileID: 1159015163}
   - {fileID: 300139912}
   - {fileID: 568911226}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1607086424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73878,7 +73758,6 @@ MonoBehaviour:
   - {fileID: 360255499}
   landTerritory: {fileID: 11400000, guid: 9a6e39e348d44f1479d3c4a8cf29b1aa, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1621087409
 GameObject:
   m_ObjectHideFlags: 0
@@ -74361,7 +74240,6 @@ MonoBehaviour:
   - {fileID: 1188944136}
   landTerritory: {fileID: 11400000, guid: 7f60fbcf406d33e429e0c47d10aa0f7d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1633834837
 GameObject:
   m_ObjectHideFlags: 0
@@ -75161,7 +75039,6 @@ MonoBehaviour:
   - {fileID: 361529518}
   landTerritory: {fileID: 11400000, guid: 65f1253f4ec19c54ca2e332d9d6cdd78, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1648332032
 GameObject:
   m_ObjectHideFlags: 0
@@ -76139,7 +76016,6 @@ MonoBehaviour:
   - {fileID: 5402248}
   landTerritory: {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1660512963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76639,7 +76515,6 @@ MonoBehaviour:
   - {fileID: 1877805610}
   landTerritory: {fileID: 11400000, guid: 7905adadd81c792448ff4c549567b30b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1671257672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76889,7 +76764,6 @@ MonoBehaviour:
   - {fileID: 1488744876}
   landTerritory: {fileID: 11400000, guid: 00fea1639a4931540bda8378cf11b923, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1680693506
 GameObject:
   m_ObjectHideFlags: 0
@@ -77000,7 +76874,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 2068111323}
   - {fileID: 1321431099}
-  flagLocation: {fileID: 0}
 --- !u!1 &1680742540
 GameObject:
   m_ObjectHideFlags: 0
@@ -77112,7 +76985,6 @@ MonoBehaviour:
   - {fileID: 1680693509}
   landTerritory: {fileID: 11400000, guid: 8abde5a687f0cb84db33229acd7311f4, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1680903809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77971,7 +77843,6 @@ MonoBehaviour:
   - {fileID: 1188944136}
   landTerritory: {fileID: 11400000, guid: c21e4b9f746936d41bd198a82f5167e4, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1702814917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78748,7 +78619,6 @@ MonoBehaviour:
   - {fileID: 1188944136}
   landTerritory: {fileID: 11400000, guid: e72f26098d9daf14bae6cf1fd50dc49c, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1713402736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78937,7 +78807,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 568911226}
   - {fileID: 29577908}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1715809803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79531,7 +79400,6 @@ MonoBehaviour:
   - {fileID: 358586971}
   landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1729242401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79837,7 +79705,6 @@ MonoBehaviour:
   - {fileID: 360255499}
   landTerritory: {fileID: 11400000, guid: 4532cbe1c8af66342ab261bbd1300413, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1734341791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80062,7 +79929,6 @@ MonoBehaviour:
   - {fileID: 1849376802}
   landTerritory: {fileID: 11400000, guid: 1245831c7f207814498f4f4c8b44916d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1736440524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80661,7 +80527,6 @@ MonoBehaviour:
   - {fileID: 794631071}
   landTerritory: {fileID: 11400000, guid: eb4377444ae91864f95475a3cfca3e11, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1754461937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81024,7 +80889,6 @@ MonoBehaviour:
   - {fileID: 42136104}
   landTerritory: {fileID: 11400000, guid: 21f401e25db51f644ac46cc8f4f6db02, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1764265566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81502,7 +81366,6 @@ MonoBehaviour:
   - {fileID: 1620480474}
   landTerritory: {fileID: 11400000, guid: 80e5a7cfe2ade0c4c8c3c7c0f7c2abe7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1775261578
 GameObject:
   m_ObjectHideFlags: 0
@@ -81724,7 +81587,6 @@ MonoBehaviour:
   - {fileID: 1248153068}
   landTerritory: {fileID: 11400000, guid: ec52214e5816a3545aa7ef2c7098ef49, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1776269261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82750,7 +82612,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 00751987a4e497148a79133b120fd61c, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1791102420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83145,7 +83006,6 @@ MonoBehaviour:
   - {fileID: 80270586}
   landTerritory: {fileID: 11400000, guid: 50942f76d8fb75b488935905a2c5e47e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1795085114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83512,7 +83372,6 @@ MonoBehaviour:
   - {fileID: 224236475}
   landTerritory: {fileID: 11400000, guid: c883ae1569ab3d548901394463e836fc, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1801945330
 GameObject:
   m_ObjectHideFlags: 0
@@ -83622,7 +83481,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: 1b491e4adcfe72e4fa63c869d9d1f499, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1802604136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83851,7 +83709,6 @@ MonoBehaviour:
   - {fileID: 250677183}
   landTerritory: {fileID: 11400000, guid: 9a2efae9a851d5941b22c39c416f36f5, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1809037589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84278,7 +84135,6 @@ MonoBehaviour:
   - {fileID: 1514151603}
   landTerritory: {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1814227948
 GameObject:
   m_ObjectHideFlags: 0
@@ -84387,7 +84243,6 @@ MonoBehaviour:
   - {fileID: 470968861}
   landTerritory: {fileID: 11400000, guid: e6231485e53b2a84197fb66adf998f5e, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1816831522
 GameObject:
   m_ObjectHideFlags: 0
@@ -84497,7 +84352,6 @@ MonoBehaviour:
   - {fileID: 1378342898}
   landTerritory: {fileID: 11400000, guid: c133a24f22232074db1f66d483c8d3a1, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1818561973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84986,7 +84840,6 @@ MonoBehaviour:
   - {fileID: 772246919}
   landTerritory: {fileID: 11400000, guid: e86262c2e4ff6354fa7b02ae9b109e17, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1825227713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85571,7 +85424,6 @@ MonoBehaviour:
   - {fileID: 631874842}
   landTerritory: {fileID: 11400000, guid: 89f46606b69288b4490b10ce03897470, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1831365919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86748,7 +86600,6 @@ MonoBehaviour:
   - {fileID: 1908652260}
   landTerritory: {fileID: 11400000, guid: d21c50a934b0c3c4da09433171de16a0, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1852740749
 GameObject:
   m_ObjectHideFlags: 0
@@ -86860,7 +86711,6 @@ MonoBehaviour:
   landTerritory: {fileID: 11400000, guid: aacdd521d834e7940bf6f7883ea89c76, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
-  flagLocation: {fileID: 0}
 --- !u!1 &1853642821
 GameObject:
   m_ObjectHideFlags: 0
@@ -87448,7 +87298,6 @@ MonoBehaviour:
   - {fileID: 1857445612}
   landTerritory: {fileID: 11400000, guid: 5e95b9a7b29c2674692c01585487db12, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1868999634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88069,7 +87918,6 @@ MonoBehaviour:
   - {fileID: 1232698926}
   landTerritory: {fileID: 11400000, guid: ce92c63bd715cd84f8fd5d18c34282dc, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1877805607
 GameObject:
   m_ObjectHideFlags: 0
@@ -88180,7 +88028,6 @@ MonoBehaviour:
   - {fileID: 1372819624}
   landTerritory: {fileID: 11400000, guid: 6018a03038b62d340b0524715ed845a0, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1877830422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88427,7 +88274,6 @@ MonoBehaviour:
   - {fileID: 1775261581}
   landTerritory: {fileID: 11400000, guid: 87fbe94ea3bb0ba47be92cb5562e1d84, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1879183931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88681,7 +88527,6 @@ MonoBehaviour:
   - {fileID: 302453759}
   landTerritory: {fileID: 11400000, guid: 1f2747f9199507844ab0ae4a6bb4ec4d, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1886579568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89030,7 +88875,6 @@ MonoBehaviour:
   - {fileID: 184140875}
   landTerritory: {fileID: 11400000, guid: b79f8e16b2b3eae47a870ed7efe50844, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1899567397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89516,7 +89360,6 @@ MonoBehaviour:
   - {fileID: 35587632}
   landTerritory: {fileID: 11400000, guid: d10e587d572f2154085ac772d6983b99, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1912084714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89867,7 +89710,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Western Poland
+      value: 'Western Poland
+
+        <size=10><sprite name="Neutral"></size>'
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -89891,7 +89736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4280693304
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_Pivot.x
@@ -90287,7 +90132,6 @@ MonoBehaviour:
   - {fileID: 232159064}
   landTerritory: {fileID: 11400000, guid: 1f341c28272b5da409c0120e8e17d47c, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1931756591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91394,7 +91238,6 @@ MonoBehaviour:
   - {fileID: 1490200032}
   landTerritory: {fileID: 11400000, guid: 01e1134ca660c3849aee35ae892a7b92, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1966600804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92474,7 +92317,6 @@ MonoBehaviour:
   hazardousAdjacencies:
   - {fileID: 1001610957}
   - {fileID: 694162057}
-  flagLocation: {fileID: 0}
 --- !u!1001 &1979979238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92842,7 +92684,6 @@ MonoBehaviour:
   - {fileID: 993834609}
   landTerritory: {fileID: 11400000, guid: 413a9d6be17dee24985a1e3895b32536, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1986925653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93188,7 +93029,6 @@ MonoBehaviour:
   - {fileID: 1082479210}
   landTerritory: {fileID: 11400000, guid: 1c1371a375a16764a813dd629f9c5cd7, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &1991240054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93635,7 +93475,6 @@ MonoBehaviour:
   - {fileID: 244147201}
   landTerritory: {fileID: 11400000, guid: d3256e8efd1de41468a19bc185e130d9, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &1997836284
 GameObject:
   m_ObjectHideFlags: 0
@@ -93828,7 +93667,6 @@ MonoBehaviour:
   - {fileID: 1075510098}
   landTerritory: {fileID: 11400000, guid: dc98d6675ff742049abe312450bb569f, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2010618279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94075,7 +93913,6 @@ MonoBehaviour:
   - {fileID: 655868731}
   landTerritory: {fileID: 11400000, guid: ec167388830028949a5cf32a6543fa44, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2013652263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95392,7 +95229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Hainan
+      value: "Hainan  \n<sprite name=\"China\">\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
@@ -95401,6 +95238,10 @@ PrefabInstance:
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSizeBase
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_Pivot.x
@@ -96032,7 +95873,6 @@ MonoBehaviour:
   - {fileID: 1137129029}
   landTerritory: {fileID: 11400000, guid: 7e51c4f470040fe48bbb5289a5100290, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &2046348843
 GameObject:
   m_ObjectHideFlags: 0
@@ -96141,7 +95981,6 @@ MonoBehaviour:
   - {fileID: 952352065}
   landTerritory: {fileID: 11400000, guid: 96e07edcf10d57741a92367795957b69, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2048044064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96390,15 +96229,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
-      value: Switzerland
+      value: Switzerland<sprite name="Russia">
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSize
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_fontSizeBase
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_Pivot.x
@@ -96737,7 +96592,6 @@ MonoBehaviour:
   - {fileID: 1488744876}
   landTerritory: {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2063846076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96966,7 +96820,6 @@ MonoBehaviour:
   - {fileID: 1419490669}
   - {fileID: 824623047}
   - {fileID: 1551751528}
-  flagLocation: {fileID: 0}
 --- !u!1001 &2070242374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97489,7 +97342,6 @@ MonoBehaviour:
   - {fileID: 1659069460}
   landTerritory: {fileID: 11400000, guid: 51f660c64344b8341942abcc44450534, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2083759743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97717,7 +97569,6 @@ MonoBehaviour:
   - {fileID: 1775729498}
   landTerritory: {fileID: 11400000, guid: d2b17d69ef027fb44924b1bbaadd73c3, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &2092264149
 GameObject:
   m_ObjectHideFlags: 0
@@ -97828,7 +97679,6 @@ MonoBehaviour:
   - {fileID: 1659069460}
   landTerritory: {fileID: 11400000, guid: a88de290b9f571c4e94ab80c7333726b, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &2096634783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98438,7 +98288,6 @@ MonoBehaviour:
   - {fileID: 613544436}
   landTerritory: {fileID: 11400000, guid: 0593b7b710e736d4ebcea8b8ad017350, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &2101081791
 GameObject:
   m_ObjectHideFlags: 0
@@ -99248,7 +99097,6 @@ MonoBehaviour:
   - {fileID: 27338225}
   landTerritory: {fileID: 11400000, guid: e201de71cc8791e4d9f3cf00ca0230e8, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1 &2124971340
 GameObject:
   m_ObjectHideFlags: 0
@@ -100774,7 +100622,6 @@ MonoBehaviour:
   - {fileID: 125643079}
   landTerritory: {fileID: 11400000, guid: a77bf585e355f3a4da2b0c12f0430917, type: 2}
   hazardousAdjacencies: []
-  flagLocation: {fileID: 0}
 --- !u!1001 &528543380150620472
 PrefabInstance:
   m_ObjectHideFlags: 0
