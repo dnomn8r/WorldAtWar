@@ -1,10 +1,27 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class LandZone : Zone{
 
 #if UNITY_EDITOR
+
+    [MenuItem("Zones/Add Flags")]
+    static void AddFlagsToZones() {
+
+        LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+
+        foreach (LandZone zone in zones) {
+
+			GameObject newFlag = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<Object>("Assets/Resources/CountryFlags/CountryFlagIndicator")) as GameObject;
+
+			newFlag.name = "CountryFlagIndicator";
+            newFlag.transform.SetParent(zone.transform, false);
+
+			zone.originalOwnerFlag = newFlag.GetComponent<SpriteRenderer>();
+        }
+    }
 
     public override Color BaseColor {
 		get {
@@ -59,8 +76,17 @@ public class LandZone : Zone{
 
 	private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
 
+	private SpriteRenderer originalOwnerFlag;
+    public SpriteRenderer OriginalOwnerFlag {
 
-	private void Awake() {
+        get { return originalOwnerFlag; }
+#if UNITY_EDITOR
+
+        set { originalOwnerFlag = value; }
+#endif
+    }
+
+    private void Awake() {
 
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
