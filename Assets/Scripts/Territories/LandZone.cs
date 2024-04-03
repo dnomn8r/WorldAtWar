@@ -14,7 +14,7 @@ public class LandZone : Zone{
 
         foreach (LandZone zone in zones) {
 
-			GameObject newFlag = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<Object>("Assets/Resources/CountryFlags/CountryFlagIndicator")) as GameObject;
+			GameObject newFlag = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Resources/CountryFlags/CountryFlagIndicator.prefab")) as GameObject;
 
 			newFlag.name = "CountryFlagIndicator";
             newFlag.transform.SetParent(zone.transform, false);
@@ -76,7 +76,7 @@ public class LandZone : Zone{
 
 	private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
 
-	private SpriteRenderer originalOwnerFlag;
+	[SerializeField] private SpriteRenderer originalOwnerFlag;
     public SpriteRenderer OriginalOwnerFlag {
 
         get { return originalOwnerFlag; }
