@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: China
   m_EditorClassIdentifier: 
   flag: {fileID: -1552490605, guid: d28494bcbf011784392176be63471426, type: 3}
-  ownershipColor: {r: 0.8553459, g: 0.2683889, b: 0.20711197, a: 1}
+  ownershipColor: {r: 0.8553459, g: 0.41431877, b: 0.32008222, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 8324eee171b0fb142bdc64e2b97d7725, type: 2}
   - {fileID: 11400000, guid: aacdd521d834e7940bf6f7883ea89c76, type: 2}

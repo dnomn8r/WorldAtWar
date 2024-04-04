@@ -18,12 +18,21 @@ public class SeaZone : Zone{
 
 	public override Color BaseColor {
 		get {
-			return new Color(0.15f, 0.6f, 0.9f);
+			return new Color(0.5f, 0.75f, 1.0f);
 		}
 	}
 	public override FontStyles FontStyle {
 		get {
 			return FontStyles.Italic;
+		}
+	}
+
+	private void Awake() {
+
+		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+
+		foreach (SpriteRenderer ren in renderers) {
+			ren.color = BaseColor;
 		}
 	}
 

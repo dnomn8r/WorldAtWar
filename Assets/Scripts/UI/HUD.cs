@@ -10,6 +10,8 @@ public class HUD : MonoBehaviour {
 
 	void Start() {
 
+		incomeTogglePanel.SetActive(toggleIncomeButton.isOn);
+
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
 	}
 						   
@@ -17,7 +19,7 @@ public class HUD : MonoBehaviour {
 
 		Debug.Log("You have clicked the button!");
 
-		incomeTogglePanel.SetActive(isActive);
+		incomeTogglePanel.SetActive(toggleIncomeButton.isOn);
 	}
 
 }

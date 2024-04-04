@@ -184,6 +184,8 @@ public class LandZone : Zone{
 #endif
     }
 
+	public bool isCapital = false;
+
     private void Awake() {
 
 		if (Value > 0) {
@@ -211,7 +213,7 @@ public class LandZone : Zone{
 
 	private void UpdateOwnerFlag() {
 
-		OriginalOwnerFlag.gameObject.SetActive(OriginalOwner != CurrentOwner);
+		OriginalOwnerFlag.gameObject.SetActive(isCapital || OriginalOwner != CurrentOwner);
 	}
 
 }

@@ -315,6 +315,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1584419978}
   zoneValueDisplay: {fileID: 6855547}
   originalOwnerFlag: {fileID: 140072964}
+  isCapital: 1
 --- !u!1001 &6849767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,6 +658,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1729242403}
   zoneValueDisplay: {fileID: 1356652540}
   originalOwnerFlag: {fileID: 1319634553}
+  isCapital: 0
 --- !u!1001 &12305154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,6 +919,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
@@ -1200,6 +1206,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 574289091}
   zoneValueDisplay: {fileID: 1776555265}
   originalOwnerFlag: {fileID: 1640451210}
+  isCapital: 0
 --- !u!1001 &32557717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1503,6 +1510,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2048044066}
   zoneValueDisplay: {fileID: 1589278270}
   originalOwnerFlag: {fileID: 2091100659}
+  isCapital: 0
 --- !u!1 &42136101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1735,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 927727822}
   zoneValueDisplay: {fileID: 950889922}
   originalOwnerFlag: {fileID: 1231713038}
+  isCapital: 0
 --- !u!1 &43232840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2290,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 107858734}
   zoneValueDisplay: {fileID: 1682036097}
   originalOwnerFlag: {fileID: 227050098}
+  isCapital: 0
 --- !u!1001 &48810939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2864,6 +2874,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.45
@@ -3034,6 +3048,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 505320299}
   zoneValueDisplay: {fileID: 266851220}
   originalOwnerFlag: {fileID: 1141010709}
+  isCapital: 0
 --- !u!1001 &74290041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3277,6 +3292,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 446522553}
   zoneValueDisplay: {fileID: 1980768443}
   originalOwnerFlag: {fileID: 1701596666}
+  isCapital: 0
 --- !u!1 &81352382
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,6 +3405,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1821572253}
   zoneValueDisplay: {fileID: 1123823952}
   originalOwnerFlag: {fileID: 81760513}
+  isCapital: 0
 --- !u!1001 &81760512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5376,6 +5393,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1595688847}
   zoneValueDisplay: {fileID: 974191654}
   originalOwnerFlag: {fileID: 1792097190}
+  isCapital: 0
 --- !u!1 &131798172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,6 +5849,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2063846078}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 733143469}
+  isCapital: 0
 --- !u!1001 &134340575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6257,12 +6276,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.13
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.7
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6943,6 +6974,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 4536865383199381371}
   zoneValueDisplay: {fileID: 528543380150620474}
   originalOwnerFlag: {fileID: 2108212943}
+  isCapital: 0
 --- !u!1001 &145943019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7046,12 +7078,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.09
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.52
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7319,7 +7363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.200221
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7539,6 +7583,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1543022157}
   zoneValueDisplay: {fileID: 789258659}
   originalOwnerFlag: {fileID: 234794465}
+  isCapital: 0
 --- !u!1 &156100349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7672,12 +7717,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.01
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.78
+      value: 3.18
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7837,6 +7894,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1132547470}
   zoneValueDisplay: {fileID: 769397471}
   originalOwnerFlag: {fileID: 1244296239}
+  isCapital: 0
 --- !u!1001 &164512063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8026,6 +8084,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1331573926}
   zoneValueDisplay: {fileID: 1655246035}
   originalOwnerFlag: {fileID: 1397906665}
+  isCapital: 0
 --- !u!1001 &174252908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8967,6 +9026,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1986925655}
   zoneValueDisplay: {fileID: 1105482710}
   originalOwnerFlag: {fileID: 1793226951}
+  isCapital: 0
 --- !u!1001 &184559936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9480,6 +9540,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2083759745}
   zoneValueDisplay: {fileID: 856333368}
   originalOwnerFlag: {fileID: 1333067520}
+  isCapital: 0
 --- !u!1 &206599340
 GameObject:
   m_ObjectHideFlags: 0
@@ -9596,6 +9657,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1966600806}
   zoneValueDisplay: {fileID: 525697187}
   originalOwnerFlag: {fileID: 2135480646}
+  isCapital: 0
 --- !u!1001 &207017136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9858,6 +9920,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 348968313}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 225741777}
+  isCapital: 0
 --- !u!1 &208626548
 GameObject:
   m_ObjectHideFlags: 0
@@ -9975,6 +10038,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1899567399}
   zoneValueDisplay: {fileID: 1038934394}
   originalOwnerFlag: {fileID: 1616738611}
+  isCapital: 0
 --- !u!1001 &208936673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10214,6 +10278,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 885343372}
   zoneValueDisplay: {fileID: 500162075}
   originalOwnerFlag: {fileID: 2137097715}
+  isCapital: 0
 --- !u!1001 &214490400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10458,6 +10523,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1464803851}
   zoneValueDisplay: {fileID: 1173498228}
   originalOwnerFlag: {fileID: 1647128107}
+  isCapital: 0
 --- !u!1001 &223377547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10647,6 +10713,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 314080406}
   zoneValueDisplay: {fileID: 821242370}
   originalOwnerFlag: {fileID: 547469826}
+  isCapital: 0
 --- !u!1001 &225741776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11157,6 +11224,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 391752627}
   zoneValueDisplay: {fileID: 1093514912}
   originalOwnerFlag: {fileID: 622836612}
+  isCapital: 0
 --- !u!1001 &234794464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11349,6 +11417,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1507768422}
   zoneValueDisplay: {fileID: 1040747805}
   originalOwnerFlag: {fileID: 59664935}
+  isCapital: 0
 --- !u!1001 &238360038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11660,6 +11729,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1310660357}
   zoneValueDisplay: {fileID: 446042876}
   originalOwnerFlag: {fileID: 1464659499}
+  isCapital: 0
 --- !u!1 &244443722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11773,6 +11843,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1360204889}
   zoneValueDisplay: {fileID: 1845258349}
   originalOwnerFlag: {fileID: 1887714566}
+  isCapital: 0
 --- !u!1001 &245054270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12178,6 +12249,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 886210714}
   zoneValueDisplay: {fileID: 1100007892}
   originalOwnerFlag: {fileID: 1730526490}
+  isCapital: 0
 --- !u!1 &251020198
 GameObject:
   m_ObjectHideFlags: 0
@@ -12289,6 +12361,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1478152787}
   zoneValueDisplay: {fileID: 718750640}
   originalOwnerFlag: {fileID: 2119490450}
+  isCapital: 0
 --- !u!1001 &251500372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13676,12 +13749,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.24
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.06
+      value: 0.94
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14212,6 +14297,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 285871249}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2093295881}
+  isCapital: 0
 --- !u!1 &284086675
 GameObject:
   m_ObjectHideFlags: 0
@@ -14684,6 +14770,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1754461939}
   zoneValueDisplay: {fileID: 1766099174}
   originalOwnerFlag: {fileID: 1913982530}
+  isCapital: 0
 --- !u!1001 &292378382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15196,6 +15283,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1175873106}
   zoneValueDisplay: {fileID: 306318277}
   originalOwnerFlag: {fileID: 1058956762}
+  isCapital: 0
 --- !u!1001 &296423780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15441,6 +15529,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1187897862}
   zoneValueDisplay: {fileID: 931434657}
   originalOwnerFlag: {fileID: 1015844421}
+  isCapital: 0
 --- !u!1 &302453756
 GameObject:
   m_ObjectHideFlags: 0
@@ -15557,6 +15646,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1552575647}
   zoneValueDisplay: {fileID: 989717929}
   originalOwnerFlag: {fileID: 1835385493}
+  isCapital: 0
 --- !u!1 &302823974
 GameObject:
   m_ObjectHideFlags: 0
@@ -15668,6 +15758,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 493747736}
   zoneValueDisplay: {fileID: 1822752105}
   originalOwnerFlag: {fileID: 1880036167}
+  isCapital: 0
 --- !u!1001 &306318275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16510,6 +16601,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 363505368}
   zoneValueDisplay: {fileID: 1482636293}
   originalOwnerFlag: {fileID: 387771818}
+  isCapital: 0
 --- !u!1 &313298631
 GameObject:
   m_ObjectHideFlags: 0
@@ -16620,6 +16712,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1972505692}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1436409447}
+  isCapital: 0
 --- !u!1001 &313900335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17689,6 +17782,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1560688759}
   zoneValueDisplay: {fileID: 1254957114}
   originalOwnerFlag: {fileID: 562085474}
+  isCapital: 0
 --- !u!1001 &337862694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17993,13 +18087,29 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.07
+      value: 3.16
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.6
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18842,6 +18952,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 415371277}
   zoneValueDisplay: {fileID: 1756113772}
   originalOwnerFlag: {fileID: 48810940}
+  isCapital: 0
 --- !u!1 &360255496
 GameObject:
   m_ObjectHideFlags: 0
@@ -18957,6 +19068,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 132812934}
   zoneValueDisplay: {fileID: 666402007}
   originalOwnerFlag: {fileID: 721538066}
+  isCapital: 0
 --- !u!1 &361529515
 GameObject:
   m_ObjectHideFlags: 0
@@ -19388,6 +19500,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1270843870}
   zoneValueDisplay: {fileID: 2127839398}
   originalOwnerFlag: {fileID: 695661187}
+  isCapital: 0
 --- !u!1001 &366509027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19577,6 +19690,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1336566484}
   zoneValueDisplay: {fileID: 1931756593}
   originalOwnerFlag: {fileID: 1695619653}
+  isCapital: 0
 --- !u!1001 &370049207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19768,6 +19882,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 876870075}
   zoneValueDisplay: {fileID: 1944229097}
   originalOwnerFlag: {fileID: 2127047384}
+  isCapital: 0
 --- !u!1001 &371817891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20209,6 +20324,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 941013246}
   zoneValueDisplay: {fileID: 1917349002}
   originalOwnerFlag: {fileID: 668888651}
+  isCapital: 0
 --- !u!1 &380042841
 GameObject:
   m_ObjectHideFlags: 0
@@ -20324,6 +20440,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1945952442}
   zoneValueDisplay: {fileID: 858737863}
   originalOwnerFlag: {fileID: 1400938914}
+  isCapital: 0
 --- !u!1001 &380332813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20663,6 +20780,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 760002042}
   zoneValueDisplay: {fileID: 2134903189}
   originalOwnerFlag: {fileID: 1700183771}
+  isCapital: 0
 --- !u!1001 &391752625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21088,6 +21206,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 738848962}
   zoneValueDisplay: {fileID: 2120074990}
   originalOwnerFlag: {fileID: 1923287148}
+  isCapital: 0
 --- !u!1001 &397778884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22407,6 +22526,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2114029517}
   zoneValueDisplay: {fileID: 1387141227}
   originalOwnerFlag: {fileID: 184559937}
+  isCapital: 0
 --- !u!1001 &424256046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23413,6 +23533,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1185484961}
   zoneValueDisplay: {fileID: 656640338}
   originalOwnerFlag: {fileID: 1483845768}
+  isCapital: 0
 --- !u!1001 &446522551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23657,6 +23778,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 685542103}
   zoneValueDisplay: {fileID: 1169728902}
   originalOwnerFlag: {fileID: 1941949039}
+  isCapital: 0
 --- !u!1 &457878040
 GameObject:
   m_ObjectHideFlags: 0
@@ -23767,6 +23889,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1748451084}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 292378383}
+  isCapital: 0
 --- !u!1 &458543183
 GameObject:
   m_ObjectHideFlags: 0
@@ -23881,6 +24004,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 436281049}
   zoneValueDisplay: {fileID: 2019162505}
   originalOwnerFlag: {fileID: 1778955244}
+  isCapital: 0
 --- !u!1001 &462253799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24330,11 +24454,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.4260864
+      value: -3.08
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.9726124
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -24488,6 +24612,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1299712527}
   zoneValueDisplay: {fileID: 182644584}
   originalOwnerFlag: {fileID: 772496115}
+  isCapital: 0
 --- !u!1001 &471949183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25765,6 +25890,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1362848279}
   zoneValueDisplay: {fileID: 1639320787}
   originalOwnerFlag: {fileID: 1328414979}
+  isCapital: 0
 --- !u!1 &493320318
 GameObject:
   m_ObjectHideFlags: 0
@@ -27207,6 +27333,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.06
@@ -27573,6 +27703,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 811885089}
   zoneValueDisplay: {fileID: 1599599165}
   originalOwnerFlag: {fileID: 1432447465}
+  isCapital: 0
 --- !u!1 &515003169
 GameObject:
   m_ObjectHideFlags: 0
@@ -27921,6 +28052,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 806111309}
   zoneValueDisplay: {fileID: 397778886}
   originalOwnerFlag: {fileID: 1242954178}
+  isCapital: 0
 --- !u!1 &521017379
 GameObject:
   m_ObjectHideFlags: 0
@@ -28568,6 +28700,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 287171611}
   zoneValueDisplay: {fileID: 1477757457}
   originalOwnerFlag: {fileID: 1741052786}
+  isCapital: 0
 --- !u!1001 &532523490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28831,6 +28964,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1651283033}
   zoneValueDisplay: {fileID: 142855159}
   originalOwnerFlag: {fileID: 2090981860}
+  isCapital: 0
 --- !u!1 &537093037
 GameObject:
   m_ObjectHideFlags: 0
@@ -28941,6 +29075,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 616152457}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2065144197}
+  isCapital: 0
 --- !u!1001 &537321973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29288,6 +29423,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 74290043}
   zoneValueDisplay: {fileID: 1870751655}
   originalOwnerFlag: {fileID: 320673203}
+  isCapital: 0
 --- !u!1001 &542129523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29308,13 +29444,29 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.88
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.94
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29902,6 +30054,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1868999636}
   zoneValueDisplay: {fileID: 394191627}
   originalOwnerFlag: {fileID: 784156298}
+  isCapital: 0
 --- !u!1001 &548805500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30095,6 +30248,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1236594976}
   zoneValueDisplay: {fileID: 269699745}
   originalOwnerFlag: {fileID: 1929095784}
+  isCapital: 0
 --- !u!1001 &550785784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30544,6 +30698,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 873391371}
   zoneValueDisplay: {fileID: 425393807}
   originalOwnerFlag: {fileID: 1241064809}
+  isCapital: 0
 --- !u!1001 &556953919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30786,6 +30941,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2096890163}
   zoneValueDisplay: {fileID: 341709358}
   originalOwnerFlag: {fileID: 1574041689}
+  isCapital: 0
 --- !u!1001 &562085473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31057,6 +31213,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1663805727}
   zoneValueDisplay: {fileID: 254706703}
   originalOwnerFlag: {fileID: 1075634260}
+  isCapital: 0
 --- !u!1001 &570492293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32186,6 +32343,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 115525013}
   zoneValueDisplay: {fileID: 1879183933}
   originalOwnerFlag: {fileID: 2145992185}
+  isCapital: 0
 --- !u!1001 &590010623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32504,6 +32662,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1325554477}
   zoneValueDisplay: {fileID: 175152143}
   originalOwnerFlag: {fileID: 578991919}
+  isCapital: 0
 --- !u!1001 &607170086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33012,6 +33171,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1743294628}
   zoneValueDisplay: {fileID: 1513870267}
   originalOwnerFlag: {fileID: 174252909}
+  isCapital: 0
 --- !u!1001 &616152455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33608,6 +33768,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountryFlagIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -33984,6 +34152,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 188508591}
   zoneValueDisplay: {fileID: 2028483225}
   originalOwnerFlag: {fileID: 862327862}
+  isCapital: 0
 --- !u!1 &631165427
 GameObject:
   m_ObjectHideFlags: 0
@@ -34098,6 +34267,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1369012049}
   zoneValueDisplay: {fileID: 1421731808}
   originalOwnerFlag: {fileID: 1650235319}
+  isCapital: 0
 --- !u!1 &631874839
 GameObject:
   m_ObjectHideFlags: 0
@@ -34505,6 +34675,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 521750245}
   zoneValueDisplay: {fileID: 2099669967}
   originalOwnerFlag: {fileID: 850590948}
+  isCapital: 0
 --- !u!1001 &640319030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36240,6 +36411,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1048020103}
   zoneValueDisplay: {fileID: 978225991}
   originalOwnerFlag: {fileID: 838991232}
+  isCapital: 0
 --- !u!1 &661283122
 GameObject:
   m_ObjectHideFlags: 0
@@ -36579,6 +36751,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 691246024}
   zoneValueDisplay: {fileID: 1332309750}
   originalOwnerFlag: {fileID: 34915344}
+  isCapital: 0
 --- !u!1001 &666402005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37128,6 +37301,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1919674317}
   zoneValueDisplay: {fileID: 1969937188}
   originalOwnerFlag: {fileID: 622554138}
+  isCapital: 0
 --- !u!1001 &676558592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37512,6 +37686,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2035152875}
   zoneValueDisplay: {fileID: 50848301}
   originalOwnerFlag: {fileID: 733692138}
+  isCapital: 0
 --- !u!1001 &684578933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38065,6 +38240,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1734341793}
   zoneValueDisplay: {fileID: 2070242376}
   originalOwnerFlag: {fileID: 1811162242}
+  isCapital: 0
 --- !u!1001 &694816671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40149,6 +40325,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1283926681}
   zoneValueDisplay: {fileID: 1711441491}
   originalOwnerFlag: {fileID: 6849768}
+  isCapital: 0
 --- !u!1 &733623555
 GameObject:
   m_ObjectHideFlags: 0
@@ -40494,7 +40671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7.65
+      value: 8.29
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -40647,6 +40824,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2048996843}
   zoneValueDisplay: {fileID: 641595970}
   originalOwnerFlag: {fileID: 716731936}
+  isCapital: 0
 --- !u!1001 &738779106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42306,6 +42484,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 424256048}
   zoneValueDisplay: {fileID: 925004448}
   originalOwnerFlag: {fileID: 266613373}
+  isCapital: 0
 --- !u!1001 &772496114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43657,6 +43836,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1256728265}
   zoneValueDisplay: {fileID: 859345838}
   originalOwnerFlag: {fileID: 364097249}
+  isCapital: 0
 --- !u!1 &803066578
 GameObject:
   m_ObjectHideFlags: 0
@@ -44395,6 +44575,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1501337473}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 956981405}
+  isCapital: 0
 --- !u!1001 &816731254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45161,6 +45342,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1177221476}
   zoneValueDisplay: {fileID: 134340577}
   originalOwnerFlag: {fileID: 1358923672}
+  isCapital: 0
 --- !u!1 &824623044
 GameObject:
   m_ObjectHideFlags: 0
@@ -45278,6 +45460,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 749274940}
   zoneValueDisplay: {fileID: 309687649}
   originalOwnerFlag: {fileID: 575046853}
+  isCapital: 0
 --- !u!1 &824907276
 GameObject:
   m_ObjectHideFlags: 0
@@ -45389,6 +45572,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2033860502}
   zoneValueDisplay: {fileID: 1591630549}
   originalOwnerFlag: {fileID: 1332198660}
+  isCapital: 0
 --- !u!1001 &827297703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45652,6 +45836,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2133209287}
   zoneValueDisplay: {fileID: 1249093501}
   originalOwnerFlag: {fileID: 178846221}
+  isCapital: 0
 --- !u!1001 &836657729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46870,6 +47055,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1610792800}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2055695910}
+  isCapital: 0
 --- !u!1 &868035799
 GameObject:
   m_ObjectHideFlags: 0
@@ -46986,6 +47172,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1106623299}
   zoneValueDisplay: {fileID: 327240045}
   originalOwnerFlag: {fileID: 2026651681}
+  isCapital: 0
 --- !u!1 &868335648
 GameObject:
   m_ObjectHideFlags: 0
@@ -48120,6 +48307,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1521524617}
   zoneValueDisplay: {fileID: 786827468}
   originalOwnerFlag: {fileID: 99061407}
+  isCapital: 0
 --- !u!1001 &887491142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48391,6 +48579,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 497377668}
   zoneValueDisplay: {fileID: 471949185}
   originalOwnerFlag: {fileID: 728839646}
+  isCapital: 0
 --- !u!1 &893284594
 GameObject:
   m_ObjectHideFlags: 0
@@ -48408,7 +48597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &893284595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48418,15 +48607,16 @@ RectTransform:
   m_GameObject: {fileID: 893284594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 964154596}
   m_Father: {fileID: 871033801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.32013974}
-  m_AnchorMax: {x: 0.6331142, y: 1}
-  m_AnchoredPosition: {x: -139.44661, y: 37.130875}
-  m_SizeDelta: {x: 537, y: 263}
+  m_AnchorMin: {x: 0, y: 0.74}
+  m_AnchorMax: {x: 0.21750002, y: 1}
+  m_AnchoredPosition: {x: 8.799988, y: -24.300003}
+  m_SizeDelta: {x: 0, y: 0.0000038146973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893284596
 MonoBehaviour:
@@ -48644,6 +48834,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 624947494}
   zoneValueDisplay: {fileID: 1370220858}
   originalOwnerFlag: {fileID: 567212020}
+  isCapital: 0
 --- !u!1001 &908450863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49493,6 +49684,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 192960074}
   zoneValueDisplay: {fileID: 103091429}
   originalOwnerFlag: {fileID: 684578934}
+  isCapital: 0
 --- !u!1001 &925845545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50496,11 +50688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.3335781
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.5817485
+      value: -3.69
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -51117,6 +51309,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 952398844}
   zoneValueDisplay: {fileID: 1860724467}
   originalOwnerFlag: {fileID: 2000957510}
+  isCapital: 0
 --- !u!1001 &952398842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51805,6 +51998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3895d0d3b5fe6024d98248c81827d35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &964154596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+  m_PrefabInstance: {fileID: 8412147527029203568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &966566105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53244,6 +53442,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1916517462}
   zoneValueDisplay: {fileID: 740577997}
   originalOwnerFlag: {fileID: 399181325}
+  isCapital: 0
 --- !u!1 &995437406
 GameObject:
   m_ObjectHideFlags: 0
@@ -53512,6 +53711,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1890010725}
   zoneValueDisplay: {fileID: 482294133}
   originalOwnerFlag: {fileID: 1599088820}
+  isCapital: 0
 --- !u!1 &1001610954
 GameObject:
   m_ObjectHideFlags: 0
@@ -53627,6 +53827,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1069985295}
   zoneValueDisplay: {fileID: 251500374}
   originalOwnerFlag: {fileID: 647681750}
+  isCapital: 0
 --- !u!1 &1001778916
 GameObject:
   m_ObjectHideFlags: 0
@@ -54779,6 +54980,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 139859261}
   zoneValueDisplay: {fileID: 1671257674}
   originalOwnerFlag: {fileID: 437129838}
+  isCapital: 0
 --- !u!21 &1030039036
 Material:
   serializedVersion: 8
@@ -55916,6 +56118,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1559014783}
   zoneValueDisplay: {fileID: 1567227286}
   originalOwnerFlag: {fileID: 803862612}
+  isCapital: 0
 --- !u!1 &1046916712
 GameObject:
   m_ObjectHideFlags: 0
@@ -56268,6 +56471,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 309773428}
   zoneValueDisplay: {fileID: 120676497}
   originalOwnerFlag: {fileID: 2039388786}
+  isCapital: 0
 --- !u!1 &1053456214
 GameObject:
   m_ObjectHideFlags: 0
@@ -56564,6 +56768,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 400397542}
   zoneValueDisplay: {fileID: 179326853}
   originalOwnerFlag: {fileID: 1810417670}
+  isCapital: 0
 --- !u!1001 &1067154794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57023,6 +57228,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1969378568}
   zoneValueDisplay: {fileID: 1033555095}
   originalOwnerFlag: {fileID: 1379550421}
+  isCapital: 0
 --- !u!1001 &1075634259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57637,6 +57843,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 143216674}
   zoneValueDisplay: {fileID: 819467457}
   originalOwnerFlag: {fileID: 313900336}
+  isCapital: 0
 --- !u!1 &1085732315
 GameObject:
   m_ObjectHideFlags: 0
@@ -57753,6 +57960,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1618046676}
   zoneValueDisplay: {fileID: 502609688}
   originalOwnerFlag: {fileID: 1830965942}
+  isCapital: 0
 --- !u!1001 &1087114005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58281,6 +58489,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 292637451}
   zoneValueDisplay: {fileID: 1338632804}
   originalOwnerFlag: {fileID: 723007850}
+  isCapital: 0
 --- !u!1001 &1101697637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59093,6 +59302,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1423930991}
   zoneValueDisplay: {fileID: 1877830424}
   originalOwnerFlag: {fileID: 635039729}
+  isCapital: 0
 --- !u!1001 &1120373552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60005,6 +60215,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2072732697}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 950306494}
+  isCapital: 0
 --- !u!1001 &1134421635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60347,6 +60558,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1831365921}
   zoneValueDisplay: {fileID: 1486207515}
   originalOwnerFlag: {fileID: 116127654}
+  isCapital: 0
 --- !u!1001 &1141010708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60657,6 +60869,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1424165104}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 928706293}
+  isCapital: 0
 --- !u!1001 &1145501799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61177,6 +61390,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 276433225}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 53236771}
+  isCapital: 0
 --- !u!1 &1154899168
 GameObject:
   m_ObjectHideFlags: 0
@@ -61402,6 +61616,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 590010625}
   zoneValueDisplay: {fileID: 827297705}
   originalOwnerFlag: {fileID: 613514394}
+  isCapital: 0
 --- !u!1001 &1159618987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61595,6 +61810,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1835214899}
   zoneValueDisplay: {fileID: 1900295255}
   originalOwnerFlag: {fileID: 820527936}
+  isCapital: 0
 --- !u!1001 &1167032751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61778,6 +61994,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1660512965}
   zoneValueDisplay: {fileID: 1416153156}
   originalOwnerFlag: {fileID: 1328701744}
+  isCapital: 0
 --- !u!1001 &1169728900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62192,6 +62409,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1515577393}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1863107893}
+  isCapital: 0
 --- !u!1001 &1175873104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62943,6 +63161,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 544844581}
   zoneValueDisplay: {fileID: 98941601}
   originalOwnerFlag: {fileID: 1785114417}
+  isCapital: 0
 --- !u!1 &1190265376
 GameObject:
   m_ObjectHideFlags: 0
@@ -63168,6 +63387,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1506399862}
   zoneValueDisplay: {fileID: 990423435}
   originalOwnerFlag: {fileID: 1433723087}
+  isCapital: 0
 --- !u!1001 &1192720473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63558,6 +63778,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1220293809}
   zoneValueDisplay: {fileID: 1976489577}
   originalOwnerFlag: {fileID: 1946178893}
+  isCapital: 0
 --- !u!1 &1195573247
 GameObject:
   m_ObjectHideFlags: 0
@@ -64308,6 +64529,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2039278358}
   zoneValueDisplay: {fileID: 1600417933}
   originalOwnerFlag: {fileID: 1677026078}
+  isCapital: 0
 --- !u!1001 &1206359780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64456,13 +64678,29 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.34
+      value: 2.42
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65026,6 +65264,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1344251820}
   zoneValueDisplay: {fileID: 207017138}
   originalOwnerFlag: {fileID: 1935116304}
+  isCapital: 0
 --- !u!1 &1224092134
 GameObject:
   m_ObjectHideFlags: 0
@@ -65137,6 +65376,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1534122924}
   zoneValueDisplay: {fileID: 960744356}
   originalOwnerFlag: {fileID: 155367619}
+  isCapital: 0
 --- !u!1001 &1224741781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65400,6 +65640,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2134260353}
   zoneValueDisplay: {fileID: 911094095}
   originalOwnerFlag: {fileID: 307432718}
+  isCapital: 0
 --- !u!1001 &1228047204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65717,6 +65958,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 812040495}
   zoneValueDisplay: {fileID: 2010618281}
   originalOwnerFlag: {fileID: 145560121}
+  isCapital: 0
 --- !u!1001 &1236594974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66392,6 +66634,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 658236647}
   zoneValueDisplay: {fileID: 538275096}
   originalOwnerFlag: {fileID: 1782814383}
+  isCapital: 0
 --- !u!1 &1248191073
 GameObject:
   m_ObjectHideFlags: 0
@@ -67227,6 +67470,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1031704695}
   zoneValueDisplay: {fileID: 1446348790}
   originalOwnerFlag: {fileID: 537321974}
+  isCapital: 0
 --- !u!1 &1269033549
 GameObject:
   m_ObjectHideFlags: 0
@@ -67340,6 +67584,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 373403229}
   zoneValueDisplay: {fileID: 550863600}
   originalOwnerFlag: {fileID: 18869705}
+  isCapital: 0
 --- !u!1001 &1269603184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68445,7 +68690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.2727547
+      value: -7.43
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -68605,6 +68850,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1802604138}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 953989175}
+  isCapital: 0
 --- !u!1001 &1290582510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68947,6 +69193,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 670438731}
   zoneValueDisplay: {fileID: 250665256}
   originalOwnerFlag: {fileID: 2103940092}
+  isCapital: 0
 --- !u!1001 &1297218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69309,6 +69556,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2126714020}
   zoneValueDisplay: {fileID: 1736440526}
   originalOwnerFlag: {fileID: 1476112411}
+  isCapital: 0
 --- !u!1 &1309641529
 GameObject:
   m_ObjectHideFlags: 0
@@ -69790,6 +70038,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1764265568}
   zoneValueDisplay: {fileID: 1956018428}
   originalOwnerFlag: {fileID: 1819282036}
+  isCapital: 0
 --- !u!1001 &1319634552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69984,6 +70233,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1721989963}
   zoneValueDisplay: {fileID: 798473208}
   originalOwnerFlag: {fileID: 550785785}
+  isCapital: 0
 --- !u!1001 &1322560806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70227,6 +70477,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1680903811}
   zoneValueDisplay: {fileID: 1082042327}
   originalOwnerFlag: {fileID: 694816672}
+  isCapital: 0
 --- !u!1001 &1325554475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71743,6 +71994,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1228047206}
   zoneValueDisplay: {fileID: 422116388}
   originalOwnerFlag: {fileID: 1397811433}
+  isCapital: 0
 --- !u!1001 &1349170310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71982,6 +72234,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 406564419}
   zoneValueDisplay: {fileID: 1200376413}
   originalOwnerFlag: {fileID: 380332814}
+  isCapital: 0
 --- !u!1001 &1356652538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73235,6 +73488,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1499673771}
   zoneValueDisplay: {fileID: 142443973}
   originalOwnerFlag: {fileID: 902465203}
+  isCapital: 0
 --- !u!1001 &1376015407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73461,6 +73715,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 296423782}
   zoneValueDisplay: {fileID: 402728597}
   originalOwnerFlag: {fileID: 991865573}
+  isCapital: 0
 --- !u!1001 &1379550420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73654,6 +73909,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1018276656}
   zoneValueDisplay: {fileID: 1466112123}
   originalOwnerFlag: {fileID: 1009552445}
+  isCapital: 0
 --- !u!1001 &1387141225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74123,6 +74379,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 836657731}
   zoneValueDisplay: {fileID: 493378734}
   originalOwnerFlag: {fileID: 1560643832}
+  isCapital: 0
 --- !u!1001 &1397811432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74459,6 +74716,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1123870890}
   zoneValueDisplay: {fileID: 522777210}
   originalOwnerFlag: {fileID: 386080520}
+  isCapital: 0
 --- !u!1001 &1402411700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75238,6 +75496,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2013652265}
   zoneValueDisplay: {fileID: 1607086426}
   originalOwnerFlag: {fileID: 1622600638}
+  isCapital: 0
 --- !u!1001 &1421430450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76115,6 +76374,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 400462162}
   zoneValueDisplay: {fileID: 320638742}
   originalOwnerFlag: {fileID: 2118181181}
+  isCapital: 0
 --- !u!1 &1430997633
 GameObject:
   m_ObjectHideFlags: 0
@@ -76226,6 +76486,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 969536543}
   zoneValueDisplay: {fileID: 821220959}
   originalOwnerFlag: {fileID: 114751873}
+  isCapital: 0
 --- !u!1001 &1431228628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76237,6 +76498,14 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77009,6 +77278,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1322560808}
   zoneValueDisplay: {fileID: 1782633762}
   originalOwnerFlag: {fileID: 776288558}
+  isCapital: 0
 --- !u!1001 &1440489594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78031,6 +78301,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1866480292}
   zoneValueDisplay: {fileID: 739443955}
   originalOwnerFlag: {fileID: 2098678817}
+  isCapital: 0
 --- !u!1 &1455683083
 GameObject:
   m_ObjectHideFlags: 0
@@ -80526,6 +80797,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 611096363}
   zoneValueDisplay: {fileID: 1423818673}
   originalOwnerFlag: {fileID: 1749236224}
+  isCapital: 0
 --- !u!1001 &1483845767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80703,6 +80975,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 696429091}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1651351470}
+  isCapital: 0
 --- !u!1001 &1486207513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81113,6 +81386,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 154764976}
   zoneValueDisplay: {fileID: 621283317}
   originalOwnerFlag: {fileID: 542129524}
+  isCapital: 1
 --- !u!1 &1490200029
 GameObject:
   m_ObjectHideFlags: 0
@@ -82471,6 +82745,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1470049097}
   zoneValueDisplay: {fileID: 570492295}
   originalOwnerFlag: {fileID: 160406659}
+  isCapital: 1
 --- !u!1001 &1515577391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83745,6 +84020,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1705775617}
   zoneValueDisplay: {fileID: 1487466376}
   originalOwnerFlag: {fileID: 1529622777}
+  isCapital: 0
 --- !u!1001 &1552575645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84179,6 +84455,14 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -85380,11 +85664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.7576046
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.9583235
+      value: 2.73
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -85540,6 +85824,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1269603186}
   zoneValueDisplay: {fileID: 1493030930}
   originalOwnerFlag: {fileID: 934730080}
+  isCapital: 0
 --- !u!1001 &1589278268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85959,6 +86244,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1839173715}
   zoneValueDisplay: {fileID: 1830752355}
   originalOwnerFlag: {fileID: 738779107}
+  isCapital: 0
 --- !u!1001 &1594592016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86057,11 +86343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.0550575
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.2617588
+      value: 5.31
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -86250,6 +86536,14 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87158,6 +87452,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1968681259}
   zoneValueDisplay: {fileID: 107781205}
   originalOwnerFlag: {fileID: 1167032752}
+  isCapital: 0
 --- !u!1001 &1607086424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87689,11 +87984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.75
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.25
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -88189,6 +88484,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1964773194}
   zoneValueDisplay: {fileID: 1070594764}
   originalOwnerFlag: {fileID: 1606253912}
+  isCapital: 0
 --- !u!1 &1621087409
 GameObject:
   m_ObjectHideFlags: 0
@@ -88752,6 +89048,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 214490402}
   zoneValueDisplay: {fileID: 492113065}
   originalOwnerFlag: {fileID: 1606436780}
+  isCapital: 0
 --- !u!1 &1633834837
 GameObject:
   m_ObjectHideFlags: 0
@@ -89643,6 +89940,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1550424322}
   zoneValueDisplay: {fileID: 1078583083}
   originalOwnerFlag: {fileID: 763966823}
+  isCapital: 0
 --- !u!1001 &1647128106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90915,6 +91213,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 463956654}
   zoneValueDisplay: {fileID: 1685929390}
   originalOwnerFlag: {fileID: 269951543}
+  isCapital: 1
 --- !u!1001 &1660512963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91442,6 +91741,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 947557225}
   zoneValueDisplay: {fileID: 2029794991}
   originalOwnerFlag: {fileID: 966566106}
+  isCapital: 0
 --- !u!1001 &1671257672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91708,6 +92008,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2049566453}
   zoneValueDisplay: {fileID: 1284504427}
   originalOwnerFlag: {fileID: 1847131218}
+  isCapital: 0
 --- !u!1001 &1677026077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91899,6 +92200,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1810602721}
   zoneValueDisplay: {fileID: 307078181}
   originalOwnerFlag: {fileID: 2029127177}
+  isCapital: 0
 --- !u!1 &1680742540
 GameObject:
   m_ObjectHideFlags: 0
@@ -92016,6 +92318,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1316836658}
   zoneValueDisplay: {fileID: 337862696}
   originalOwnerFlag: {fileID: 1838238842}
+  isCapital: 1
 --- !u!1001 &1680903809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92394,11 +92697,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.7377014
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.1338997
+      value: -3.22
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -92988,6 +93291,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1874839157}
   zoneValueDisplay: {fileID: 51807222}
   originalOwnerFlag: {fileID: 294463942}
+  isCapital: 0
 --- !u!1001 &1700183770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93968,6 +94272,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 711664447}
   zoneValueDisplay: {fileID: 1202104411}
   originalOwnerFlag: {fileID: 511305685}
+  isCapital: 0
 --- !u!1001 &1713402736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94229,6 +94534,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1328600172}
   zoneValueDisplay: {fileID: 1724172150}
   originalOwnerFlag: {fileID: 245054271}
+  isCapital: 0
 --- !u!1001 &1715809803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94861,6 +95167,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 316430414}
   zoneValueDisplay: {fileID: 1445522187}
   originalOwnerFlag: {fileID: 1490401954}
+  isCapital: 0
 --- !u!1001 &1729242401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95183,6 +95490,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1349170312}
   zoneValueDisplay: {fileID: 2029435722}
   originalOwnerFlag: {fileID: 594863337}
+  isCapital: 0
 --- !u!1001 &1730526489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95499,6 +95807,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 942030740}
   zoneValueDisplay: {fileID: 1594592018}
   originalOwnerFlag: {fileID: 1208410106}
+  isCapital: 1
 --- !u!1001 &1736440524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96278,6 +96587,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 208936675}
   zoneValueDisplay: {fileID: 1707655772}
   originalOwnerFlag: {fileID: 1713421388}
+  isCapital: 0
 --- !u!1001 &1754461937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96668,6 +96978,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 119255558}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 758252101}
+  isCapital: 0
 --- !u!1001 &1764265566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97173,6 +97484,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1007513597}
   zoneValueDisplay: {fileID: 226643952}
   originalOwnerFlag: {fileID: 891313806}
+  isCapital: 0
 --- !u!1 &1775261578
 GameObject:
   m_ObjectHideFlags: 0
@@ -97479,6 +97791,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 816731256}
   zoneValueDisplay: {fileID: 1655511917}
   originalOwnerFlag: {fileID: 1950324810}
+  isCapital: 0
 --- !u!1001 &1776269261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98853,6 +99166,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1281039296}
   zoneValueDisplay: {fileID: 647247433}
   originalOwnerFlag: {fileID: 1775533493}
+  isCapital: 0
 --- !u!1001 &1791102420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99244,6 +99558,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountryFlagIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.83
@@ -99417,6 +99739,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1080452548}
   zoneValueDisplay: {fileID: 782098331}
   originalOwnerFlag: {fileID: 1039756055}
+  isCapital: 0
 --- !u!1001 &1795085114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99811,6 +100134,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1901583885}
   zoneValueDisplay: {fileID: 1873290850}
   originalOwnerFlag: {fileID: 1581835907}
+  isCapital: 0
 --- !u!1 &1801945330
 GameObject:
   m_ObjectHideFlags: 0
@@ -99926,6 +100250,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 517439325}
   zoneValueDisplay: {fileID: 618552408}
   originalOwnerFlag: {fileID: 1581112689}
+  isCapital: 0
 --- !u!1001 &1802604136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100171,6 +100496,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1825796111}
   zoneValueDisplay: {fileID: 1285947203}
   originalOwnerFlag: {fileID: 148757060}
+  isCapital: 1
 --- !u!1001 &1809037589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100756,6 +101082,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1410394305}
   zoneValueDisplay: {fileID: 479552217}
   originalOwnerFlag: {fileID: 1447994994}
+  isCapital: 0
 --- !u!1 &1814227948
 GameObject:
   m_ObjectHideFlags: 0
@@ -100870,6 +101197,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 463558960}
   zoneValueDisplay: {fileID: 1209634639}
   originalOwnerFlag: {fileID: 2129314801}
+  isCapital: 0
 --- !u!1 &1816831522
 GameObject:
   m_ObjectHideFlags: 0
@@ -100985,6 +101313,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1710311757}
   zoneValueDisplay: {fileID: 1467091023}
   originalOwnerFlag: {fileID: 164512064}
+  isCapital: 0
 --- !u!1001 &1818561973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101568,6 +101897,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2127592923}
   zoneValueDisplay: {fileID: 1791102422}
   originalOwnerFlag: {fileID: 2092622509}
+  isCapital: 0
 --- !u!1001 &1825227713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101771,7 +102101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.7404976
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -101820,6 +102150,14 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -102247,6 +102585,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2121002432}
   zoneValueDisplay: {fileID: 619940088}
   originalOwnerFlag: {fileID: 995569750}
+  isCapital: 0
 --- !u!1001 &1830965941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102773,13 +103112,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountryFlagIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.03
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.78
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -103784,6 +104143,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 556953921}
   zoneValueDisplay: {fileID: 641837557}
   originalOwnerFlag: {fileID: 2028077183}
+  isCapital: 0
 --- !u!1 &1852740749
 GameObject:
   m_ObjectHideFlags: 0
@@ -103901,6 +104261,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1441242267}
   zoneValueDisplay: {fileID: 1599858619}
   originalOwnerFlag: {fileID: 184097129}
+  isCapital: 0
 --- !u!1 &1853642821
 GameObject:
   m_ObjectHideFlags: 0
@@ -104591,6 +104952,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 947894555}
   zoneValueDisplay: {fileID: 1784932880}
   originalOwnerFlag: {fileID: 417023655}
+  isCapital: 0
 --- !u!1001 &1868999634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105261,6 +105623,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 501525268}
   zoneValueDisplay: {fileID: 462253801}
   originalOwnerFlag: {fileID: 2129756832}
+  isCapital: 0
 --- !u!1 &1877805607
 GameObject:
   m_ObjectHideFlags: 0
@@ -105377,6 +105740,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 483126124}
   zoneValueDisplay: {fileID: 580312422}
   originalOwnerFlag: {fileID: 1777101151}
+  isCapital: 0
 --- !u!1001 &1877830422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105640,6 +106004,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 716698151}
   zoneValueDisplay: {fileID: 2021233295}
   originalOwnerFlag: {fileID: 1333735688}
+  isCapital: 0
 --- !u!1001 &1879183931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105986,6 +106351,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1658008112}
   zoneValueDisplay: {fileID: 43328049}
   originalOwnerFlag: {fileID: 1954980493}
+  isCapital: 0
 --- !u!1001 &1886579568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106426,6 +106792,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1795657658}
   zoneValueDisplay: {fileID: 1793202408}
   originalOwnerFlag: {fileID: 1825921695}
+  isCapital: 0
 --- !u!1001 &1899567397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106950,6 +107317,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 930821434}
   zoneValueDisplay: {fileID: 1224741783}
   originalOwnerFlag: {fileID: 1520377187}
+  isCapital: 0
 --- !u!1001 &1912084714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107971,6 +108339,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1924975109}
   zoneValueDisplay: {fileID: 2145406045}
   originalOwnerFlag: {fileID: 463848516}
+  isCapital: 0
 --- !u!1001 &1931756591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109505,6 +109874,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1617044736}
   zoneValueDisplay: {fileID: 736173157}
   originalOwnerFlag: {fileID: 345722003}
+  isCapital: 1
 --- !u!1001 &1966600804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110656,6 +111026,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1979979240}
   zoneValueDisplay: {fileID: 437694211}
   originalOwnerFlag: {fileID: 1573180477}
+  isCapital: 0
 --- !u!1001 &1979979238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111051,6 +111422,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1784801379}
   zoneValueDisplay: {fileID: 1270987554}
   originalOwnerFlag: {fileID: 916494963}
+  isCapital: 0
 --- !u!1001 &1986925653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111413,6 +111785,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1448887464}
   zoneValueDisplay: {fileID: 1653777240}
   originalOwnerFlag: {fileID: 246256404}
+  isCapital: 0
 --- !u!1001 &1991240054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111887,6 +112260,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 482883623}
   zoneValueDisplay: {fileID: 2051560908}
   originalOwnerFlag: {fileID: 1362310559}
+  isCapital: 0
 --- !u!1 &1997836284
 GameObject:
   m_ObjectHideFlags: 0
@@ -112164,6 +112538,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 874387300}
   zoneValueDisplay: {fileID: 1192720475}
   originalOwnerFlag: {fileID: 253410344}
+  isCapital: 0
 --- !u!1001 &2010618279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112427,6 +112802,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1421430452}
   zoneValueDisplay: {fileID: 1145501801}
   originalOwnerFlag: {fileID: 1558993009}
+  isCapital: 0
 --- !u!1001 &2013652263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113657,6 +114033,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountryFlagIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.16
@@ -114870,6 +115254,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1852721438}
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1067154795}
+  isCapital: 0
 --- !u!1 &2046348843
 GameObject:
   m_ObjectHideFlags: 0
@@ -114984,6 +115369,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1206359782}
   zoneValueDisplay: {fileID: 768291289}
   originalOwnerFlag: {fileID: 1027835586}
+  isCapital: 0
 --- !u!1001 &2048044064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115712,6 +116098,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1603414353}
   zoneValueDisplay: {fileID: 1782137991}
   originalOwnerFlag: {fileID: 1431228629}
+  isCapital: 0
 --- !u!1001 &2063846076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116024,6 +116411,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 254768400}
   zoneValueDisplay: {fileID: 1715809805}
   originalOwnerFlag: {fileID: 1018778003}
+  isCapital: 0
 --- !u!1001 &2070242374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116574,6 +116962,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 507310286}
   zoneValueDisplay: {fileID: 178887197}
   originalOwnerFlag: {fileID: 2032707437}
+  isCapital: 0
 --- !u!1001 &2083759743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116818,6 +117207,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1037765419}
   zoneValueDisplay: {fileID: 1795085116}
   originalOwnerFlag: {fileID: 223377548}
+  isCapital: 0
 --- !u!1001 &2090981859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117076,6 +117466,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 715502706}
   zoneValueDisplay: {fileID: 532523492}
   originalOwnerFlag: {fileID: 1475419624}
+  isCapital: 0
 --- !u!1001 &2092622508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117941,6 +118332,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 2096634785}
   zoneValueDisplay: {fileID: 1993920922}
   originalOwnerFlag: {fileID: 238360039}
+  isCapital: 0
 --- !u!1 &2101081791
 GameObject:
   m_ObjectHideFlags: 0
@@ -119085,6 +119477,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 848661483}
   zoneValueDisplay: {fileID: 1149953659}
   originalOwnerFlag: {fileID: 356532455}
+  isCapital: 0
 --- !u!1 &2124971340
 GameObject:
   m_ObjectHideFlags: 0
@@ -121072,6 +121465,7 @@ MonoBehaviour:
   zoneNameDisplay: {fileID: 1991240056}
   zoneValueDisplay: {fileID: 1655863009}
   originalOwnerFlag: {fileID: 511197274}
+  isCapital: 0
 --- !u!1001 &2145992184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121407,6 +121801,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13ab5f95c96abd4aaec459cbc205a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &8412147527029203568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 893284595}
+    m_Modifications:
+    - target: {fileID: 2070894835968697617, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_Name
+      value: IncomeEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

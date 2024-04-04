@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Belgium
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.020489542, g: 0.38599992, b: 0.9308176, a: 1}
+  flag: {fileID: 0}
+  ownershipColor: {r: 0.050432995, g: 0.29124182, b: 0.6415094, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
   - {fileID: 11400000, guid: 50942f76d8fb75b488935905a2c5e47e, type: 2}
