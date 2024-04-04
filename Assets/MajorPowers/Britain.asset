@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Britain
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.72327036, g: 0.56260306, b: 0.28430432, a: 1}
+  flag: {fileID: -853259743, guid: d28494bcbf011784392176be63471426, type: 3}
+  ownershipColor: {r: 0.84276724, g: 0.7253771, b: 0.5220916, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 42ef1caefe1a62c4bbdfe15c47071962, type: 2}
   - {fileID: 11400000, guid: ef635bf2d9b165944b0ea906e1af38ee, type: 2}
@@ -89,4 +90,3 @@ MonoBehaviour:
     modifier: -2
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: -1
-  flag: {fileID: 21300000, guid: ca60db2b4f23d8649beb0fa6549fc526, type: 3}

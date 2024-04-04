@@ -15,6 +15,7 @@ public class InitialOwnershipState : ScriptableObject{
 
 	[SerializeField] private List<OwnedTerritories> ownerships = new List<OwnedTerritories>();
 
+	public List<OwnedTerritories> Ownerships { get { return ownerships; } }
 
 
 }

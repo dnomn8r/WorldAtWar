@@ -7,14 +7,37 @@ public class WorldMapInitializer : MonoBehaviour{
 
 	[SerializeField] private List<MinorPower> minorPowers;
 
+	[SerializeField] private Sprite neutralFlag;
+
+	[Space]
+
+	[SerializeField] private InitialGameState initialGameState;
+
+
+	private Dictionary<LandTerritory, LandZone> landZoneMapping = new Dictionary<LandTerritory, LandZone>();
+
 	private void Start() {
 
+		MapLandZones();
+
 		InitializeOriginalTerritories();
+
+		InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
+	}
+
+	private void MapLandZones() {
+
+		landZoneMapping.Clear();
+
+		List<LandZone> currentLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
+
+		foreach (LandZone zone in currentLandZones) {
+
+			landZoneMapping.Add(zone.LandTerritory, zone);
+		}
 	}
 
 	private void InitializeOriginalTerritories() {
-
-		List<LandZone> currentLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
 
 		List<LandZone> usedLandZones = new List<LandZone>();
 
@@ -22,19 +45,9 @@ public class WorldMapInitializer : MonoBehaviour{
 
 			foreach (LandTerritory currentTerritory in majorPower.LandTerritories) {
 
-				foreach (LandZone zone in currentLandZones) {
+				landZoneMapping[currentTerritory].SetOriginalOwner(majorPower);
 
-					if (zone.LandTerritory == currentTerritory) {
-
-						if (zone.LandTerritory == currentTerritory) {
-
-							zone.SetOriginalOwner(majorPower);
-
-							usedLandZones.Add(zone);
-							break;
-						}
-					}
-				}
+				usedLandZones.Add(landZoneMapping[currentTerritory]);
 			}
 		}
 
@@ -42,29 +55,36 @@ public class WorldMapInitializer : MonoBehaviour{
 
 			foreach (LandTerritory currentTerritory in minorPower.LandTerritories) {
 
-				foreach (LandZone zone in currentLandZones) {
+				landZoneMapping[currentTerritory].SetOriginalOwner(minorPower);
 
-					if (zone.LandTerritory == currentTerritory) {
-
-						zone.SetOriginalOwner(minorPower);
-
-						usedLandZones.Add(zone);
-						break;
-					}
-				}
+				usedLandZones.Add(landZoneMapping[currentTerritory]);					
 			}
 		}
 
-		foreach(LandZone zone in usedLandZones) {
-			currentLandZones.Remove(zone);
+		List<LandZone> allLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
+
+		foreach (LandZone zone in allLandZones) {
+
+			if (!usedLandZones.Contains(zone)) {
+
+				Country newCountry = ScriptableObject.CreateInstance<Country>();
+				newCountry.name = zone.name;
+				newCountry.Flag = neutralFlag;
+
+				zone.SetOriginalOwner(newCountry);
+			}
 		}
 
-		foreach(LandZone zone in currentLandZones) {
+	}
 
-			Country newCountry = ScriptableObject.CreateInstance<Country>();
-			newCountry.name = zone.name;
+	private void InitializeOwnershipState(InitialOwnershipState ownershipState) {
 
-			zone.SetOriginalOwner(newCountry);
+		foreach(InitialOwnershipState.OwnedTerritories ownership in ownershipState.Ownerships) {
+
+			foreach(LandTerritory territory in ownership.territories) {
+
+				landZoneMapping[territory].SetCurrentOwner(ownership.country);
+			}
 		}
 
 	}

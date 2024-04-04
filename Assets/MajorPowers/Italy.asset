@@ -46,4 +46,4 @@ MonoBehaviour:
     modifier: 0
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: 0
-  flag: {fileID: 21300000, guid: 58381d91ce7bd3f4e855ff08da1915e3, type: 3}
+  flag: {fileID: 340967567, guid: d28494bcbf011784392176be63471426, type: 3}

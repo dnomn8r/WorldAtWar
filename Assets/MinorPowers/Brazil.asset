@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Brazil
   m_EditorClassIdentifier: 
-  ownershipColor: {r: 0.6330643, g: 0.91823894, b: 0.33206737, a: 1}
+  flag: {fileID: 0}
+  ownershipColor: {r: 0.86596173, g: 1, b: 0.72641504, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
   - {fileID: 11400000, guid: 418c97dd340e93a469adcaddabcdbb55, type: 2}

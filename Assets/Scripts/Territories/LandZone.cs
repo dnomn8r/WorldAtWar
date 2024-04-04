@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class LandZone : Zone{
 
@@ -23,7 +24,48 @@ public class LandZone : Zone{
         }
     }
 
-    public override Color BaseColor {
+	[MenuItem("Zones/Hookup Components")]
+	static void HookupComponents() {
+
+		LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+
+		foreach (LandZone zone in zones) {
+
+			ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
+			if(zoneNameDisplay != null) {
+				zone.ZoneNameDisplay = zoneNameDisplay;
+			} else {
+				Debug.LogError("missing zone name display on " + zone.name, zone);
+			}
+
+			ZoneValueDisplay zoneValueDisplay = zone.GetComponentInChildren<ZoneValueDisplay>();
+
+			if (zoneValueDisplay != null) {
+				zone.ZoneValueDisplay = zoneValueDisplay;
+			} else if(zone.Value > 0){
+				Debug.LogError("missing zone value display on " + zone.name, zone);
+			}
+
+			SpriteRenderer[] renderers = zone.GetComponentsInChildren<SpriteRenderer>();
+
+
+			List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
+
+			foreach (SpriteRenderer renderer in renderers) {
+
+				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && renderer != zone.OriginalOwnerFlag) {
+					landRenderers.Add(renderer);
+				}
+			}
+
+			zone.LandRenderers = landRenderers;
+
+		}
+
+	}
+
+
+	public override Color BaseColor {
 		get {
 			return Color.white;
 		}
@@ -71,10 +113,66 @@ public class LandZone : Zone{
 
 	public int Value { get { return landTerritory.Value; } }
 
-	public Country OriginalOwner { get; private set; }
-	public Country CurrentOwner { get; private set; }
+	private Country originalOwner;
+	public Country OriginalOwner {
+		get {
+			return originalOwner;
+		}
 
-	private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
+		private set {
+			originalOwner = value;
+			currentOwner = value;
+
+			OriginalOwnerFlag.sprite = OriginalOwner.Flag;
+
+			UpdateLandColors();
+			UpdateOwnerFlag();
+		}
+	}
+
+	private Country currentOwner;
+	public Country CurrentOwner { 
+		get { return currentOwner; }
+
+		private set {
+			currentOwner = value;
+
+			UpdateLandColors();
+			UpdateOwnerFlag();
+		}
+	}
+
+	[SerializeField] private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
+
+	public List<SpriteRenderer> LandRenderers {
+
+		get { return landRenderers; }
+#if UNITY_EDITOR
+
+		set { landRenderers = value; }
+#endif
+	}
+
+
+	[SerializeField] private ZoneNameDisplay zoneNameDisplay;
+	public ZoneNameDisplay ZoneNameDisplay {
+
+		get { return zoneNameDisplay; }
+#if UNITY_EDITOR
+
+		set { zoneNameDisplay = value; }
+#endif
+	}
+
+	[SerializeField] private ZoneValueDisplay zoneValueDisplay;
+	public ZoneValueDisplay ZoneValueDisplay {
+
+		get { return zoneValueDisplay; }
+#if UNITY_EDITOR
+
+		set { zoneValueDisplay = value; }
+#endif
+	}
 
 	[SerializeField] private SpriteRenderer originalOwnerFlag;
     public SpriteRenderer OriginalOwnerFlag {
@@ -88,36 +186,32 @@ public class LandZone : Zone{
 
     private void Awake() {
 
-		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
-
-		foreach (SpriteRenderer renderer in renderers) {
-
-			if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
-				landRenderers.Add(renderer);
-			}
+		if (Value > 0) {
+			ZoneValueDisplay.SetValue(Value);
 		}
 	}
 
 	public void SetOriginalOwner(Country country) {
 
 		OriginalOwner = country;
-
-		UpdateLandColors();
 	}
 
 	public void SetCurrentOwner(Country country) {
 
-		CurrentOwner = country;
-
-		UpdateLandColors();
+		CurrentOwner = country;		
 	}
 
 	private void UpdateLandColors() {
 
 		foreach (SpriteRenderer renderer in landRenderers) {
 
-			renderer.color = OriginalOwner.OwnershipColor;
+			renderer.color = CurrentOwner.OwnershipColor;
 		}
+	}
+
+	private void UpdateOwnerFlag() {
+
+		OriginalOwnerFlag.gameObject.SetActive(OriginalOwner != CurrentOwner);
 	}
 
 }
