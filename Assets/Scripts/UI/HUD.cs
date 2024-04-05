@@ -5,21 +5,30 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour {
 
-	[SerializeField] private Toggle toggleIncomeButton;
-	[SerializeField] private GameObject incomeTogglePanel;
+    private static HUD instance;
+    public static HUD Instance {
+        get { return instance; }
+    }
 
-	void Start() {
+    private void Awake() {
+        instance = this;
+    }
 
-		incomeTogglePanel.SetActive(toggleIncomeButton.isOn);
+    [SerializeField] private Toggle toggleIncomeButton;
+	[SerializeField] private IncomePanel incomeTogglePanel;
+
+	public void Initialize() {
+
+		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
+
+		incomeTogglePanel.UpdateIncomes();
 	}
 						   
 	void ToggleIncomeGroup(bool isActive) {
 
-		Debug.Log("You have clicked the button!");
-
-		incomeTogglePanel.SetActive(toggleIncomeButton.isOn);
+		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 	}
 
 }

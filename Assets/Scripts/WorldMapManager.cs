@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldMapInitializer : MonoBehaviour{
+public class WorldMapManager : MonoBehaviour{
 
 	[SerializeField] private List<MajorPower> majorPowers;
 
@@ -16,22 +16,36 @@ public class WorldMapInitializer : MonoBehaviour{
 
 	private Dictionary<LandTerritory, LandZone> landZoneMapping = new Dictionary<LandTerritory, LandZone>();
 
-	private void Start() {
+	private List<LandZone> allLandZones;
 
-		MapLandZones();
+
+    private static WorldMapManager instance;
+    public static WorldMapManager Instance {
+        get { return instance; }
+    }
+
+    private void Awake() {
+        instance = this;
+    }
+
+    private void Start() {
+
+		allLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
+
+        MapLandZones();
 
 		InitializeOriginalTerritories();
 
 		InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
+
+		HUD.Instance.Initialize();
 	}
 
 	private void MapLandZones() {
 
-		landZoneMapping.Clear();
+		landZoneMapping.Clear();		
 
-		List<LandZone> currentLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
-
-		foreach (LandZone zone in currentLandZones) {
+		foreach (LandZone zone in allLandZones) {
 
 			landZoneMapping.Add(zone.LandTerritory, zone);
 		}
@@ -87,6 +101,21 @@ public class WorldMapInitializer : MonoBehaviour{
 			}
 		}
 
+	}
+
+	public int GetIncome(Country country) {
+
+		int totalIncome = 0;
+
+		for(int i = 0;i<allLandZones.Count;i++) {
+
+			if (allLandZones[i].CurrentOwner == country) {
+
+				totalIncome += allLandZones[i].Value;
+			}
+		}
+
+		return totalIncome;
 	}
 
 }
