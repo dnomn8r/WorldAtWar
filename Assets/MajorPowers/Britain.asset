@@ -64,6 +64,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e72f26098d9daf14bae6cf1fd50dc49c, type: 2}
   - {fileID: 11400000, guid: 21f401e25db51f644ac46cc8f4f6db02, type: 2}
   - {fileID: 11400000, guid: 383e3881fd1ac75468e34beb8ce7e337, type: 2}
+  - {fileID: 11400000, guid: a77bf585e355f3a4da2b0c12f0430917, type: 2}
   unitCostModifiers:
   - unitType: {fileID: 11400000, guid: 2cf4f7887d6d44849baab0273892ad18, type: 2}
     modifier: 0

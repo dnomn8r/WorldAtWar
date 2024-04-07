@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f9596f5f6c2c429bcd16345bd24b6, type: 3}
   m_Name: Spain
   m_EditorClassIdentifier: 
+  flag: {fileID: 0}
   ownershipColor: {r: 0.8616352, g: 0.6041116, b: 0.25198755, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
@@ -19,4 +20,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89c79d26946caa5418309cf268399f00, type: 2}
   - {fileID: 11400000, guid: c2b171ecdebedb441b392cb893022915, type: 2}
   - {fileID: 11400000, guid: 7b04cc432abda99478862335c0fb04ef, type: 2}
-  - {fileID: 11400000, guid: a77bf585e355f3a4da2b0c12f0430917, type: 2}
