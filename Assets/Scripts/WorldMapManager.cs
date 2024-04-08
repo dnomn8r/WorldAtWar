@@ -38,6 +38,10 @@ public class WorldMapManager : MonoBehaviour{
 
 		InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
 
+		InitializeNeutralStates(initialGameState.InitialNeutralState);
+
+		InitializeCountryStates(initialGameState.InitialCountryStates);
+
 		HUD.Instance.Initialize();
 	}
 
@@ -97,10 +101,37 @@ public class WorldMapManager : MonoBehaviour{
 
 			foreach(LandTerritory territory in ownership.territories) {
 
-				landZoneMapping[territory].SetCurrentOwner(ownership.country);
+				landZoneMapping[territory].SetCurrentOwner(ownership.country);	
 			}
 		}
+	}
 
+	private void InitializeNeutralStates(InitialLandTerritoryState neutralLandTerritoryState) {
+
+		foreach(LandTerritoryEntry landEntry in neutralLandTerritoryState.TerritoryEntries) {
+
+			landZoneMapping[landEntry.LandTerritory].SetFactory(landEntry.Factory);
+
+			// add units here
+		}
+	}
+
+	private void InitializeCountryStates(List<InitialCountryState> initialCountryStates) {
+
+		foreach(InitialCountryState countryState in initialCountryStates) {
+
+			foreach(LandTerritoryEntry landEntry in countryState.TerritoryEntries) {
+
+				landZoneMapping[landEntry.LandTerritory].SetFactory(landEntry.Factory);
+
+				// add units here
+			}
+
+			foreach (WaterTerritoryEntry waterEntry in countryState.WaterTerritoryEntries) {
+
+				// add units here
+			}
+		}
 	}
 
 	public int GetIncome(Country country) {

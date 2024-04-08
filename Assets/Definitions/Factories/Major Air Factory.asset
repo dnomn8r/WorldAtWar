@@ -16,4 +16,5 @@ MonoBehaviour:
   validUnitTypes:
   - {fileID: 11400000, guid: 953f2aa5886fe6648b07cc268ab56912, type: 2}
   - {fileID: 11400000, guid: 37f74fa8862c07d41b4a6237fcdc3007, type: 2}
+  factoryIcon: {fileID: 2100157419, guid: 6daf1dd37b97a3a4792d2a75da541e18, type: 3}
   cost: 9

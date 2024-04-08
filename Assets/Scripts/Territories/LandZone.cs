@@ -191,6 +191,8 @@ public class LandZone : Zone{
 		if (Value > 0) {
 			ZoneValueDisplay.SetValue(Value);
 		}
+
+		SetFactory(null);
 	}
 
 	public void SetOriginalOwner(Country country) {
@@ -201,6 +203,23 @@ public class LandZone : Zone{
 	public void SetCurrentOwner(Country country) {
 
 		CurrentOwner = country;		
+	}
+
+	public void SetFactory(Factory factory) {
+
+		if (factory != null) {
+
+			ZoneValueDisplay.GetComponent<SpriteRenderer>().sprite = factory.FactoryIcon;
+
+		} else {
+
+			if (ZoneValueDisplay != null) {
+
+				Sprite[] circles = Resources.LoadAll<Sprite>("CircleOutline");
+
+				ZoneValueDisplay.GetComponent<SpriteRenderer>().sprite = circles[0];
+			}
+		}
 	}
 
 	private void UpdateLandColors() {

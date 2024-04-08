@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26a3c9c0ab313144f94f608acb3596c0, type: 3}
-  m_Name: Minor Sea Factory
+  m_Name: Major Naval Factory
   m_EditorClassIdentifier: 
-  factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
+  factoryType: {fileID: 11400000, guid: 9d0db8094fe009247b681231e10f7113, type: 2}
   validUnitTypes:
+  - {fileID: 11400000, guid: c32fb9c3f9c56b44bb07cd6671446da8, type: 2}
   - {fileID: 11400000, guid: f53f74f7314a63c4784fc0fca8e41a57, type: 2}
+  - {fileID: 11400000, guid: 73d94efd89ec67d45bc829866f7e44c8, type: 2}
   - {fileID: 11400000, guid: 6224ed48caedca544832ae03eec4c196, type: 2}
   - {fileID: 11400000, guid: 45237edfd15e0964e93bcdc847b96cd8, type: 2}
-  cost: 7
+  factoryIcon: {fileID: -1199244249, guid: 6daf1dd37b97a3a4792d2a75da541e18, type: 3}
+  cost: 11

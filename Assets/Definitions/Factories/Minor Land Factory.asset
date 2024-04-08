@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2cf4f7887d6d44849baab0273892ad18, type: 2}
   - {fileID: 11400000, guid: e1d88fce18dad2e489796e1179f535b4, type: 2}
   - {fileID: 11400000, guid: 61a0d62fc870e06469bffe4446a36dea, type: 2}
+  factoryIcon: {fileID: -1845195963, guid: 6daf1dd37b97a3a4792d2a75da541e18, type: 3}
   cost: 6

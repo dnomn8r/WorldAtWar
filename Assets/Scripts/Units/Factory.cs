@@ -10,6 +10,9 @@ public class Factory : ScriptableObject{
 
 	[SerializeField] private List<UnitType> validUnitTypes;
 
+	[SerializeField] private Sprite factoryIcon;
+	public Sprite FactoryIcon { get { return factoryIcon; } }
+
 	public bool CanBuildUnit(Unit unit) {
 
 		return validUnitTypes.Contains(unit.UnitType);
