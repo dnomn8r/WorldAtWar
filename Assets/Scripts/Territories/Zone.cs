@@ -106,8 +106,32 @@ public abstract class Zone : MonoBehaviour {
 		get { return adjacencies; }
 	}
 
+    [SerializeField] private List<SpriteRenderer> zoneRenderers = new List<SpriteRenderer>();
+
+    public List<SpriteRenderer> ZoneRenderers {
+
+        get { return zoneRenderers; }
+#if UNITY_EDITOR
+
+        set { zoneRenderers = value; }
+#endif
+    }
 
 
+    [SerializeField] private ZoneNameDisplay zoneNameDisplay;
+    public ZoneNameDisplay ZoneNameDisplay {
 
+        get { return zoneNameDisplay; }
+#if UNITY_EDITOR
+
+        set { zoneNameDisplay = value; }
+#endif
+    }
+
+
+	protected virtual void Awake() {
+
+		gameObject.AddComponent<PolygonCollider2D>();
+	}
 
 }

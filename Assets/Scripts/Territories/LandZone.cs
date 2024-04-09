@@ -27,38 +27,41 @@ public class LandZone : Zone{
 	[MenuItem("Zones/Hookup Components")]
 	static void HookupComponents() {
 
-		LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+		LandZone[] landZones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
 
-		foreach (LandZone zone in zones) {
-
-			ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
-			if(zoneNameDisplay != null) {
-				zone.ZoneNameDisplay = zoneNameDisplay;
-			} else {
-				Debug.LogError("missing zone name display on " + zone.name, zone);
-			}
+		foreach (LandZone zone in landZones) {
 
 			ZoneValueDisplay zoneValueDisplay = zone.GetComponentInChildren<ZoneValueDisplay>();
 
 			if (zoneValueDisplay != null) {
 				zone.ZoneValueDisplay = zoneValueDisplay;
-			} else if(zone.Value > 0){
+			} else if (zone.Value > 0) {
 				Debug.LogError("missing zone value display on " + zone.name, zone);
 			}
 
-			SpriteRenderer[] renderers = zone.GetComponentsInChildren<SpriteRenderer>();
+		}
 
+        Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
 
-			List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
+        foreach (Zone zone in zones) {
+
+            ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
+            if (zoneNameDisplay != null) {
+                zone.ZoneNameDisplay = zoneNameDisplay;
+            }
+
+            SpriteRenderer[] renderers = zone.GetComponentsInChildren<SpriteRenderer>();
+
+			List<SpriteRenderer> zoneRenderers = new List<SpriteRenderer>();
 
 			foreach (SpriteRenderer renderer in renderers) {
 
-				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && renderer != zone.OriginalOwnerFlag) {
-					landRenderers.Add(renderer);
+				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
+					zoneRenderers.Add(renderer);
 				}
 			}
 
-			zone.LandRenderers = landRenderers;
+			zone.ZoneRenderers = zoneRenderers;
 
 		}
 
@@ -142,27 +145,7 @@ public class LandZone : Zone{
 		}
 	}
 
-	[SerializeField] private List<SpriteRenderer> landRenderers = new List<SpriteRenderer>();
 
-	public List<SpriteRenderer> LandRenderers {
-
-		get { return landRenderers; }
-#if UNITY_EDITOR
-
-		set { landRenderers = value; }
-#endif
-	}
-
-
-	[SerializeField] private ZoneNameDisplay zoneNameDisplay;
-	public ZoneNameDisplay ZoneNameDisplay {
-
-		get { return zoneNameDisplay; }
-#if UNITY_EDITOR
-
-		set { zoneNameDisplay = value; }
-#endif
-	}
 
 	[SerializeField] private ZoneValueDisplay zoneValueDisplay;
 	public ZoneValueDisplay ZoneValueDisplay {
@@ -186,7 +169,9 @@ public class LandZone : Zone{
 
 	public bool isCapital = false;
 
-    private void Awake() {
+    protected override void Awake() {
+
+		base.Awake();
 
 		if (Value > 0) {
 			ZoneValueDisplay.SetValue(Value);
@@ -224,7 +209,7 @@ public class LandZone : Zone{
 
 	private void UpdateLandColors() {
 
-		foreach (SpriteRenderer renderer in landRenderers) {
+		foreach (SpriteRenderer renderer in ZoneRenderers) {
 
 			renderer.color = CurrentOwner.OwnershipColor;
 		}

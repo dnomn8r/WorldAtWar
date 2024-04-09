@@ -27,7 +27,9 @@ public class SeaZone : Zone{
 		}
 	}
 
-	private void Awake() {
+	protected override void Awake() {
+
+		base.Awake();
 
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
