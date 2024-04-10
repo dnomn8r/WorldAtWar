@@ -103,7 +103,7 @@ public abstract class Zone : MonoBehaviour {
 	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();
 
 	public List<Zone> Adjacencies {
-		get { return adjacencies; }
+		get { return adjacencies; }	
 	}
 
     [SerializeField] private List<SpriteRenderer> zoneRenderers = new List<SpriteRenderer>();
@@ -128,10 +128,23 @@ public abstract class Zone : MonoBehaviour {
 #endif
     }
 
+    protected virtual void Awake() {
 
-	protected virtual void Awake() {
-
-		gameObject.AddComponent<PolygonCollider2D>();
+		SetHoverState(false, false, false);
 	}
+
+	public void SetHoverState(bool hover, bool isAdjacency, bool isHazard) {
+
+        //Debug.Log("hovered zone: " + name, gameObject);
+
+		zoneNameDisplay.SetHoverState(hover, isAdjacency, isHazard);
+
+    }
+
+	public void SetSelectedState(bool selected) {
+
+	}
+
+
 
 }

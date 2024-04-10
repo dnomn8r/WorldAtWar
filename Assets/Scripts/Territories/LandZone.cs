@@ -57,6 +57,11 @@ public class LandZone : Zone{
 			foreach (SpriteRenderer renderer in renderers) {
 
 				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
+
+					if (renderer.GetComponent<PolygonCollider2D>() == null) {
+						renderer.AddComponent<PolygonCollider2D>();
+					}
+
 					zoneRenderers.Add(renderer);
 				}
 			}

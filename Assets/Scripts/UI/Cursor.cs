@@ -21,7 +21,7 @@ public class Cursor : MonoBehaviour {
 
         //Debug.DrawRay(selectionRay.origin, selectionRay.direction * 10000, Color.red);
 
-        Zone selectedZone = null;
+        Zone hoveredZone = null;
         int highestPriority = -10000;
 
         for (int i = 0; i < hitColliders.Length; i++) {
@@ -37,7 +37,7 @@ public class Cursor : MonoBehaviour {
                     if(highestPriority < spriteRenderer.sortingOrder) {
                         highestPriority = spriteRenderer.sortingOrder;
 
-                        selectedZone = zone;
+                        hoveredZone = zone;
                     }
                 }
 
@@ -45,14 +45,26 @@ public class Cursor : MonoBehaviour {
 
         }
 
-        if (currentlySelectedZone != selectedZone) {
-            if (selectedZone != null) {
-                Debug.Log("selected zone: " + selectedZone.name, selectedZone);
-            } else {
-                Debug.Log("no zone selected");
+        if (currentlySelectedZone != hoveredZone) {
+
+            if (currentlySelectedZone != null) {
+                currentlySelectedZone.SetHoverState(false, false, false);
+
+                // add deSELECTION of adjacencies and hazard adjacenices
             }
 
-            currentlySelectedZone = selectedZone;
+            if (hoveredZone != null) {
+
+                // add SELECTION of adjacencies and hazard adjacenices
+                hoveredZone.SetHoverState(true, false, false);
+                
+            } else {
+
+                Debug.Log("no zone selected");
+            }
+            
+
+            currentlySelectedZone = hoveredZone;
         }
        
 
