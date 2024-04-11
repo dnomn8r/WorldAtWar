@@ -4,25 +4,25 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
-public class LandZone : Zone{
+public class LandZone : Zone {
 
 #if UNITY_EDITOR
 
-    [MenuItem("Zones/Add Flags")]
-    static void AddFlagsToZones() {
+	[MenuItem("Zones/Add Flags")]
+	static void AddFlagsToZones() {
 
-        LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+		LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
 
-        foreach (LandZone zone in zones) {
+		foreach (LandZone zone in zones) {
 
 			GameObject newFlag = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Resources/CountryFlags/CountryFlagIndicator.prefab")) as GameObject;
 
 			newFlag.name = "CountryFlagIndicator";
-            newFlag.transform.SetParent(zone.transform, false);
+			newFlag.transform.SetParent(zone.transform, false);
 
 			zone.originalOwnerFlag = newFlag.GetComponent<SpriteRenderer>();
-        }
-    }
+		}
+	}
 
 	[MenuItem("Zones/Hookup Components")]
 	static void HookupComponents() {
@@ -41,16 +41,16 @@ public class LandZone : Zone{
 
 		}
 
-        Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
+		Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
 
-        foreach (Zone zone in zones) {
+		foreach (Zone zone in zones) {
 
-            ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
-            if (zoneNameDisplay != null) {
-                zone.ZoneNameDisplay = zoneNameDisplay;
-            }
+			ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
+			if (zoneNameDisplay != null) {
+				zone.ZoneNameDisplay = zoneNameDisplay;
+			}
 
-            SpriteRenderer[] renderers = zone.GetComponentsInChildren<SpriteRenderer>();
+			SpriteRenderer[] renderers = zone.GetComponentsInChildren<SpriteRenderer>();
 
 			List<SpriteRenderer> zoneRenderers = new List<SpriteRenderer>();
 
@@ -59,7 +59,7 @@ public class LandZone : Zone{
 				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
 
 					if (renderer.GetComponent<PolygonCollider2D>() == null) {
-						renderer.AddComponent<PolygonCollider2D>();
+						renderer.gameObject.AddComponent<PolygonCollider2D>();
 					}
 
 					zoneRenderers.Add(renderer);
@@ -94,7 +94,7 @@ public class LandZone : Zone{
 
 			if (zone != null) {
 
-				zone.ToggleHighlight(toggle, true);	
+				zone.ToggleHighlight(toggle, true);
 			} else {
 
 				Debug.LogError("zone is null in " + gameObject.name + " this should not happen");
@@ -103,18 +103,18 @@ public class LandZone : Zone{
 	}
 #endif
 
-    [SerializeField] private LandTerritory landTerritory;
+	[SerializeField] private LandTerritory landTerritory;
 
-    public LandTerritory LandTerritory{
+	public LandTerritory LandTerritory {
 
-        get { return landTerritory; }
+		get { return landTerritory; }
 #if UNITY_EDITOR
 
-        set { landTerritory = value; }
+		set { landTerritory = value; }
 #endif
-    }
+	}
 
-    [SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
+	[SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
 	public List<LandZone> HazardousAdjacencies {
 		get { return hazardousAdjacencies; }
 	}
@@ -139,7 +139,7 @@ public class LandZone : Zone{
 	}
 
 	private Country currentOwner;
-	public Country CurrentOwner { 
+	public Country CurrentOwner {
 		get { return currentOwner; }
 
 		private set {
@@ -163,18 +163,18 @@ public class LandZone : Zone{
 	}
 
 	[SerializeField] private SpriteRenderer originalOwnerFlag;
-    public SpriteRenderer OriginalOwnerFlag {
+	public SpriteRenderer OriginalOwnerFlag {
 
-        get { return originalOwnerFlag; }
+		get { return originalOwnerFlag; }
 #if UNITY_EDITOR
 
-        set { originalOwnerFlag = value; }
+		set { originalOwnerFlag = value; }
 #endif
-    }
+	}
 
 	public bool isCapital = false;
 
-    protected override void Awake() {
+	protected override void Awake() {
 
 		base.Awake();
 
@@ -192,7 +192,7 @@ public class LandZone : Zone{
 
 	public void SetCurrentOwner(Country country) {
 
-		CurrentOwner = country;		
+		CurrentOwner = country;
 	}
 
 	public void SetFactory(Factory factory) {
@@ -225,4 +225,14 @@ public class LandZone : Zone{
 		OriginalOwnerFlag.gameObject.SetActive(isCapital || OriginalOwner != CurrentOwner);
 	}
 
+	public override void SetHoverState(bool hover) {
+
+		base.SetHoverState(hover);
+
+		foreach(Zone zone in hazardousAdjacencies) {
+
+			zone.SetNameColor(hover ? "red" : null);
+		}
+
+	}
 }

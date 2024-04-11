@@ -48,7 +48,7 @@ public class Cursor : MonoBehaviour {
         if (currentlySelectedZone != hoveredZone) {
 
             if (currentlySelectedZone != null) {
-                currentlySelectedZone.SetHoverState(false, false, false);
+                currentlySelectedZone.SetHoverState(false);
 
                 // add deSELECTION of adjacencies and hazard adjacenices
             }
@@ -56,7 +56,7 @@ public class Cursor : MonoBehaviour {
             if (hoveredZone != null) {
 
                 // add SELECTION of adjacencies and hazard adjacenices
-                hoveredZone.SetHoverState(true, false, false);
+                hoveredZone.SetHoverState(true);
                 
             } else {
 

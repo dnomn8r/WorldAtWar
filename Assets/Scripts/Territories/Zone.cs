@@ -130,16 +130,27 @@ public abstract class Zone : MonoBehaviour {
 
     protected virtual void Awake() {
 
-		SetHoverState(false, false, false);
+		SetHoverState(false);
 	}
 
-	public void SetHoverState(bool hover, bool isAdjacency, bool isHazard) {
+	public virtual void SetHoverState(bool hover) {
 
         //Debug.Log("hovered zone: " + name, gameObject);
 
-		zoneNameDisplay.SetHoverState(hover, isAdjacency, isHazard);
+		SetNameColor(hover ? "yellow" : null);
+
+		foreach (Zone zone in adjacencies) {
+			zone.SetNameColor(hover ? "green" : null);
+		}
 
     }
+
+	public void SetNameColor(string color) {
+
+		if(ZoneNameDisplay != null) {
+			zoneNameDisplay.SetNameColor(color);
+		}
+	}
 
 	public void SetSelectedState(bool selected) {
 

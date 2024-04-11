@@ -27,17 +27,16 @@ public class ZoneNameDisplay : MonoBehaviour {
 	}
 #endif
 
-	public void SetHoverState(bool hover, bool isAdjacency, bool isHazard) {
+	public void SetNameColor(string colorName) {
 
 		if(originalString == null) {
 			originalString = textMesh.text;
 		}
 
-		if (isAdjacency) {
-            textMesh.text = "<color=" + (isHazard ? "red" : "green") + ">" + originalString + ">";
-        } else if (hover) {
-			textMesh.text = "<color=yellow>" + originalString + ">";
-		} else {
+		if (!string.IsNullOrEmpty(colorName)) {
+
+            textMesh.text = "<color=" + colorName + ">" + originalString + "</color>";
+        } else { 
 			textMesh.text = originalString;
 		}
     }
