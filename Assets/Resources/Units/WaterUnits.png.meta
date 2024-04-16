@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89a4f0df217714a44a512e9d594e1717
+guid: cc113a879a44b4b47bec05294ce73e22
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,106 +97,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Infantry
+      name: Battleship
       rect:
         serializedVersion: 2
-        x: 295
-        y: 1414
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.50212026, y: 0.5099556}
+        x: 108
+        y: 1526
+        width: 950
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94522fbc5342654b9a7d30fd7d35576
-      internalID: -993655857
+      spriteID: 8e5d82626525bec4392838ab3a81b6b6
+      internalID: 196059314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Artillery
+      name: Submarine
       rect:
         serializedVersion: 2
-        x: 1225
-        y: 881
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5043623, y: 0.4978806}
+        x: 49
+        y: 709
+        width: 950
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7198ef79d6483fc439d7057568d0d78b
-      internalID: 572612863
+      spriteID: c8d66797d5772de468407a3a001103e4
+      internalID: 2098372687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Armor
+      name: Destroyer
       rect:
         serializedVersion: 2
-        x: 347
-        y: 851
-        width: 500
-        height: 500
+        x: 1081
+        y: 748
+        width: 846
+        height: 455
       alignment: 9
-      pivot: {x: 0.4865428, y: 0.49361867}
+      pivot: {x: 0.49999985, y: 0.489116}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: becf4c0191bd02c489e4ee15f9ddb90a
-      internalID: 1198041265
+      spriteID: 8b2a662e900751e47941fa8f8e7fd145
+      internalID: -592184214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomber
+      name: Carrier
       rect:
         serializedVersion: 2
-        x: 1219
-        y: 208
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.52273977, y: 0.5114089}
+        x: 83
+        y: 152
+        width: 950
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf5f8cc8b3a8eb4f8b2a910bf4549a0
-      internalID: -449502080
+      spriteID: 8d4694d5514f11243ae009c0b5126997
+      internalID: 1180748153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fighter
+      name: Transport
       rect:
         serializedVersion: 2
-        x: 295
-        y: 203
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5054392, y: 0.5176079}
+        x: 1101
+        y: 104
+        width: 927
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff557cf6ba6b99343965d6dc788502cb
-      internalID: 1535806312
+      spriteID: 0584673763a185c4c98b2d02e68045c8
+      internalID: -24412
       vertices: []
       indices: 
       edges: []
@@ -204,7 +204,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f4bb8a7d17d62d64a9701f23432dc64a
+    spriteID: 1075bda58e1752449ad2992ac79c0898
     internalID: 0
     vertices: []
     indices: 
@@ -212,11 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Armor: 1198041265
-      Artillery: 572612863
-      Bomber: -449502080
-      Fighter: 1535806312
-      Infantry: -993655857
+      Battleship: 196059314
+      Carrier: 1180748153
+      Destroyer: -592184214
+      Submarine: 2098372687
+      Transport: -24412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
