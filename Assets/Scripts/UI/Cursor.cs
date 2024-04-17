@@ -57,6 +57,8 @@ public class Cursor : MonoBehaviour {
 
                 // add SELECTION of adjacencies and hazard adjacenices
                 hoveredZone.SetHoverState(true);
+
+                HUD.Instance.SetHoveredZone(hoveredZone);
                 
             } else {
 
