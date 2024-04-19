@@ -62,7 +62,7 @@ public class Cursor : MonoBehaviour {
                 
             } else {
 
-                Debug.Log("no zone selected");
+                //Debug.Log("no zone selected");
             }
             
 

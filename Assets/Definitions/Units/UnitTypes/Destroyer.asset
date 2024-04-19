@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0411dd308ad53e34e86f3dd1e6a11c7b, type: 3}
   m_Name: Destroyer
   m_EditorClassIdentifier: 
+  sprite: {fileID: -592184214, guid: cc113a879a44b4b47bec05294ce73e22, type: 3}

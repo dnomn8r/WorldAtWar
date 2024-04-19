@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0411dd308ad53e34e86f3dd1e6a11c7b, type: 3}
   m_Name: Armor
   m_EditorClassIdentifier: 
+  sprite: {fileID: 1198041265, guid: 89a4f0df217714a44a512e9d594e1717, type: 3}
