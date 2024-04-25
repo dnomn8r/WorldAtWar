@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Search.SearchColumn;
 
 public class WorldMapManager : MonoBehaviour{
 
@@ -14,9 +15,9 @@ public class WorldMapManager : MonoBehaviour{
 	[SerializeField] private InitialGameState initialGameState;
 
 
-	private Dictionary<LandTerritory, LandZone> landZoneMapping = new Dictionary<LandTerritory, LandZone>();
+	private Dictionary<Territory, Zone> zoneMapping = new Dictionary<Territory, Zone>();
 
-	private List<LandZone> allLandZones;
+	private List<Zone> allZones;
 
 
     private static WorldMapManager instance;
@@ -30,7 +31,7 @@ public class WorldMapManager : MonoBehaviour{
 
     private void Start() {
 
-		allLandZones = new List<LandZone>(GetComponentsInChildren<LandZone>());
+		allZones = new List<Zone>(GetComponentsInChildren<Zone>());
 
         MapLandZones();
 
@@ -47,11 +48,11 @@ public class WorldMapManager : MonoBehaviour{
 
 	private void MapLandZones() {
 
-		landZoneMapping.Clear();		
+		zoneMapping.Clear();		
 
-		foreach (LandZone zone in allLandZones) {
+		foreach (Zone zone in allZones) {
 
-			landZoneMapping.Add(zone.LandTerritory, zone);
+			zoneMapping.Add(zone.Territory, zone);
 		}
 	}
 
@@ -63,9 +64,11 @@ public class WorldMapManager : MonoBehaviour{
 
 			foreach (LandTerritory currentTerritory in majorPower.LandTerritories) {
 
-				landZoneMapping[currentTerritory].SetOriginalOwner(majorPower);
+				LandZone landZone = zoneMapping[currentTerritory] as LandZone;
 
-				usedLandZones.Add(landZoneMapping[currentTerritory]);
+                landZone.SetOriginalOwner(majorPower);
+
+				usedLandZones.Add(landZone);
 			}
 		}
 
@@ -73,9 +76,11 @@ public class WorldMapManager : MonoBehaviour{
 
 			foreach (LandTerritory currentTerritory in minorPower.LandTerritories) {
 
-				landZoneMapping[currentTerritory].SetOriginalOwner(minorPower);
+                LandZone landZone = zoneMapping[currentTerritory] as LandZone;
 
-				usedLandZones.Add(landZoneMapping[currentTerritory]);					
+                landZone.SetOriginalOwner(minorPower);
+
+				usedLandZones.Add(landZone);					
 			}
 		}
 
@@ -101,7 +106,9 @@ public class WorldMapManager : MonoBehaviour{
 
 			foreach(LandTerritory territory in ownership.territories) {
 
-				landZoneMapping[territory].SetCurrentOwner(ownership.country);	
+                LandZone landZone = zoneMapping[territory] as LandZone;
+
+                landZone.SetCurrentOwner(ownership.country);	
 			}
 		}
 	}
@@ -110,27 +117,44 @@ public class WorldMapManager : MonoBehaviour{
 
 		foreach(LandTerritoryEntry landEntry in neutralLandTerritoryState.TerritoryEntries) {
 
-			landZoneMapping[landEntry.LandTerritory].SetFactory(landEntry.Factory);
+            LandZone landZone = zoneMapping[landEntry.LandTerritory] as LandZone;
 
-			// add units here
-		}
+            landZone.SetFactory(landEntry.Factory);
+
+
+			foreach (UnitEntry unitEntry in landEntry.UnitEntries) {
+
+				landZone.AddUnits(landZone.CurrentOwner, unitEntry.Unit, unitEntry.Count);
+			}
+
+        }
 	}
 
 	private void InitializeCountryStates(List<InitialCountryState> initialCountryStates) {
 
 		foreach(InitialCountryState countryState in initialCountryStates) {
 
-			foreach(LandTerritoryEntry landEntry in countryState.TerritoryEntries) {
+			foreach (LandTerritoryEntry landEntry in countryState.TerritoryEntries) {
 
-				landZoneMapping[landEntry.LandTerritory].SetFactory(landEntry.Factory);
+				LandZone landZone = zoneMapping[landEntry.LandTerritory] as LandZone;
 
-				// add units here
+				landZone.SetFactory(landEntry.Factory);
+
+				foreach (UnitEntry unitEntry in landEntry.UnitEntries) {
+
+                    landZone.AddUnits(countryState.Country, unitEntry.Unit, unitEntry.Count);
+                }
 			}
 
 			foreach (WaterTerritoryEntry waterEntry in countryState.WaterTerritoryEntries) {
 
-				// add units here
-			}
+                SeaZone seaZone = zoneMapping[waterEntry.WaterTerritory] as SeaZone;
+
+                foreach (UnitEntry unitEntry in waterEntry.UnitEntries) {
+
+                    seaZone.AddUnits(countryState.Country, unitEntry.Unit, unitEntry.Count);
+                }
+            }
 		}
 	}
 
@@ -138,11 +162,16 @@ public class WorldMapManager : MonoBehaviour{
 
 		int totalIncome = 0;
 
-		for(int i = 0;i<allLandZones.Count;i++) {
+		for(int i = 0;i<allZones.Count;i++) {
 
-			if (allLandZones[i].CurrentOwner == country) {
+			LandZone landZone = allZones[i] as LandZone;
 
-				totalIncome += allLandZones[i].Value;
+			if (landZone != null) {
+
+				if (landZone.CurrentOwner == country) {
+
+					totalIncome += landZone.Value;
+				}
 			}
 		}
 

@@ -128,6 +128,74 @@ public abstract class Zone : MonoBehaviour {
 #endif
     }
 
+	public struct UnitOwnershipEntry {
+
+		public Country owner;
+		public Unit unit;
+		public int count;
+
+		public UnitOwnershipEntry(Country owner, Unit unit, int count) {
+
+			this.owner = owner;
+			this.unit = unit;
+			this.count = count;
+		}
+	}
+
+	public abstract Territory Territory {
+		get;
+	}
+
+	private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
+
+	public List<UnitOwnershipEntry> GetUnits() {
+		return new List<UnitOwnershipEntry>(units.Values);
+	}
+
+	public void AddUnits(Country owner, Unit unit, int count) {
+
+		string key = owner.name + unit.name;
+
+		if(!units.ContainsKey(key)) {
+
+			units.Add(key, new UnitOwnershipEntry(owner, unit, count));
+		} else {
+
+			UnitOwnershipEntry entry = units[key];
+			entry.count += count;
+			units[key] = entry;
+		}
+	}
+
+    public void RemoveUnits(Country owner, Unit unit, int count) {
+
+        string key = owner.name + unit.name;
+
+        if (!units.ContainsKey(key)) {
+
+			Debug.LogError("trying to remove units that aren't there!");
+
+        } else {
+
+            UnitOwnershipEntry entry = units[key];
+            entry.count -= count;
+
+			if (entry.count < 0) {
+
+				Debug.LogError("trying to remove more units that we have!");
+
+			} else if (entry.count == 0) {
+
+				units.Remove(key);
+
+			} else {
+
+				units[key] = entry;
+			}
+        }
+    }
+
+
     protected virtual void Awake() {
 
 		SetHoverState(false);

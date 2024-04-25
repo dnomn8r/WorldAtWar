@@ -43,8 +43,6 @@ MonoBehaviour:
     unitEntries:
     - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
       count: 2
-    - unit: {fileID: 0}
-      count: 0
     factory: {fileID: 0}
   - landTerritory: {fileID: 11400000, guid: b03775523a51add428636c8efb3a85fb, type: 2}
     unitEntries:

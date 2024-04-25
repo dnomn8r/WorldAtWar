@@ -498,9 +498,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4312735569305748076}
-  - component: {fileID: -5202161420912907297}
+  - component: {fileID: 6114655200410759796}
   m_Layer: 0
-  m_Name: LandUnitEntry
+  m_Name: UnitDisplayEntry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +529,7 @@ Transform:
   - {fileID: 586452394987193729}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5202161420912907297
+--- !u!114 &6114655200410759796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2070894835968697617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb05d19646da91d438bf984740e925a4, type: 3}
+  m_Script: {fileID: 11500000, guid: ff3955ccb3d19c24e8de94e29c627690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageRenderer: {fileID: 9189805367846270239}

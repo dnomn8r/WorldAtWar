@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class UnitDetailEntry : MonoBehaviour {
+public class UnitDetailEntry : MonoBehaviour {
 
 	[SerializeField] private Image imageRenderer;
 
@@ -14,13 +14,16 @@ public abstract class UnitDetailEntry : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI movementField;
 	[SerializeField] private TextMeshProUGUI countField;
 
-	public virtual void SetUnit(Unit unit, int count, MajorPower owner) {
+	public void SetUnit(Unit unit, int count, Country owner) {
 
 		imageRenderer.sprite = unit.UnitType.Sprite;
 		nameField.text = unit.name;
 
 		movementField.text = unit.Movement.ToString();
-	}
+
+        //attackStrengthField.text = landUnit.Attack.ToString();
+        //defenceStrengthField.text = landUnit.Defence.ToString();
+    }
 
 }
 

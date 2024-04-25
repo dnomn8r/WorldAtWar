@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Zone;
 
 public class TerritoryPanel : MonoBehaviour {
 
 	[SerializeField] private TextMeshProUGUI nameField;
 
-	[SerializeField] private LandUnitDetailEntry landUnitEntry;
+	[SerializeField] private UnitDetailEntry unitEntry;
 
 	[SerializeField] private Transform unitEntryStartMount;
 
@@ -20,16 +21,14 @@ public class TerritoryPanel : MonoBehaviour {
 
 		nameField.text = currentZone.name;
 
-		LandZone landZone = selectedZone as LandZone;
+		List<UnitOwnershipEntry> units = selectedZone.GetUnits();
 
-		//LandZone.u
+		Debug.Log("selected zone: " + currentZone.name);
 
+		foreach(UnitOwnershipEntry unitEntry in units) {
 
-		//if(selectedZone is LandZone) { 
-		//foreach(Unit unit in selectedZone as LandZone) {
-
-		//}
-
+			Debug.Log("unit: " + unitEntry.unit.name + "x" + unitEntry.count + " owned by: " + unitEntry.owner.name);
+		}
 
 	}
 

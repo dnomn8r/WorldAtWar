@@ -15,8 +15,14 @@ public class SeaZone : Zone{
 #endif
 	}
 
+    public override Territory Territory {
+        get {
+            return waterTerritory;
+        }
+    }
 
-	public override Color BaseColor {
+
+    public override Color BaseColor {
 		get {
 			return new Color(0.5f, 0.75f, 1.0f);
 		}

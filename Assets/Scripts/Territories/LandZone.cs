@@ -114,7 +114,13 @@ public class LandZone : Zone {
 #endif
 	}
 
-	[SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
+    public override Territory Territory {
+		get {
+			return landTerritory;
+		}
+    }
+
+    [SerializeField] protected List<LandZone> hazardousAdjacencies = new List<LandZone>();
 	public List<LandZone> HazardousAdjacencies {
 		get { return hazardousAdjacencies; }
 	}
