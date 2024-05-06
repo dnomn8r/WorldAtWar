@@ -13,7 +13,18 @@ public class Transport : SeaUnit{
 		get { return nonCombat; }
 	}
 
-	public int Defence {
+    public override int FirstStat {
+        get {
+            return Defence;
+        }
+    }
+    public override int SecondStat {
+        get {
+            return Capacity;
+        }
+    }
+
+    public int Defence {
 		get { 
 			if(nonCombat) {
 				return 0;

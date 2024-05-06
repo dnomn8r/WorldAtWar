@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Cursor : MonoBehaviour {
 
+    private Zone currentlyHoveredZone = null;
     private Zone currentlySelectedZone = null;
 
     private void LateUpdate() {
-        
+
+        if (EventSystem.current.IsPointerOverGameObject()) {
+            return;
+        }
+
         Ray selectionRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 
@@ -45,30 +51,35 @@ public class Cursor : MonoBehaviour {
 
         }
 
-        if (currentlySelectedZone != hoveredZone) {
+        if (currentlyHoveredZone != hoveredZone) {
 
-            if (currentlySelectedZone != null) {
-                currentlySelectedZone.SetHoverState(false);
+            //if (currentlyHoveredZone != null) {
+            //    currentlyHoveredZone.SetHoverState(false);
+            //}
 
-                // add deSELECTION of adjacencies and hazard adjacenices
-            }
+            //if (hoveredZone != null) {
 
-            if (hoveredZone != null) {
-
-                // add SELECTION of adjacencies and hazard adjacenices
-                hoveredZone.SetHoverState(true);
+                //hoveredZone.SetHoverState(true);
 
                 HUD.Instance.SetHoveredZone(hoveredZone);
                 
-            } else {
+            //} else {
 
                 //Debug.Log("no zone selected");
-            }
+            //}
             
 
-            currentlySelectedZone = hoveredZone;
+            currentlyHoveredZone = hoveredZone;
         }
-       
+
+        if(hoveredZone != null && hoveredZone != currentlySelectedZone && Input.GetMouseButtonDown(0)) {
+
+            currentlySelectedZone = hoveredZone;
+
+            HUD.Instance.SetSelectedZone(currentlySelectedZone);
+
+        }
+
 
     }
 

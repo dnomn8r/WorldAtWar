@@ -9,20 +9,20 @@ public class UnitDetailEntry : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI nameField;
 
 		
-	[SerializeField] protected TextMeshProUGUI attackStrengthField;
-	[SerializeField] protected TextMeshProUGUI defenceStrengthField;
+	[SerializeField] protected TextMeshProUGUI firstEntryField;
+	[SerializeField] protected TextMeshProUGUI secondEntryField;
 	[SerializeField] private TextMeshProUGUI movementField;
 	[SerializeField] private TextMeshProUGUI countField;
 
-	public void SetUnit(Unit unit, int count, Country owner) {
+	public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
 
-		imageRenderer.sprite = unit.UnitType.Sprite;
-		nameField.text = unit.name;
+		imageRenderer.sprite = unitOwnership.unit.UnitType.Sprite;
+		nameField.text = unitOwnership.unit.name;
 
-		movementField.text = unit.Movement.ToString();
+		movementField.text = unitOwnership.unit.Movement.ToString();
 
-        //attackStrengthField.text = landUnit.Attack.ToString();
-        //defenceStrengthField.text = landUnit.Defence.ToString();
+        firstEntryField.text = unitOwnership.unit.FirstStat.ToString();
+        secondEntryField.text = unitOwnership.unit.SecondStat.ToString();
     }
 
 }

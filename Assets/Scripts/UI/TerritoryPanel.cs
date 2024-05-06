@@ -15,19 +15,42 @@ public class TerritoryPanel : MonoBehaviour {
 
 	private Zone currentZone;
 
+	private List<UnitDetailEntry> unitEntries = new List<UnitDetailEntry>();
+
 	public void SetZone(Zone selectedZone) {
+
+		// clear previous entries
+		for (int i = 0;i< unitEntries.Count; i++) {
+			Destroy(unitEntries[i].gameObject);
+		}
+
+		unitEntries.Clear();
 
 		currentZone = selectedZone;
 
 		nameField.text = currentZone.name;
 
-		List<UnitOwnershipEntry> units = selectedZone.GetUnits();
+		List<UnitOwnershipEntry> unitOwnerships = selectedZone.GetUnits();
 
 		Debug.Log("selected zone: " + currentZone.name);
 
-		foreach(UnitOwnershipEntry unitEntry in units) {
+		float currentOffset = 0.0f;
+		float entrySize = 40.0f;
 
-			Debug.Log("unit: " + unitEntry.unit.name + "x" + unitEntry.count + " owned by: " + unitEntry.owner.name);
+		foreach(UnitOwnershipEntry currentOwnershipEntry in unitOwnerships) {
+
+            UnitDetailEntry newEntry = Instantiate<UnitDetailEntry>(unitEntry, unitEntryStartMount);
+			//newEntry.transform.localPosition = new Vector3(0, -currentOffset, 0);
+
+			newEntry.SetUnit(currentOwnershipEntry);
+
+			unitEntries.Add(newEntry);
+
+			currentOffset += entrySize;
+
+		
+
+			Debug.Log("unit: " + currentOwnershipEntry.unit.name + " x" + currentOwnershipEntry.count + " owned by: " + currentOwnershipEntry.owner.name);
 		}
 
 	}

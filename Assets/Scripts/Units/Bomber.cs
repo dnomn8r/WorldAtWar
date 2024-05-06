@@ -3,7 +3,19 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Bomber", menuName = "Units/Bomber", order = 1)]
 public class Bomber : Unit{
 
-	[SerializeField] private int bombAttack;
+    public override int FirstStat {
+        get {
+            return bombAttack;
+        }
+    }
+
+    public override int SecondStat {
+        get {
+            return airStrength;
+        }
+    }
+
+    [SerializeField] private int bombAttack;
 	public int BombAttack { get { return bombAttack; } }
 
 	[SerializeField] private int airStrength;

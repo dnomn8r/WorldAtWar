@@ -42,7 +42,7 @@ public class Armor : LandUnit{
 
 	public bool HasMetalTracks {
 		get {
-			return Attack > 4;
+			return FirstStat > 4;
 		}
 	}
 

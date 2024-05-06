@@ -3,7 +3,18 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Battleship", menuName = "Units/Battleship", order = 1)]
 public class Battleship : SeaUnit{
 
-	[SerializeField] private int firstGunStrength;
+    public override int FirstStat {
+        get {
+            return firstGunStrength;
+        }
+    }
+    public override int SecondStat {
+        get {
+            return secondGunStrength;
+        }
+    }
+
+    [SerializeField] private int firstGunStrength;
 	public int FirstGunStrength {
 		get { return firstGunStrength; }
 	}

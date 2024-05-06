@@ -5,18 +5,18 @@ public class Infantry : LandUnit{
 
 	public bool CanGainRommelBonuses {
 		get {
-			return (Attack + Defence) > 4;
+			return (FirstStat + SecondStat) > 4;
 		}
 	}
 
 	public bool CanMoveBySeaOrAir {
 		get {
-			return (Attack + Defence) > 4;
+			return (FirstStat + SecondStat) > 4;
 		}
 	}
 	public bool CanAmphibiousAttackOrBecomeParatrooper {
 		get {
-			return (Attack + Defence) > 5;
+			return (FirstStat + SecondStat) > 5;
 		}
 	}
 

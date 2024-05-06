@@ -5,8 +5,11 @@ public abstract class Unit : ScriptableObject{
 	[SerializeField] private UnitType unitType;
 	public UnitType UnitType { get { return unitType; } }
 
+    public abstract int FirstStat { get; }
 
-	[SerializeField] private int movement;
+    public abstract int SecondStat { get; }
+
+    [SerializeField] private int movement;
 	public int Movement { get { return movement;} }
 
 	public abstract int BaseCost { get; }

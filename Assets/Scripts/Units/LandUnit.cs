@@ -2,21 +2,22 @@ using UnityEngine;
 
 public abstract class LandUnit : Unit{
 
-	[SerializeField] private int attack;
-	public int Attack { get { return attack; } }
+    [SerializeField] private int attack;
+    [SerializeField] private int defence;
 
-	[SerializeField] private int defence;
-	public int Defence { get { return defence; } }
+    public override int FirstStat { get { return attack; } }
 
-	public override int BaseCost {
+    public override int SecondStat { get { return defence; } }
+
+    public override int BaseCost {
 		get {
-			return Attack + Defence;
+			return FirstStat + SecondStat;
 		}
 	}
 
 	public virtual int TransportLoad {
 		get {
-			return Attack + Defence;
+			return FirstStat + SecondStat;
 		}
 	}
 

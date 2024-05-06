@@ -4,16 +4,20 @@ using UnityEngine;
 public class Carrier : SeaUnit{
 
 	[SerializeField] private int attack;
-	public int Attack {
-		get { return attack; }
-	}
-
 	[SerializeField] private int defence;
-	public int Defence {
-		get { return defence; }
-	}
 
-	[SerializeField] private int capacity;
+    public override int FirstStat {
+        get {
+            return attack;
+        }
+    }
+    public override int SecondStat {
+        get {
+            return defence;
+        }
+    }
+
+    [SerializeField] private int capacity;
 	public int Capacity {
 		get {
 			return capacity;
@@ -37,7 +41,7 @@ public class Carrier : SeaUnit{
 				capacityDiscount = 1;
 			}
 
-			return Attack + Defence + Capacity - capacityDiscount;
+			return attack + defence + Capacity - capacityDiscount;
 		}
 	}
 

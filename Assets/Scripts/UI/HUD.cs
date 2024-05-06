@@ -17,8 +17,9 @@ public class HUD : MonoBehaviour {
     [SerializeField] private Toggle toggleIncomeButton;
 	[SerializeField] private IncomePanel incomeTogglePanel;
 	[SerializeField] private TerritoryPanel territoryPanel;
+    [SerializeField] private TerritoryPanel territoryHoverPanel;
 
-	public void Initialize() {
+    public void Initialize() {
 
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 
@@ -32,12 +33,23 @@ public class HUD : MonoBehaviour {
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 	}
 
-	public void SetHoveredZone(Zone zone) {
 
-		territoryPanel.gameObject.SetActive(zone != null);
+
+    public void SetSelectedZone(Zone zone) {
+
+        territoryPanel.gameObject.SetActive(zone != null);
+
+        if (zone != null) {
+            territoryPanel.SetZone(zone);
+        }
+    }
+
+    public void SetHoveredZone(Zone zone) {
+
+		territoryHoverPanel.gameObject.SetActive(zone != null);
 
 		if (zone != null) {
-			territoryPanel.SetZone(zone);
+			territoryHoverPanel.SetZone(zone);
 		}
 	}
 

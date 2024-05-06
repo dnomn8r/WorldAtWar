@@ -3,7 +3,19 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Fighter", menuName = "Units/Fighter", order = 1)]
 public class Fighter : Unit{
 
-	[SerializeField] private int landSeaStrength;
+    public override int FirstStat {
+		get {
+			return landSeaStrength;
+		}
+	}
+
+    public override int SecondStat {
+		get {
+			return airStrength;
+		} 
+	}
+
+    [SerializeField] private int landSeaStrength;
 	public int LandSeaStrength { get { return landSeaStrength; } }
 
 	[SerializeField] private int airStrength;

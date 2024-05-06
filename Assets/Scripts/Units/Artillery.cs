@@ -5,36 +5,36 @@ public class Artillery : LandUnit{
 
 	public bool LowLevelAntiAir {
 		get {
-			return Attack + Defence < 10;
+			return FirstStat + SecondStat < 10;
 		}
 	}
 	public bool AntiAir {
 		get {
-			return Attack + Defence < 18;
+			return FirstStat + SecondStat < 18;
 		}
 	}
 
 	public bool CanSupportShot {
 		get {
-			return Attack + Defence > 9;
+			return FirstStat + SecondStat > 9;
 		}
 	}
 
 	public bool CanShootAmphibiousAttackingShips {
 		get {
-			return Attack + Defence > 13;
+			return FirstStat + SecondStat > 13;
 		}
 	}
 
 	public bool PreemptiveShot {
 		get {
-			return Attack + Defence > 17;
+			return FirstStat + SecondStat > 17;
 		}
 	}
 
 	public bool CanMoveByAirTransport {
 		get {
-			return Attack + Defence <= 10;
+			return FirstStat + SecondStat <= 10;
 		}
 	}
 
