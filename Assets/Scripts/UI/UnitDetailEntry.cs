@@ -17,6 +17,14 @@ public class UnitDetailEntry : MonoBehaviour {
 	public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
 
 		imageRenderer.sprite = unitOwnership.unit.UnitType.Sprite;
+
+		if(unitOwnership.unit is SeaUnit) {
+			imageRenderer.transform.localScale = new Vector3(4.75f, 2.25f, 1.0f);
+		} else {
+            imageRenderer.transform.localScale = new Vector3(3.0f, 3.0f, 1.0f);
+        }
+
+
 		nameField.text = unitOwnership.unit.name;
 
 		movementField.text = unitOwnership.unit.Movement.ToString();
