@@ -11,6 +11,8 @@ public class Cursor : MonoBehaviour {
     private void LateUpdate() {
 
         if (EventSystem.current.IsPointerOverGameObject()) {
+            currentlyHoveredZone = null;
+            HUD.Instance.SetHoveredZone(currentlyHoveredZone);
             return;
         }
 
@@ -74,7 +76,13 @@ public class Cursor : MonoBehaviour {
 
         if(hoveredZone != null && hoveredZone != currentlySelectedZone && Input.GetMouseButtonDown(0)) {
 
+            if(currentlySelectedZone != null) {
+                currentlySelectedZone.SetSelectedState(false);
+            }
+
             currentlySelectedZone = hoveredZone;
+
+            currentlySelectedZone.SetSelectedState(true);
 
             HUD.Instance.SetSelectedZone(currentlySelectedZone);
 

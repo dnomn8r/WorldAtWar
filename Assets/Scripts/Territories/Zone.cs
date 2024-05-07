@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
 using TMPro;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -222,7 +220,12 @@ public abstract class Zone : MonoBehaviour {
 
 	public void SetSelectedState(bool selected) {
 
-	}
+        SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+
+		foreach (SpriteRenderer ren in zoneRenderers) {
+			ren.color = selected ? Color.green : BaseColor;
+		}
+    }
 
 
 

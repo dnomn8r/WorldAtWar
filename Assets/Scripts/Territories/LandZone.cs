@@ -75,7 +75,7 @@ public class LandZone : Zone {
 
 	public override Color BaseColor {
 		get {
-			return Color.white;
+			return CurrentOwner != null ? CurrentOwner.OwnershipColor : Color.white;
 		}
 	}
 

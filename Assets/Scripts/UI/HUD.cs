@@ -26,6 +26,8 @@ public class HUD : MonoBehaviour {
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
 
 		incomeTogglePanel.UpdateIncomes();
+
+        SetSelectedZone(null);
 	}
 						   
 	void ToggleIncomeGroup(bool isActive) {
