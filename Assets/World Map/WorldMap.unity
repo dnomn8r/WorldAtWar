@@ -317,6 +317,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 6855547}
   originalOwnerFlag: {fileID: 140072964}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &5402249
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -908,6 +909,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1356652540}
   originalOwnerFlag: {fileID: 1319634553}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &12023283
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1713,6 +1715,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1776555265}
   originalOwnerFlag: {fileID: 1640451210}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &29577909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2158,6 +2161,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1589278270}
   originalOwnerFlag: {fileID: 2091100659}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &35587633
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2570,6 +2574,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 950889922}
   originalOwnerFlag: {fileID: 1231713038}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &42375406
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3457,6 +3462,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1682036097}
   originalOwnerFlag: {fileID: 227050098}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &47973029
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4103,6 +4109,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
   m_PrefabInstance: {fileID: 53236770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &57871512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1488744875}
+    m_Modifications:
+    - target: {fileID: 6253331684131574940, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_Name
+      value: LandZoneInfoDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1468280945888145415, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8883176105933517421, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+--- !u!4 &57871513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+  m_PrefabInstance: {fileID: 57871512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &59664934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4299,6 +4373,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 266851220}
   originalOwnerFlag: {fileID: 1141010709}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &70010735
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4685,6 +4760,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1980768443}
   originalOwnerFlag: {fileID: 1701596666}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &80270587
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4915,6 +4991,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1123823952}
   originalOwnerFlag: {fileID: 81760513}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &81352386
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7193,6 +7270,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 974191654}
   originalOwnerFlag: {fileID: 1792097190}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &125643080
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7914,6 +7992,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 733143469}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &132875713
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9104,6 +9183,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 528543380150620474}
   originalOwnerFlag: {fileID: 2108212943}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &145583175
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9992,6 +10072,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 789258659}
   originalOwnerFlag: {fileID: 234794465}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &155416523
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10543,6 +10624,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 769397471}
   originalOwnerFlag: {fileID: 1244296239}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &160811848
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10834,6 +10916,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1655246035}
   originalOwnerFlag: {fileID: 1397906665}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &168139164
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11195,6 +11278,14 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11900,6 +11991,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1105482710}
   originalOwnerFlag: {fileID: 1793226951}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &184140876
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12565,6 +12657,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 856333368}
   originalOwnerFlag: {fileID: 1333067520}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &197237915
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12788,6 +12881,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 525697187}
   originalOwnerFlag: {fileID: 2135480646}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &206599344
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13140,6 +13234,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 225741777}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &207710146
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13409,6 +13504,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1038934394}
   originalOwnerFlag: {fileID: 1616738611}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &208626552
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13800,6 +13896,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 500162075}
   originalOwnerFlag: {fileID: 2137097715}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &208955203
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14118,6 +14215,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1173498228}
   originalOwnerFlag: {fileID: 1647128107}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &217331729
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14506,6 +14604,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 821242370}
   originalOwnerFlag: {fileID: 547469826}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &224236476
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14665,11 +14764,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -15165,6 +15264,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1093514912}
   originalOwnerFlag: {fileID: 622836612}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &232159065
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15468,6 +15568,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1040747805}
   originalOwnerFlag: {fileID: 59664935}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &235750746
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15873,6 +15974,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 446042876}
   originalOwnerFlag: {fileID: 1464659499}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &244147202
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16118,6 +16220,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1845258349}
   originalOwnerFlag: {fileID: 1887714566}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &244443726
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16698,6 +16801,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1100007892}
   originalOwnerFlag: {fileID: 1730526490}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &250677184
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16925,6 +17029,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 718750640}
   originalOwnerFlag: {fileID: 2119490450}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &251020202
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18985,6 +19090,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2093295881}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &281058235
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19605,6 +19711,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1766099174}
   originalOwnerFlag: {fileID: 1913982530}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &292191750
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20181,6 +20288,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 306318277}
   originalOwnerFlag: {fileID: 1058956762}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &295176101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20539,6 +20647,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 931434657}
   originalOwnerFlag: {fileID: 1015844421}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &300139913
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20788,6 +20897,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 989717929}
   originalOwnerFlag: {fileID: 1835385493}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &302453760
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20972,6 +21082,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1822752105}
   originalOwnerFlag: {fileID: 1880036167}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &302823978
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21895,6 +22006,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1482636293}
   originalOwnerFlag: {fileID: 387771818}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &313196021
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22074,6 +22186,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1436409447}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &313298635
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23239,6 +23352,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1254957114}
   originalOwnerFlag: {fileID: 562085474}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &335612205
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24672,6 +24786,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1756113772}
   originalOwnerFlag: {fileID: 48810940}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &358586972
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24915,6 +25030,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 666402007}
   originalOwnerFlag: {fileID: 721538066}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &360255500
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25490,6 +25606,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2127839398}
   originalOwnerFlag: {fileID: 695661187}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &365601909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25805,6 +25922,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1931756593}
   originalOwnerFlag: {fileID: 1695619653}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &369570907
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26119,6 +26237,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1944229097}
   originalOwnerFlag: {fileID: 2127047384}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &371349133
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26654,6 +26773,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1917349002}
   originalOwnerFlag: {fileID: 668888651}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &378828831
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26878,6 +26998,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 858737863}
   originalOwnerFlag: {fileID: 1400938914}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &380042845
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27352,6 +27473,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2134903189}
   originalOwnerFlag: {fileID: 1700183771}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &389845312
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27879,6 +28001,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2120074990}
   originalOwnerFlag: {fileID: 1923287148}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &397479229
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28942,11 +29065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.300009
+      value: 16.6
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29353,6 +29476,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1387141227}
   originalOwnerFlag: {fileID: 184559937}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &423567088
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30555,6 +30679,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 656640338}
   originalOwnerFlag: {fileID: 1483845768}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &446066022
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30866,6 +30991,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1169728902}
   originalOwnerFlag: {fileID: 1941949039}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &454557740
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31100,6 +31226,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 292378383}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &457878044
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31290,6 +31417,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2019162505}
   originalOwnerFlag: {fileID: 1778955244}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &458543187
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31999,6 +32127,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 182644584}
   originalOwnerFlag: {fileID: 772496115}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &470968862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33415,6 +33544,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1639320787}
   originalOwnerFlag: {fileID: 1328414979}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &492321256
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33563,7 +33693,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 28702e9337089e04dadfc89d4ca68b4f, type: 3}
-  m_Color: {r: 0.5, g: 0.75, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35473,6 +35603,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1599599165}
   originalOwnerFlag: {fileID: 1432447465}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &512687575
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -35995,6 +36126,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 397778886}
   originalOwnerFlag: {fileID: 1242954178}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &518233204
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -36803,6 +36935,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1477757457}
   originalOwnerFlag: {fileID: 1741052786}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &530188558
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37123,6 +37256,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 142855159}
   originalOwnerFlag: {fileID: 2090981860}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &533204723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37369,6 +37503,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2065144197}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &537093041
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37577,7 +37712,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
@@ -37585,7 +37720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 642976681994708555, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Name
@@ -37837,6 +37972,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1870751655}
   originalOwnerFlag: {fileID: 320673203}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &538586216
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38703,6 +38839,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 394191627}
   originalOwnerFlag: {fileID: 784156298}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &547724442
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38978,6 +39115,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 269699745}
   originalOwnerFlag: {fileID: 1929095784}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &550694659
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39572,6 +39710,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 425393807}
   originalOwnerFlag: {fileID: 1241064809}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &554174517
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39897,6 +40036,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 341709358}
   originalOwnerFlag: {fileID: 1574041689}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &562000660
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40302,6 +40442,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 254706703}
   originalOwnerFlag: {fileID: 1075634260}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &568911227
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -41626,6 +41767,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1879183933}
   originalOwnerFlag: {fileID: 2145992185}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &588441354
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -42086,6 +42228,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 175152143}
   originalOwnerFlag: {fileID: 578991919}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &597837464
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -42707,6 +42850,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1513870267}
   originalOwnerFlag: {fileID: 174252909}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &613544437
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43528,11 +43672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43912,6 +44056,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2028483225}
   originalOwnerFlag: {fileID: 862327862}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &626343101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44170,6 +44315,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1421731808}
   originalOwnerFlag: {fileID: 1650235319}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &631165431
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44720,6 +44866,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2099669967}
   originalOwnerFlag: {fileID: 850590948}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &638003775
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -46853,6 +47000,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 978225991}
   originalOwnerFlag: {fileID: 838991232}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &659987465
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -47374,6 +47522,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1332309750}
   originalOwnerFlag: {fileID: 34915344}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &663125961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -47932,7 +48081,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fb19acf3d0f72b748b4c0cde3eae4125, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47987,6 +48136,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1969937188}
   originalOwnerFlag: {fileID: 622554138}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &675555519
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -48481,6 +48631,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 50848301}
   originalOwnerFlag: {fileID: 733692138}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &684068799
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -49259,6 +49410,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2070242376}
   originalOwnerFlag: {fileID: 1811162242}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &694162058
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -51930,6 +52082,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1711441491}
   originalOwnerFlag: {fileID: 6849768}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &733496912
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -52647,6 +52800,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 641595970}
   originalOwnerFlag: {fileID: 716731936}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &738241355
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -54690,6 +54844,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 925004448}
   originalOwnerFlag: {fileID: 266613373}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &772246920
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -56324,6 +56479,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 859345838}
   originalOwnerFlag: {fileID: 364097249}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &802919241
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57427,6 +57583,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 956981405}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &814128877
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -58294,6 +58451,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 134340577}
   originalOwnerFlag: {fileID: 1358923672}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &821346924
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -58565,6 +58723,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 309687649}
   originalOwnerFlag: {fileID: 575046853}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &824623048
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -58857,6 +59016,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1591630549}
   originalOwnerFlag: {fileID: 1332198660}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &824907280
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -59344,6 +59504,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1249093501}
   originalOwnerFlag: {fileID: 178846221}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &836166000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60658,6 +60819,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 2055695910}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &866634108
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60880,6 +61042,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 327240045}
   originalOwnerFlag: {fileID: 2026651681}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &868035803
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -62204,6 +62367,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 786827468}
   originalOwnerFlag: {fileID: 99061407}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &886585191
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -62468,11 +62632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.r
@@ -62653,6 +62817,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 471949185}
   originalOwnerFlag: {fileID: 728839646}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &893213731
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -62872,10 +63037,10 @@ RectTransform:
   - {fileID: 1773945757}
   m_Father: {fileID: 871033801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -304.19995, y: 134.35}
-  m_SizeDelta: {x: -626, y: -317.3}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 43, y: -65}
+  m_SizeDelta: {x: 80, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893284596
 MonoBehaviour:
@@ -63132,6 +63297,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1370220858}
   originalOwnerFlag: {fileID: 567212020}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &904355966
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -64146,6 +64312,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 103091429}
   originalOwnerFlag: {fileID: 684578934}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &925176432
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -65992,6 +66159,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1860724467}
   originalOwnerFlag: {fileID: 2000957510}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &952352066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68786,6 +68954,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 740577997}
   originalOwnerFlag: {fileID: 399181325}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &993834610
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68933,7 +69102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.72614, y: 211.78035}
+  m_AnchoredPosition: {x: -319.8, y: 214.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995437408
@@ -69168,6 +69337,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 482294133}
   originalOwnerFlag: {fileID: 1599088820}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &997667275
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -69384,6 +69554,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 251500374}
   originalOwnerFlag: {fileID: 647681750}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1001610958
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -71093,6 +71264,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1671257674}
   originalOwnerFlag: {fileID: 437129838}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1029685240
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72429,6 +72601,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1567227286}
   originalOwnerFlag: {fileID: 803862612}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1046377515
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72904,6 +73077,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 120676497}
   originalOwnerFlag: {fileID: 2039388786}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1052228755
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73400,6 +73574,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 179326853}
   originalOwnerFlag: {fileID: 1810417670}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1066360220
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73661,11 +73836,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -73917,6 +74092,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1033555095}
   originalOwnerFlag: {fileID: 1379550421}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1075510099
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74630,6 +74806,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 819467457}
   originalOwnerFlag: {fileID: 313900336}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1082479211
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74875,6 +75052,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 502609688}
   originalOwnerFlag: {fileID: 1830965942}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1085732319
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -75580,6 +75758,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1338632804}
   originalOwnerFlag: {fileID: 723007850}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1100151795
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -76528,6 +76707,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1877830424}
   originalOwnerFlag: {fileID: 635039729}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1119183263
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77651,6 +77831,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 950306494}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1132608753
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78127,6 +78308,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1486207515}
   originalOwnerFlag: {fileID: 116127654}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1139583638
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78583,6 +78765,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 928706293}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1143603214
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79273,6 +79456,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 53236771}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1153163135
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79687,6 +79871,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 827297705}
   originalOwnerFlag: {fileID: 613514394}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1159015164
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79991,6 +80176,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1900295255}
   originalOwnerFlag: {fileID: 820527936}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1166595879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -80292,6 +80478,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1416153156}
   originalOwnerFlag: {fileID: 1328701744}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1167121047
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -80833,6 +81020,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1863107893}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1174608450
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -81692,6 +81880,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 98941601}
   originalOwnerFlag: {fileID: 1785114417}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1188944137
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -82197,6 +82386,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 990423435}
   originalOwnerFlag: {fileID: 1433723087}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1190632380
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -82734,6 +82924,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1976489577}
   originalOwnerFlag: {fileID: 1946178893}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1193292836
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -83674,6 +83865,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1600417933}
   originalOwnerFlag: {fileID: 1677026078}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1203689823
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -84507,6 +84699,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 207017138}
   originalOwnerFlag: {fileID: 1935116304}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1223089112
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -84767,6 +84960,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 960744356}
   originalOwnerFlag: {fileID: 155367619}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1224092138
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -85092,6 +85286,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 911094095}
   originalOwnerFlag: {fileID: 307432718}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1226481431
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -85616,6 +85811,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2010618281}
   originalOwnerFlag: {fileID: 145560121}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1232698927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -86705,7 +86901,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: de8de034e948da040864bb755f6ce2f1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86759,6 +86955,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 538275096}
   originalOwnerFlag: {fileID: 1782814383}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1248153069
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -87934,6 +88131,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1446348790}
   originalOwnerFlag: {fileID: 537321974}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1264706730
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -88169,6 +88367,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 550863600}
   originalOwnerFlag: {fileID: 18869705}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1269033553
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89517,6 +89716,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 953989175}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1288917956
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -90001,6 +90201,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 250665256}
   originalOwnerFlag: {fileID: 2103940092}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1294512290
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -90584,6 +90785,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1736440526}
   originalOwnerFlag: {fileID: 1476112411}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1308422818
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -90885,11 +91087,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.699991
+      value: -13.9
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -91317,6 +91519,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1956018428}
   originalOwnerFlag: {fileID: 1819282036}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1319387636
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91614,6 +91817,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 798473208}
   originalOwnerFlag: {fileID: 550785785}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1321431100
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91976,6 +92180,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1082042327}
   originalOwnerFlag: {fileID: 694816672}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1324186043
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -93706,6 +93911,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 422116388}
   originalOwnerFlag: {fileID: 1397811433}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1346924379
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -94049,6 +94255,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1200376413}
   originalOwnerFlag: {fileID: 380332814}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1354318835
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -95471,6 +95678,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 142443973}
   originalOwnerFlag: {fileID: 902465203}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1372819625
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -95921,6 +96129,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 402728597}
   originalOwnerFlag: {fileID: 991865573}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1378342899
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96236,6 +96445,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1466112123}
   originalOwnerFlag: {fileID: 1009552445}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1383039574
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96940,6 +97150,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 493378734}
   originalOwnerFlag: {fileID: 1560643832}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1392588554
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -97190,11 +97401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.699991
+      value: -3.5000005
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -97441,6 +97652,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 522777210}
   originalOwnerFlag: {fileID: 386080520}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1402003137
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -97703,7 +97915,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404867337
 MonoBehaviour:
@@ -98428,6 +98640,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1607086426}
   originalOwnerFlag: {fileID: 1622600638}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1419490670
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -99466,6 +99679,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 320638742}
   originalOwnerFlag: {fileID: 2118181181}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1429211057
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -99714,6 +99928,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 821220959}
   originalOwnerFlag: {fileID: 114751873}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1430997637
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -100762,6 +100977,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1782633762}
   originalOwnerFlag: {fileID: 776288558}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1439797110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -101986,6 +102202,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 739443955}
   originalOwnerFlag: {fileID: 2098678817}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1455576719
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -102306,10 +102523,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 995437407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: -0.5}
-  m_SizeDelta: {x: -28, y: -3}
+  m_AnchorMin: {x: 0, y: 0.35000002}
+  m_AnchorMax: {x: 0.98125, y: 1}
+  m_AnchoredPosition: {x: 10.5, y: -4}
+  m_SizeDelta: {x: -25, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459408976
 MonoBehaviour:
@@ -102333,12 +102550,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -104743,11 +104960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -39.69999
+      value: -24.3
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -105146,6 +105363,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1423818673}
   originalOwnerFlag: {fileID: 1749236224}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1483701559
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -105487,6 +105705,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1651351470}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1484090663
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -105564,11 +105783,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.300009
+      value: 6.4999995
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106001,6 +106220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 57871513}
   - {fileID: 154764975}
   - {fileID: 621283316}
   - {fileID: 542129525}
@@ -106035,6 +106255,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 621283317}
   originalOwnerFlag: {fileID: 542129524}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1488744877
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -107652,6 +107873,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 570492295}
   originalOwnerFlag: {fileID: 160406659}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1514151604
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -109289,6 +109511,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1487466376}
   originalOwnerFlag: {fileID: 1529622777}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1551751529
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -111484,6 +111707,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1493030930}
   originalOwnerFlag: {fileID: 934730080}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1586604159
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -112013,6 +112237,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1830752355}
   originalOwnerFlag: {fileID: 738779107}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1592914597
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -113066,10 +113291,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
+      value: 0.92156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
@@ -113322,6 +113551,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 107781205}
   originalOwnerFlag: {fileID: 1167032752}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1607069496
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -114623,7 +114853,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 08b43383a41ed0544bd6595ddd889549, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -114678,6 +114908,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1070594764}
   originalOwnerFlag: {fileID: 1606253912}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1620480475
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -115525,6 +115756,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 492113065}
   originalOwnerFlag: {fileID: 1606436780}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1626788675
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -116670,6 +116902,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1078583083}
   originalOwnerFlag: {fileID: 763966823}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1646684087
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -117573,11 +117806,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -118113,6 +118346,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1685929390}
   originalOwnerFlag: {fileID: 269951543}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1659069461
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -118789,6 +119023,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2029794991}
   originalOwnerFlag: {fileID: 966566106}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1670454463
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -119169,6 +119404,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1284504427}
   originalOwnerFlag: {fileID: 1847131218}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1673163662
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -119451,6 +119687,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 307078181}
   originalOwnerFlag: {fileID: 2029127177}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1680693510
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -119718,6 +119955,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 337862696}
   originalOwnerFlag: {fileID: 1838238842}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1680742544
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -120950,6 +121188,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 51807222}
   originalOwnerFlag: {fileID: 294463942}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1698399873
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -122002,6 +122241,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1202104411}
   originalOwnerFlag: {fileID: 511305685}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1712472192
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -122345,6 +122585,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1724172150}
   originalOwnerFlag: {fileID: 245054271}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1714752527
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -123175,6 +123416,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1445522187}
   originalOwnerFlag: {fileID: 1490401954}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1726013693
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -123585,6 +123827,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2029435722}
   originalOwnerFlag: {fileID: 594863337}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1730290422
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -124001,6 +124244,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1594592018}
   originalOwnerFlag: {fileID: 1208410106}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1735579749
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -125048,6 +125292,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1707655772}
   originalOwnerFlag: {fileID: 1713421388}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1751404473
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -125534,6 +125779,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 758252101}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1759053286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -126050,11 +126296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -55.69999
+      value: -34.600002
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -126172,7 +126418,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 213ac5632a172444db7371346b0de5f1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126228,6 +126474,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 226643952}
   originalOwnerFlag: {fileID: 891313806}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1774359351
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -126661,7 +126908,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4b0b52913e8e0e439a73cbd98f0da0b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126715,6 +126962,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1655511917}
   originalOwnerFlag: {fileID: 1950324810}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1775729499
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -127725,11 +127973,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128267,6 +128519,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 647247433}
   originalOwnerFlag: {fileID: 1775533493}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1790853571
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -128976,6 +129229,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 782098331}
   originalOwnerFlag: {fileID: 1039756055}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1793325659
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -129534,6 +129788,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1873290850}
   originalOwnerFlag: {fileID: 1581835907}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1800863642
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -129752,6 +130007,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 618552408}
   originalOwnerFlag: {fileID: 1581112689}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1801945334
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -130161,6 +130417,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1285947203}
   originalOwnerFlag: {fileID: 148757060}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1806297547
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -130956,6 +131213,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 479552217}
   originalOwnerFlag: {fileID: 1447994994}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1813642507
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -131274,6 +131532,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1209634639}
   originalOwnerFlag: {fileID: 2129314801}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1814227952
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -131526,6 +131785,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1467091023}
   originalOwnerFlag: {fileID: 164512064}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1816831526
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -132241,6 +132501,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1791102422}
   originalOwnerFlag: {fileID: 2092622509}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1823749636
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -133137,6 +133398,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 619940088}
   originalOwnerFlag: {fileID: 995569750}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1830960678
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -134986,6 +135248,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 641837557}
   originalOwnerFlag: {fileID: 2028077183}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1852734473
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -135182,6 +135445,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1599858619}
   originalOwnerFlag: {fileID: 184097129}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1852740753
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -136206,6 +136470,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1784932880}
   originalOwnerFlag: {fileID: 417023655}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1866816340
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -137012,6 +137277,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 462253801}
   originalOwnerFlag: {fileID: 2129756832}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1877494141
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -137263,6 +137529,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 580312422}
   originalOwnerFlag: {fileID: 1777101151}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1877805611
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -137610,6 +137877,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2021233295}
   originalOwnerFlag: {fileID: 1333735688}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1878377292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -138073,6 +138341,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 43328049}
   originalOwnerFlag: {fileID: 1954980493}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1884228967
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -138635,6 +138904,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1793202408}
   originalOwnerFlag: {fileID: 1825921695}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1896941747
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -138864,7 +139134,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 831236789}
   m_HandleRect: {fileID: 831236788}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -139445,6 +139715,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1224741783}
   originalOwnerFlag: {fileID: 1520377187}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1908652261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -140658,6 +140929,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2145406045}
   originalOwnerFlag: {fileID: 463848516}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1930916479
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -141541,11 +141813,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142462,6 +142734,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 736173157}
   originalOwnerFlag: {fileID: 345722003}
   isCapital: 1
+  factory: {fileID: 0}
 --- !u!60 &1965616864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -143036,11 +143309,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -143958,6 +144231,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 437694211}
   originalOwnerFlag: {fileID: 1573180477}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1979812467
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -144499,6 +144773,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1270987554}
   originalOwnerFlag: {fileID: 916494963}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1983437266
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -144997,6 +145272,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1653777240}
   originalOwnerFlag: {fileID: 246256404}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1989431171
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -145545,6 +145821,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 2051560908}
   originalOwnerFlag: {fileID: 1362310559}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &1995453106
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -145928,6 +146205,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1192720475}
   originalOwnerFlag: {fileID: 253410344}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2001942857
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -146250,6 +146528,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1145501801}
   originalOwnerFlag: {fileID: 1558993009}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2013178270
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -148991,6 +149270,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 0}
   originalOwnerFlag: {fileID: 1067154795}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2041148151
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -149209,6 +149489,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 768291289}
   originalOwnerFlag: {fileID: 1027835586}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2046348847
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -150174,6 +150455,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1782137991}
   originalOwnerFlag: {fileID: 1431228629}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2060614657
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -150593,6 +150875,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1715809805}
   originalOwnerFlag: {fileID: 1018778003}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2068111324
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -151115,7 +151398,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 12, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075252862
 MonoBehaviour:
@@ -151274,6 +151557,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 178887197}
   originalOwnerFlag: {fileID: 2032707437}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2077180177
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -151627,6 +151911,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1795085116}
   originalOwnerFlag: {fileID: 223377548}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2084964404
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -151773,6 +152058,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
@@ -152023,6 +152312,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 532523492}
   originalOwnerFlag: {fileID: 1475419624}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2092264153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -152994,6 +153284,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1993920922}
   originalOwnerFlag: {fileID: 238360039}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2100885971
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -154427,6 +154718,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1149953659}
   originalOwnerFlag: {fileID: 356532455}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2121317582
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -156773,6 +157065,7 @@ MonoBehaviour:
   zoneValueDisplay: {fileID: 1655863009}
   originalOwnerFlag: {fileID: 511197274}
   isCapital: 0
+  factory: {fileID: 0}
 --- !u!60 &2145458065
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -156965,11 +157258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.19999
+      value: -47.79999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.30001
+      value: 26.199999
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -157298,11 +157591,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.2
+      value: -47.8
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 56.3
+      value: 35.9
       objectReference: {fileID: 0}
     - target: {fileID: 4312735569305748076, guid: bf8987f3933e4ef4bba52c354921e63d, type: 3}
       propertyPath: m_LocalPosition.z

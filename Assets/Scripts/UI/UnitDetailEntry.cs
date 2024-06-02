@@ -31,6 +31,8 @@ public class UnitDetailEntry : MonoBehaviour {
 
         firstEntryField.text = unitOwnership.unit.FirstStat.ToString();
         secondEntryField.text = unitOwnership.unit.SecondStat.ToString();
+
+		countField.text = unitOwnership.count.ToString();
     }
 
 }

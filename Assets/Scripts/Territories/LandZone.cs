@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class LandZone : Zone {
 
@@ -180,6 +179,8 @@ public class LandZone : Zone {
 
 	public bool isCapital = false;
 
+	public Factory factory;
+
 	protected override void Awake() {
 
 		base.Awake();
@@ -202,6 +203,8 @@ public class LandZone : Zone {
 	}
 
 	public void SetFactory(Factory factory) {
+
+		this.factory = factory;
 
 		if (factory != null) {
 
