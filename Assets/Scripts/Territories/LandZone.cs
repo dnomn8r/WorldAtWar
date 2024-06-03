@@ -155,8 +155,6 @@ public class LandZone : Zone {
 		}
 	}
 
-
-
 	[SerializeField] private ZoneValueDisplay zoneValueDisplay;
 	public ZoneValueDisplay ZoneValueDisplay {
 
@@ -200,7 +198,12 @@ public class LandZone : Zone {
 	public void SetCurrentOwner(Country country) {
 
 		CurrentOwner = country;
-	}
+
+        if (zoneInfoDisplay != null) {
+
+			zoneInfoDisplay.Refresh();
+        }
+    }
 
 	public void SetFactory(Factory factory) {
 
@@ -218,6 +221,11 @@ public class LandZone : Zone {
 
 				ZoneValueDisplay.GetComponent<SpriteRenderer>().sprite = circles[0];
 			}
+		}
+
+		if(zoneInfoDisplay != null) {
+
+			zoneInfoDisplay.Refresh();
 		}
 	}
 

@@ -144,7 +144,10 @@ public abstract class Zone : MonoBehaviour {
 		get;
 	}
 
-	private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
+    [SerializeField] protected LandZoneInfoDisplay zoneInfoDisplay;
+
+
+    private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
 
 	public List<UnitOwnershipEntry> GetUnits() {
 		return new List<UnitOwnershipEntry>(units.Values);
@@ -162,6 +165,10 @@ public abstract class Zone : MonoBehaviour {
 			UnitOwnershipEntry entry = units[key];
 			entry.count += count;
 			units[key] = entry;
+		}
+
+		if(zoneInfoDisplay != null) {
+			zoneInfoDisplay.Refresh();
 		}
 	}
 
@@ -191,10 +198,18 @@ public abstract class Zone : MonoBehaviour {
 				units[key] = entry;
 			}
         }
+
+        if (zoneInfoDisplay != null) {
+            zoneInfoDisplay.Refresh();
+        }
     }
 
 
     protected virtual void Awake() {
+
+		if(zoneInfoDisplay != null) {
+			zoneInfoDisplay.SetZone(this);
+		}
 
 		SetHoverState(false);
 	}

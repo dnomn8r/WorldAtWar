@@ -312,6 +312,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 5402246}
   zoneNameDisplay: {fileID: 1584419978}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 6855547}
@@ -904,6 +905,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 12023280}
   zoneNameDisplay: {fileID: 1729242403}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5efe711569fac174bb60a29a169fb759, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1356652540}
@@ -1464,6 +1466,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 27338224}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 5c05a84b40c58764c8b597dc5b943222, type: 2}
 --- !u!60 &27338226
 PolygonCollider2D:
@@ -1709,6 +1712,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 29577906}
   zoneNameDisplay: {fileID: 574289091}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9c1ba546a64ada440ad1df2e6e64c902, type: 2}
   hazardousAdjacencies:
   - {fileID: 1714752526}
@@ -2156,6 +2160,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 35587630}
   zoneNameDisplay: {fileID: 2048044066}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1b22ba0ef97df524f9ad868ec193320d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1589278270}
@@ -2365,6 +2370,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 42136103}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 8822f7904e9dc684cace30bf6fb13edd, type: 2}
 --- !u!60 &42136105
 PolygonCollider2D:
@@ -2569,6 +2575,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 42375404}
   zoneNameDisplay: {fileID: 927727822}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1aa7245a8d9a2ab499d6208869890a4e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 950889922}
@@ -2942,6 +2949,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 43232842}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: db9c0c1d7bc0e62478f498ad3c02106e, type: 2}
 --- !u!60 &43232844
 PolygonCollider2D:
@@ -3457,6 +3465,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 47973026}
   zoneNameDisplay: {fileID: 107858734}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7b04cc432abda99478862335c0fb04ef, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1682036097}
@@ -4122,16 +4131,24 @@ PrefabInstance:
       value: LandZoneInfoDisplay
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4168,7 +4185,49 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1468280945888145415, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8883176105933517421, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 2240363116619927938, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4488264474604893060, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4292368300287115857, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8403939409894966253, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8176496945601491512, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8477790838591206256, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8106236479255904933, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5422964698204339597, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5663900304901753944, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7092609678300332286, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7473169514474008875, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2454819036964636024, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2866908471833556141, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3638962186413613875, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3988001433866048230, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
@@ -4177,6 +4236,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8095803517149095242, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
   m_PrefabInstance: {fileID: 57871512}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &57871514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5626587218510203091, guid: b4d2a75bf92e9224b8865dfb4f3b2da1, type: 3}
+  m_PrefabInstance: {fileID: 57871512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44437b4aa5a00064ba5aaa2b76b8d3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &59664934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4367,6 +4437,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 70010732}
   zoneNameDisplay: {fileID: 505320299}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 82c1b628543cf4a4586f1ce156ba55e2, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
@@ -4755,6 +4826,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 80270584}
   zoneNameDisplay: {fileID: 446522553}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 067c90c253ae35f4080f88ac0df7b3f6, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1980768443}
@@ -4986,6 +5058,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 81352383}
   zoneNameDisplay: {fileID: 1821572253}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9e80c497228e0844b8b578b21eab3773, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1123823952}
@@ -5261,6 +5334,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 83481686}
   zoneNameDisplay: {fileID: 908450867}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: fd6c58b55133a7349b484a5f4962b4d6, type: 2}
 --- !u!60 &83481689
 PolygonCollider2D:
@@ -6364,6 +6438,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 114500316}
   zoneNameDisplay: {fileID: 279226517}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 7853685a232832145a28bf8deba5e694, type: 2}
 --- !u!60 &114500318
 PolygonCollider2D:
@@ -6526,6 +6601,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 114588732}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: d542c8142f3bc284bb949a1801842f46, type: 2}
 --- !u!60 &114588734
 PolygonCollider2D:
@@ -7265,6 +7341,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 125643077}
   zoneNameDisplay: {fileID: 1595688847}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: be5ba55f18bb73c49aad5c0e997eccb7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 974191654}
@@ -7506,6 +7583,7 @@ MonoBehaviour:
   - {fileID: 131798174}
   - {fileID: 1498607232}
   zoneNameDisplay: {fileID: 922127240}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 382b183d79065bb44afb71647c72e69e, type: 2}
 --- !u!60 &131798176
 PolygonCollider2D:
@@ -7674,6 +7752,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 132668087}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 203db4efdc5a9754cac761fdf2c808ee, type: 2}
 --- !u!60 &132668089
 PolygonCollider2D:
@@ -7987,6 +8066,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 132875710}
   zoneNameDisplay: {fileID: 2063846078}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 48830a24e20e8fd479f105eeda15695e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -9178,6 +9258,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 145583172}
   zoneNameDisplay: {fileID: 4536865383199381371}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 18f5610afb5d54041992869b9ed3225d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 528543380150620474}
@@ -9675,6 +9756,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 152414845}
   zoneNameDisplay: {fileID: 749581233}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: f44752d12edd40a4f91c6aa9acd0dde9, type: 2}
 --- !u!60 &152414847
 PolygonCollider2D:
@@ -9753,6 +9835,10 @@ PrefabInstance:
     - target: {fileID: 6253331684131574940, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_Name
       value: ZoneNameDisplay (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6253331684131574940, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6633367878170421198, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_text
@@ -9867,10 +9953,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6253331684131574940, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
 --- !u!224 &154764975 stripped
 RectTransform:
@@ -10065,6 +10148,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 155416520}
   zoneNameDisplay: {fileID: 1543022157}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0232ac5b276d69e478a3073157ab9ae2, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
@@ -10339,6 +10423,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 156100351}
   zoneNameDisplay: {fileID: 1645129783}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: c10814f4da9b61046a4f85cf2ea034f7, type: 2}
 --- !u!60 &156100353
 PolygonCollider2D:
@@ -10619,6 +10704,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 160811845}
   zoneNameDisplay: {fileID: 1132547470}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 4e2d0ebb06ba82d4696aa28b7c851984, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 769397471}
@@ -10911,6 +10997,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 168139161}
   zoneNameDisplay: {fileID: 1331573926}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9644cbe2a1bcc844096b4ace44ddbc9f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1655246035}
@@ -11985,6 +12072,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 184140873}
   zoneNameDisplay: {fileID: 1986925655}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ab349642adc583a47ad6b000372568d8, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
@@ -12652,6 +12740,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 197237912}
   zoneNameDisplay: {fileID: 2083759745}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: bd1a95da2fdf78e41a2d5ad821a2076d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 856333368}
@@ -12876,6 +12965,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 206599341}
   zoneNameDisplay: {fileID: 1966600806}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7f8567f95a1679e4ca49218011dc1f30, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 525697187}
@@ -13229,6 +13319,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 207710144}
   zoneNameDisplay: {fileID: 348968313}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5c7645f4381a3f14abe06f75e2d116b8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -13498,6 +13589,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 208626549}
   zoneNameDisplay: {fileID: 1899567399}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 58f1a321120d4ef49bba4a94b35aaaaa, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
@@ -13891,6 +13983,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 208955201}
   zoneNameDisplay: {fileID: 885343372}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5fe2c4fd98394c145a8ae5991ebd023d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 500162075}
@@ -14210,6 +14303,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 217331726}
   zoneNameDisplay: {fileID: 1464803851}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b5794a97d94caa846995e1fe0233f21b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1173498228}
@@ -14599,6 +14693,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 224236474}
   zoneNameDisplay: {fileID: 314080406}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b7c0405938e149441a2c3dbc4a8456ba, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 821242370}
@@ -14764,11 +14859,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -15092,6 +15187,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 228519851}
   zoneNameDisplay: {fileID: 1943348364}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 063ddcb525bdf284ca30c0f93c92e97f, type: 2}
 --- !u!60 &228519853
 PolygonCollider2D:
@@ -15259,6 +15355,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 232159062}
   zoneNameDisplay: {fileID: 391752627}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f174a1d206a15a34b8d58c6852acc368, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1093514912}
@@ -15563,6 +15660,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 235750743}
   zoneNameDisplay: {fileID: 1507768422}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d6b982daad162fb4c986d6e81c141a71, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1040747805}
@@ -15969,6 +16067,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 244147200}
   zoneNameDisplay: {fileID: 1310660357}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c5a1f39af0afbbe498201e111c78602d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 446042876}
@@ -16215,6 +16314,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 244443723}
   zoneNameDisplay: {fileID: 1360204889}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7ba096ff2609a954e8f4b658cdc5f173, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1845258349}
@@ -16796,6 +16896,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 250677182}
   zoneNameDisplay: {fileID: 886210714}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c910901b567bd6d4fb98462c7427203a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1100007892}
@@ -17024,6 +17125,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 251020199}
   zoneNameDisplay: {fileID: 1478152787}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5101250d01c365a429f77d1a7c0ed22f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 718750640}
@@ -19085,6 +19187,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 281058232}
   zoneNameDisplay: {fileID: 285871249}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 59b81c06ec0df604697d1f1913596132, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -19258,6 +19361,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 284086677}
   zoneNameDisplay: {fileID: 925845549}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 2f48ef6427faaa1449b399da1ae494bf, type: 2}
 --- !u!60 &284086679
 PolygonCollider2D:
@@ -19706,6 +19810,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 292191747}
   zoneNameDisplay: {fileID: 1754461939}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 2bf6dab9faf4fd949854a25e2d45bfe4, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1766099174}
@@ -20283,6 +20388,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 295176098}
   zoneNameDisplay: {fileID: 1175873106}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9502a97e8a4180f478df83ced7ca7684, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 306318277}
@@ -20641,6 +20747,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 300139910}
   zoneNameDisplay: {fileID: 1187897862}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 040b2b3b73ba639479d8b0cf1f976195, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
@@ -20892,6 +20999,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 302453758}
   zoneNameDisplay: {fileID: 1552575647}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 586434589bc09574a914bf7c737f01ce, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 989717929}
@@ -21077,6 +21185,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 302823975}
   zoneNameDisplay: {fileID: 493747736}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e554e931458ba104084a3edf12a6b5fc, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1822752105}
@@ -22001,6 +22110,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 313196018}
   zoneNameDisplay: {fileID: 363505368}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 3fc4841501d058d44a533426bbd0f0ac, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1482636293}
@@ -22181,6 +22291,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 313298632}
   zoneNameDisplay: {fileID: 1972505692}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c2b171ecdebedb441b392cb893022915, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -23347,6 +23458,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 335612203}
   zoneNameDisplay: {fileID: 1560688759}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 418c97dd340e93a469adcaddabcdbb55, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1254957114}
@@ -24291,6 +24403,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 351281032}
   zoneNameDisplay: {fileID: 1465924276}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: c9d4e5759e003d74cbd9a5cfd12660db, type: 2}
 --- !u!60 &351281034
 PolygonCollider2D:
@@ -24781,6 +24894,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 358586969}
   zoneNameDisplay: {fileID: 415371277}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: db53b04318a4118408ccca6486e31ca9, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1756113772}
@@ -25025,6 +25139,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 360255497}
   zoneNameDisplay: {fileID: 132812934}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 2f6e94909cf75c74a8e9a9e00b5d981b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 666402007}
@@ -25227,6 +25342,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 361529517}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 566fb2c163252f44d9126ae6b09c513e, type: 2}
 --- !u!60 &361529519
 PolygonCollider2D:
@@ -25601,6 +25717,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 365601906}
   zoneNameDisplay: {fileID: 1270843870}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 97a62afae5b5bae4297b6e72c7a2892c, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2127839398}
@@ -25917,6 +26034,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 369570904}
   zoneNameDisplay: {fileID: 1336566484}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 566b8f0c74d5b7544a05da425c0866d8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1931756593}
@@ -26232,6 +26350,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 371349130}
   zoneNameDisplay: {fileID: 876870075}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8c195cc5b9845eb469222b97251f0b7a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1944229097}
@@ -26768,6 +26887,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 378828828}
   zoneNameDisplay: {fileID: 941013246}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 96404b7ab7c0d0244976f631af5a6461, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1917349002}
@@ -26993,6 +27113,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 380042842}
   zoneNameDisplay: {fileID: 1945952442}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ae35e03394f9ac643bba8ce901635d21, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 858737863}
@@ -27468,6 +27589,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 389845309}
   zoneNameDisplay: {fileID: 760002042}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: dfcec3022e9a8914b9a68818450d4ff6, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2134903189}
@@ -27996,6 +28118,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 397479226}
   zoneNameDisplay: {fileID: 738848962}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f450524fb7be773498c5bd17c4b8c82f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2120074990}
@@ -29471,6 +29594,7 @@ MonoBehaviour:
   - {fileID: 423567086}
   - {fileID: 751698462}
   zoneNameDisplay: {fileID: 2114029517}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 863a2f1586178c04f8e81d1de7b76310, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1387141227}
@@ -30364,6 +30488,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 437910165}
   zoneNameDisplay: {fileID: 1103141394}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: ecccd4547d123f04c88a62605398d1fd, type: 2}
 --- !u!60 &437910167
 PolygonCollider2D:
@@ -30674,6 +30799,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 446066019}
   zoneNameDisplay: {fileID: 1185484961}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 34d383266d8421b4596e8421ed4c9ae4, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 656640338}
@@ -30986,6 +31112,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 454557737}
   zoneNameDisplay: {fileID: 685542103}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 675e3b8270d200e4fa36151b4d57ebb7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1169728902}
@@ -31221,6 +31348,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 457878041}
   zoneNameDisplay: {fileID: 1748451084}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 6ced6213a2ebc084a8b85b98c320e57a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -31412,6 +31540,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 458543184}
   zoneNameDisplay: {fileID: 436281049}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c8e5e9fa6105ecd48b7177207f05b4b0, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2019162505}
@@ -32120,6 +32249,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 470968859}
   zoneNameDisplay: {fileID: 1299712527}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: dcbb8c6d4dace2f4e91150ca057a4450, type: 2}
   hazardousAdjacencies:
   - {fileID: 925176431}
@@ -33227,6 +33357,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 490160987}
   zoneNameDisplay: {fileID: 1844627239}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 4617c97eb3e6f974eaecaf574cfb6284, type: 2}
 --- !u!60 &490160989
 PolygonCollider2D:
@@ -33539,6 +33670,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 492321253}
   zoneNameDisplay: {fileID: 1362848279}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0de3e6b3b2207a346a2a344c31677c65, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1639320787}
@@ -33693,7 +33825,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 28702e9337089e04dadfc89d4ca68b4f, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 0.5, g: 0.75, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33728,6 +33860,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 493320320}
   zoneNameDisplay: {fileID: 1334271431}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 1924caa48565f0943a8dffbacedf3933, type: 2}
 --- !u!60 &493320322
 PolygonCollider2D:
@@ -35155,6 +35288,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 508343475}
   zoneNameDisplay: {fileID: 2129194178}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 19576dcad784ff148a31cb404e1bf15c, type: 2}
 --- !u!60 &508343477
 PolygonCollider2D:
@@ -35598,6 +35732,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 512687572}
   zoneNameDisplay: {fileID: 811885089}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 58ab61d3a114eec4e932b145deebac52, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1599599165}
@@ -35817,6 +35952,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 515003171}
   zoneNameDisplay: {fileID: 622464081}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 003c1c25628beb6409e35c6784cf403e, type: 2}
 --- !u!60 &515003173
 PolygonCollider2D:
@@ -36121,6 +36257,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 518233201}
   zoneNameDisplay: {fileID: 806111309}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 56590e332f678ec408f97a8ad43c674e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 397778886}
@@ -36342,6 +36479,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 521017381}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: a09c43483306cfc4eb921de4ac92c64a, type: 2}
 --- !u!60 &521017383
 PolygonCollider2D:
@@ -36930,6 +37068,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 530188555}
   zoneNameDisplay: {fileID: 287171611}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 898b675736dbeb24882813f27dd99017, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1477757457}
@@ -37251,6 +37390,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 533204720}
   zoneNameDisplay: {fileID: 1651283033}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7e00875f789038d47b49d40f5ab5e5bb, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 142855159}
@@ -37498,6 +37638,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 537093039}
   zoneNameDisplay: {fileID: 616152457}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 416059b485b625c4eb5d1a22d51473ad, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -37712,7 +37853,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
@@ -37720,7 +37861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 642976681994708555, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Name
@@ -37967,6 +38108,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 538586213}
   zoneNameDisplay: {fileID: 74290043}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a023ceb9678c50b43a0ee53bd4cc6c31, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1870751655}
@@ -38140,6 +38282,10 @@ PrefabInstance:
     - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Name
       value: CountryFlagIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050027781402507856, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
@@ -38592,6 +38738,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 545721184}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 6a59bcde71f8c1b43aa7ae66a75c75da, type: 2}
 --- !u!60 &545721186
 PolygonCollider2D:
@@ -38834,6 +38981,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 547724439}
   zoneNameDisplay: {fileID: 1868999636}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: bc5f76073a8a9e240ac95c617c39a5f2, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 394191627}
@@ -39110,6 +39258,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 550694656}
   zoneNameDisplay: {fileID: 1236594976}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c26398f1cb404bd488829df91dfce25c, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 269699745}
@@ -39538,6 +39687,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 553295151}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: d725c07541d4dce4fa65349e72b08a0f, type: 2}
 --- !u!60 &553295153
 PolygonCollider2D:
@@ -39705,6 +39855,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 554174514}
   zoneNameDisplay: {fileID: 873391371}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b24f7cb7b610c844baf4f63633d226c6, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 425393807}
@@ -40031,6 +40182,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 562000657}
   zoneNameDisplay: {fileID: 2096890163}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: df387eace65e9e64f89cdd1045e7aed9, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 341709358}
@@ -40435,6 +40587,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 568911224}
   zoneNameDisplay: {fileID: 1663805727}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5e99dca4332864e44bde6c9e1e0dffc6, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
@@ -41758,6 +41911,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 588441351}
   zoneNameDisplay: {fileID: 115525013}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 85cd783fa1314734595f30f56db6a18a, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
@@ -42223,6 +42377,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 597837461}
   zoneNameDisplay: {fileID: 1325554477}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7225ecc4abd2d49489d784d2b6c06e8b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 175152143}
@@ -42845,6 +43000,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 613544434}
   zoneNameDisplay: {fileID: 1743294628}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 255a115a86bc1e24f81566ce4e7c56e4, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1513870267}
@@ -43519,6 +43675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZoneValueDisplay (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 642976681994708555, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -43626,10 +43786,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1183071186523770811, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
 --- !u!224 &621283316 stripped
 RectTransform:
@@ -43672,11 +43829,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44051,6 +44212,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 626343099}
   zoneNameDisplay: {fileID: 188508591}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 97ec26ad13538144ea065b20e1a7a5eb, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2028483225}
@@ -44310,6 +44472,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 631165428}
   zoneNameDisplay: {fileID: 1369012049}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5b567aa499c0e6a47af173d3223ba805, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1421731808}
@@ -44510,6 +44673,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 631874841}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 8150f5453638da943a7b82471ffa7211, type: 2}
 --- !u!60 &631874843
 PolygonCollider2D:
@@ -44861,6 +45025,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 638003772}
   zoneNameDisplay: {fileID: 521750245}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a6245a3a4ac3c024990ac71d2bc174ec, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2099669967}
@@ -45699,6 +45864,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 646617007}
   zoneNameDisplay: {fileID: 1184463604}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 7b9529949da94444a97ca575124499d6, type: 2}
 --- !u!60 &646617009
 PolygonCollider2D:
@@ -46118,6 +46284,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 652486378}
   zoneNameDisplay: {fileID: 1875701468}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 7189afd64e3b5d54e9804293eae1339e, type: 2}
 --- !u!60 &652486380
 PolygonCollider2D:
@@ -46363,6 +46530,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 655868730}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 7d708722b91f4b047b3e2f71c1838b98, type: 2}
 --- !u!60 &655868732
 PolygonCollider2D:
@@ -46994,6 +47162,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 659987462}
   zoneNameDisplay: {fileID: 1048020103}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7b5656b18945b144cb03e211dbbcd716, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -47232,6 +47401,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 661283124}
   zoneNameDisplay: {fileID: 1103665160}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 0a06f77f66fd41f49917b9fe70f20714, type: 2}
 --- !u!60 &661283126
 PolygonCollider2D:
@@ -47517,6 +47687,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 663125958}
   zoneNameDisplay: {fileID: 691246024}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8997fe21230f0a647bed70ff558b4efd, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1332309750}
@@ -48081,7 +48252,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fb19acf3d0f72b748b4c0cde3eae4125, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -48131,6 +48302,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 675555516}
   zoneNameDisplay: {fileID: 1919674317}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 118ca21e713aa2542a2653b9c18ecc0f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1969937188}
@@ -48626,6 +48798,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 684068796}
   zoneNameDisplay: {fileID: 2035152875}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0f16845d7f6754943ac8027c4d2ef18f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 50848301}
@@ -49016,6 +49189,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 687746187}
   zoneNameDisplay: {fileID: 2040478205}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 72d05f05513ba7945b949e416f351a25, type: 2}
 --- !u!60 &687746189
 PolygonCollider2D:
@@ -49403,6 +49577,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 694162055}
   zoneNameDisplay: {fileID: 1734341793}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 29d5a90cd21de194eb04e257b3ed75f6, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
@@ -49766,6 +49941,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 695290770}
   zoneNameDisplay: {fileID: 1461502670}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: ba3b0905e78036c40ac61c2ae47beefe, type: 2}
 --- !u!60 &695290772
 PolygonCollider2D:
@@ -50361,6 +50537,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 712650877}
   zoneNameDisplay: {fileID: 1436094680}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 332711403e2c8c04992cf814b20fc8a2, type: 2}
 --- !u!60 &712650879
 PolygonCollider2D:
@@ -51160,6 +51337,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 722570990}
   zoneNameDisplay: {fileID: 449988252}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 436ef7902be110c4f8ac76713ede4bdd, type: 2}
 --- !u!60 &722570992
 PolygonCollider2D:
@@ -51553,6 +51731,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 726660339}
   zoneNameDisplay: {fileID: 1851215846}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: f37b41f7885545e4186e0a3aa2523437, type: 2}
 --- !u!60 &726660341
 PolygonCollider2D:
@@ -52077,6 +52256,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 733496909}
   zoneNameDisplay: {fileID: 1283926681}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ea5de9472bc66bd4a8226449fdabc0cf, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1711441491}
@@ -52318,6 +52498,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 733623557}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 95fd1ddb935a9164dbc88789a893f38e, type: 2}
 --- !u!60 &733623559
 PolygonCollider2D:
@@ -52795,6 +52976,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 738241352}
   zoneNameDisplay: {fileID: 2048996843}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 625edf33a186f124795f212c4c8cf6aa, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 641595970}
@@ -54680,7 +54862,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28307842}
   m_HandleRect: {fileID: 28307841}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -54839,6 +55021,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 772246917}
   zoneNameDisplay: {fileID: 424256048}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ec8501ea4bb36514cbd06b1b06bf0ea8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 925004448}
@@ -55154,6 +55337,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 774387387}
   zoneNameDisplay: {fileID: 728831559}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 8155e10fdb9bed34aa28af52db0612a5, type: 2}
 --- !u!60 &774387389
 PolygonCollider2D:
@@ -56039,6 +56223,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 794631070}
   zoneNameDisplay: {fileID: 425099404}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 65b06c313c9be5849904688088318e1a, type: 2}
 --- !u!60 &794631072
 PolygonCollider2D:
@@ -56474,6 +56659,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 802919238}
   zoneNameDisplay: {fileID: 1256728265}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 10cf45cf29ee074468b334a3fdaa4739, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 859345838}
@@ -57578,6 +57764,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 814128875}
   zoneNameDisplay: {fileID: 1501337473}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e0cf9f20138fbe44b8671da18ec9eb56, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -58446,6 +58633,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 821346921}
   zoneNameDisplay: {fileID: 1177221476}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0404bf6726e42144c9ef8d7eafd4a3d1, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 134340577}
@@ -58716,6 +58904,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 824623045}
   zoneNameDisplay: {fileID: 749274940}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e353a4f94d034be49801ed8394622ef5, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -59011,6 +59200,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 824907277}
   zoneNameDisplay: {fileID: 2033860502}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: cb6613644ab6f1042b9f9dc8a8efabc0, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1591630549}
@@ -59499,6 +59689,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 836165997}
   zoneNameDisplay: {fileID: 2133209287}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c0443681829dd7c439cc84d1a8c7de16, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1249093501}
@@ -60814,6 +61005,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 866634105}
   zoneNameDisplay: {fileID: 1610792800}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 89c79d26946caa5418309cf268399f00, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -61037,6 +61229,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 868035800}
   zoneNameDisplay: {fileID: 1106623299}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5209463ab1a2ef5408ed8584ee2693aa, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 327240045}
@@ -61281,6 +61474,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 868335650}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: ab58348ab2724f743817fd2f6ac4a592, type: 2}
 --- !u!60 &868335652
 PolygonCollider2D:
@@ -62362,6 +62556,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 886585188}
   zoneNameDisplay: {fileID: 1521524617}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 624a8a18698cf32418fa5dcc26477969, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 786827468}
@@ -62632,11 +62827,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.r
@@ -62812,6 +63007,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 893213728}
   zoneNameDisplay: {fileID: 497377668}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 290ee5f2f6e925840ac0df1921a0c5f1, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 471949185}
@@ -63292,6 +63488,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 904355963}
   zoneNameDisplay: {fileID: 624947494}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 14c89ba4abba19348bb6d95604f6842d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1370220858}
@@ -63605,6 +63802,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 909723954}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 88f4fea12346edb4a99393f9491435a2, type: 2}
 --- !u!60 &909723956
 PolygonCollider2D:
@@ -64306,6 +64504,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 925176429}
   zoneNameDisplay: {fileID: 192960074}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c34df85aa2afd85499b7c098ef25cf1b, type: 2}
   hazardousAdjacencies:
   - {fileID: 470968861}
@@ -64845,6 +65044,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 930799482}
   zoneNameDisplay: {fileID: 45083985}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: e942fe8d1fe54f645bf812a340a94ab9, type: 2}
 --- !u!60 &930799484
 PolygonCollider2D:
@@ -66154,6 +66354,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 952352063}
   zoneNameDisplay: {fileID: 952398844}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ef635bf2d9b165944b0ea906e1af38ee, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1860724467}
@@ -66620,6 +66821,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 954460080}
   zoneNameDisplay: {fileID: 1960461601}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 115591a998961364e86d52eb9a2a958b, type: 2}
 --- !u!60 &954460082
 PolygonCollider2D:
@@ -66845,6 +67047,7 @@ MonoBehaviour:
   - {fileID: 955523285}
   - {fileID: 1725394332}
   zoneNameDisplay: {fileID: 1989421355}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 62ae0a02138fb5c43ac84243b08202ef, type: 2}
 --- !u!60 &955523287
 PolygonCollider2D:
@@ -67256,7 +67459,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533457802}
   m_HandleRect: {fileID: 1533457801}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -67614,6 +67817,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 972415834}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 09f7eb255a8a74647b7549941bc53ecd, type: 2}
 --- !u!60 &972415836
 PolygonCollider2D:
@@ -68085,6 +68289,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 982195403}
   zoneNameDisplay: {fileID: 1368147064}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 18fb7b3ad47eb8e41add0ef5f9f05aed, type: 2}
 --- !u!60 &982195405
 PolygonCollider2D:
@@ -68780,6 +68985,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 993511049}
   zoneNameDisplay: {fileID: 1825227717}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 358601ea403308747b428f66ab9d92d6, type: 2}
 --- !u!60 &993511051
 PolygonCollider2D:
@@ -68949,6 +69155,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 993834607}
   zoneNameDisplay: {fileID: 1916517462}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b03775523a51add428636c8efb3a85fb, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 740577997}
@@ -69332,6 +69539,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 997667272}
   zoneNameDisplay: {fileID: 1890010725}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5ff31bebcd794a74f8db1c46d5d5174f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 482294133}
@@ -69544,6 +69752,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1001610955}
   zoneNameDisplay: {fileID: 1069985295}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8a572ede56798fa41a087bad5ff38b48, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
@@ -69914,6 +70123,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1001778918}
   zoneNameDisplay: {fileID: 1687246792}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 006b2a0899d6bce41a679e53e98400ab, type: 2}
 --- !u!60 &1001778920
 PolygonCollider2D:
@@ -70691,6 +70901,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1023035153}
   zoneNameDisplay: {fileID: 750560829}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: dbcde5f9d4a63034898980e0d0492d79, type: 2}
 --- !u!60 &1023035155
 PolygonCollider2D:
@@ -70892,6 +71103,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1023412345}
   zoneNameDisplay: {fileID: 766784347}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 962793387421ad3459ede7bb9361585c, type: 2}
 --- !u!60 &1023412348
 PolygonCollider2D:
@@ -71259,6 +71471,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1029685237}
   zoneNameDisplay: {fileID: 139859261}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1f4fc4ad53507db41ab3f8aa81dc40cf, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1671257674}
@@ -72431,6 +72644,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1045739319}
   zoneNameDisplay: {fileID: 1620400814}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 00ca1638f8bae384cbce449fcf0e0498, type: 2}
 --- !u!60 &1045739321
 PolygonCollider2D:
@@ -72596,6 +72810,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1046377512}
   zoneNameDisplay: {fileID: 1559014783}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a49ef9aaabd383345a27d7104ae14cb9, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1567227286}
@@ -72775,6 +72990,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1046916714}
   zoneNameDisplay: {fileID: 1943355341}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 69d08729ffaa04f4ca5787ef9e02825d, type: 2}
 --- !u!60 &1046916716
 PolygonCollider2D:
@@ -73072,6 +73288,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1052228752}
   zoneNameDisplay: {fileID: 309773428}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: dd24b6e343e62ca4eb142aeb0506608c, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 120676497}
@@ -73324,6 +73541,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1053456216}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 8b0c7b6ab30104d44a393838043d1157, type: 2}
 --- !u!60 &1053456218
 PolygonCollider2D:
@@ -73569,6 +73787,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1066360217}
   zoneNameDisplay: {fileID: 400397542}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a7cc09f8308052e439450b8828f4f027, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 179326853}
@@ -73836,11 +74055,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -74087,6 +74306,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1075510096}
   zoneNameDisplay: {fileID: 1969378568}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c17ba4bf7664ccd44a5557ea312c551b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1033555095}
@@ -74801,6 +75021,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1082479208}
   zoneNameDisplay: {fileID: 143216674}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 16d155d97baccf74299531764a71f140, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 819467457}
@@ -75046,6 +75267,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1085732316}
   zoneNameDisplay: {fileID: 1618046676}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 403727592cf29884ebfe13326d253f87, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
@@ -75753,6 +75975,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1100151792}
   zoneNameDisplay: {fileID: 292637451}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 668d3c1904cf4da458c2a55bd0cfdf15, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1338632804}
@@ -76702,6 +76925,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1119183260}
   zoneNameDisplay: {fileID: 1423930991}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 2952559bae781e544b787e25156ab0d7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1877830424}
@@ -77826,6 +78050,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1132608750}
   zoneNameDisplay: {fileID: 2072732697}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1ea0cc1cb045845478bd79cc7457efaf, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -78116,6 +78341,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1137129028}
   zoneNameDisplay: {fileID: 1443919858}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: c4c9ff76436ab974d96f95979edce013, type: 2}
 --- !u!60 &1137129030
 PolygonCollider2D:
@@ -78303,6 +78529,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1139583636}
   zoneNameDisplay: {fileID: 1831365921}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 151dea2e50604d745ae29cd1c6cd0de6, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1486207515}
@@ -78760,6 +78987,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1143603212}
   zoneNameDisplay: {fileID: 1424165104}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 383e3881fd1ac75468e34beb8ce7e337, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -79081,6 +79309,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1147483862}
   zoneNameDisplay: {fileID: 2098308646}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 8e69b8c36ca94954e9eeba55b2177279, type: 2}
 --- !u!60 &1147483864
 PolygonCollider2D:
@@ -79451,6 +79680,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1153163133}
   zoneNameDisplay: {fileID: 276433225}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: dae07549ff9536c498931511782676b5, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -79626,6 +79856,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1154899170}
   zoneNameDisplay: {fileID: 1176517109}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: a3d02f8f538695045a812d9d2aecb303, type: 2}
 --- !u!60 &1154899172
 PolygonCollider2D:
@@ -79865,6 +80096,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1159015161}
   zoneNameDisplay: {fileID: 590010625}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 6100fc4976b3166468c9627cdc1e78b1, type: 2}
   hazardousAdjacencies:
   - {fileID: 1607069495}
@@ -80170,6 +80402,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1166595876}
   zoneNameDisplay: {fileID: 1835214899}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8933d88b0b1049343b774e1fdd9948fc, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
@@ -80473,6 +80706,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1167121045}
   zoneNameDisplay: {fileID: 1660512965}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 4fb44771d94487c4184d37cd987bfefa, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1416153156}
@@ -81015,6 +81249,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1174608447}
   zoneNameDisplay: {fileID: 1515577393}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c629dc9624bf5a3449b56f87541ea53a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -81875,6 +82110,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1188944135}
   zoneNameDisplay: {fileID: 544844581}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9788e8f5ffd02be43b4caf2506d72695, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 98941601}
@@ -82160,6 +82396,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1190265378}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 77dcee5a0637cf84da6d9ed7d832b2c5, type: 2}
 --- !u!60 &1190265380
 PolygonCollider2D:
@@ -82381,6 +82618,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1190632377}
   zoneNameDisplay: {fileID: 1506399862}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f89e9539e60739f4fa64e80e333892b6, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 990423435}
@@ -82919,6 +83157,7 @@ MonoBehaviour:
   - {fileID: 1193292833}
   - {fileID: 803066580}
   zoneNameDisplay: {fileID: 1220293809}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 42ef1caefe1a62c4bbdfe15c47071962, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1976489577}
@@ -83510,6 +83749,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1200620702}
   zoneNameDisplay: {fileID: 1678408541}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: d26e1eb5d6952bc4d8a1dfcf9332719e, type: 2}
 --- !u!60 &1200620704
 PolygonCollider2D:
@@ -83860,6 +84100,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1203689820}
   zoneNameDisplay: {fileID: 2039278358}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 2b4d4e4d4670a424399d905c2b1e095b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1600417933}
@@ -84694,6 +84935,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1223089109}
   zoneNameDisplay: {fileID: 1344251820}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 541e8fadbb1300448a076ff289cd8085, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 207017138}
@@ -84955,6 +85197,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1224092135}
   zoneNameDisplay: {fileID: 1534122924}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9f45466722bf77a46b14f3994855e9f5, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 960744356}
@@ -85281,6 +85524,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1226481428}
   zoneNameDisplay: {fileID: 2134260353}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 835391758eca15b4796ddfdbe5bb300d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 911094095}
@@ -85806,6 +86050,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1232698924}
   zoneNameDisplay: {fileID: 812040495}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8b206dff2035668499461becd1084016, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2010618281}
@@ -86218,6 +86463,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1239364469}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 20c5c0c06d3aa3d439ff89f58e3942aa, type: 2}
 --- !u!60 &1239364471
 PolygonCollider2D:
@@ -86747,6 +86993,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1247481555}
   zoneNameDisplay: {fileID: 1152109498}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 02e472065cea0b3498720f9a66667538, type: 2}
 --- !u!60 &1247481558
 PolygonCollider2D:
@@ -86901,7 +87148,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: de8de034e948da040864bb755f6ce2f1, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86950,6 +87197,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1248153066}
   zoneNameDisplay: {fileID: 658236647}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 71dc7bfef6e4d1a41804829db7fe6c45, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 538275096}
@@ -87163,6 +87411,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1248191075}
   zoneNameDisplay: {fileID: 1776269265}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: f56125e7e95336d4aa17cc3578982a7f, type: 2}
 --- !u!60 &1248191077
 PolygonCollider2D:
@@ -87496,6 +87745,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1250806085}
   zoneNameDisplay: {fileID: 542487826}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: b7bc97020bb833544a02dcf9e1aca9d6, type: 2}
 --- !u!60 &1250806087
 PolygonCollider2D:
@@ -88121,6 +88371,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1264706727}
   zoneNameDisplay: {fileID: 1031704695}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8324eee171b0fb142bdc64e2b97d7725, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -88362,6 +88613,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1269033550}
   zoneNameDisplay: {fileID: 373403229}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d32410d164858304f8d756d291b25980, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 550863600}
@@ -89711,6 +89963,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1288917953}
   zoneNameDisplay: {fileID: 1802604138}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0015b8ca78be0bc4fbd01805a54c5983, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -90030,6 +90283,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1290949314}
   zoneNameDisplay: {fileID: 2020180815}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 9be5d5ce19cf9044a93d1027d9d075fc, type: 2}
 --- !u!60 &1290949316
 PolygonCollider2D:
@@ -90196,6 +90450,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1294512288}
   zoneNameDisplay: {fileID: 670438731}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 6c6d879fdc8f905468c1b070c3360353, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 250665256}
@@ -90626,7 +90881,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1956132806}
   m_HandleRect: {fileID: 1956132805}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -90780,6 +91035,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1308422816}
   zoneNameDisplay: {fileID: 2126714020}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c1f94d84c5576b94b9bac279d9fc4875, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1736440526}
@@ -90973,6 +91229,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1309641531}
   zoneNameDisplay: {fileID: 536035789}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: c83f1cb6a8f404949a56c1a9a252b1cb, type: 2}
 --- !u!60 &1309641533
 PolygonCollider2D:
@@ -91514,6 +91771,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1319387633}
   zoneNameDisplay: {fileID: 1764265568}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9c67fac2d31b3c2498ac5f87eafa25c7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1956018428}
@@ -91807,6 +92065,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1321431097}
   zoneNameDisplay: {fileID: 1721989963}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c365da39ac2104349b1ab3a286f86b8a, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -92175,6 +92434,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1324186040}
   zoneNameDisplay: {fileID: 1680903811}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 133332e20b0376d48822cf9bdd520887, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1082042327}
@@ -93906,6 +94166,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1346924376}
   zoneNameDisplay: {fileID: 1228047206}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f791469a0e66a424ba028d9a0e7e1882, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 422116388}
@@ -94250,6 +94511,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1354318832}
   zoneNameDisplay: {fileID: 406564419}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: eba8ea1f9d1868845949efc60a8e0043, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1200376413}
@@ -94617,6 +94879,7 @@ MonoBehaviour:
   - {fileID: 1357559690}
   - {fileID: 1448743489}
   zoneNameDisplay: {fileID: 1297218979}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: ef7b272706a223d478fc5f4e202214a6, type: 2}
 --- !u!60 &1357559692
 PolygonCollider2D:
@@ -95673,6 +95936,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1372819622}
   zoneNameDisplay: {fileID: 1499673771}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c8a4a9d6b62d929479845334940ad400, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 142443973}
@@ -96124,6 +96388,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1378342896}
   zoneNameDisplay: {fileID: 296423782}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f10627d7660102540882ce078258d256, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 402728597}
@@ -96440,6 +96705,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1383039571}
   zoneNameDisplay: {fileID: 1018276656}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b76153708cc31bf4cb1d7b168c013d34, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1466112123}
@@ -96772,6 +97038,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1388706322}
   zoneNameDisplay: {fileID: 1330828759}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: c925d728123be4e42ad0034127fa662a, type: 2}
 --- !u!60 &1388706324
 PolygonCollider2D:
@@ -96978,6 +97245,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1390596251}
   zoneNameDisplay: {fileID: 1750639097}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: adbf3b14d62870b4784182c14e7cc5de, type: 2}
 --- !u!60 &1390596254
 PolygonCollider2D:
@@ -97145,6 +97413,7 @@ MonoBehaviour:
   - {fileID: 1392588551}
   - {fileID: 582056040}
   zoneNameDisplay: {fileID: 836657731}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c36a533ed28a54245858826860774f63, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 493378734}
@@ -97647,6 +97916,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1402003135}
   zoneNameDisplay: {fileID: 1123870890}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ef298fb767496524e845307c20f80ed7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 522777210}
@@ -98466,6 +98736,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1418680277}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3239bbe313e51064884581243a1e4ac2, type: 2}
 --- !u!60 &1418680279
 PolygonCollider2D:
@@ -98634,6 +98905,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1419490667}
   zoneNameDisplay: {fileID: 2013652265}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b915ce2b3a830134995f46ea29aa22ad, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -99674,6 +99946,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1429211054}
   zoneNameDisplay: {fileID: 400462162}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 14d5148594db70e428af1d2599c0a9f1, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 320638742}
@@ -99923,6 +100196,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1430997634}
   zoneNameDisplay: {fileID: 969536543}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ffa4a24934285534d8dd7481026523a8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 821220959}
@@ -100198,6 +100472,7 @@ MonoBehaviour:
   - {fileID: 1431896235}
   - {fileID: 1638372210}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 62991ae1e65ed2f45b98de75e6203411, type: 2}
 --- !u!60 &1431896237
 PolygonCollider2D:
@@ -100763,6 +101038,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1439553827}
   zoneNameDisplay: {fileID: 610154386}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3b397be6bc852e342b6c53dc4e9723b1, type: 2}
 --- !u!60 &1439553829
 PolygonCollider2D:
@@ -100972,6 +101248,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1439797107}
   zoneNameDisplay: {fileID: 1322560808}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 662cd12311e473445b5e87b35e188b1a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1782633762}
@@ -102030,6 +102307,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1454570505}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 2e6589cb2745ba44b911fdd99daf223a, type: 2}
 --- !u!60 &1454570507
 PolygonCollider2D:
@@ -102197,6 +102475,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1455576716}
   zoneNameDisplay: {fileID: 1866480292}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 17813a0fd5733214387756a698494b33, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 739443955}
@@ -102435,6 +102714,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1455683085}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 310ed7bab4b0cbc4d88a466772df3a0a, type: 2}
 --- !u!60 &1455683087
 PolygonCollider2D:
@@ -102889,6 +103169,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1463468213}
   zoneNameDisplay: {fileID: 1902540636}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: cbde8452779ed83498d8e02535d48da7, type: 2}
 --- !u!60 &1463468215
 PolygonCollider2D:
@@ -103980,6 +104261,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1473100115}
   zoneNameDisplay: {fileID: 1290582514}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 5d06523f191f27b42a6cc00f3c0d6520, type: 2}
 --- !u!60 &1473100117
 PolygonCollider2D:
@@ -104270,6 +104552,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1475628616}
   zoneNameDisplay: {fileID: 2073915176}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 28ed7b6752852b1488e4818b8ac9d5a6, type: 2}
 --- !u!60 &1475628618
 PolygonCollider2D:
@@ -104891,6 +105174,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1480298223}
   zoneNameDisplay: {fileID: 767375150}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: e67835f245f4a014ea12fd70f9522742, type: 2}
 --- !u!60 &1480298225
 PolygonCollider2D:
@@ -105358,6 +105642,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1483701556}
   zoneNameDisplay: {fileID: 611096363}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: da54204796c90e14ba1574338033e06e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1423818673}
@@ -105700,6 +105985,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1484090660}
   zoneNameDisplay: {fileID: 696429091}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b994b62668e688a48ab67988edd0a1b9, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -106250,6 +106536,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1488744874}
   zoneNameDisplay: {fileID: 154764976}
+  zoneInfoDisplay: {fileID: 57871514}
   landTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 621283317}
@@ -106495,6 +106782,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1490200031}
   zoneNameDisplay: {fileID: 1183988413}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 9f93612df3136454d93baff988c5ea14, type: 2}
 --- !u!60 &1490200033
 PolygonCollider2D:
@@ -107868,6 +108156,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1514151601}
   zoneNameDisplay: {fileID: 1470049097}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5335ff156f3cc21468ac12bd39dbe0bb, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 570492295}
@@ -108332,6 +108621,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1516872155}
   zoneNameDisplay: {fileID: 1382265676}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3a641c5240cbfb643b0527c4d2e0df5c, type: 2}
 --- !u!60 &1516872157
 PolygonCollider2D:
@@ -109505,6 +109795,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1551751526}
   zoneNameDisplay: {fileID: 1705775617}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 988807367332b7b418cd8d534a1551fb, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -109821,6 +110112,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1555020285}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 67abcb0e9b321734f9f169c240617289, type: 2}
 --- !u!60 &1555020287
 PolygonCollider2D:
@@ -110123,6 +110415,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1558976839}
   zoneNameDisplay: {fileID: 1809037593}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 889027ae396630a43a65bbab560dc2b6, type: 2}
 --- !u!60 &1558976841
 PolygonCollider2D:
@@ -111354,6 +111647,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1583198231}
   zoneNameDisplay: {fileID: 1826134859}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 520cca5f0a4204942a1d1d39c55d1506, type: 2}
 --- !u!60 &1583198233
 PolygonCollider2D:
@@ -111702,6 +111996,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1586604157}
   zoneNameDisplay: {fileID: 1269603186}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 3793da7221b640a42a156a4c08e0e399, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1493030930}
@@ -112232,6 +112527,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1592914594}
   zoneNameDisplay: {fileID: 1839173715}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d934dce7a0aa9ec4c9831137c07dd69a, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1830752355}
@@ -113291,11 +113587,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.r
@@ -113543,6 +113839,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1607069493}
   zoneNameDisplay: {fileID: 1968681259}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e7b00c24e53f1d847810c1447280279b, type: 2}
   hazardousAdjacencies:
   - {fileID: 1159015163}
@@ -114396,6 +114693,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1617405412}
   zoneNameDisplay: {fileID: 1692863798}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: b9052bd981f423c4095767d4afa2e7dc, type: 2}
 --- !u!60 &1617405414
 PolygonCollider2D:
@@ -114689,6 +114987,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1618081576}
   zoneNameDisplay: {fileID: 1087114009}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 0d55c54a0d64b564aa1ce93aeeb4c77f, type: 2}
 --- !u!60 &1618081578
 PolygonCollider2D:
@@ -114853,7 +115152,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 08b43383a41ed0544bd6595ddd889549, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -114903,6 +115202,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1620480472}
   zoneNameDisplay: {fileID: 1964773194}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9a6e39e348d44f1479d3c4a8cf29b1aa, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1070594764}
@@ -115132,6 +115432,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1621087411}
   zoneNameDisplay: {fileID: 2121164847}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: bb3959052aefe8844b334236e21cf04a, type: 2}
 --- !u!60 &1621087413
 PolygonCollider2D:
@@ -115356,6 +115657,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1621179552}
   zoneNameDisplay: {fileID: 1886579572}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 951d2c4ad4e357546b2f6510da8c0c75, type: 2}
 --- !u!60 &1621179554
 PolygonCollider2D:
@@ -115751,6 +116053,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1626788673}
   zoneNameDisplay: {fileID: 214490402}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7f60fbcf406d33e429e0c47d10aa0f7d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 492113065}
@@ -115987,6 +116290,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1633834839}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3556f610fcc7818429ccf4e6fd71d0a9, type: 2}
 --- !u!60 &1633834841
 PolygonCollider2D:
@@ -116897,6 +117201,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1646684084}
   zoneNameDisplay: {fileID: 1550424322}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 65f1253f4ec19c54ca2e332d9d6cdd78, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1078583083}
@@ -117806,11 +118111,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -118341,6 +118646,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1659069458}
   zoneNameDisplay: {fileID: 463956654}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1685929390}
@@ -119018,6 +119324,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1670454460}
   zoneNameDisplay: {fileID: 947557225}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7905adadd81c792448ff4c549567b30b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2029794991}
@@ -119399,6 +119706,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1673163659}
   zoneNameDisplay: {fileID: 2049566453}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 00fea1639a4931540bda8378cf11b923, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1284504427}
@@ -119680,6 +119988,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1680693507}
   zoneNameDisplay: {fileID: 1810602721}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 525127421b88ad446a9a346b771cc274, type: 2}
   hazardousAdjacencies:
   - {fileID: 2068111323}
@@ -119950,6 +120259,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1680742541}
   zoneNameDisplay: {fileID: 1316836658}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 8abde5a687f0cb84db33229acd7311f4, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 337862696}
@@ -120773,6 +121083,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1689926897}
   zoneNameDisplay: {fileID: 758691324}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 6020f3b2851a4a6488b696629970128c, type: 2}
 --- !u!60 &1689926899
 PolygonCollider2D:
@@ -121183,6 +121494,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1698399871}
   zoneNameDisplay: {fileID: 1874839157}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c21e4b9f746936d41bd198a82f5167e4, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 51807222}
@@ -122236,6 +122548,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1712472190}
   zoneNameDisplay: {fileID: 711664447}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e72f26098d9daf14bae6cf1fd50dc49c, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1202104411}
@@ -122578,6 +122891,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1714752524}
   zoneNameDisplay: {fileID: 1328600172}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 305eff19ed618d246a537b18ce41782c, type: 2}
   hazardousAdjacencies:
   - {fileID: 568911226}
@@ -123411,6 +123725,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1726013690}
   zoneNameDisplay: {fileID: 316430414}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: f32fe8b08d609a3439aaf6f7d6f23ac8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1445522187}
@@ -123822,6 +124137,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1730290419}
   zoneNameDisplay: {fileID: 1349170312}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 4532cbe1c8af66342ab261bbd1300413, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2029435722}
@@ -124239,6 +124555,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1735579746}
   zoneNameDisplay: {fileID: 942030740}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1245831c7f207814498f4f4c8b44916d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1594592018}
@@ -125287,6 +125604,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1751404471}
   zoneNameDisplay: {fileID: 208936675}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: eb4377444ae91864f95475a3cfca3e11, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1707655772}
@@ -125774,6 +126092,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1759053284}
   zoneNameDisplay: {fileID: 119255558}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 21f401e25db51f644ac46cc8f4f6db02, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -126228,6 +126547,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1769966067}
   zoneNameDisplay: {fileID: 1841987966}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3d79ecc5fbd5d9e46b0861ea6d56c714, type: 2}
 --- !u!60 &1769966069
 PolygonCollider2D:
@@ -126418,7 +126738,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 213ac5632a172444db7371346b0de5f1, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126469,6 +126789,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1774359348}
   zoneNameDisplay: {fileID: 1007513597}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 80e5a7cfe2ade0c4c8c3c7c0f7c2abe7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 226643952}
@@ -126706,6 +127027,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1775261580}
   zoneNameDisplay: {fileID: 2131728894}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 69781e9102ce20848af13e6689233e0d, type: 2}
 --- !u!60 &1775261582
 PolygonCollider2D:
@@ -126908,7 +127230,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4b0b52913e8e0e439a73cbd98f0da0b, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126957,6 +127279,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1775729496}
   zoneNameDisplay: {fileID: 816731256}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ec52214e5816a3545aa7ef2c7098ef49, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1655511917}
@@ -127599,6 +127922,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1780608781}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: a9ee4ce18ca469749bd300796cd6b05a, type: 2}
 --- !u!60 &1780608783
 PolygonCollider2D:
@@ -127973,7 +128297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
@@ -127981,7 +128305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128513,6 +128837,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1790853568}
   zoneNameDisplay: {fileID: 1281039296}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 00751987a4e497148a79133b120fd61c, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
@@ -129224,6 +129549,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1793325656}
   zoneNameDisplay: {fileID: 1080452548}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 50942f76d8fb75b488935905a2c5e47e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 782098331}
@@ -129783,6 +130109,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1800863640}
   zoneNameDisplay: {fileID: 1901583885}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c883ae1569ab3d548901394463e836fc, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1873290850}
@@ -130001,6 +130328,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1801945331}
   zoneNameDisplay: {fileID: 517439325}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1b491e4adcfe72e4fa63c869d9d1f499, type: 2}
   hazardousAdjacencies:
   - {fileID: 588441353}
@@ -130412,6 +130740,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1806297545}
   zoneNameDisplay: {fileID: 1825796111}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 9a2efae9a851d5941b22c39c416f36f5, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1285947203}
@@ -131208,6 +131537,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1813642504}
   zoneNameDisplay: {fileID: 1410394305}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 46031104b8920774ca91509c2f579580, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 479552217}
@@ -131527,6 +131857,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1814227949}
   zoneNameDisplay: {fileID: 463558960}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e6231485e53b2a84197fb66adf998f5e, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1209634639}
@@ -131780,6 +132111,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1816831523}
   zoneNameDisplay: {fileID: 1710311757}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: c133a24f22232074db1f66d483c8d3a1, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1467091023}
@@ -132496,6 +132828,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1823749633}
   zoneNameDisplay: {fileID: 2127592923}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e86262c2e4ff6354fa7b02ae9b109e17, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1791102422}
@@ -133062,6 +133395,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1827317942}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 84ea8876dfd51114aaa75817d3b1f3a0, type: 2}
 --- !u!60 &1827317944
 PolygonCollider2D:
@@ -133393,6 +133727,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1830960675}
   zoneNameDisplay: {fileID: 2121002432}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 89f46606b69288b4490b10ce03897470, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 619940088}
@@ -134027,6 +134362,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1835715482}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 406d026d0d7ad154dab73b97a9e20ff5, type: 2}
 --- !u!60 &1835715484
 PolygonCollider2D:
@@ -134792,6 +135128,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1849376801}
   zoneNameDisplay: {fileID: 1186998352}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 1d2f7aed7b149ad42a2d1350d1904291, type: 2}
 --- !u!60 &1849376803
 PolygonCollider2D:
@@ -135243,6 +135580,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1852734470}
   zoneNameDisplay: {fileID: 556953921}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d21c50a934b0c3c4da09433171de16a0, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 641837557}
@@ -135439,6 +135777,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1852740750}
   zoneNameDisplay: {fileID: 1441242267}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: aacdd521d834e7940bf6f7883ea89c76, type: 2}
   hazardousAdjacencies:
   - {fileID: 1321431099}
@@ -135694,6 +136033,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1853642822}
   zoneNameDisplay: {fileID: 1270029689}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 50dd662a555a2b64e996f8a3cf9e0809, type: 2}
 --- !u!60 &1853642825
 PolygonCollider2D:
@@ -135866,6 +136206,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1857445611}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: adf65d8e6fc1dc141be06c254439bb86, type: 2}
 --- !u!60 &1857445613
 PolygonCollider2D:
@@ -136465,6 +136806,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1866816337}
   zoneNameDisplay: {fileID: 947894555}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 5e95b9a7b29c2674692c01585487db12, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1784932880}
@@ -137272,6 +137614,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1877494138}
   zoneNameDisplay: {fileID: 501525268}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ce92c63bd715cd84f8fd5d18c34282dc, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 462253801}
@@ -137524,6 +137867,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1877805608}
   zoneNameDisplay: {fileID: 483126124}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 6018a03038b62d340b0524715ed845a0, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 580312422}
@@ -137872,6 +138216,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1878377289}
   zoneNameDisplay: {fileID: 716698151}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 87fbe94ea3bb0ba47be92cb5562e1d84, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2021233295}
@@ -138336,6 +138681,7 @@ MonoBehaviour:
   - {fileID: 1884228964}
   - {fileID: 1555377696}
   zoneNameDisplay: {fileID: 1658008112}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1f2747f9199507844ab0ae4a6bb4ec4d, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 43328049}
@@ -138899,6 +139245,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1896941744}
   zoneNameDisplay: {fileID: 1795657658}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: b79f8e16b2b3eae47a870ed7efe50844, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1793202408}
@@ -139134,7 +139481,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 831236789}
   m_HandleRect: {fileID: 831236788}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -139710,6 +140057,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1908652258}
   zoneNameDisplay: {fileID: 930821434}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d10e587d572f2154085ac772d6983b99, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1224741783}
@@ -140924,6 +141272,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1930916476}
   zoneNameDisplay: {fileID: 1924975109}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1f341c28272b5da409c0120e8e17d47c, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2145406045}
@@ -141813,11 +142162,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457455462451367912, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142434,6 +142787,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1961727114}
   zoneNameDisplay: {fileID: 1193061061}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 0807cd144250a1d4e9969630f3f68fcb, type: 2}
 --- !u!60 &1961727116
 PolygonCollider2D:
@@ -142729,6 +143083,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1965616861}
   zoneNameDisplay: {fileID: 1617044736}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 01e1134ca660c3849aee35ae892a7b92, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 736173157}
@@ -143309,11 +143664,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 291920822616598405, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_Color.r
@@ -143562,6 +143917,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1971510714}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 41ca416c694f84d4eb7b3964420b7ccd, type: 2}
 --- !u!60 &1971510716
 PolygonCollider2D:
@@ -144014,6 +144370,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1979200557}
   zoneNameDisplay: {fileID: 644679276}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 08f17fc485b063f4a9aa365508008ea7, type: 2}
 --- !u!60 &1979200559
 PolygonCollider2D:
@@ -144224,6 +144581,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1979812464}
   zoneNameDisplay: {fileID: 1979979240}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d2bdf4b5eead31f4ea4d870750fc4cab, type: 2}
   hazardousAdjacencies:
   - {fileID: 1001610957}
@@ -144768,6 +145126,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1983437263}
   zoneNameDisplay: {fileID: 1784801379}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 413a9d6be17dee24985a1e3895b32536, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1270987554}
@@ -145267,6 +145626,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1989431168}
   zoneNameDisplay: {fileID: 1448887464}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 1c1371a375a16764a813dd629f9c5cd7, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1653777240}
@@ -145816,6 +146176,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 1995453104}
   zoneNameDisplay: {fileID: 482883623}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d3256e8efd1de41468a19bc185e130d9, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 2051560908}
@@ -146200,6 +146561,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2001942854}
   zoneNameDisplay: {fileID: 874387300}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: dc98d6675ff742049abe312450bb569f, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1192720475}
@@ -146523,6 +146885,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2013178267}
   zoneNameDisplay: {fileID: 1421430452}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: ec167388830028949a5cf32a6543fa44, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1145501801}
@@ -146879,6 +147242,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2017862714}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 2f2c03e6992dc244aba076c38e324542, type: 2}
 --- !u!60 &2017862716
 PolygonCollider2D:
@@ -147560,6 +147924,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2021452080}
   zoneNameDisplay: {fileID: 1601721427}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 3ca02eaa557f8694f8010659a0b76794, type: 2}
 --- !u!60 &2021452082
 PolygonCollider2D:
@@ -149265,6 +149630,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2041148148}
   zoneNameDisplay: {fileID: 1852721438}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 7e51c4f470040fe48bbb5289a5100290, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 0}
@@ -149484,6 +149850,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2046348844}
   zoneNameDisplay: {fileID: 1206359782}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 96e07edcf10d57741a92367795957b69, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 768291289}
@@ -150450,6 +150817,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2060614654}
   zoneNameDisplay: {fileID: 1603414353}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: eed00c0a07120d24b9c889248e8940d2, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1782137991}
@@ -150863,6 +151231,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2068111321}
   zoneNameDisplay: {fileID: 254768400}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 51490425642e53f48978a1a0c1d272a9, type: 2}
   hazardousAdjacencies:
   - {fileID: 1264706729}
@@ -151552,6 +151921,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2077180174}
   zoneNameDisplay: {fileID: 507310286}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 51f660c64344b8341942abcc44450534, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 178887197}
@@ -151906,6 +152276,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2084964401}
   zoneNameDisplay: {fileID: 1037765419}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: d2b17d69ef027fb44924b1bbaadd73c3, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1795085116}
@@ -152307,6 +152678,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2092264150}
   zoneNameDisplay: {fileID: 715502706}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a88de290b9f571c4e94ab80c7333726b, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 532523492}
@@ -153279,6 +153651,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2100885968}
   zoneNameDisplay: {fileID: 2096634785}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: 0593b7b710e736d4ebcea8b8ad017350, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1993920922}
@@ -153548,6 +153921,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2101081793}
   zoneNameDisplay: {fileID: 1101697641}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 284bc0cd1bc771c4c9a21abec74d7330, type: 2}
 --- !u!60 &2101081795
 PolygonCollider2D:
@@ -153983,6 +154357,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2116957813}
   zoneNameDisplay: {fileID: 1959515757}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 64fdda4ff454a774fbed6119b604a070, type: 2}
 --- !u!60 &2116957815
 PolygonCollider2D:
@@ -154713,6 +155088,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2121317579}
   zoneNameDisplay: {fileID: 848661483}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: e201de71cc8791e4d9f3cf00ca0230e8, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1149953659}
@@ -154922,6 +155298,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2124971342}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 1177cde11ea89244db5430340ee2bba0, type: 2}
 --- !u!60 &2124971344
 PolygonCollider2D:
@@ -156361,6 +156738,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2136000748}
   zoneNameDisplay: {fileID: 0}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 4bcbc2684152b674287d4b97be1ed6f7, type: 2}
 --- !u!60 &2136000750
 PolygonCollider2D:
@@ -156542,6 +156920,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2136430390}
   zoneNameDisplay: {fileID: 1531219584}
+  zoneInfoDisplay: {fileID: 0}
   waterTerritory: {fileID: 11400000, guid: 9de1e65f7d66825488c81091edd399e2, type: 2}
 --- !u!60 &2136430392
 PolygonCollider2D:
@@ -157060,6 +157439,7 @@ MonoBehaviour:
   zoneRenderers:
   - {fileID: 2145458062}
   zoneNameDisplay: {fileID: 1991240056}
+  zoneInfoDisplay: {fileID: 0}
   landTerritory: {fileID: 11400000, guid: a77bf585e355f3a4da2b0c12f0430917, type: 2}
   hazardousAdjacencies: []
   zoneValueDisplay: {fileID: 1655863009}
