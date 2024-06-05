@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using static Zone;
 
 public class TerritoryPanel : MonoBehaviour {
@@ -32,7 +30,7 @@ public class TerritoryPanel : MonoBehaviour {
 
 		List<UnitOwnershipEntry> unitOwnerships = selectedZone.GetUnits();
 
-		Debug.Log("selected zone: " + currentZone.name);
+		//Debug.Log("selected zone: " + currentZone.name);
 
 		float currentOffset = 0.0f;
 		float entrySize = 40.0f;
@@ -48,9 +46,7 @@ public class TerritoryPanel : MonoBehaviour {
 
 			currentOffset += entrySize;
 
-		
-
-			Debug.Log("unit: " + currentOwnershipEntry.unit.name + " x" + currentOwnershipEntry.count + " owned by: " + currentOwnershipEntry.owner.name);
+			//Debug.Log("unit: " + currentOwnershipEntry.unit.name + " x" + currentOwnershipEntry.count + " owned by: " + currentOwnershipEntry.owner.name);
 		}
 
 	}

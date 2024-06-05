@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 8095803517149095242}
   - component: {fileID: 5626587218510203091}
   m_Layer: 0
-  m_Name: LandZoneInfoDisplay
+  m_Name: LandZoneInfoDisplay1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,6 @@ Transform:
   - {fileID: 4287639535376804024}
   - {fileID: 1345729893931619787}
   - {fileID: 5968316454353309773}
-  - {fileID: 4774602915178280454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5626587218510203091
@@ -413,7 +412,7 @@ MonoBehaviour:
   - {fileID: 4847288073609592274}
   - {fileID: 7667723163477311649}
   - {fileID: 3032751670442034471}
-  - {fileID: 4217352422551217004}
+  - {fileID: 0}
 --- !u!1001 &1115840044099919417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.5
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1171152455081446674, guid: 137b603140bfbb24b94f71172f004a37, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -545,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.16
+      value: -4.58
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -673,79 +672,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
   m_PrefabInstance: {fileID: 3752955999241726172}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4097318598092929131
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8095803517149095242}
-    m_Modifications:
-    - target: {fileID: 1896197374070284208, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_Name
-      value: UnitEntry (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
---- !u!114 &4217352422551217004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 169890083470727943, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-  m_PrefabInstance: {fileID: 4097318598092929131}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 083429c79017fa045bb40b04f7b73810, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &4774602915178280454 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
-  m_PrefabInstance: {fileID: 4097318598092929131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4692351634697545429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -760,11 +686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.22
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.32
+      value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -837,7 +763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6799998
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 8835593542699109997, guid: aa26ddb9714e1d04c8c5e6dbf5a467fe, type: 3}
       propertyPath: m_LocalPosition.z

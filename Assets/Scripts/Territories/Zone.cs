@@ -66,7 +66,9 @@ public abstract class Zone : MonoBehaviour {
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in renderers) {
-			ren.color = toggle ? Color.green : BaseColor;
+			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {
+				ren.color = toggle ? Color.green : BaseColor;
+			}
 		}
 
 		ToggleAdjacencyHighlights(toggle);
@@ -77,7 +79,9 @@ public abstract class Zone : MonoBehaviour {
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in renderers) {
-			ren.color = toggle ? (isHazard ? Color.red : Color.yellow) : BaseColor;
+			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {
+				ren.color = toggle ? (isHazard ? Color.red : Color.yellow) : BaseColor;
+			}
 		}
 	}
 
@@ -144,7 +148,7 @@ public abstract class Zone : MonoBehaviour {
 		get;
 	}
 
-    [SerializeField] protected LandZoneInfoDisplay zoneInfoDisplay;
+    [SerializeField] protected ZoneInfoDisplay zoneInfoDisplay;
 
 
     private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
@@ -238,7 +242,9 @@ public abstract class Zone : MonoBehaviour {
         SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in zoneRenderers) {
-			ren.color = selected ? Color.green : BaseColor;
+			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {
+				ren.color = selected ? Color.green : BaseColor;
+			}
 		}
     }
 

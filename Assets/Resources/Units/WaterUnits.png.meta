@@ -100,8 +100,8 @@ TextureImporter:
       name: Battleship
       rect:
         serializedVersion: 2
-        x: 108
-        y: 1526
+        x: 105
+        y: 1447
         width: 950
         height: 450
       alignment: 0

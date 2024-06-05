@@ -40,8 +40,12 @@ public class SeaZone : Zone{
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in renderers) {
-			ren.color = BaseColor;
+
+			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {
+				ren.color = BaseColor;
+			}
 		}
+
 	}
 
 
