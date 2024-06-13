@@ -4,9 +4,14 @@ using System.Collections.Generic;
 
 public class ZoneInfoDisplay : MonoBehaviour {
 
-	[SerializeField] private TextMeshPro zoneNameText;
+	[System.Serializable]
+	public struct ZoneInfoEntry {
 
-	[SerializeField] private List<ZoneUnitTypeDisplay> zoneUnitTypeDisplays = new List<ZoneUnitTypeDisplay>();
+		public GameObject root;
+		public List<ZoneUnitTypeDisplay> zoneUnitTypeDisplays;
+	}
+
+	[SerializeField] private List<ZoneInfoEntry> zoneInfoEntries;
 
 	protected Zone zone;
 	public void SetZone(Zone zone) {
@@ -18,10 +23,6 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
 		if(zone == null) {
 			return;
-		}
-
-		if (zoneNameText != null) {
-			zoneNameText.text = zone.name;
 		}
 
 
@@ -37,17 +38,17 @@ public class ZoneInfoDisplay : MonoBehaviour {
 		}
 
 		int currentIndex = 0;
-		foreach(KeyValuePair<UnitType, int> entry in unitTypeCounts) {
+		//foreach(KeyValuePair<UnitType, int> entry in unitTypeCounts) {
 
-			zoneUnitTypeDisplays[currentIndex].gameObject.SetActive(true);
-			zoneUnitTypeDisplays[currentIndex].SetUnitTypeAndCount(entry.Key.Sprite, entry.Value);
+		//	zoneUnitTypeDisplays[currentIndex].gameObject.SetActive(true);
+		//	zoneUnitTypeDisplays[currentIndex].SetUnitTypeAndCount(entry.Key.Sprite, entry.Value);
 
-			currentIndex++;
-		}
+		//	currentIndex++;
+		//}
 
-		for(int i=currentIndex;i<zoneUnitTypeDisplays.Count;i++) {
-			zoneUnitTypeDisplays[i].gameObject.SetActive(false);
-		}
+		//for(int i=currentIndex;i<zoneUnitTypeDisplays.Count;i++) {
+		//	zoneUnitTypeDisplays[i].gameObject.SetActive(false);
+		//}
     }
 
 
