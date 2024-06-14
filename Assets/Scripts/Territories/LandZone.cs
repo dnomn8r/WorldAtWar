@@ -38,7 +38,15 @@ public class LandZone : Zone {
 				Debug.LogError("missing zone value display on " + zone.name, zone);
 			}
 
-		}
+            ZoneInfoDisplay zoneInfoDisplay = zone.GetComponentInChildren<ZoneInfoDisplay>();
+
+            if (zoneInfoDisplay != null) {
+                zone.ZoneInfoDisplay = zoneInfoDisplay;
+            } else if (zone.Value > 0) {
+                Debug.LogError("missing zone info display on " + zone.name, zone);
+            }
+
+        }
 
 		Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
 
@@ -165,7 +173,7 @@ public class LandZone : Zone {
 #endif
 	}
 
-	[SerializeField] private SpriteRenderer originalOwnerFlag;
+    [SerializeField] private SpriteRenderer originalOwnerFlag;
 	public SpriteRenderer OriginalOwnerFlag {
 
 		get { return originalOwnerFlag; }
@@ -199,9 +207,9 @@ public class LandZone : Zone {
 
 		CurrentOwner = country;
 
-        if (zoneInfoDisplay != null) {
+        if (ZoneInfoDisplay != null) {
 
-			zoneInfoDisplay.Refresh();
+			ZoneInfoDisplay.Refresh();
         }
     }
 
@@ -223,9 +231,9 @@ public class LandZone : Zone {
 			}
 		}
 
-		if(zoneInfoDisplay != null) {
+		if(ZoneInfoDisplay != null) {
 
-			zoneInfoDisplay.Refresh();
+			ZoneInfoDisplay.Refresh();
 		}
 	}
 

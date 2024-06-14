@@ -12,7 +12,7 @@ public class SeaZone : Zone{
 #if UNITY_EDITOR
 
 		set { waterTerritory = value; }
-#endif
+#endif 
 	}
 
     public override Territory Territory {

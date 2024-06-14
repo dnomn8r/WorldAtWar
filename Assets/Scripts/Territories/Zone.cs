@@ -148,7 +148,15 @@ public abstract class Zone : MonoBehaviour {
 		get;
 	}
 
-    [SerializeField] protected ZoneInfoDisplay zoneInfoDisplay;
+    [SerializeField] private ZoneInfoDisplay zoneInfoDisplay;
+    public ZoneInfoDisplay ZoneInfoDisplay {
+
+        get { return zoneInfoDisplay; }
+#if UNITY_EDITOR
+
+        set { zoneInfoDisplay = value; }
+#endif
+    }
 
 
     private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
