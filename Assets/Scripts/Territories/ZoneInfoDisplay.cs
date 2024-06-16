@@ -35,8 +35,13 @@ public class ZoneInfoDisplay : MonoBehaviour {
 			return;
 		}
 
-		
-		//Dictionary<UnitType, int> unitTypeCounts = new Dictionary<UnitType, int>();
+		if(zone.GetUnits().Count == 0 ) {
+			gameObject.SetActive(false);
+			return;
+		} else {
+			gameObject.SetActive(true);
+		}
+	
 
         List<UnitTypeCount> unitTypeCounts = new List<UnitTypeCount>();
 
@@ -64,21 +69,18 @@ public class ZoneInfoDisplay : MonoBehaviour {
 			}
 
             unitTypeCounts.Sort(delegate (UnitTypeCount x, UnitTypeCount y) {
-                if (x.unitType.Priority < y.unitType.Priority) {
+                if (x.unitType.Priority > y.unitType.Priority) {
                     return 1;
-                } else if (x.unitType.Priority > y.unitType.Priority) {
+                } else if (x.unitType.Priority < y.unitType.Priority) {
                     return -1;
                 }
                 return 0;
             });
         }
 
-		Debug.Log("unit type counts: " +  unitTypeCounts.Count);	
-
-	
 		for(int i=0;i<zoneInfoEntries.Count;i++) {
 
-			if(unitTypeCounts.Count == i - 1) {
+			if(i == unitTypeCounts.Count - 1 && unitTypeCounts.Count > 0) {
 
                 zoneInfoEntries[i].root.SetActive(true);
 
