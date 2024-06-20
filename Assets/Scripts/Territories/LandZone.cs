@@ -38,21 +38,21 @@ public class LandZone : Zone {
 				Debug.LogError("missing zone value display on " + zone.name, zone);
 			}
 
-            ZoneInfoDisplay zoneInfoDisplay = zone.GetComponentInChildren<ZoneInfoDisplay>();
-
-            if (zoneInfoDisplay != null) {
-                zone.ZoneInfoDisplay = zoneInfoDisplay;
-            } else if (zone.Value > 0) {
-                Debug.LogError("missing zone info display on " + zone.name, zone);
-            }
-
         }
 
 		Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
 
 		foreach (Zone zone in zones) {
 
-			ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
+            ZoneInfoDisplay zoneInfoDisplay = zone.GetComponentInChildren<ZoneInfoDisplay>();
+
+            if (zoneInfoDisplay != null) {
+                zone.ZoneInfoDisplay = zoneInfoDisplay;
+			} else {
+				Debug.LogError("missing zone display in zone: " + zone.name, zone);
+			}
+
+            ZoneNameDisplay zoneNameDisplay = zone.GetComponentInChildren<ZoneNameDisplay>();
 			if (zoneNameDisplay != null) {
 				zone.ZoneNameDisplay = zoneNameDisplay;
 			}
@@ -65,7 +65,7 @@ public class LandZone : Zone {
 
 				if (renderer.GetComponent<ZoneValueDisplay>() == null && 
 					renderer.GetComponent<ZoneNameDisplay>() == null && 
-					renderer.GetComponentInParent<LandZoneInfoDisplay>() == null &&
+					renderer.GetComponentInParent<ZoneInfoDisplay>() == null &&
 					!renderer.name.StartsWith("CountryFlag")) {
 
 					if (renderer.GetComponent<PolygonCollider2D>() == null) {
