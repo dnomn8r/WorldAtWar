@@ -21,12 +21,19 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
 	private struct UnitTypeCount {
 		public UnitType unitType;
-		public int count;
+		public Dictionary<Country, int> countryCounts;
 
-		public UnitTypeCount(UnitType t, int c) {
+		public UnitTypeCount(UnitType t, Country country, int count) {
 			unitType = t;
-			count = c;	
+            countryCounts = new Dictionary<Country, int> {
+                { country, count }
+            };
+        }
+		public void AddCount(Country c, int count) {
+
+			countryCounts[c] += count;
 		}
+
 	}
 
 	public virtual void Refresh() {
@@ -59,12 +66,12 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
 			if(addIndex == -1) {
 
-				unitTypeCounts.Add(new UnitTypeCount(entry.unit.UnitType, entry.count));
+				unitTypeCounts.Add(new UnitTypeCount(entry.unit.UnitType, entry.owner, entry.count));
 
 			} else {
 
 				UnitTypeCount unitTypeCount =  unitTypeCounts[addIndex];
-				unitTypeCount.count += entry.count;
+				unitTypeCount.AddCount(entry.owner, entry.count);
 				unitTypeCounts[addIndex] = unitTypeCount;
 			}
 
@@ -85,7 +92,7 @@ public class ZoneInfoDisplay : MonoBehaviour {
                 zoneInfoEntries[i].root.SetActive(true);
 
 				for(int j = 0; j < zoneInfoEntries[i].zoneUnitTypeDisplays.Count; ++j) {
-					zoneInfoEntries[i].zoneUnitTypeDisplays[j].SetUnitTypeAndCount(unitTypeCounts[j].unitType, unitTypeCounts[j].count);
+					zoneInfoEntries[i].zoneUnitTypeDisplays[j].SetUnitTypeAndCounts(unitTypeCounts[j].unitType, unitTypeCounts[j].countryCounts);
                 }
             } else {
 

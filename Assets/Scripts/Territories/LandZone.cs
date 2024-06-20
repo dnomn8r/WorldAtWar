@@ -63,13 +63,21 @@ public class LandZone : Zone {
 
 			foreach (SpriteRenderer renderer in renderers) {
 
-				if (renderer.GetComponent<ZoneValueDisplay>() == null && renderer.GetComponent<ZoneNameDisplay>() == null && !renderer.name.StartsWith("CountryFlag")) {
+				if (renderer.GetComponent<ZoneValueDisplay>() == null && 
+					renderer.GetComponent<ZoneNameDisplay>() == null && 
+					renderer.GetComponentInParent<LandZoneInfoDisplay>() == null &&
+					!renderer.name.StartsWith("CountryFlag")) {
 
 					if (renderer.GetComponent<PolygonCollider2D>() == null) {
 						renderer.gameObject.AddComponent<PolygonCollider2D>();
 					}
 
 					zoneRenderers.Add(renderer);
+				} else {
+					PolygonCollider2D poly = renderer.GetComponent<PolygonCollider2D>();
+					if (poly != null) {
+						DestroyImmediate(poly);
+					}
 				}
 			}
 
