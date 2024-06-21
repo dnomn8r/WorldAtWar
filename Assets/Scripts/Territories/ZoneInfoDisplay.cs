@@ -17,6 +17,8 @@ public class ZoneInfoDisplay : MonoBehaviour {
 	public void SetZone(Zone zone) {
 
 		this.zone = zone;
+
+		Refresh();
 	}
 
 	private struct UnitTypeCount {
