@@ -33,7 +33,11 @@ public class ZoneInfoDisplay : MonoBehaviour {
         }
 		public void AddCount(Country c, int count) {
 
-			countryCounts[c] += count;
+			if (countryCounts.ContainsKey(c)) {
+				countryCounts[c] += count;
+			} else {
+				countryCounts.Add(c, count);
+			}
 		}
 
 	}
@@ -87,6 +91,7 @@ public class ZoneInfoDisplay : MonoBehaviour {
             });
         }
 
+		Debug.Log("------------------ doing zone: " + zone.name);
 		for(int i=0;i<zoneInfoEntries.Count;i++) {
 
 			if(i == unitTypeCounts.Count - 1 && unitTypeCounts.Count > 0) {

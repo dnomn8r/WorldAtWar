@@ -52,6 +52,11 @@ MonoBehaviour:
     - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
       count: 1
     factory: {fileID: 0}
+  - landTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
+    unitEntries:
+    - unit: {fileID: 11400000, guid: df40003cb90e56243a212816202d760f, type: 2}
+      count: 1
+    factory: {fileID: 0}
   waterTerritoryEntries:
   - waterTerritory: {fileID: 11400000, guid: c83f1cb6a8f404949a56c1a9a252b1cb, type: 2}
     unitEntries:
