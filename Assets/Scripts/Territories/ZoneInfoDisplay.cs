@@ -91,7 +91,6 @@ public class ZoneInfoDisplay : MonoBehaviour {
             });
         }
 
-		Debug.Log("------------------ doing zone: " + zone.name);
 		for(int i=0;i<zoneInfoEntries.Count;i++) {
 
 			if(i == unitTypeCounts.Count - 1 && unitTypeCounts.Count > 0) {
