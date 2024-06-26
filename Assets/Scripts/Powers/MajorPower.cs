@@ -31,5 +31,7 @@ public class MajorPower : Country{
 	[SerializeField] private List<FactoryCostModifier> factoryCostModifiers;
 	public List<FactoryCostModifier> FactoryCostModifiers { get { return factoryCostModifiers; } }
 
+	[SerializeField] private LandTerritory capitalTerritory;
+	public LandTerritory CapitalTerritory { get { return capitalTerritory; } }
 }
 

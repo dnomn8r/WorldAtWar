@@ -16,9 +16,34 @@ public class WorldMapManager : MonoBehaviour{
 
 
 	private Dictionary<Territory, Zone> zoneMapping = new Dictionary<Territory, Zone>();
-
 	private List<Zone> allZones;
 
+	public struct General {
+		public MajorPower owner;
+		public LandTerritory currentTerritory;
+
+		public General(MajorPower owner, LandTerritory territory) {
+			this.owner = owner;
+			this.currentTerritory = territory;
+		}
+	}
+
+    private List<General> generals = new List<General>();
+
+    public List<General> GetGeneralsAtTerritory(LandTerritory territory) {
+		
+		List<General> generalsAtLocation = new List<General>();
+
+		for(int i=0;i<generals.Count;i++) {
+
+			if (generals[i].currentTerritory == territory) {
+
+                generalsAtLocation.Add(generals[i]);
+			}
+		}
+
+		return generalsAtLocation;
+	}
 
     private static WorldMapManager instance;
     public static WorldMapManager Instance {
@@ -37,7 +62,9 @@ public class WorldMapManager : MonoBehaviour{
 
 		InitializeOriginalTerritories();
 
-		InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
+        InitializeGenerals();
+
+        InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
 
 		InitializeNeutralStates(initialGameState.InitialNeutralState);
 
@@ -158,7 +185,16 @@ public class WorldMapManager : MonoBehaviour{
 		}
 	}
 
-	public int GetIncome(Country country) {
+	private void InitializeGenerals() {
+
+		foreach(MajorPower power in majorPowers) {
+
+			generals.Add(new General(power, power.CapitalTerritory));
+		}
+	}
+
+
+    public int GetIncome(Country country) {
 
 		int totalIncome = 0;
 

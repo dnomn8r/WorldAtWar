@@ -9,9 +9,10 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
 		public GameObject root;
 		public List<ZoneUnitTypeDisplay> zoneUnitTypeDisplays;
+		public List<SpriteRenderer> generals;
 	}
 
-	[SerializeField] private List<ZoneInfoEntry> zoneInfoEntries;
+	[SerializeField] protected List<ZoneInfoEntry> zoneInfoEntries;
 
 	protected Zone zone;
 	public void SetZone(Zone zone) {

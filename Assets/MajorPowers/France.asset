@@ -61,3 +61,4 @@ MonoBehaviour:
     modifier: 1
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: 1
+  capitalTerritory: {fileID: 11400000, guid: e5eed670bb63baa4f9bfc93df3710d1d, type: 2}

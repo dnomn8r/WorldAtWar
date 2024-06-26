@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Italy
   m_EditorClassIdentifier: 
+  flag: {fileID: 340967567, guid: d28494bcbf011784392176be63471426, type: 3}
   ownershipColor: {r: 0.44705886, g: 0.427451, b: 0.41176474, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}
@@ -46,4 +47,4 @@ MonoBehaviour:
     modifier: 0
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: 0
-  flag: {fileID: 340967567, guid: d28494bcbf011784392176be63471426, type: 3}
+  capitalTerritory: {fileID: 11400000, guid: afff8bafc692c2544b9b1d9effcc1741, type: 2}

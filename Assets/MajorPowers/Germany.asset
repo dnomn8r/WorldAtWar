@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d612bcf2e2fe0e4d99c98cc47c92aa3, type: 3}
   m_Name: Germany
   m_EditorClassIdentifier: 
+  flag: {fileID: 299019398, guid: d28494bcbf011784392176be63471426, type: 3}
   ownershipColor: {r: 0.29803923, g: 0.2784314, b: 0.2627451, a: 1}
   landTerritories:
   - {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
@@ -43,4 +44,4 @@ MonoBehaviour:
     modifier: -2
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: -1
-  flag: {fileID: 299019398, guid: d28494bcbf011784392176be63471426, type: 3}
+  capitalTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
