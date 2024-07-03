@@ -8,7 +8,7 @@ public class IncomePanel : MonoBehaviour {
 	[System.Serializable]
 	public struct IncomePanelEntry {
 
-		public Country country;
+		public MajorPower majorPower;
 		public IncomeEntry incomeEntry;
 	}
 
@@ -18,7 +18,7 @@ public class IncomePanel : MonoBehaviour {
 
 		for(int i = 0;i<incomePanelEntries.Count;i++) {
 
-			incomePanelEntries[i].incomeEntry.SetCountryIncome(incomePanelEntries[i].country, WorldMapManager.Instance.GetIncome(incomePanelEntries[i].country));
+			incomePanelEntries[i].incomeEntry.SetCountryIncome(incomePanelEntries[i].majorPower, WorldMapManager.Instance.GetIncome(incomePanelEntries[i].majorPower));
 
 		}
 

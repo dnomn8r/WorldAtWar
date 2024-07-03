@@ -1,60 +1,48 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Search.SearchColumn;
 
 public class WorldMapManager : MonoBehaviour{
 
 	[SerializeField] private List<MajorPower> majorPowers;
+	public List<MajorPower> MajorPowers { get { return majorPowers; } }
 
 	[SerializeField] private List<MinorPower> minorPowers;
 
 	[SerializeField] private Sprite neutralFlag;
 
-	[Space]
+	//[Space]
 
-	[SerializeField] private InitialGameState initialGameState;
+	//[SerializeField] private InitialGameState initialGameState;
 
 
 	private Dictionary<Territory, Zone> zoneMapping = new Dictionary<Territory, Zone>();
 	private List<Zone> allZones;
 
-	public struct General {
-		public MajorPower owner;
-		public LandTerritory currentTerritory;
 
-		public General(MajorPower owner, LandTerritory territory) {
-			this.owner = owner;
-			this.currentTerritory = territory;
-		}
-	}
-
-    private List<General> generals = new List<General>();
-
-    public List<General> GetGeneralsAtTerritory(LandTerritory territory) {
-		
-		List<General> generalsAtLocation = new List<General>();
-
-		for(int i=0;i<generals.Count;i++) {
-
-			if (generals[i].currentTerritory == territory) {
-
-                generalsAtLocation.Add(generals[i]);
-			}
-		}
-
-		return generalsAtLocation;
-	}
 
     private static WorldMapManager instance;
     public static WorldMapManager Instance {
         get { return instance; }
     }
 
+	public Zone GetZone(Territory territory) {
+
+		Zone zone = null;
+		if (zoneMapping.TryGetValue(territory, out zone)) {
+			return zone;
+		}
+		else{
+			Debug.LogError("no zone for territory: " + territory.name + " should never happen!");
+		}
+
+		return null;
+	}
+
     private void Awake() {
         instance = this;
     }
 
-    private void Start() {
+    public void Initialize() {
 
 		allZones = new List<Zone>(GetComponentsInChildren<Zone>());
 
@@ -62,15 +50,6 @@ public class WorldMapManager : MonoBehaviour{
 
 		InitializeOriginalTerritories();
 
-        InitializeGenerals();
-
-        InitializeOwnershipState(initialGameState.InitialLandTerritoryOwnership);
-
-		InitializeNeutralStates(initialGameState.InitialNeutralState);
-
-		InitializeCountryStates(initialGameState.InitialCountryStates);
-
-		HUD.Instance.Initialize();
 	}
 
 	private void MapLandZones() {
@@ -127,72 +106,7 @@ public class WorldMapManager : MonoBehaviour{
 
 	}
 
-	private void InitializeOwnershipState(InitialOwnershipState ownershipState) {
-
-		foreach(InitialOwnershipState.OwnedTerritories ownership in ownershipState.Ownerships) {
-
-			foreach(LandTerritory territory in ownership.territories) {
-
-                LandZone landZone = zoneMapping[territory] as LandZone;
-
-                landZone.SetCurrentOwner(ownership.country);	
-			}
-		}
-	}
-
-	private void InitializeNeutralStates(InitialLandTerritoryState neutralLandTerritoryState) {
-
-		foreach(LandTerritoryEntry landEntry in neutralLandTerritoryState.TerritoryEntries) {
-
-            LandZone landZone = zoneMapping[landEntry.LandTerritory] as LandZone;
-
-            landZone.SetFactory(landEntry.Factory);
-
-
-			foreach (UnitEntry unitEntry in landEntry.UnitEntries) {
-
-				landZone.AddUnits(landZone.CurrentOwner, unitEntry.Unit, unitEntry.Count);
-			}
-
-        }
-	}
-
-	private void InitializeCountryStates(List<InitialCountryState> initialCountryStates) {
-
-		foreach(InitialCountryState countryState in initialCountryStates) {
-
-			foreach (LandTerritoryEntry landEntry in countryState.TerritoryEntries) {
-
-				LandZone landZone = zoneMapping[landEntry.LandTerritory] as LandZone;
-
-				landZone.SetFactory(landEntry.Factory);
-
-				foreach (UnitEntry unitEntry in landEntry.UnitEntries) {
-
-                    landZone.AddUnits(countryState.Country, unitEntry.Unit, unitEntry.Count);
-                }
-			}
-
-			foreach (WaterTerritoryEntry waterEntry in countryState.WaterTerritoryEntries) {
-
-                SeaZone seaZone = zoneMapping[waterEntry.WaterTerritory] as SeaZone;
-
-                foreach (UnitEntry unitEntry in waterEntry.UnitEntries) {
-
-                    seaZone.AddUnits(countryState.Country, unitEntry.Unit, unitEntry.Count);
-                }
-            }
-		}
-	}
-
-	private void InitializeGenerals() {
-
-		foreach(MajorPower power in majorPowers) {
-
-			generals.Add(new General(power, power.CapitalTerritory));
-		}
-	}
-
+	
 
     public int GetIncome(Country country) {
 

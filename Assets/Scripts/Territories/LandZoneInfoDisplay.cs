@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using static WorldMapManager;
+using static GameManager;
 
 public class LandZoneInfoDisplay : ZoneInfoDisplay {
 
@@ -15,7 +15,7 @@ public class LandZoneInfoDisplay : ZoneInfoDisplay {
 			return;
 		}
 
-		List<General> generalsPresent = WorldMapManager.Instance.GetGeneralsAtTerritory(landZone.LandTerritory);
+		List<General> generalsPresent = GameManager.Instance.GetGeneralsAtTerritory(landZone.LandTerritory);
 
 
 		for (int i = 0; i < zoneInfoEntries.Count; i++) {
