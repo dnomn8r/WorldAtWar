@@ -45,7 +45,28 @@ public class GameManager : MonoBehaviour{
         get { return instance; }
     }
 
+    // state variables
     public int currentTurnIndex = 0;
+
+    private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
+    private Dictionary<MajorPower, int> lendLease = new Dictionary<MajorPower, int>();
+
+
+    public int GetSavedIPCs(MajorPower power) {
+        int ipcs = 0;
+
+        savedIPCs.TryGetValue(power, out ipcs);
+     
+        return ipcs;
+    } 
+    public int GetLendLease(MajorPower power) {
+        int ll = 0;
+
+        lendLease.TryGetValue(power, out ll);
+
+        return ll;
+    }
+
 
     private void Awake() {
         instance = this;
