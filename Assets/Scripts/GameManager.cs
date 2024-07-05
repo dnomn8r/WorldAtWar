@@ -1,8 +1,31 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 public class GameManager : MonoBehaviour{
+
+    public enum TurnPhase { COLLECT_INCOME, COMBAT_MOVEMENT, COMBAT, NON_COMBAT_MOVEMENT, BUILD_RECRUIT}
+
+    private static string GetPhaseName(TurnPhase phase) {
+
+        switch (phase) {
+
+            case TurnPhase.COLLECT_INCOME:
+                return "Collect Income";
+            case TurnPhase.COMBAT_MOVEMENT:
+                return "Combat Movement";
+            case TurnPhase.COMBAT:
+                return "Combat";
+            case TurnPhase.NON_COMBAT_MOVEMENT:
+                return "Non Combat Movement";
+            case TurnPhase.BUILD_RECRUIT:
+                return "Build and Recruit";
+
+        }
+
+        return "BAD PHASE!";
+    }
 
     [System.Serializable]
     public struct MajorPowerTurn {
@@ -42,11 +65,39 @@ public class GameManager : MonoBehaviour{
 
     private static GameManager instance;
     public static GameManager Instance {
-        get { return instance; }
+        get { 
+
+            return instance; 
+        }
     }
 
+    public event Action OnPhaseChanged;
+
     // state variables
-    public int currentTurnIndex = 0;
+
+    public int currentRound = 0;
+
+    private int _currentTurnIndex = -1;
+
+    public int CurrentTurnIndex{
+
+        set {
+            if (value < 0 || value >= turnOrder.Count) {
+                Debug.Log("bad turn index! must be between 0 and " + (turnOrder.Count - 1));
+            }
+            if(_currentTurnIndex == value) {
+                Debug.LogError("We shouldn't be trying to change turn to what it already is!");
+            }
+
+            _currentTurnIndex = value;
+
+            OnPhaseChanged?.Invoke();
+        }
+
+        get {
+            return _currentTurnIndex;
+        }
+    }
 
     private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
     private Dictionary<MajorPower, int> lendLease = new Dictionary<MajorPower, int>();
@@ -67,6 +118,14 @@ public class GameManager : MonoBehaviour{
         return ll;
     }
 
+    public string GetCurrentPhaseName() {
+
+        return GetPhaseName((TurnPhase)CurrentTurnIndex);
+    }
+    public MajorPowerTurn GetCurrentlyActivePowers() {
+
+        return turnOrder[CurrentTurnIndex];
+    }
 
     private void Awake() {
         instance = this;
@@ -95,23 +154,15 @@ public class GameManager : MonoBehaviour{
 
         InitializeCountryStates(initialGameState.InitialCountryStates);
 
-        HUD.Instance.Initialize();
+        CurrentTurnIndex = 0;
 
-        SetCurrentTurnIndex(0);
+
+        HUD.Instance.Initialize();
     }
 
     public bool IsCurrentTurn(MajorPower majorPower) {
 
-        return turnOrder[currentTurnIndex].powers.Contains(majorPower);
-    }
-
-    private void SetCurrentTurnIndex(int turnIndex) {
-
-        if (turnIndex < 0 || turnIndex >= turnOrder.Count) {
-            Debug.Log("bad turn index! must be between 0 and " + (turnOrder.Count - 1));
-        }
-
-        currentTurnIndex = turnIndex;      
+        return turnOrder[_currentTurnIndex].powers.Contains(majorPower);
     }
 
 
