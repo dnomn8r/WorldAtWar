@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static GameManager;
 
 public class HUD : MonoBehaviour {
 
@@ -27,16 +28,31 @@ public class HUD : MonoBehaviour {
 
 		incomeTogglePanel.UpdateIncomes();
 
+        GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
+
         SetSelectedZone(null);
 	}
-						   
-	void ToggleIncomeGroup(bool isActive) {
+
+    private void OnDisable() {
+        GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;
+    }
+
+    private void OnPhaseChanged() {
+
+        if((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
+
+            DisplayCollectIncomePhase();
+        }
+    }
+    private void DisplayCollectIncomePhase() {
+
+
+    }
+
+    void ToggleIncomeGroup(bool isActive) {
 
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 	}
-
-
-
     public void SetSelectedZone(Zone zone) {
 
         territoryPanel.gameObject.SetActive(zone != null);

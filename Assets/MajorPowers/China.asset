@@ -54,3 +54,9 @@ MonoBehaviour:
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: 1
   capitalTerritory: {fileID: 11400000, guid: 8abde5a687f0cb84db33229acd7311f4, type: 2}
+  canSendLendLease: 0
+  allies:
+  - {fileID: 11400000, guid: 755de750aba2351428c3bd9cfccf6147, type: 2}
+  - {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
+  - {fileID: 11400000, guid: d94e850fc23d04c4c99d3ecaa7eca14a, type: 2}
+  - {fileID: 11400000, guid: 1977b7873388b6843977b563be30a49c, type: 2}

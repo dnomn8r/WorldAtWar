@@ -36,5 +36,10 @@ public class MajorPower : Country{
 
 	[SerializeField] private bool canSendLendLease = false;
 	public bool CanSendLL { get { return canSendLendLease; } }
+
+	[SerializeField] private List<MajorPower> allies = new List<MajorPower>();
+	public bool IsAlly(MajorPower potentialAlly) {
+		return allies.Contains(potentialAlly);
+	}
 }
 

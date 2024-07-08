@@ -46,3 +46,6 @@ MonoBehaviour:
     modifier: -1
   capitalTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
   canSendLendLease: 1
+  allies:
+  - {fileID: 11400000, guid: a1028825075c97647827ee829f9fef5c, type: 2}
+  - {fileID: 11400000, guid: dd7263fee3022e44b85420a39e0727d1, type: 2}

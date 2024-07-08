@@ -79,6 +79,16 @@ public class GameManager : MonoBehaviour{
 
     private int _currentTurnIndex = -1;
 
+    private int _currentPhaseIndex = -1;
+    public int CurrentPhaseIndex {
+        get { return _currentPhaseIndex; }
+        set {
+            _currentPhaseIndex = value;
+
+            OnPhaseChanged?.Invoke();
+        }
+    }
+
     public int CurrentTurnIndex{
 
         set {
@@ -91,7 +101,7 @@ public class GameManager : MonoBehaviour{
 
             _currentTurnIndex = value;
 
-            OnPhaseChanged?.Invoke();
+            CurrentPhaseIndex = 0;
         }
 
         get {
@@ -99,9 +109,11 @@ public class GameManager : MonoBehaviour{
         }
     }
 
+
     private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
     private Dictionary<MajorPower, int> lendLease = new Dictionary<MajorPower, int>();
 
+    private Dictionary<MajorPower, int> pendingLendLease = new Dictionary<MajorPower, int>();
 
     public int GetSavedIPCs(MajorPower power) {
         int ipcs = 0;
@@ -120,7 +132,7 @@ public class GameManager : MonoBehaviour{
 
     public string GetCurrentPhaseName() {
 
-        return GetPhaseName((TurnPhase)CurrentTurnIndex);
+        return GetPhaseName((TurnPhase)CurrentPhaseIndex);
     }
     public MajorPowerTurn GetCurrentlyActivePowers() {
 
