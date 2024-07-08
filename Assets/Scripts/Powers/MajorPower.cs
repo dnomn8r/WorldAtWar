@@ -33,5 +33,8 @@ public class MajorPower : Country{
 
 	[SerializeField] private LandTerritory capitalTerritory;
 	public LandTerritory CapitalTerritory { get { return capitalTerritory; } }
+
+	[SerializeField] private bool canSendLendLease = false;
+	public bool CanSendLL { get { return canSendLendLease; } }
 }
 

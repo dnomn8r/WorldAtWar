@@ -58,3 +58,4 @@ MonoBehaviour:
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: -2
   capitalTerritory: {fileID: 11400000, guid: 9a2efae9a851d5941b22c39c416f36f5, type: 2}
+  canSendLendLease: 1
