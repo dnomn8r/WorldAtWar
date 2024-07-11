@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour{
     }
 
     public event Action OnPhaseChanged;
+    public event Action OnPendingLendLeaseChanged;
 
     // state variables
 
@@ -113,7 +114,58 @@ public class GameManager : MonoBehaviour{
     private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
     private Dictionary<MajorPower, int> lendLease = new Dictionary<MajorPower, int>();
 
-    private Dictionary<MajorPower, int> pendingLendLease = new Dictionary<MajorPower, int>();
+    private Dictionary<MajorPower, int> pendingSentLendLease = new Dictionary<MajorPower, int>();
+    private Dictionary<MajorPower, int> pendingReceivedLendLease = new Dictionary<MajorPower, int>();
+
+
+    public int GetCurrentTotalIncome(MajorPower power) {
+
+        return WorldMapManager.Instance.GetIncome(power) + GetSavedIPCs(power) + GetTotalReceivingLendLease(power) - GetPendingSentLendlease(power);
+
+    }
+
+    public int GetTotalReceivingLendLease(MajorPower power) {
+
+        int lendLeaseValue = 0;
+        lendLease.TryGetValue(power, out lendLeaseValue);
+
+        int pendingLendLeaseValue = 0;
+        pendingReceivedLendLease.TryGetValue(power, out pendingLendLeaseValue);
+
+        return lendLeaseValue + pendingLendLeaseValue;
+    }
+
+    public void ChangePendingLendLease(MajorPower source, MajorPower recipient, int delta) {
+
+        if(!pendingSentLendLease.ContainsKey(source)) {
+            pendingSentLendLease.Add(source, 0);
+        }
+
+        pendingSentLendLease[source] += delta;
+        if (pendingSentLendLease[source] < 0) {
+            Debug.LogError("should never have less than 0 pending lend lease!");
+            pendingSentLendLease[source] = 0;
+        }
+
+        if (pendingSentLendLease[source] > Mathf.FloorToInt(WorldMapManager.Instance.GetIncome(source) / 3)) {
+            Debug.LogError("should never have more than 1/3 of income! We have income: " + WorldMapManager.Instance.GetIncome(source) + " and sent " + pendingSentLendLease[source]);
+            pendingSentLendLease[source] = Mathf.FloorToInt(WorldMapManager.Instance.GetIncome(source) / 3);
+        }
+
+        if (!pendingReceivedLendLease.ContainsKey(recipient)) {
+            pendingReceivedLendLease.Add(recipient, 0);
+        }
+
+        pendingReceivedLendLease[recipient] += delta;
+    }
+
+    public int GetPendingSentLendlease(MajorPower power) {
+
+        int sentLL = 0;
+        pendingSentLendLease.TryGetValue(power, out sentLL);
+
+        return sentLL;
+    }
 
     public int GetSavedIPCs(MajorPower power) {
         int ipcs = 0;
