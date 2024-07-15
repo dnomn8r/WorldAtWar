@@ -20,13 +20,14 @@ public class HUD : MonoBehaviour {
 	[SerializeField] private TerritoryPanel territoryPanel;
     [SerializeField] private TerritoryPanel territoryHoverPanel;
 
+    [SerializeField] private AvailableIPCDisplay availableIPCDisplay;
+    [SerializeField] private PhaseDisplay phaseDisplay;
+
     public void Initialize() {
 
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
-
-		incomeTogglePanel.UpdateIncomes();
 
         GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
 
@@ -38,6 +39,13 @@ public class HUD : MonoBehaviour {
     }
 
     private void OnPhaseChanged() {
+
+        incomeTogglePanel.UpdateIncomes();
+
+        Debug.Log("on phase changed");
+        availableIPCDisplay.UpdateDisplay();
+        phaseDisplay.UpdateDisplay();
+
 
         if((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
 

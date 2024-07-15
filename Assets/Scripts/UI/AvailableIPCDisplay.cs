@@ -3,38 +3,34 @@ using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
 
+
 public class AvailableIPCDisplay : MonoBehaviour {
 
-	[SerializeField] private TextMeshProUGUI countriesField;
-	[SerializeField] private TextMeshProUGUI phaseNameField;
+    [SerializeField] private IPCBreakdownDisplay breakdownDisplaySingle;
 
-    private void Start() {
+    [SerializeField] private IPCBreakdownDisplay[] breakdownDisplayDouble;
 
-        GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
-    }
+    [SerializeField] private GameObject singleRoot;
+    [SerializeField] private GameObject doubleRoot;
 
-    private void OnDisable() {
-        GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;
-    }
-
-    private void OnPhaseChanged() {
+    public void UpdateDisplay() {
 
         MajorPowerTurn turn = GameManager.Instance.GetCurrentlyActivePowers();
 
-        string countriesText = "";
+        singleRoot.SetActive(turn.powers.Count == 1);
+        doubleRoot.SetActive(turn.powers.Count == 2);
 
-        for(int i = 0; i < turn.powers.Count; ++i) {
-
-            countriesText += turn.powers[i].name;
-
-            if(i < turn.powers.Count - 1) {
-                countriesText += " and ";
-            }
+        if(turn.powers.Count == 1) {
+            breakdownDisplaySingle.SetCountry(turn.powers[0]);
         }
 
-        countriesField.text = countriesText;
+        if(turn.powers.Count == 2) {
 
-        phaseNameField.text = GameManager.Instance.GetCurrentPhaseName();
+            for (int i = 0; i < breakdownDisplayDouble.Length; ++i) {
+
+                breakdownDisplayDouble[i].SetCountry(turn.powers[i]);
+            }
+        }
     }
 }
 

@@ -218,10 +218,10 @@ public class GameManager : MonoBehaviour{
 
         InitializeCountryStates(initialGameState.InitialCountryStates);
 
-        CurrentTurnIndex = 0;
-
 
         HUD.Instance.Initialize();
+
+        CurrentTurnIndex = 0;
     }
 
     public bool IsCurrentTurn(MajorPower majorPower) {

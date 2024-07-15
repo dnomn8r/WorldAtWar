@@ -8,9 +8,9 @@ public class IPCBreakdownDisplay : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI countryField;
     [SerializeField] private TextMeshProUGUI breakdownIPCField;
 
-    private void SetCountry(MajorPower country) {
+    public void SetCountry(MajorPower country) {
 
-        countryField.text = country.ToString() + ": <color=green>" + GameManager.Instance.GetCurrentTotalIncome(country) + "</color";
+        countryField.text = country.ToString() + ": <color=green>" + GameManager.Instance.GetCurrentTotalIncome(country) + "</color>";
 
         //totalIPCField.text = string.Format("{0}(Base) + {1}(Saved) + {2}(LL) - " WorldMapManager.Instance.GetIncome(country) + ""
         int baseIncome = WorldMapManager.Instance.GetIncome(country);

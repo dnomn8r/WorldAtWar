@@ -8,16 +8,16 @@ public class PhaseDisplay : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI countriesField;
 	[SerializeField] private TextMeshProUGUI phaseNameField;
 
-    private void Start() {
+    //private void Start() {
 
-        GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
-    }
+    //    GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
+    //}
 
-    private void OnDisable() {
-        GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;
-    }
+    //private void OnDisable() {
+    //    GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;
+    //}
 
-    private void OnPhaseChanged() {
+    public void UpdateDisplay() {
 
         MajorPowerTurn turn = GameManager.Instance.GetCurrentlyActivePowers();
 
