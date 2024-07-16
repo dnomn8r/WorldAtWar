@@ -42,7 +42,6 @@ public class HUD : MonoBehaviour {
 
         incomeTogglePanel.UpdateIncomes();
 
-        Debug.Log("on phase changed");
         availableIPCDisplay.UpdateDisplay();
         phaseDisplay.UpdateDisplay();
 
