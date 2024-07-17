@@ -167,6 +167,14 @@ public class GameManager : MonoBehaviour{
         return sentLL;
     }
 
+    public int GetPendingReceivedLendlease(MajorPower power) {
+
+        int receivedLL = 0;
+        pendingReceivedLendLease.TryGetValue(power, out receivedLL);
+
+        return receivedLL;
+    }
+
     public int GetSavedIPCs(MajorPower power) {
         int ipcs = 0;
 
