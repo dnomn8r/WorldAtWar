@@ -30,19 +30,27 @@ public class HUD : MonoBehaviour {
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
 
         GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
+        GameManager.Instance.OnPendingLendLeaseChanged += OnLendLeaseChanged;
 
         SetSelectedZone(null);
 	}
 
     private void OnDisable() {
         GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;
+        GameManager.Instance.OnPendingLendLeaseChanged -= OnLendLeaseChanged;
+    }
+
+    private void OnLendLeaseChanged() {
+
+        incomeTogglePanel.UpdateIncomes();
+        availableIPCDisplay.UpdateDisplay();
     }
 
     private void OnPhaseChanged() {
 
         incomeTogglePanel.UpdateIncomes();
-
         availableIPCDisplay.UpdateDisplay();
+
         phaseDisplay.UpdateDisplay();
 
 

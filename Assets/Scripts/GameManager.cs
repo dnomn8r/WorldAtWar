@@ -140,23 +140,28 @@ public class GameManager : MonoBehaviour{
         if(!pendingSentLendLease.ContainsKey(source)) {
             pendingSentLendLease.Add(source, 0);
         }
-
-        pendingSentLendLease[source] += delta;
-        if (pendingSentLendLease[source] < 0) {
-            Debug.LogError("should never have less than 0 pending lend lease!");
-            pendingSentLendLease[source] = 0;
-        }
-
-        if (pendingSentLendLease[source] > Mathf.FloorToInt(WorldMapManager.Instance.GetIncome(source) / 3)) {
-            Debug.LogError("should never have more than 1/3 of income! We have income: " + WorldMapManager.Instance.GetIncome(source) + " and sent " + pendingSentLendLease[source]);
-            pendingSentLendLease[source] = Mathf.FloorToInt(WorldMapManager.Instance.GetIncome(source) / 3);
-        }
-
         if (!pendingReceivedLendLease.ContainsKey(recipient)) {
             pendingReceivedLendLease.Add(recipient, 0);
         }
 
+        if (GetPendingSentLendlease(source) + delta < 0 || 
+            pendingReceivedLendLease[recipient] + delta < 0) {
+
+            //Debug.LogError("should never have less than 0 pending lend lease!");
+            return;
+        }
+
+        if (GetPendingSentLendlease(source) + delta > Mathf.FloorToInt(WorldMapManager.Instance.GetIncome(source) / 3)) {
+
+            //Debug.LogError("should never have more than 1/3 of income! We have income: " + WorldMapManager.Instance.GetIncome(source) + " and sent " + pendingSentLendLease[source]);
+            return;
+        }
+
+        pendingSentLendLease[source] += delta;
+
         pendingReceivedLendLease[recipient] += delta;
+
+        OnPendingLendLeaseChanged?.Invoke();
     }
 
     public int GetPendingSentLendlease(MajorPower power) {

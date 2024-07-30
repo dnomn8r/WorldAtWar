@@ -28,12 +28,15 @@ public class IncomeEntry : MonoBehaviour {
 
     void IncreaseLendLease() {
 
-        Debug.Log("INCREASE sending lend lease from: " + leaser.name + " to " + power.name);
+        //Debug.Log("INCREASE sending lend lease from: " + leaser.name + " to " + power.name);
+
+        GameManager.Instance.ChangePendingLendLease(leaser, power, 1);
     }
 
     void DecreaseLendLease() {
 
-        Debug.Log("decrease lend lease from: " + leaser.name + " to " + power.name);
+        //Debug.Log("decrease lend lease from: " + leaser.name + " to " + power.name);
+        GameManager.Instance.ChangePendingLendLease(leaser, power, -1);
 
     }
 
