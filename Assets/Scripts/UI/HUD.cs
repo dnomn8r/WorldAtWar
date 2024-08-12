@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
@@ -23,6 +24,10 @@ public class HUD : MonoBehaviour {
     [SerializeField] private AvailableIPCDisplay availableIPCDisplay;
     [SerializeField] private PhaseDisplay phaseDisplay;
 
+    [SerializeField] private TextMeshProUGUI turnDisplay;
+
+    [SerializeField] private Button endPhaseButton;
+
     public void Initialize() {
 
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
@@ -30,10 +35,30 @@ public class HUD : MonoBehaviour {
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
 
         GameManager.Instance.OnPhaseChanged += OnPhaseChanged;
+        GameManager.Instance.OnTurnChanged += Instance_OnTurnChanged;
+        GameManager.Instance.OnRoundChanged += Instance_OnRoundChanged;
+
         GameManager.Instance.OnPendingLendLeaseChanged += OnLendLeaseChanged;
+
+        endPhaseButton.onClick.AddListener(EndPhaseEvent);
 
         SetSelectedZone(null);
 	}
+
+    private void Instance_OnRoundChanged() {
+
+        turnDisplay.text = "Round " + (GameManager.Instance.currentRound + 1);
+    }
+
+    private void Instance_OnTurnChanged() {
+
+       
+    }
+
+    private void EndPhaseEvent() {
+
+        GameManager.Instance.EndPhase();
+    }
 
     private void OnDisable() {
         GameManager.Instance.OnPhaseChanged -= OnPhaseChanged;

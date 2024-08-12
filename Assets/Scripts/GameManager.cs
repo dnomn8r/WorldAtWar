@@ -72,6 +72,9 @@ public class GameManager : MonoBehaviour{
     }
 
     public event Action OnPhaseChanged;
+    public event Action OnTurnChanged;
+    public event Action OnRoundChanged;
+
     public event Action OnPendingLendLeaseChanged;
 
     // state variables
@@ -83,26 +86,60 @@ public class GameManager : MonoBehaviour{
     private int _currentPhaseIndex = -1;
     public int CurrentPhaseIndex {
         get { return _currentPhaseIndex; }
-        set {
+        private set {
             _currentPhaseIndex = value;
 
             OnPhaseChanged?.Invoke();
         }
     }
 
-    public int CurrentTurnIndex{
+    public void EndPhase() {
+
+        int maxPhases = Enum.GetValues(typeof(TurnPhase)).Length;
+
+        if(CurrentPhaseIndex + 1 < maxPhases) {
+            CurrentPhaseIndex = CurrentPhaseIndex + 1;
+        } else {
+          
+            CurrentTurn = CurrentTurn + 1;
+        }
+    }
+
+    public int CurrentRound {
+        get {
+            return currentRound;
+        }
+        set {
+            currentRound = value;
+            CurrentTurn = 0;
+
+            OnRoundChanged?.Invoke();   
+        }
+    }
+
+    public int CurrentTurn{
 
         set {
-            if (value < 0 || value >= turnOrder.Count) {
-                Debug.Log("bad turn index! must be between 0 and " + (turnOrder.Count - 1));
+            if (value < 0 || value > turnOrder.Count) {
+                Debug.Log("bad turn index! must be between 0 and " + (turnOrder.Count));
             }
             if(_currentTurnIndex == value) {
                 Debug.LogError("We shouldn't be trying to change turn to what it already is!");
             }
 
-            _currentTurnIndex = value;
+            if (_currentTurnIndex + 1 < turnOrder.Count) {
 
-            CurrentPhaseIndex = 0;
+                _currentTurnIndex = value;
+
+                CurrentPhaseIndex = 0;
+
+                OnTurnChanged?.Invoke();
+            } else {
+
+                CurrentRound = CurrentRound + 1;             
+            }
+          
+ 
         }
 
         get {
@@ -201,7 +238,7 @@ public class GameManager : MonoBehaviour{
     }
     public MajorPowerTurn GetCurrentlyActivePowers() {
 
-        return turnOrder[CurrentTurnIndex];
+        return turnOrder[CurrentTurn];
     }
 
     private void Awake() {
@@ -234,7 +271,7 @@ public class GameManager : MonoBehaviour{
 
         HUD.Instance.Initialize();
 
-        CurrentTurnIndex = 0;
+        CurrentRound = 0;
     }
 
     public bool IsCurrentTurn(MajorPower majorPower) {
