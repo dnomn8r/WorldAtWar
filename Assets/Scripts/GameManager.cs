@@ -89,6 +89,8 @@ public class GameManager : MonoBehaviour{
         private set {
             _currentPhaseIndex = value;
 
+            //Debug.Log("current phase: " + _currentPhaseIndex);
+
             OnPhaseChanged?.Invoke();
         }
     }
@@ -111,8 +113,11 @@ public class GameManager : MonoBehaviour{
         }
         set {
             currentRound = value;
-            CurrentTurn = 0;
 
+            //Debug.Log("current round: " + value);
+
+            CurrentTurn = 0;
+   
             OnRoundChanged?.Invoke();   
         }
     }
@@ -127,7 +132,21 @@ public class GameManager : MonoBehaviour{
                 Debug.LogError("We shouldn't be trying to change turn to what it already is!");
             }
 
-            if (_currentTurnIndex + 1 < turnOrder.Count) {
+            //Debug.Log("current turn: " + value);
+
+            if (value < turnOrder.Count) {
+
+                if (_currentTurnIndex >= 0) {
+                    MajorPowerTurn majorPowerTurn = GetCurrentlyActivePowers();
+
+                    foreach (MajorPower power in majorPowerTurn.powers) {
+
+                        if (!savedIPCs.ContainsKey(power)) {
+                            savedIPCs.Add(power, 0);
+                        }
+                        savedIPCs[power] += WorldMapManager.Instance.GetIncome(power);
+                    }
+                }
 
                 _currentTurnIndex = value;
 
