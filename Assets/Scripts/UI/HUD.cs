@@ -79,9 +79,13 @@ public class HUD : MonoBehaviour {
         phaseDisplay.UpdateDisplay();
 
 
-        if((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
+        if ((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
 
             DisplayCollectIncomePhase();
+
+        } else if ((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COMBAT_MOVEMENT) {
+
+
         }
     }
     private void DisplayCollectIncomePhase() {

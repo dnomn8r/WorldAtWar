@@ -97,9 +97,25 @@ public class GameManager : MonoBehaviour{
 
     public void EndPhase() {
 
+        if ((TurnPhase)CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
+
+            foreach(KeyValuePair<MajorPower, int> kvp in pendingReceivedLendLease) {
+
+                if (!lendLease.ContainsKey(kvp.Key)) {
+                    lendLease.Add(kvp.Key, 0);
+                }
+                lendLease[kvp.Key] += kvp.Value;
+            }
+
+
+
+            pendingReceivedLendLease.Clear();
+        }
+
         int maxPhases = Enum.GetValues(typeof(TurnPhase)).Length;
 
         if(CurrentPhaseIndex + 1 < maxPhases) {
+
             CurrentPhaseIndex = CurrentPhaseIndex + 1;
         } else {
           
@@ -166,9 +182,12 @@ public class GameManager : MonoBehaviour{
         }
     }
 
+    
 
     private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
+    
     private Dictionary<MajorPower, int> lendLease = new Dictionary<MajorPower, int>();
+
 
     private Dictionary<MajorPower, int> pendingSentLendLease = new Dictionary<MajorPower, int>();
     private Dictionary<MajorPower, int> pendingReceivedLendLease = new Dictionary<MajorPower, int>();
