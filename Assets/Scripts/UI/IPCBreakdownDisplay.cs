@@ -10,26 +10,37 @@ public class IPCBreakdownDisplay : MonoBehaviour {
 
     public void SetCountry(MajorPower country) {
 
-        countryField.text = country.name + ": <color=green>" + GameManager.Instance.GetCurrentTotalIncome(country) + "</color>";
+        if ((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME) {
 
-        //totalIPCField.text = string.Format("{0}(Base) + {1}(Saved) + {2}(LL) - " WorldMapManager.Instance.GetIncome(country) + ""
-        int baseIncome = WorldMapManager.Instance.GetIncome(country);
-        int savedIncome = GameManager.Instance.GetSavedIPCs(country);  
-        int receivedLL = GameManager.Instance.GetTotalReceivingLendLease(country);
-        int sentLL = GameManager.Instance.GetPendingSentLendlease(country);
+            countryField.text = country.name + ": <color=green>" + GameManager.Instance.GetCurrentTotalIncome(country) + "</color>";
 
-        string breakdownString = baseIncome + "(Base)";
-        if(savedIncome > 0) {
-            breakdownString += " + " + savedIncome + "(Saved)"; 
-        }
-        if(receivedLL > 0) {
-            breakdownString += " + " + receivedLL + "(LL)";
-        }
-        if(sentLL > 0) {
-            breakdownString += " - " + sentLL + "(Sent)";
-        }
+            int baseIncome = WorldMapManager.Instance.GetIncome(country);
 
-        breakdownIPCField.text = breakdownString;
+            int savedIncome = GameManager.Instance.GetSavedIPCs(country);
+
+            int receivedLL = GameManager.Instance.GetTotalReceivingLendLease(country);
+            int sentLL = GameManager.Instance.GetPendingSentLendlease(country);
+
+            string breakdownString = baseIncome + "(Base)";
+            if (savedIncome > 0) {
+                breakdownString += " + " + savedIncome + "(Saved)";
+            }
+            if (receivedLL > 0) {
+                breakdownString += " + " + receivedLL + "(LL)";
+            }
+            if (sentLL > 0) {
+                breakdownString += " - " + sentLL + "(Sent)";
+            }
+
+            breakdownIPCField.text = breakdownString;
+        } else {
+
+            countryField.text = country.name + ": " + 
+                (GameManager.Instance.GetCurrentIPCs(country) + GameManager.Instance.GetSavedIPCs(country))  + 
+                (GameManager.Instance.GetLendLease(country) > 0 ? (" + " + GameManager.Instance.GetLendLease(country) + "(LL)") : "");
+
+            breakdownIPCField.text = "";
+        }
     }
 
 

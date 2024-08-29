@@ -107,9 +107,25 @@ public class GameManager : MonoBehaviour{
                 lendLease[kvp.Key] += kvp.Value;
             }
 
+            MajorPowerTurn majorPowerTurn = GetCurrentlyActivePowers();
 
+            // add actual income available for this turn
+            foreach (MajorPower power in majorPowerTurn.powers) {
 
+                if(!currentIPCs.ContainsKey(power)) {
+                    currentIPCs.Add(power, 0);  
+                }
+
+                int sentLendLease = 0;
+                if(pendingSentLendLease.ContainsKey(power)) {
+                    sentLendLease = pendingSentLendLease[power];
+                }
+
+                currentIPCs[power] = WorldMapManager.Instance.GetIncome(power) - sentLendLease;
+            }
+            
             pendingReceivedLendLease.Clear();
+            pendingSentLendLease.Clear();
         }
 
         int maxPhases = Enum.GetValues(typeof(TurnPhase)).Length;
@@ -160,7 +176,7 @@ public class GameManager : MonoBehaviour{
                         if (!savedIPCs.ContainsKey(power)) {
                             savedIPCs.Add(power, 0);
                         }
-                        savedIPCs[power] += WorldMapManager.Instance.GetIncome(power);
+                        savedIPCs[power] += currentIPCs[power];
                     }
                 }
 
@@ -182,7 +198,7 @@ public class GameManager : MonoBehaviour{
         }
     }
 
-    
+    private Dictionary<MajorPower, int> currentIPCs = new Dictionary<MajorPower, int>();
 
     private Dictionary<MajorPower, int> savedIPCs = new Dictionary<MajorPower, int>();
     
@@ -192,6 +208,13 @@ public class GameManager : MonoBehaviour{
     private Dictionary<MajorPower, int> pendingSentLendLease = new Dictionary<MajorPower, int>();
     private Dictionary<MajorPower, int> pendingReceivedLendLease = new Dictionary<MajorPower, int>();
 
+
+    public int GetCurrentIPCs(MajorPower power) {
+
+        int IPCs = 0;
+        currentIPCs.TryGetValue(power, out IPCs);
+        return IPCs;
+    }
 
     public int GetCurrentTotalIncome(MajorPower power) {
 
