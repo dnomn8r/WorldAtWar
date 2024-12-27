@@ -130,17 +130,15 @@ public abstract class Zone : MonoBehaviour {
 #endif
     }
 
-	public struct UnitOwnershipEntry {
+
+	public class UnitInstance {
 
 		public Country owner;
 		public Unit unit;
-		public int count;
 
-		public UnitOwnershipEntry(Country owner, Unit unit, int count) {
-
+		public UnitInstance(Country owner, Unit unit) {
 			this.owner = owner;
 			this.unit = unit;
-			this.count = count;
 		}
 	}
 
@@ -158,25 +156,35 @@ public abstract class Zone : MonoBehaviour {
 #endif
     }
 
+	public struct UnitOwnershipEntry {
 
-    private Dictionary<string, UnitOwnershipEntry> units = new Dictionary<string, UnitOwnershipEntry>();
+		public Country owner;
+		public Unit unit;
+		public int count;
 
-	public List<UnitOwnershipEntry> GetUnits() {
-		return new List<UnitOwnershipEntry>(units.Values);
+		public UnitOwnershipEntry(Country owner, Unit unit, int count) {
+
+			this.owner = owner;
+			this.unit = unit;
+			this.count = count;
+		}
+	}
+
+
+	private List<UnitInstance> units = new List<UnitInstance>();
+
+	public List<UnitInstance> GetUnits() {
+
+		return units;
 	}
 
 	public void AddUnits(Country owner, Unit unit, int count) {
 
-		string key = owner.name + unit.name;
+		for (int i = 0; i < count; i++) {
 
-		if(!units.ContainsKey(key)) {
+			UnitInstance newUnit = new UnitInstance(owner, unit);
 
-			units.Add(key, new UnitOwnershipEntry(owner, unit, count));
-		} else {
-
-			UnitOwnershipEntry entry = units[key];
-			entry.count += count;
-			units[key] = entry;
+			units.Add(newUnit);
 		}
 
 		if(zoneInfoDisplay != null) {
@@ -184,32 +192,9 @@ public abstract class Zone : MonoBehaviour {
 		}
 	}
 
-    public void RemoveUnits(Country owner, Unit unit, int count) {
+    public void RemoveUnit(UnitInstance unit) {
 
-        string key = owner.name + unit.name;
-
-        if (!units.ContainsKey(key)) {
-
-			Debug.LogError("trying to remove units that aren't there!");
-
-        } else {
-
-            UnitOwnershipEntry entry = units[key];
-            entry.count -= count;
-
-			if (entry.count < 0) {
-
-				Debug.LogError("trying to remove more units that we have!");
-
-			} else if (entry.count == 0) {
-
-				units.Remove(key);
-
-			} else {
-
-				units[key] = entry;
-			}
-        }
+		units.Remove(unit);
 
         if (zoneInfoDisplay != null) {
             zoneInfoDisplay.Refresh();
@@ -247,7 +232,7 @@ public abstract class Zone : MonoBehaviour {
 
 	public void SetSelectedState(bool selected) {
 
-        SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+        //SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in zoneRenderers) {
 			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {

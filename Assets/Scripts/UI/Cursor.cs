@@ -10,13 +10,13 @@ public class Cursor : MonoBehaviour {
 
     private void LateUpdate() {
 
-        if (EventSystem.current.IsPointerOverGameObject()) {
-            currentlyHoveredZone = null;
-            HUD.Instance.SetHoveredZone(currentlyHoveredZone);
-            return;
-        }
+        //if (EventSystem.current.IsPointerOverGameObject()) {
+        //    currentlyHoveredZone = null;
+        //    HUD.Instance.SetHoveredZone(currentlyHoveredZone);
+        //    return;
+        //}
 
-        Ray selectionRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //Ray selectionRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 
         //int hitCount = Physics.RaycastNonAlloc(selectionRay, hits, 10000);
@@ -63,7 +63,7 @@ public class Cursor : MonoBehaviour {
 
                 //hoveredZone.SetHoverState(true);
 
-                HUD.Instance.SetHoveredZone(hoveredZone);
+                //HUD.Instance.SetHoveredZone(hoveredZone);
                 
             //} else {
 

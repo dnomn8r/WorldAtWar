@@ -14,6 +14,7 @@ public class UnitDetailEntry : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI movementField;
 	[SerializeField] private TextMeshProUGUI countField;
 
+
 	public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
 
 		imageRenderer.sprite = unitOwnership.unit.UnitType.Sprite;

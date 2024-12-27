@@ -30,6 +30,8 @@ public class HUD : MonoBehaviour {
 
     public void Initialize() {
 
+        territoryHoverPanel.gameObject.SetActive(false); // not used FOR NOW
+
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 
 		toggleIncomeButton.onValueChanged.AddListener(ToggleIncomeGroup);
@@ -106,13 +108,13 @@ public class HUD : MonoBehaviour {
         }
     }
 
-    public void SetHoveredZone(Zone zone) {
+ //   public void SetHoveredZone(Zone zone) {
 
-		territoryHoverPanel.gameObject.SetActive(zone != null);
+	//	territoryHoverPanel.gameObject.SetActive(zone != null);
 
-		if (zone != null) {
-			territoryHoverPanel.SetZone(zone);
-		}
-	}
+	//	if (zone != null) {
+	//		territoryHoverPanel.SetZone(zone);
+	//	}
+	//}
 
 }

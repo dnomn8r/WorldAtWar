@@ -59,13 +59,16 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
         List<UnitTypeCount> unitTypeCounts = new List<UnitTypeCount>();
 
-        foreach (Zone.UnitOwnershipEntry entry in zone.GetUnits()) {
+		List<Zone.UnitInstance> allUnits = zone.GetUnits();
+
+        //foreach (Zone.UnitOwnershipEntry entry in zone.GetUnits()) {
+		foreach (Zone.UnitInstance unitInstance in allUnits) {
 
 			int addIndex = -1;
 
 			for (int i = 0; i < unitTypeCounts.Count; i++) {
 
-				if (unitTypeCounts[i].unitType == entry.unit.UnitType) {
+				if (unitTypeCounts[i].unitType == unitInstance.unit.UnitType) {
 					addIndex = i;
 					break;
 				}
@@ -73,12 +76,12 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
 			if(addIndex == -1) {
 
-				unitTypeCounts.Add(new UnitTypeCount(entry.unit.UnitType, entry.owner, entry.count));
+				unitTypeCounts.Add(new UnitTypeCount(unitInstance.unit.UnitType, unitInstance.owner, 1));
 
 			} else {
 
 				UnitTypeCount unitTypeCount =  unitTypeCounts[addIndex];
-				unitTypeCount.AddCount(entry.owner, entry.count);
+				unitTypeCount.AddCount(unitInstance.owner, 1);
 				unitTypeCounts[addIndex] = unitTypeCount;
 			}
 

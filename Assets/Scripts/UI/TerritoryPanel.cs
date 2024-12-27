@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
 using static Zone;
 
 public class TerritoryPanel : MonoBehaviour {
@@ -15,6 +17,7 @@ public class TerritoryPanel : MonoBehaviour {
 
 	private List<UnitDetailEntry> unitEntries = new List<UnitDetailEntry>();
 
+
 	public void SetZone(Zone selectedZone) {
 
 		// clear previous entries
@@ -28,14 +31,35 @@ public class TerritoryPanel : MonoBehaviour {
 
 		nameField.text = currentZone.name;
 
-		List<UnitOwnershipEntry> unitOwnerships = selectedZone.GetUnits();
+		//List<UnitOwnershipEntry> unitOwnerships = selectedZone.GetUnits();
+
+		List<UnitInstance> allUnits = selectedZone.GetUnits();
 
 		//Debug.Log("selected zone: " + currentZone.name);
 
 		float currentOffset = 0.0f;
 		float entrySize = 40.0f;
 
-		foreach(UnitOwnershipEntry currentOwnershipEntry in unitOwnerships) {
+		Dictionary<string, UnitOwnershipEntry> unitOwnershipDictionary = new Dictionary<string, UnitOwnershipEntry>();	
+
+		foreach (UnitInstance unitInstance in allUnits) {
+
+			string key = unitInstance.owner.name + unitInstance.unit.name;
+
+			if (!unitOwnershipDictionary.ContainsKey(key)) {
+
+				unitOwnershipDictionary.Add(key, new UnitOwnershipEntry(unitInstance.owner, unitInstance.unit, 1));
+			} else {
+
+				UnitOwnershipEntry entry = unitOwnershipDictionary[key];
+				entry.count += 1;
+				unitOwnershipDictionary[key] = entry;
+			}
+		}
+
+		List<UnitOwnershipEntry> unitOwnerships = new List<UnitOwnershipEntry>(unitOwnershipDictionary.Values);
+
+		foreach (UnitOwnershipEntry currentOwnershipEntry in unitOwnerships) {
 
             UnitDetailEntry newEntry = Instantiate<UnitDetailEntry>(unitEntry, unitEntryStartMount);
 			//newEntry.transform.localPosition = new Vector3(0, -currentOffset, 0);
