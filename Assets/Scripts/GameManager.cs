@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour{
 
-    public enum TurnPhase { COLLECT_INCOME, COMBAT_MOVEMENT, COMBAT, NON_COMBAT_MOVEMENT, BUILD_RECRUIT}
+    public enum TurnPhase { COLLECT_INCOME, COMBAT_ORDERS, COMBAT, NON_COMBAT_MOVEMENT, BUILD_RECRUIT}
 
     private static string GetPhaseName(TurnPhase phase) {
 
@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour{
 
             case TurnPhase.COLLECT_INCOME:
                 return "Collect Income";
-            case TurnPhase.COMBAT_MOVEMENT:
-                return "Combat Movement";
+            case TurnPhase.COMBAT_ORDERS:
+                return "Combat Orders";
             case TurnPhase.COMBAT:
                 return "Combat";
             case TurnPhase.NON_COMBAT_MOVEMENT:
