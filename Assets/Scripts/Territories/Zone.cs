@@ -158,13 +158,11 @@ public abstract class Zone : MonoBehaviour {
 
 	public struct UnitOwnershipEntry {
 
-		public Country owner;
-		public Unit unit;
+		public UnitInstance unit;
 		public int count;
 
-		public UnitOwnershipEntry(Country owner, Unit unit, int count) {
+		public UnitOwnershipEntry(UnitInstance unit, int count) {
 
-			this.owner = owner;
 			this.unit = unit;
 			this.count = count;
 		}

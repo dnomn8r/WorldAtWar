@@ -17,21 +17,21 @@ public class UnitDetailEntry : MonoBehaviour {
 
 	public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
 
-		imageRenderer.sprite = unitOwnership.unit.UnitType.Sprite;
+		imageRenderer.sprite = unitOwnership.unit.unit.UnitType.Sprite;
 
-		if(unitOwnership.unit is SeaUnit) {
+		if(unitOwnership.unit.unit is SeaUnit) {
 			imageRenderer.transform.localScale = new Vector3(4.75f, 2.25f, 1.0f);
 		} else {
             imageRenderer.transform.localScale = new Vector3(3.0f, 3.0f, 1.0f);
         }
 
 
-		nameField.text = unitOwnership.unit.name;
+		nameField.text = unitOwnership.unit.unit.name;
 
-		movementField.text = unitOwnership.unit.Movement.ToString();
+		movementField.text = unitOwnership.unit.unit.Movement.ToString();
 
-        firstEntryField.text = unitOwnership.unit.FirstStat.ToString();
-        secondEntryField.text = unitOwnership.unit.SecondStat.ToString();
+        firstEntryField.text = unitOwnership.unit.unit.FirstStat.ToString();
+        secondEntryField.text = unitOwnership.unit.unit.SecondStat.ToString();
 
 		countField.text = unitOwnership.count.ToString();
     }

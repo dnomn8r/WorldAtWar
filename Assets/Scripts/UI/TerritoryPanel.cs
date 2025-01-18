@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
-using static UnityEngine.UI.GridLayoutGroup;
 using static Zone;
 
 public class TerritoryPanel : MonoBehaviour {
@@ -48,7 +46,7 @@ public class TerritoryPanel : MonoBehaviour {
 
 			if (!unitOwnershipDictionary.ContainsKey(key)) {
 
-				unitOwnershipDictionary.Add(key, new UnitOwnershipEntry(unitInstance.owner, unitInstance.unit, 1));
+				unitOwnershipDictionary.Add(key, new UnitOwnershipEntry(unitInstance, 1));
 			} else {
 
 				UnitOwnershipEntry entry = unitOwnershipDictionary[key];
