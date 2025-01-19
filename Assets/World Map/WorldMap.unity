@@ -12239,7 +12239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.86
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 5363444325627930711, guid: 76442a378f308cc49bb0b5bd11322e48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -77176,7 +77176,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28307842}
   m_HandleRect: {fileID: 28307841}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -97845,7 +97845,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533457802}
   m_HandleRect: {fileID: 1533457801}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -162374,7 +162374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.93
+      value: 2.28
       objectReference: {fileID: 0}
     - target: {fileID: 8095803517149095242, guid: 2d2f8fd5c6b445644bda5d383bacc1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
