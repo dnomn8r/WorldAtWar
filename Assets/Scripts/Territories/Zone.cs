@@ -20,6 +20,31 @@ public abstract class Zone : MonoBehaviour {
 		}
 	}
 
+	[MenuItem("Zones/Add Moves")]
+	static void AddMoves() {
+
+		Zone[] zones = FindObjectsByType<Zone>(FindObjectsSortMode.None);
+
+		foreach (Zone zone in zones) {
+
+			zone.movementArrows.Clear();
+
+			foreach (Zone adjacency in zone.adjacencies) {
+
+				GameObject newArrow = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/World Map/Prefabs/MovementArrow.prefab")) as GameObject;
+
+				newArrow.name = "Move to " + adjacency.name;
+				newArrow.transform.SetParent(zone.transform, false);
+
+				newArrow.transform.localPosition = Vector3.zero;
+
+
+				zone.movementArrows.Add(newArrow);
+			}
+
+		}
+	}
+
 
 	[MenuItem("Zones/Make Scriptables")]
 	static void MakeScriptables() {
@@ -107,6 +132,10 @@ public abstract class Zone : MonoBehaviour {
 	public List<Zone> Adjacencies {
 		get { return adjacencies; }	
 	}
+
+	[SerializeField] protected List<GameObject> movementArrows = new List<GameObject>();
+	public List<GameObject> MovementArrows { get { return movementArrows; } }
+
 
     [SerializeField] private List<SpriteRenderer> zoneRenderers = new List<SpriteRenderer>();
 

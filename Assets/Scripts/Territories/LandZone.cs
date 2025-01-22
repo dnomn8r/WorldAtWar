@@ -23,6 +23,31 @@ public class LandZone : Zone {
 		}
 	}
 
+	[MenuItem("Zones/Add Hazardous Moves")]
+	static void AddHazardousMoves() {
+
+		LandZone[] zones = FindObjectsByType<LandZone>(FindObjectsSortMode.None);
+
+		foreach (LandZone zone in zones) {
+
+			zone.hazardousMovementArrows.Clear();
+
+			foreach (LandZone hazardousAdjacency in zone.hazardousAdjacencies) {
+				
+				GameObject newArrow = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/World Map/Prefabs/HazardousMovementArrow.prefab")) as GameObject;
+
+				newArrow.name = "HazardousMove to " + hazardousAdjacency.name;
+				newArrow.transform.SetParent(zone.transform, false);
+
+				newArrow.transform.localPosition = Vector3.zero;
+
+
+				zone.hazardousMovementArrows.Add(newArrow);
+			}
+
+		}
+	}
+
 	[MenuItem("Zones/Hookup Components")]
 	static void HookupComponents() {
 
@@ -139,6 +164,9 @@ public class LandZone : Zone {
 	public List<LandZone> HazardousAdjacencies {
 		get { return hazardousAdjacencies; }
 	}
+
+	[SerializeField] protected List<GameObject> hazardousMovementArrows = new List<GameObject>();
+	public List<GameObject> HazardousMovementArrows { get { return hazardousMovementArrows; } }
 
 	public int Value { get { return landTerritory.Value; } }
 
