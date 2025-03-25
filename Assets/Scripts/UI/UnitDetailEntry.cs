@@ -8,14 +8,31 @@ public class UnitDetailEntry : MonoBehaviour {
 
 	[SerializeField] private TextMeshProUGUI nameField;
 
-		
-	[SerializeField] protected TextMeshProUGUI firstEntryField;
+    [SerializeField] private Button moveButton;
+    
+    [SerializeField] private GameObject moveVisualRoot;
+    [SerializeField] private TextMeshProUGUI moveCountText;
+
+    [SerializeField] protected TextMeshProUGUI firstEntryField;
 	[SerializeField] protected TextMeshProUGUI secondEntryField;
 	[SerializeField] private TextMeshProUGUI movementField;
 	[SerializeField] private TextMeshProUGUI countField;
 
 
-	public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
+	void OnEnable() {
+    
+        moveVisualRoot.gameObject.SetActive(false);
+        moveButton.onClick.AddListener(AttemptMove);
+    }
+    void OnDisable() {
+        moveButton.onClick.RemoveListener(AttemptMove);
+    }
+    void AttemptMove() {
+
+        //toggleVisual.gameObject.SetActive();
+    }
+
+    public void SetUnit(Zone.UnitOwnershipEntry unitOwnership) {
 
 		imageRenderer.sprite = unitOwnership.unit.unit.UnitType.Sprite;
 

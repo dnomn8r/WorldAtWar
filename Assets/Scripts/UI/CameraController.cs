@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour {
 
@@ -9,7 +10,11 @@ public class CameraController : MonoBehaviour {
 	[SerializeField] private float moveSpeed = 5.0f;
 	[SerializeField] private float smoothSpeed = 2.0f;
 
-	[SerializeField] private float zoomSpeed = 10.0f;
+	[SerializeField] private float zoomSpeed = 50.0f;
+	[SerializeField] private float mouseScrollZoomSpeed = 1000.0f;
+
+	[SerializeField] private float minZoom = 110.0f;
+	[SerializeField] private float maxZoom = 10.0f;
 
 	private Vector3 targetPosition;
 	private float targetOrthoSize;
@@ -39,7 +44,7 @@ public class CameraController : MonoBehaviour {
 
 		targetPosition = transform.position + dirVector * moveSpeed * Time.deltaTime;
 
-		
+
 		// zooming in
 
 		if(Input.GetKey(KeyCode.Z)) {
@@ -49,7 +54,13 @@ public class CameraController : MonoBehaviour {
 			targetOrthoSize = targetOrthoSize + zoomSpeed * Time.deltaTime;
 		}
 
+		if (!EventSystem.current.IsPointerOverGameObject() && 
+			Mathf.Abs(Input.mouseScrollDelta.y) > 0.1f) {
+			
+			targetOrthoSize = targetOrthoSize + -Mathf.Sign(Input.mouseScrollDelta.y) * mouseScrollZoomSpeed * Time.deltaTime;
+		}
 
+		targetOrthoSize = Mathf.Clamp(targetOrthoSize, maxZoom, minZoom);
 	}
 
 	private void LateUpdate() {

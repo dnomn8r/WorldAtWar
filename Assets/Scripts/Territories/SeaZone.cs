@@ -41,7 +41,9 @@ public class SeaZone : Zone{
 
 		foreach (SpriteRenderer ren in renderers) {
 
-			if (ren.GetComponentInParent<ZoneInfoDisplay>() == null) {
+			if (ren.GetComponentInParent<ZoneInfoDisplay>() == null &&
+				ren.GetComponentInParent<MovementArrow>() == null) {
+
 				ren.color = BaseColor;
 			}
 		}

@@ -46,9 +46,22 @@ public class WorldMapManager : MonoBehaviour{
 
 		allZones = new List<Zone>(GetComponentsInChildren<Zone>());
 
+		InitializeMovementArrows(allZones);
+
         MapLandZones();
 
 		InitializeOriginalTerritories();
+
+	}
+
+	private void InitializeMovementArrows(List<Zone> zones) {
+
+		foreach (Zone zone in zones) {
+			MovementArrow[] moveArrows = zone.GetComponentsInChildren<MovementArrow>();
+			for(int i = 0; i < moveArrows.Length; i++) {
+				moveArrows[i].ToggleVisibility(false);
+			}
+		}
 
 	}
 

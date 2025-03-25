@@ -74,7 +74,9 @@ public class Cursor : MonoBehaviour {
             currentlyHoveredZone = hoveredZone;
         }
 
-        if(hoveredZone != null && hoveredZone != currentlySelectedZone && Input.GetMouseButtonDown(0)) {
+        if(hoveredZone != null && hoveredZone != currentlySelectedZone && 
+            Input.GetMouseButtonDown(0) &&
+            !EventSystem.current.IsPointerOverGameObject()) {
 
             if(currentlySelectedZone != null) {
                 currentlySelectedZone.SetSelectedState(false);
