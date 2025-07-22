@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
 
 	[SerializeField] private Camera myCamera;
 
-	[SerializeField] private float moveSpeed = 5.0f;
+	private float moveSpeed = 150.0f;
 	[SerializeField] private float smoothSpeed = 2.0f;
 
 	[SerializeField] private float zoomSpeed = 50.0f;
@@ -22,6 +22,13 @@ public class CameraController : MonoBehaviour {
 	private void Start() {
 		
 		targetOrthoSize = myCamera.orthographicSize;
+
+		targetPosition = transform.position;
+	}
+
+	public void AdjustTargetCameraPosition(Vector3 delta) {
+
+		targetPosition += delta;
 	}
 
 	void Update() {
@@ -41,9 +48,9 @@ public class CameraController : MonoBehaviour {
 		if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
 			dirVector.y = -1;
 		}
-
-		targetPosition = transform.position + dirVector * moveSpeed * Time.deltaTime;
-
+		if (dirVector != Vector3.zero) {
+			AdjustTargetCameraPosition(dirVector.normalized * moveSpeed * Time.deltaTime * (targetOrthoSize / (minZoom - maxZoom)));
+		}
 
 		// zooming in
 

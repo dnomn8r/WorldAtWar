@@ -8,18 +8,41 @@ public class Cursor : MonoBehaviour {
     private Zone currentlyHoveredZone = null;
     private Zone currentlySelectedZone = null;
 
-    private void LateUpdate() {
+    private Zone currentMouseDownZone = null;
 
-        //if (EventSystem.current.IsPointerOverGameObject()) {
-        //    currentlyHoveredZone = null;
-        //    HUD.Instance.SetHoveredZone(currentlyHoveredZone);
-        //    return;
+    private Vector2? previousPanPosition;
+    private void Update() {
+
+        float speed = 100.0f;
+        //if(!EventSystem.current.IsPointerOverGameObject()) {
+
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition.z = 5f;
+
+            Vector2 pos = Camera.main.ScreenToWorldPoint(mousePosition);
+          
+            if (Input.GetMouseButtonDown(2)) {
+                previousPanPosition = pos;
+            }
+
+            if (Input.GetMouseButton(2)) {
+
+                Vector2 dir = (pos - previousPanPosition.Value) * Time.deltaTime * speed;
+
+                Vector3 delta = new Vector3(dir.x, dir.y, 0);
+
+                HUD.Instance.CameraController.AdjustTargetCameraPosition(-delta);
+
+                previousPanPosition = pos;
+        }
+
+
         //}
 
-        //Ray selectionRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+    }
 
+    private void LateUpdate() {
 
-        //int hitCount = Physics.RaycastNonAlloc(selectionRay, hits, 10000);
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = 5f;
 
@@ -27,7 +50,6 @@ public class Cursor : MonoBehaviour {
 
         Collider2D[] hitColliders = Physics2D.OverlapPointAll(v);
 
-        //Debug.DrawRay(selectionRay.origin, selectionRay.direction * 10000, Color.red);
 
         Zone hoveredZone = null;
         int highestPriority = -10000;
@@ -55,39 +77,33 @@ public class Cursor : MonoBehaviour {
 
         if (currentlyHoveredZone != hoveredZone) {
 
-            //if (currentlyHoveredZone != null) {
-            //    currentlyHoveredZone.SetHoverState(false);
-            //}
+           currentlyHoveredZone = hoveredZone;
+        }
 
-            //if (hoveredZone != null) {
+        if (hoveredZone != null && Input.GetMouseButtonDown(0) &&
+            !EventSystem.current.IsPointerOverGameObject()) {
 
-                //hoveredZone.SetHoverState(true);
-
-                //HUD.Instance.SetHoveredZone(hoveredZone);
-                
-            //} else {
-
-                //Debug.Log("no zone selected");
-            //}
-            
-
-            currentlyHoveredZone = hoveredZone;
+            currentMouseDownZone = hoveredZone;
         }
 
         if(hoveredZone != null && hoveredZone != currentlySelectedZone && 
-            Input.GetMouseButtonDown(0) &&
+            Input.GetMouseButtonUp(0) &&
             !EventSystem.current.IsPointerOverGameObject()) {
 
-            if(currentlySelectedZone != null) {
-                currentlySelectedZone.SetSelectedState(false);
+            if (currentMouseDownZone == hoveredZone) {
+                if (currentlySelectedZone != null) {
+                    currentlySelectedZone.SetSelectedState(false);
+                }
+
+                currentlySelectedZone = hoveredZone;
+
+                currentlySelectedZone.SetSelectedState(true);
+
+                HUD.Instance.SetSelectedZone(currentlySelectedZone);
+            } else {
+
+                Debug.Log("doing move from: " + currentMouseDownZone.name + " to " + hoveredZone.name);
             }
-
-            currentlySelectedZone = hoveredZone;
-
-            currentlySelectedZone.SetSelectedState(true);
-
-            HUD.Instance.SetSelectedZone(currentlySelectedZone);
-
         }
 
 

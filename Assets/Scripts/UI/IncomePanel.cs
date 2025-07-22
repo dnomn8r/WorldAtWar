@@ -43,20 +43,6 @@ public class IncomePanel : MonoBehaviour {
 
 			incomePanelEntries[i].incomeEntry.UpdateCountryIncome(leaser, incomePanelEntries[i].majorPower);
 
-			//if (incomePanelEntries[i].majorPower != leaser && incomePanelEntries[i].majorPower.IsAlly(leaser)) {
-
-			//	GameObject newLeasePanel = GameObject.Instantiate(lendLeaseSendPanel) as GameObject;
-
-			//	newLeasePanel.transform.parent = incomePanelEntries[i].incomeEntry.transform;
-
-			//	newLeasePanel.transform.localPosition = new Vector3(195.0f, -1.2f, 0.0f);
-			//	//newLeasePanel.transform.localScale = new Vector3(1.72f, 1.72f, 1.72f);
-			//	newLeasePanel.transform.localEulerAngles = Vector3.zero;
-
-   // //            SendLendLeaseEntry leasePanel = newLeasePanel.GetComponent<SendLendLeaseEntry>();
-			//	//leasePanel.SetPowers(leaser, incomePanelEntries[i].majorPower);
-
-			//}
 		
 
 		}

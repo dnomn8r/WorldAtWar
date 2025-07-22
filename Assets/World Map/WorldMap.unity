@@ -138396,6 +138396,8 @@ MonoBehaviour:
   phaseDisplay: {fileID: 241323494}
   turnDisplay: {fileID: 1099172028}
   endPhaseButton: {fileID: 252444252}
+  cameraController: {fileID: 1108942544}
+  cursor: {fileID: 173878601}
 --- !u!1001 &871735253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152447,8 +152449,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533457802}
   m_HandleRect: {fileID: 1533457801}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9999752
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -209960,7 +209962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.018522566, y: 0.027726285}
   m_AnchorMax: {x: 0.9815227, y: 0.97300005}
-  m_AnchoredPosition: {x: -3, y: 3.053688}
+  m_AnchoredPosition: {x: -3, y: 3.0537338}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1335421033

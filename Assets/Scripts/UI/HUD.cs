@@ -28,6 +28,11 @@ public class HUD : MonoBehaviour {
 
     [SerializeField] private Button endPhaseButton;
 
+    [SerializeField] private CameraController cameraController;
+    public CameraController CameraController { get { return cameraController; } }
+    [SerializeField] private Cursor cursor;
+    public Cursor Cursor { get { return cursor; } } 
+
     public void Initialize() {
 
         territoryHoverPanel.gameObject.SetActive(false); // not used FOR NOW

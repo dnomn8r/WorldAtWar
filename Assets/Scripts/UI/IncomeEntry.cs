@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static GameManager;
 
 public class IncomeEntry : MonoBehaviour {
 
@@ -49,7 +50,8 @@ public class IncomeEntry : MonoBehaviour {
 
         lendLeaseValue.text = pendingReceivedLL.ToString();
 
-        bool showLL = power != leaser && power.IsAlly(leaser);
+        bool showLL = power != leaser && power.IsAlly(leaser) && 
+            (TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME;
 
         upButton.gameObject.SetActive(showLL);
         downButton.gameObject.SetActive(showLL);
