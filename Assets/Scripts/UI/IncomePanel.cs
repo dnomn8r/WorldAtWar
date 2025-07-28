@@ -43,8 +43,6 @@ public class IncomePanel : MonoBehaviour {
 
 			incomePanelEntries[i].incomeEntry.UpdateCountryIncome(leaser, incomePanelEntries[i].majorPower);
 
-		
-
 		}
 
 	}

@@ -5,6 +5,8 @@ public abstract class LandUnit : Unit{
     [SerializeField] private int attack;
     [SerializeField] private int defence;
 
+    public override MoveType MovementType { get { return MoveType.LAND; } }
+
     public override int FirstStat { get { return attack; } }
 
     public override int SecondStat { get { return defence; } }

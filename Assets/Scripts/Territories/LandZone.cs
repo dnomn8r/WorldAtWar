@@ -113,19 +113,6 @@ public class LandZone : Zone {
 	}
 
 
-	public override Color BaseColor {
-		get {
-			return CurrentOwner != null ? CurrentOwner.OwnershipColor : Color.white;
-		}
-	}
-
-	public override FontStyles FontStyle {
-		get {
-			return FontStyles.Bold;
-		}
-	}
-
-
 	protected override void ToggleAdjacencyHighlights(bool toggle) {
 
 		base.ToggleAdjacencyHighlights(toggle);
@@ -143,7 +130,18 @@ public class LandZone : Zone {
 	}
 #endif
 
-	[SerializeField] private LandTerritory landTerritory;
+    public override Color BaseColor {
+        get {
+            return CurrentOwner != null ? CurrentOwner.OwnershipColor : Color.white;
+        }
+    }
+    public override FontStyles FontStyle {
+        get {
+            return FontStyles.Bold;
+        }
+    }
+
+    [SerializeField] private LandTerritory landTerritory;
 
 	public LandTerritory LandTerritory {
 
@@ -290,10 +288,10 @@ public class LandZone : Zone {
 
 		base.SetHoverState(hover);
 
-		foreach(Zone zone in hazardousAdjacencies) {
+		//foreach(Zone zone in hazardousAdjacencies) {
 
-			zone.SetNameColor(hover ? "red" : null);
-		}
+		//	zone.SetNameColor(hover ? "red" : null);
+		//}
 
 	}
 }

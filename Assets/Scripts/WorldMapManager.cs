@@ -57,6 +57,7 @@ public class WorldMapManager : MonoBehaviour{
 	private void InitializeMovementArrows(List<Zone> zones) {
 
 		foreach (Zone zone in zones) {
+
 			MovementArrow[] moveArrows = zone.GetComponentsInChildren<MovementArrow>();
 			for(int i = 0; i < moveArrows.Length; i++) {
 				moveArrows[i].ToggleVisibility(false);
@@ -119,7 +120,6 @@ public class WorldMapManager : MonoBehaviour{
 
 	}
 
-	
 
     public int GetIncome(Country country) {
 
@@ -139,6 +139,95 @@ public class WorldMapManager : MonoBehaviour{
 		}
 
 		return totalIncome;
+	}
+
+	public void GetZonesWithinRange(Zone currentZone, Zone.UnitInstance unitInstance, 
+									int range, bool isCombatMove, ref List<Zone> zonesInRange) {
+
+		LandZone landZone = currentZone as LandZone;
+        SeaZone seaZone = currentZone as SeaZone;
+
+        MajorPower unitOwner = unitInstance.owner as MajorPower;
+		if (unitOwner == null) {
+			Debug.LogError("should never be trying to move a non major power unit!");
+			return;
+		}
+
+		// if it's a land unit, needs to be on land, and be friendly (unless in combat)
+		if(unitInstance.unit.MovementType == Unit.MoveType.LAND) {
+
+			if(landZone == null) {
+				return;
+			}
+
+			if (!isCombatMove) {
+
+				// **** eventually have checks work with diplomacy
+
+				if (!unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower)) {
+					return;
+				}
+			}
+        
+		}else if(unitInstance.unit.MovementType == Unit.MoveType.SEA) {
+
+			if(seaZone == null) {
+				return;
+			}
+
+			List<Zone.UnitInstance> unitsInSeaZone = seaZone.GetUnits();
+
+			foreach(Zone.UnitInstance seaUnit in unitsInSeaZone) {
+				// we always allow sharing with minor powers or neutrals
+				if(seaUnit.owner is MajorPower seaPower) {
+
+					if (!unitOwner.IsSeaMovementAlly(seaPower)) {
+						return;
+					}
+				} 
+			}
+
+        } else if (unitInstance.unit.MovementType == Unit.MoveType.AIR) {
+
+
+
+        }
+
+        if (!zonesInRange.Contains(currentZone)) {
+            zonesInRange.Add(currentZone);
+		}
+
+		if (range > 0) {
+
+			if (landZone != null && 
+				(unitInstance.unit.MovementType == Unit.MoveType.LAND || unitInstance.unit.MovementType == Unit.MoveType.AIR)) {
+
+				foreach (Zone hazardousZone in landZone.HazardousAdjacencies) {
+
+					// move goes to 0 if we're a land unit that can't fly since hazardous terrain stops movement
+                    GetZonesWithinRange(hazardousZone, unitInstance, 
+						unitInstance.unit.MovementType == Unit.MoveType.LAND ? range - 1 : 0, 
+						isCombatMove, ref zonesInRange);
+                }
+			}
+
+			foreach (Zone zone in currentZone.Adjacencies) {
+
+				if ((unitInstance.unit.MovementType == Unit.MoveType.LAND || 
+					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is LandZone) {
+				
+					GetZonesWithinRange(zone, unitInstance, range - 1, isCombatMove, 
+						ref zonesInRange);
+				
+				}else if ((unitInstance.unit.MovementType == Unit.MoveType.SEA || 
+					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is SeaZone) {
+
+                    GetZonesWithinRange(zone, unitInstance, range - 1, isCombatMove, 
+						ref zonesInRange);
+                }
+			}
+		}
+
 	}
 
 }

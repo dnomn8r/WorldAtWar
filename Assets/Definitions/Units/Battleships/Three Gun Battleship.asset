@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Three Gun Battleship
   m_EditorClassIdentifier: 
   unitType: {fileID: 11400000, guid: c32fb9c3f9c56b44bb07cd6671446da8, type: 2}
+  hitpoints: 3
   movement: 3
   firstGunStrength: 8
   secondGunStrength: 6

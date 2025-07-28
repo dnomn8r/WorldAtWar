@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Fighter", menuName = "Units/Fighter", order = 1)]
-public class Fighter : Unit{
+public class Fighter : AirUnit{
 
     public override int FirstStat {
 		get {

@@ -92,9 +92,24 @@ MonoBehaviour:
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: -1
   capitalTerritory: {fileID: 11400000, guid: 1245831c7f207814498f4f4c8b44916d, type: 2}
-  canSendLendLease: 1
-  allies:
+  ipcAllies:
   - {fileID: 11400000, guid: 8b75a36a5ad8a074f9286e1934b58a53, type: 2}
   - {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
   - {fileID: 11400000, guid: d94e850fc23d04c4c99d3ecaa7eca14a, type: 2}
   - {fileID: 11400000, guid: 1977b7873388b6843977b563be30a49c, type: 2}
+  landMovementAllies:
+  - {fileID: 11400000, guid: 8b75a36a5ad8a074f9286e1934b58a53, type: 2}
+  - {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
+  - {fileID: 11400000, guid: 1977b7873388b6843977b563be30a49c, type: 2}
+  - {fileID: 11400000}
+  seaMovementAllies:
+  - {fileID: 11400000, guid: 8b75a36a5ad8a074f9286e1934b58a53, type: 2}
+  - {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
+  - {fileID: 11400000, guid: 1977b7873388b6843977b563be30a49c, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: d94e850fc23d04c4c99d3ecaa7eca14a, type: 2}
+  railroadAllies:
+  - {fileID: 11400000, guid: 8b75a36a5ad8a074f9286e1934b58a53, type: 2}
+  - {fileID: 11400000, guid: 84f8a5f7bea369246bdd1c6d39d34c04, type: 2}
+  - {fileID: 11400000, guid: 1977b7873388b6843977b563be30a49c, type: 2}
+  - {fileID: 11400000}

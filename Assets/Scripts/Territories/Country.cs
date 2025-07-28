@@ -11,9 +11,8 @@ public class Country : ScriptableObject{
 		get {
 			return flag;
 		}
-#if UNITY_EDITOR
+
 		set { flag = value;}
-#endif
 	}
 
 

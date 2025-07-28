@@ -82,10 +82,6 @@ public abstract class Zone : MonoBehaviour {
 		}
 	}
 
-
-	public abstract Color BaseColor { get; }
-	public abstract FontStyles FontStyle { get; }
-
 	public void ToggleSelection(bool toggle) {
 
 		SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
@@ -125,9 +121,11 @@ public abstract class Zone : MonoBehaviour {
 	}
 #endif
 
+    public abstract Color BaseColor { get; }
+    public abstract FontStyles FontStyle { get; }
 
 
-	[SerializeField] protected List<Zone> adjacencies = new List<Zone>();
+    [SerializeField] protected List<Zone> adjacencies = new List<Zone>();
 
 	public List<Zone> Adjacencies {
 		get { return adjacencies; }	
@@ -165,9 +163,15 @@ public abstract class Zone : MonoBehaviour {
 		public Country owner;
 		public Unit unit;
 
+		public int moveRemaining;
+		public int hitsRemaining;
+
 		public UnitInstance(Country owner, Unit unit) {
 			this.owner = owner;
 			this.unit = unit;
+
+			moveRemaining = unit.Movement;
+			hitsRemaining = unit.Hitpoints;
 		}
 	}
 
@@ -242,24 +246,27 @@ public abstract class Zone : MonoBehaviour {
 
         //Debug.Log("hovered zone: " + name, gameObject);
 
-		SetNameColor(hover ? "yellow" : null);
+        //SetNameColor(hover ? "yellow" : null);
 
-		foreach (Zone zone in adjacencies) {
-			zone.SetNameColor(hover ? "green" : null);
-		}
-
+        //foreach (Zone zone in adjacencies) {
+        //	zone.SetNameColor(hover ? "green" : null);
+        //}
+        foreach (SpriteRenderer ren in zoneRenderers) {
+            if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {
+                //ren.color = hover ? new Color(1, 0.65f, 0) : BaseColor; // orange
+                ren.color = hover ? Color.cyan : BaseColor; // orange
+            }
+        }
     }
 
-	public void SetNameColor(string color) {
+	//public void SetNameColor(string color) {
 
-		if(ZoneNameDisplay != null) {
-			zoneNameDisplay.SetNameColor(color);
-		}
-	}
+	//	if(ZoneNameDisplay != null) {
+	//		zoneNameDisplay.SetNameColor(color);
+	//	}
+	//}
 
 	public void SetSelectedState(bool selected) {
-
-        //SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
 
 		foreach (SpriteRenderer ren in zoneRenderers) {
 			if (ren.GetComponentInParent<ZoneUnitTypeDisplay>() == null) {

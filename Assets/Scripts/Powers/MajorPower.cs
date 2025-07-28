@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public struct UnitCostModifier {
@@ -34,12 +35,29 @@ public class MajorPower : Country{
 	[SerializeField] private LandTerritory capitalTerritory;
 	public LandTerritory CapitalTerritory { get { return capitalTerritory; } }
 
-	[SerializeField] private bool canSendLendLease = false;
-	public bool CanSendLL { get { return canSendLendLease; } }
+	//[SerializeField] private bool canSendLendLease = false;
+	public bool CanSendLL { get { return ipcAllies.Count > 0; } }
 
-	[SerializeField] private List<MajorPower> allies = new List<MajorPower>();
-	public bool IsAlly(MajorPower potentialAlly) {
-		return allies.Contains(potentialAlly);
+	[SerializeField, FormerlySerializedAs("allies")] private List<MajorPower> ipcAllies = new List<MajorPower>();
+
+	[SerializeField, FormerlySerializedAs("movementAllies")] private List<MajorPower> landMovementAllies = new List<MajorPower>();
+	[SerializeField] private List<MajorPower> seaMovementAllies = new List<MajorPower>();
+	
+	[SerializeField] private List<MajorPower> railroadAllies = new List<MajorPower>();
+
+	public bool IsIPCAlly(MajorPower potentialAlly) {
+		return ipcAllies.Contains(potentialAlly);
 	}
+
+	public bool IsLandMovementAlly(MajorPower potentialAlly) {
+		return landMovementAllies.Contains(potentialAlly);	
+	}
+    public bool IsSeaMovementAlly(MajorPower potentialAlly) {
+        return seaMovementAllies.Contains(potentialAlly);
+    }
+
+    public bool IsRailroadAlly(MajorPower potentialAlly) {
+        return railroadAllies.Contains(potentialAlly);
+    }
 }
 

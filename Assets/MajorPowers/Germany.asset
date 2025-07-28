@@ -45,7 +45,17 @@ MonoBehaviour:
   - factoryType: {fileID: 11400000, guid: 86fd63a203d6cd5479385764a3892764, type: 2}
     modifier: -1
   capitalTerritory: {fileID: 11400000, guid: 3eb6d05f2b463a6458457b5af462c916, type: 2}
-  canSendLendLease: 1
-  allies:
+  ipcAllies:
   - {fileID: 11400000, guid: a1028825075c97647827ee829f9fef5c, type: 2}
   - {fileID: 11400000, guid: dd7263fee3022e44b85420a39e0727d1, type: 2}
+  landMovementAllies:
+  - {fileID: 11400000, guid: a1028825075c97647827ee829f9fef5c, type: 2}
+  - {fileID: 11400000, guid: dd7263fee3022e44b85420a39e0727d1, type: 2}
+  - {fileID: 11400000}
+  seaMovementAllies:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: a1028825075c97647827ee829f9fef5c, type: 2}
+  - {fileID: 11400000, guid: dd7263fee3022e44b85420a39e0727d1, type: 2}
+  railroadAllies:
+  - {fileID: 11400000, guid: a1028825075c97647827ee829f9fef5c, type: 2}
+  - {fileID: 11400000}
