@@ -93,7 +93,7 @@ public class Cursor : MonoBehaviour {
             foreach(Zone.UnitInstance unit in currentlySelectedZone.GetUnits()) {
 
                WorldMapManager.Instance.GetZonesWithinRange(currentlySelectedZone, 
-                    unit, unit.moveRemaining, false, ref zonesInRange);
+                    unit, unit.moveRemaining, ref zonesInRange);
             }
 
             // remove our starting zone, we don't care about it, we can't move to ourselves

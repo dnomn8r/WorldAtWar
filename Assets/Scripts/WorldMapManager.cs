@@ -142,7 +142,7 @@ public class WorldMapManager : MonoBehaviour{
 	}
 
 	public void GetZonesWithinRange(Zone currentZone, Zone.UnitInstance unitInstance, 
-									int range, bool isCombatMove, ref List<Zone> zonesInRange) {
+									int range, ref List<Zone> zonesInRange) {
 
 		LandZone landZone = currentZone as LandZone;
         SeaZone seaZone = currentZone as SeaZone;
@@ -160,16 +160,17 @@ public class WorldMapManager : MonoBehaviour{
 				return;
 			}
 
-			if (!isCombatMove) {
+		
+			// **** eventually have checks work with diplomacy
 
-				// **** eventually have checks work with diplomacy
-
-				if (!unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower)) {
-					return;
-				}
+			if (!unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower)) {
+				return;
 			}
+			
         
 		}else if(unitInstance.unit.MovementType == Unit.MoveType.SEA) {
+
+			// sea units have slightly different rules for sharing space
 
 			if(seaZone == null) {
 				return;
@@ -187,14 +188,15 @@ public class WorldMapManager : MonoBehaviour{
 				} 
 			}
 
-        } else if (unitInstance.unit.MovementType == Unit.MoveType.AIR) {
-
-
-
         }
 
         if (!zonesInRange.Contains(currentZone)) {
-            zonesInRange.Add(currentZone);
+			// air units must end up in a friendly land territory
+			if (unitInstance.unit.MovementType != Unit.MoveType.AIR ||
+				(landZone != null && unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower))) {
+
+				zonesInRange.Add(currentZone);
+			}
 		}
 
 		if (range > 0) {
@@ -207,7 +209,7 @@ public class WorldMapManager : MonoBehaviour{
 					// move goes to 0 if we're a land unit that can't fly since hazardous terrain stops movement
                     GetZonesWithinRange(hazardousZone, unitInstance, 
 						unitInstance.unit.MovementType == Unit.MoveType.LAND ? range - 1 : 0, 
-						isCombatMove, ref zonesInRange);
+						ref zonesInRange);
                 }
 			}
 
@@ -216,13 +218,13 @@ public class WorldMapManager : MonoBehaviour{
 				if ((unitInstance.unit.MovementType == Unit.MoveType.LAND || 
 					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is LandZone) {
 				
-					GetZonesWithinRange(zone, unitInstance, range - 1, isCombatMove, 
+					GetZonesWithinRange(zone, unitInstance, range - 1, 
 						ref zonesInRange);
 				
 				}else if ((unitInstance.unit.MovementType == Unit.MoveType.SEA || 
 					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is SeaZone) {
 
-                    GetZonesWithinRange(zone, unitInstance, range - 1, isCombatMove, 
+                    GetZonesWithinRange(zone, unitInstance, range - 1, 
 						ref zonesInRange);
                 }
 			}
