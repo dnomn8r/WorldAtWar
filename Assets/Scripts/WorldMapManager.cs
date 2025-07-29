@@ -10,14 +10,23 @@ public class WorldMapManager : MonoBehaviour{
 
 	[SerializeField] private Sprite neutralFlag;
 
-	//[Space]
-
-	//[SerializeField] private InitialGameState initialGameState;
-
-
 	private Dictionary<Territory, Zone> zoneMapping = new Dictionary<Territory, Zone>();
 	private List<Zone> allZones;
 
+	private List<Canal> allCanals;
+	public Canal GetCanalLink(SeaZone seaZone, SeaZone otherSeaZone) {
+
+		for (int i = 0; i < allCanals.Count; i++) {
+
+			if (allCanals[i].FirstSeaZone == seaZone && allCanals[i].SecondSeaZone == otherSeaZone ||
+                (allCanals[i].FirstSeaZone == otherSeaZone && allCanals[i].SecondSeaZone == seaZone)) {
+			
+				return allCanals[i];
+			} 
+		}
+
+		return null;
+	}
 
 
     private static WorldMapManager instance;
@@ -45,6 +54,7 @@ public class WorldMapManager : MonoBehaviour{
     public void Initialize() {
 
 		allZones = new List<Zone>(GetComponentsInChildren<Zone>());
+		allCanals = new List<Canal>(GetComponentsInChildren<Canal>());
 
 		InitializeMovementArrows(allZones);
 
@@ -144,8 +154,8 @@ public class WorldMapManager : MonoBehaviour{
 	public void GetZonesWithinRange(Zone currentZone, Zone.UnitInstance unitInstance, 
 									int range, ref List<Zone> zonesInRange) {
 
-		LandZone landZone = currentZone as LandZone;
-        SeaZone seaZone = currentZone as SeaZone;
+		LandZone currentLandZone = currentZone as LandZone;
+        SeaZone currentSeaZone = currentZone as SeaZone;
 
         MajorPower unitOwner = unitInstance.owner as MajorPower;
 		if (unitOwner == null) {
@@ -156,78 +166,97 @@ public class WorldMapManager : MonoBehaviour{
 		// if it's a land unit, needs to be on land, and be friendly (unless in combat)
 		if(unitInstance.unit.MovementType == Unit.MoveType.LAND) {
 
-			if(landZone == null) {
+			if(currentLandZone == null) {
 				return;
 			}
 
-		
 			// **** eventually have checks work with diplomacy
-
-			if (!unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower)) {
+			if (!unitOwner.IsLandMovementAlly(currentLandZone.CurrentOwner)) {
 				return;
 			}
-			
-        
+		
 		}else if(unitInstance.unit.MovementType == Unit.MoveType.SEA) {
 
 			// sea units have slightly different rules for sharing space
 
-			if(seaZone == null) {
+			if(currentSeaZone == null) {
 				return;
 			}
 
-			List<Zone.UnitInstance> unitsInSeaZone = seaZone.GetUnits();
+			List<Zone.UnitInstance> unitsInSeaZone = currentSeaZone.GetUnits();
 
 			foreach(Zone.UnitInstance seaUnit in unitsInSeaZone) {
-				// we always allow sharing with minor powers or neutrals
-				if(seaUnit.owner is MajorPower seaPower) {
-
-					if (!unitOwner.IsSeaMovementAlly(seaPower)) {
-						return;
-					}
-				} 
+			
+				if (!unitOwner.IsSeaMovementAlly(seaUnit.owner)) {
+					return;
+				}	
 			}
 
         }
 
         if (!zonesInRange.Contains(currentZone)) {
-			// air units must end up in a friendly land territory
-			if (unitInstance.unit.MovementType != Unit.MoveType.AIR ||
-				(landZone != null && unitOwner.IsLandMovementAlly(landZone.CurrentOwner as MajorPower))) {
 
-				zonesInRange.Add(currentZone);
-			}
+			// air units must end up in a friendly land territory not taken this turn
+			if(unitInstance.unit.MovementType != Unit.MoveType.AIR ||
+				(currentLandZone != null
+				&& unitOwner.IsLandMovementAlly(currentLandZone.CurrentOwner)
+				&& !GameManager.Instance.IsZoneTakenThisTurn(currentLandZone))) {
+
+                zonesInRange.Add(currentZone);
+            }
 		}
 
 		if (range > 0) {
 
-			if (landZone != null && 
+			if (currentLandZone != null && 
 				(unitInstance.unit.MovementType == Unit.MoveType.LAND || unitInstance.unit.MovementType == Unit.MoveType.AIR)) {
 
-				foreach (Zone hazardousZone in landZone.HazardousAdjacencies) {
+				foreach (Zone hazardousZone in currentLandZone.HazardousAdjacencies) {
 
 					// move goes to 0 if we're a land unit that can't fly since hazardous terrain stops movement
                     GetZonesWithinRange(hazardousZone, unitInstance, 
-						unitInstance.unit.MovementType == Unit.MoveType.LAND ? range - 1 : 0, 
+						unitInstance.unit.MovementType == Unit.MoveType.LAND ? 0 : range - 1, 
 						ref zonesInRange);
                 }
 			}
 
-			foreach (Zone zone in currentZone.Adjacencies) {
+			foreach (Zone potentialZone in currentZone.Adjacencies) {
 
-				if ((unitInstance.unit.MovementType == Unit.MoveType.LAND || 
-					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is LandZone) {
+				if (potentialZone is LandZone && (unitInstance.unit.MovementType == Unit.MoveType.LAND || 
+					unitInstance.unit.MovementType == Unit.MoveType.AIR)) {
 				
-					GetZonesWithinRange(zone, unitInstance, range - 1, 
-						ref zonesInRange);
+					GetZonesWithinRange(potentialZone, unitInstance, range - 1, ref zonesInRange);
 				
-				}else if ((unitInstance.unit.MovementType == Unit.MoveType.SEA || 
-					unitInstance.unit.MovementType == Unit.MoveType.AIR) && zone is SeaZone) {
+				}else if (potentialZone is SeaZone && (unitInstance.unit.MovementType == Unit.MoveType.SEA || 
+					unitInstance.unit.MovementType == Unit.MoveType.AIR)) {
 
-                    GetZonesWithinRange(zone, unitInstance, range - 1, 
-						ref zonesInRange);
+					bool isValidLink = true; // check if it's a canal, and if it is, can we use it
+
+					// if our link is canal, check if both sides allow us to share land with them
+					// if so, we can use it.(even if it's been conquered this turn)
+					if(unitInstance.unit.MovementType == Unit.MoveType.SEA) {
+
+						Canal canal = GetCanalLink(potentialZone as SeaZone, currentSeaZone);
+
+						if(canal != null) {
+
+							foreach(LandZone land in canal.Owners) {
+
+								if(!unitOwner.IsLandMovementAlly(land.CurrentOwner)) {
+									isValidLink = false;
+									break;
+								}
+							}
+						}
+					}
+
+					if (isValidLink) {
+						GetZonesWithinRange(potentialZone, unitInstance, range - 1, ref zonesInRange);
+					}
                 }
 			}
+
+			
 		}
 
 	}

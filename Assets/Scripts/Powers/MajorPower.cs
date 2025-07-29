@@ -49,15 +49,24 @@ public class MajorPower : Country{
 		return ipcAllies.Contains(potentialAlly);
 	}
 
-	public bool IsLandMovementAlly(MajorPower potentialAlly) {
-		return landMovementAllies.Contains(potentialAlly);	
+	public bool IsLandMovementAlly(Country potentialAlly) {
+		if (potentialAlly is MajorPower majorPower) {
+			return landMovementAllies.Contains(majorPower);
+		}
+		return false;
 	}
-    public bool IsSeaMovementAlly(MajorPower potentialAlly) {
-        return seaMovementAllies.Contains(potentialAlly);
+    public bool IsSeaMovementAlly(Country potentialAlly) {
+		if (potentialAlly is MajorPower majorPower) {
+			return seaMovementAllies.Contains(majorPower);
+		}
+		return true; // minor powers allow us to share with sea zones with their units
     }
 
-    public bool IsRailroadAlly(MajorPower potentialAlly) {
-        return railroadAllies.Contains(potentialAlly);
+    public bool IsRailroadAlly(Country potentialAlly) {
+		if (potentialAlly is MajorPower majorPower) {
+			return railroadAllies.Contains(majorPower);
+		}
+		return false;
     }
 }
 

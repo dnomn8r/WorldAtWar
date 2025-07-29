@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour{
 
     public event Action OnPendingLendLeaseChanged;
 
+    private List<LandZone> zonesTakenThisTurn = new List<LandZone>();
+    public bool IsZoneTakenThisTurn(LandZone zone) {
+        return zonesTakenThisTurn.Contains(zone);
+    }
+
     // state variables
 
     public int currentRound = 0;
@@ -165,6 +170,8 @@ public class GameManager : MonoBehaviour{
             }
 
             //Debug.Log("current turn: " + value);
+
+            zonesTakenThisTurn.Clear(); // conquered zones can now be landed on
 
             if (value < turnOrder.Count) {
 
