@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Carrier", menuName = "Units/Carrier", order = 1)]
@@ -5,6 +6,7 @@ public class Carrier : SeaUnit{
 
 	[SerializeField] private int attack;
 	[SerializeField] private int defence;
+
 
     public override int FirstStat {
         get {
@@ -18,7 +20,7 @@ public class Carrier : SeaUnit{
     }
 
     [SerializeField] private int capacity;
-	public int Capacity {
+	public int MaxCapacity {
 		get {
 			return capacity;
 		}
@@ -29,19 +31,19 @@ public class Carrier : SeaUnit{
 
 			int capacityDiscount = 0;
 
-			if(Capacity > 33) {
+			if(MaxCapacity > 33) {
 				capacityDiscount = 5;
-			} else if (Capacity > 29) {
+			} else if (MaxCapacity > 29) {
 				capacityDiscount = 4;
-			} else if (Capacity > 27) {
+			} else if (MaxCapacity > 27) {
 				capacityDiscount = 3;
-			} else if (Capacity > 23) {
+			} else if (MaxCapacity > 23) {
 				capacityDiscount = 2;
-			} else if (Capacity > 19) {
+			} else if (MaxCapacity > 19) {
 				capacityDiscount = 1;
 			}
 
-			return attack + defence + Capacity - capacityDiscount;
+			return attack + defence + MaxCapacity - capacityDiscount;
 		}
 	}
 

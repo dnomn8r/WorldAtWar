@@ -174,6 +174,78 @@ public abstract class Zone : MonoBehaviour {
 			hitsRemaining = unit.Hitpoints;
 		}
 	}
+	public class TransportInstance : UnitInstance {
+        public TransportInstance(Country owner, Unit unit) : base(owner, unit) {
+
+        }
+
+        private List<UnitInstance> carriedLandUnits = new List<UnitInstance>();
+        public List<UnitInstance> CarriedLandUnits { get { return carriedLandUnits; } }
+
+        public void AddLandUnit(UnitInstance landUnit) {
+            carriedLandUnits.Add(landUnit);
+        }
+        public void RemoveFighter(UnitInstance landUnit) {
+            carriedLandUnits.Remove(landUnit);
+        }
+        public bool HasRoomForLandUnit(Unit unit) {
+
+			if(unit is LandUnit landUnit) {
+
+				return RemainingCapacity >= landUnit.TransportLoad;
+			}
+
+			return false;
+        }
+        public int RemainingCapacity {
+            get {
+                int remainingCapacity = (unit as Transport).Capacity;
+
+                for (int i = 0; i < carriedLandUnits.Count; i++) {
+                    remainingCapacity -= (carriedLandUnits[i].unit as LandUnit).TransportLoad;
+                }
+                if (remainingCapacity < 0) {
+                    Debug.LogError("should never have less than 0 capacity! something went wrong!");
+                    remainingCapacity = 0;
+                }
+                return remainingCapacity;
+            }
+        }
+    }
+
+	public class CarrierInstance : UnitInstance {
+		
+		public CarrierInstance(Country owner, Unit unit) : base(owner, unit){
+			
+		}
+
+        private List<UnitInstance> carriedFighters = new List<UnitInstance>();
+        public List<UnitInstance> CarriedFighters { get { return carriedFighters; } }
+
+        public void AddFighter(UnitInstance fighter) {
+            carriedFighters.Add(fighter);
+        }
+        public void RemoveFighter(UnitInstance fighter) {
+            carriedFighters.Remove(fighter);
+        }
+        public bool HasRoomForFighter(Fighter fighter) {
+            return RemainingCapacity >= fighter.CarrierLoad;
+        }
+        public int RemainingCapacity {
+            get {
+                int remainingCapacity = (unit as Carrier).MaxCapacity;
+
+                for (int i = 0; i < carriedFighters.Count; i++) {
+                    remainingCapacity -= (carriedFighters[i].unit as Fighter).CarrierLoad;
+                }
+                if (remainingCapacity < 0) {
+                    Debug.LogError("should never have less than 0 capacity! something went wrong!");
+                    remainingCapacity = 0;
+                }
+                return remainingCapacity;
+            }
+        }
+    }
 
 	public abstract Territory Territory {
 		get;
@@ -213,8 +285,17 @@ public abstract class Zone : MonoBehaviour {
 
 		for (int i = 0; i < count; i++) {
 
-			UnitInstance newUnit = new UnitInstance(owner, unit);
+			UnitInstance newUnit;
 
+			if(unit is Transport) {
+
+				newUnit = new TransportInstance(owner, unit);
+			}else if (unit is Carrier) {
+
+				newUnit = new CarrierInstance(owner, unit);
+			} else { 
+				newUnit = new UnitInstance(owner, unit);
+			}
 			units.Add(newUnit);
 		}
 
