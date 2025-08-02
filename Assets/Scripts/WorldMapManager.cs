@@ -185,11 +185,32 @@ public class WorldMapManager : MonoBehaviour{
 					if (potentialZone is LandZone potentialLandZone) {
 						// check if the territory is non combat movement friendly
 						if (unitOwner.IsLandMovementAlly(potentialLandZone.CurrentOwner)) {
-							GetZonesWithinRangeNonCombat(potentialZone, unitInstance, range - 1, ref zonesInRange);
+							// if we start in a sea zone, we lose all the rest of our movement if we land
+							GetZonesWithinRangeNonCombat(potentialLandZone, unitInstance,
+								currentLandZone != null ? range - 1 : 0, ref zonesInRange);
 						}
+
 					} else if (potentialZone is SeaZone seaZone) {
 
-						// check if there are transports in the zone
+						// check if there are transports in the zone and we start on land
+						if(currentLandZone != null) {
+
+							bool transportAvailable = false;
+                            foreach (Zone.UnitInstance otherUnit in seaZone.GetUnits()) {
+
+                                if (otherUnit is Zone.TransportInstance transport &&
+                                    unitOwner == transport.owner) { // can only carry units of same country
+
+                                    if (transport.RemainingCapacity >= landUnit.TransportLoad) {
+                                        transportAvailable = true;
+                                    }
+                                    break;
+                                }
+                            }
+							if(transportAvailable) { // movement ends if we load on a transport
+                                GetZonesWithinRangeNonCombat(potentialZone, unitInstance, 0, ref zonesInRange);
+                            }
+                        }
 					}
 				}
 
