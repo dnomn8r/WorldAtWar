@@ -151,7 +151,7 @@ public class WorldMapManager : MonoBehaviour{
 		return totalIncome;
 	}
 
-	public void GetZonesWithinRangeNonCombat(Zone currentZone, Zone.UnitInstance unitInstance, 
+	public void GetZonesWithinRangeNonCombat(Zone currentZone, UnitInstance unitInstance, 
 									int range, ref List<Zone> zonesInRange) {
 
 		LandZone currentLandZone = currentZone as LandZone;
@@ -173,9 +173,13 @@ public class WorldMapManager : MonoBehaviour{
 				// check hazardous adjacencies for land units
 				if (currentLandZone != null) {
 					foreach (Zone hazardousZone in currentLandZone.HazardousAdjacencies) {
-						if (unitOwner.IsLandMovementAlly(currentLandZone.CurrentOwner)) {
-							// move goes to 0 if we're a land unit since hazardous terrain stops movement
-							GetZonesWithinRangeNonCombat(hazardousZone, unitInstance, 0, ref zonesInRange);
+						if (hazardousZone is LandZone hazardLandZone) {
+							if (unitOwner.IsLandMovementAlly(hazardLandZone.CurrentOwner)) {
+								// move goes to 0 if we're a land unit since hazardous terrain stops movement
+								GetZonesWithinRangeNonCombat(hazardLandZone, unitInstance, 0, ref zonesInRange);
+							}
+						} else {
+							Debug.LogError("we have a hazardous sea zone???");
 						}
 					}
 				}
@@ -196,7 +200,7 @@ public class WorldMapManager : MonoBehaviour{
 						if(currentLandZone != null) {
 
 							bool transportAvailable = false;
-                            foreach (Zone.UnitInstance otherUnit in seaZone.GetUnits()) {
+                            foreach (UnitInstance otherUnit in seaZone.GetUnits()) {
 
                                 if (otherUnit is Zone.TransportInstance transport &&
                                     unitOwner == transport.owner) { // can only carry units of same country
@@ -239,9 +243,9 @@ public class WorldMapManager : MonoBehaviour{
 						bool isClearOfEnemies = true;
 						// first, check if there are any enemies in the sea zone, if so,
 						// we can't go there in non combat
-                        List<Zone.UnitInstance> unitsInSeaZone = potentialSeaZone.GetUnits();
+                        List<UnitInstance> unitsInSeaZone = potentialSeaZone.GetUnits();
 
-                        foreach (Zone.UnitInstance otherSeaUnit in unitsInSeaZone) {
+                        foreach (UnitInstance otherSeaUnit in unitsInSeaZone) {
 
                             if (!unitOwner.IsSeaMovementAlly(otherSeaUnit.owner)) {
                                 isClearOfEnemies = false;
@@ -301,7 +305,7 @@ public class WorldMapManager : MonoBehaviour{
                     bool carrierAvailable = false;
 					if (airUnit is Fighter fighter) {
 
-						foreach (Zone.UnitInstance otherUnit in seaZone.GetUnits()) {
+						foreach (UnitInstance otherUnit in seaZone.GetUnits()) {
 
 							if (otherUnit is Zone.CarrierInstance carrier &&
 								unitOwner == carrier.owner) { // can only carry units of same country

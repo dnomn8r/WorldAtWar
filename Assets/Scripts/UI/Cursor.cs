@@ -36,7 +36,44 @@ public class Cursor : MonoBehaviour {
 
     }
 
-    private List<Zone> zonesInRange = new List<Zone>();
+    private class PotentialMoves {
+
+        private Zone startingZone;
+        private Dictionary<Zone, List<UnitInstance>> possibleMoves;
+
+        public PotentialMoves(Zone startingZone) {
+        
+            this.startingZone = startingZone;
+            possibleMoves = new Dictionary<Zone, List<UnitInstance>>();
+        }
+
+        public void AddPotentialMoves(UnitInstance unit, List<Zone> reachableZones) {
+
+            foreach(Zone zone in reachableZones) {
+                if (!possibleMoves.ContainsKey(zone)) {
+                    possibleMoves.Add(zone, new List<UnitInstance>());
+                }
+                possibleMoves[zone].Add(unit);
+            }
+        }
+
+        public bool IsZonePossible(Zone potentialZone) {
+            return possibleMoves.ContainsKey(potentialZone);
+        }
+
+        public void HighlightPotentialZones(bool toggle) {
+
+            foreach(Zone zone in possibleMoves.Keys) {
+                if (zone != startingZone) {
+                    zone.SetHoverState(toggle);
+                }
+            }
+        }
+    }
+
+    private PotentialMoves potentialNonCombatMove;
+    private float? startPressTime = null;
+    private const float MOVE_PRESS_DELAY = 0.25f;
 
     private void LateUpdate() {
 
@@ -77,7 +114,6 @@ public class Cursor : MonoBehaviour {
         if (hoveredZone != null && Input.GetMouseButtonDown(0) &&
             !EventSystem.current.IsPointerOverGameObject()) {
 
-            //currentMouseDownZone = hoveredZone;
             if (currentlySelectedZone != null) {
                 currentlySelectedZone.SetSelectedState(false);
             }
@@ -88,40 +124,51 @@ public class Cursor : MonoBehaviour {
 
             HUD.Instance.SetSelectedZone(currentlySelectedZone);
 
-            zonesInRange.Clear();
-
-            foreach(Zone.UnitInstance unit in currentlySelectedZone.GetUnits()) {
-
-               WorldMapManager.Instance.GetZonesWithinRangeNonCombat(currentlySelectedZone, 
-                    unit, unit.moveRemaining, ref zonesInRange);
-            }
-
-            // remove our starting zone, we don't care about it, we can't move to ourselves
-            zonesInRange.Remove(currentlySelectedZone);
-
-            Debug.Log("doing move from: " + currentlySelectedZone.name + " to " + hoveredZone.name);
-            foreach (Zone zone in zonesInRange) {
-
-                zone.SetHoverState(true);
-            }
+            startPressTime = Time.time;            
 
         }
 
+        // if held
+        if (Input.GetMouseButton(0)) {
+
+            if ((Time.time > startPressTime + MOVE_PRESS_DELAY) && potentialNonCombatMove == null) {
+
+                potentialNonCombatMove = new PotentialMoves(currentlySelectedZone);
+
+                foreach (UnitInstance unit in currentlySelectedZone.GetUnits()) {
+
+                    List<Zone> zonesInRange = new List<Zone>();
+
+                    WorldMapManager.Instance.GetZonesWithinRangeNonCombat(currentlySelectedZone,
+                        unit, unit.moveRemaining, ref zonesInRange);
+
+                    potentialNonCombatMove.AddPotentialMoves(unit, zonesInRange);
+                }
+
+                potentialNonCombatMove.HighlightPotentialZones(true);
+            }
+        }
+
+
         if (Input.GetMouseButtonUp(0)) {
 
-            if (hoveredZone != null && hoveredZone != currentlySelectedZone &&
-                !EventSystem.current.IsPointerOverGameObject()) {
+            if (potentialNonCombatMove != null) {
 
-                if (zonesInRange.Contains(hoveredZone)) {
+                if (hoveredZone != null && hoveredZone != currentlySelectedZone &&
+                    !EventSystem.current.IsPointerOverGameObject()) {
 
-                    Debug.Log("actual move to " + hoveredZone.name);
+                    if (potentialNonCombatMove.IsZonePossible(hoveredZone)) {
+
+                        Debug.Log("actual move to " + hoveredZone.name);
+                    }
                 }
+
+                potentialNonCombatMove.HighlightPotentialZones(false);
+
+                potentialNonCombatMove = null;
             }
 
-            foreach (Zone zone in zonesInRange) {
-                zone.SetSelectedState(false);
-            }
-            zonesInRange.Clear();
+            startPressTime = null;
         }
 
 

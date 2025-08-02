@@ -5,6 +5,23 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+public class UnitInstance {
+
+    public Country owner;
+    public Unit unit;
+
+    public int moveRemaining;
+    public int hitsRemaining;
+
+    public UnitInstance(Country owner, Unit unit) {
+        this.owner = owner;
+        this.unit = unit;
+
+        moveRemaining = unit.Movement;
+        hitsRemaining = unit.Hitpoints;
+    }
+}
+
 public abstract class Zone : MonoBehaviour {
 
 #if UNITY_EDITOR
@@ -158,22 +175,7 @@ public abstract class Zone : MonoBehaviour {
     }
 
 
-	public class UnitInstance {
 
-		public Country owner;
-		public Unit unit;
-
-		public int moveRemaining;
-		public int hitsRemaining;
-
-		public UnitInstance(Country owner, Unit unit) {
-			this.owner = owner;
-			this.unit = unit;
-
-			moveRemaining = unit.Movement;
-			hitsRemaining = unit.Hitpoints;
-		}
-	}
 	public class TransportInstance : UnitInstance {
         public TransportInstance(Country owner, Unit unit) : base(owner, unit) {
 

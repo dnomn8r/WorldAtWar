@@ -59,10 +59,10 @@ public class ZoneInfoDisplay : MonoBehaviour {
 
         List<UnitTypeCount> unitTypeCounts = new List<UnitTypeCount>();
 
-		List<Zone.UnitInstance> allUnits = zone.GetUnits();
+		List<UnitInstance> allUnits = zone.GetUnits();
 
         //foreach (Zone.UnitOwnershipEntry entry in zone.GetUnits()) {
-		foreach (Zone.UnitInstance unitInstance in allUnits) {
+		foreach (UnitInstance unitInstance in allUnits) {
 
 			int addIndex = -1;
 
