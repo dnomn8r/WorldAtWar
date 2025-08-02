@@ -92,7 +92,7 @@ public class Cursor : MonoBehaviour {
 
             foreach(Zone.UnitInstance unit in currentlySelectedZone.GetUnits()) {
 
-               WorldMapManager.Instance.GetZonesWithinRange(currentlySelectedZone, 
+               WorldMapManager.Instance.GetZonesWithinRangeNonCombat(currentlySelectedZone, 
                     unit, unit.moveRemaining, ref zonesInRange);
             }
 

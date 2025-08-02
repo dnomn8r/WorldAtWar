@@ -2,8 +2,6 @@ using UnityEngine;
 
 public abstract class Unit : ScriptableObject{
 
-	public enum MoveType {LAND, SEA, AIR}
-
 	[SerializeField] private UnitType unitType;
     public UnitType UnitType { get { return unitType; } }
 
@@ -20,7 +18,6 @@ public abstract class Unit : ScriptableObject{
 
 	public abstract int BaseCost { get; }
 
-	public abstract MoveType MovementType { get; }
 				
 }
 
