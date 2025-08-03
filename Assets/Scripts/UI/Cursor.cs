@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static GameManager;
 
 public class Cursor : MonoBehaviour {
 
@@ -131,21 +132,31 @@ public class Cursor : MonoBehaviour {
         // if held
         if (Input.GetMouseButton(0)) {
 
-            if ((Time.time > startPressTime + MOVE_PRESS_DELAY) && potentialNonCombatMove == null) {
+            if ((TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.NON_COMBAT_MOVEMENT) {
 
-                potentialNonCombatMove = new PotentialMoves(currentlySelectedZone);
+                if ((Time.time > startPressTime + MOVE_PRESS_DELAY) && potentialNonCombatMove == null) {
 
-                foreach (UnitInstance unit in currentlySelectedZone.GetUnits()) {
+                    potentialNonCombatMove = new PotentialMoves(currentlySelectedZone);
 
-                    List<Zone> zonesInRange = new List<Zone>();
+                    foreach (UnitInstance unit in currentlySelectedZone.GetUnits()) {
 
-                    WorldMapManager.Instance.GetZonesWithinRangeNonCombat(currentlySelectedZone,
-                        unit, unit.moveRemaining, ref zonesInRange);
+                        MajorPower majorPowerUnitOwner = unit.owner as MajorPower;
+                        if(majorPowerUnitOwner == null) { continue; } // we don't get to move minor powers
 
-                    potentialNonCombatMove.AddPotentialMoves(unit, zonesInRange);
+                        // only allow movement by currently active powers units
+                        if (GameManager.Instance.GetCurrentlyActivePowers().powers.Contains(majorPowerUnitOwner)) {
+
+                            List<Zone> zonesInRange = new List<Zone>();
+
+                            WorldMapManager.Instance.GetZonesWithinRangeNonCombat(currentlySelectedZone,
+                                unit, unit.moveRemaining, ref zonesInRange);
+
+                            potentialNonCombatMove.AddPotentialMoves(unit, zonesInRange);
+                        }
+                    }
+
+                    potentialNonCombatMove.HighlightPotentialZones(true);
                 }
-
-                potentialNonCombatMove.HighlightPotentialZones(true);
             }
         }
 
