@@ -50,7 +50,8 @@ public class IncomeEntry : MonoBehaviour {
 
         lendLeaseValue.text = pendingReceivedLL.ToString();
 
-        bool showLL = power != leaser && power.IsIPCAlly(leaser) && 
+        //Debug.Log("checking leaser " + leaser.name + " power: " + power.name + "ipc ally? " + (leaser.IsIPCAlly(power)));
+        bool showLL = power != leaser && leaser.IsIPCAlly(power) && 
             (TurnPhase)GameManager.Instance.CurrentPhaseIndex == TurnPhase.COLLECT_INCOME;
 
         upButton.gameObject.SetActive(showLL);
