@@ -19,6 +19,7 @@ public class HUD : MonoBehaviour {
     [SerializeField] private Toggle toggleIncomeButton;
 	[SerializeField] private IncomePanel incomeTogglePanel;
 	[SerializeField] private TerritoryPanel territoryPanel;
+    [SerializeField] private TerritoryPanel territoryMovePanel;
     [SerializeField] private TerritoryPanel territoryHoverPanel;
 
     [SerializeField] private AvailableIPCDisplay availableIPCDisplay;
@@ -104,12 +105,18 @@ public class HUD : MonoBehaviour {
 
 		incomeTogglePanel.gameObject.SetActive(toggleIncomeButton.isOn);
 	}
-    public void SetSelectedZone(Zone zone) {
+    public void SetSelectedZone(Zone zone, Zone targetMoveZone = null) {
 
         territoryPanel.gameObject.SetActive(zone != null);
 
         if (zone != null) {
-            territoryPanel.SetZone(zone);
+            territoryPanel.SetZone(zone, targetMoveZone);
+        }
+
+         territoryMovePanel.gameObject.SetActive(targetMoveZone != null);
+
+        if (targetMoveZone != null) {
+            territoryMovePanel.SetZone(targetMoveZone, null);
         }
     }
 

@@ -2,17 +2,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitDetailEntry : MonoBehaviour {
+public class UnitMoveDisplay : MonoBehaviour {
 
 	[SerializeField] private Image imageRenderer;
 
 	[SerializeField] private TextMeshProUGUI nameField;
 
-    [SerializeField] private Button moveButton;
+    [SerializeField] private Button undoButton;
     
-    [SerializeField] protected TextMeshProUGUI firstEntryField;
-	[SerializeField] protected TextMeshProUGUI secondEntryField;
-	[SerializeField] private TextMeshProUGUI movementField;
 	[SerializeField] private TextMeshProUGUI countField;
 
     private Zone currentZone;
@@ -22,11 +19,11 @@ public class UnitDetailEntry : MonoBehaviour {
 
     void OnEnable() {
     
-        moveButton.gameObject.SetActive(false);
-        moveButton.onClick.AddListener(AttemptMove);
+        undoButton.gameObject.SetActive(false);
+        undoButton.onClick.AddListener(AttemptMove);
     }
     void OnDisable() {
-        moveButton.onClick.RemoveListener(AttemptMove);
+        undoButton.onClick.RemoveListener(AttemptMove);
     }
     void AttemptMove() {
 
@@ -40,7 +37,7 @@ public class UnitDetailEntry : MonoBehaviour {
         this.targetMoveZone = targetMoveZone;
         this.unitOwnershipEntry = unitOwnership;
 
-        moveButton.gameObject.SetActive(targetMoveZone != null);
+        undoButton.gameObject.SetActive(targetMoveZone != null);
 
 		imageRenderer.sprite = unitOwnership.unit.unit.UnitType.Sprite;
 
@@ -52,11 +49,6 @@ public class UnitDetailEntry : MonoBehaviour {
 
 
 		nameField.text = unitOwnership.unit.unit.name;
-
-		movementField.text = unitOwnership.unit.unit.Movement.ToString();
-
-        firstEntryField.text = unitOwnership.unit.unit.FirstStat.ToString();
-        secondEntryField.text = unitOwnership.unit.unit.SecondStat.ToString();
 
 		countField.text = unitOwnership.count.ToString();
     }

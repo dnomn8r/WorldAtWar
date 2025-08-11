@@ -106,7 +106,7 @@ public class AttackPanel : MonoBehaviour {
 
             UnitDetailEntry newEntry = Instantiate<UnitDetailEntry>(unitEntry, mount);
 
-            newEntry.SetUnit(currentOwnershipEntry);
+            newEntry.SetUnit(currentOwnershipEntry, null);
 
             defendingUnitEntries.Add(newEntry);
 

@@ -170,6 +170,8 @@ public class Cursor : MonoBehaviour {
 
                     if (potentialNonCombatMove.IsZonePossible(hoveredZone)) {
 
+                        HUD.Instance.SetSelectedZone(currentlySelectedZone, hoveredZone);
+
                         Debug.Log("actual move to " + hoveredZone.name);
                     }
                 }

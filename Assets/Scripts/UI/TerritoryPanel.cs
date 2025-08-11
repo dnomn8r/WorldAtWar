@@ -15,8 +15,11 @@ public class TerritoryPanel : MonoBehaviour {
 
 	private List<UnitDetailEntry> unitEntries = new List<UnitDetailEntry>();
 
+	private Zone targetMoveZone;
 
-	public void SetZone(Zone selectedZone) {
+	public void SetZone(Zone selectedZone, Zone targetMoveZone = null) {
+
+		this.targetMoveZone = targetMoveZone;
 
 		// clear previous entries
 		for (int i = 0;i< unitEntries.Count; i++) {
@@ -29,14 +32,9 @@ public class TerritoryPanel : MonoBehaviour {
 
 		nameField.text = currentZone.name;
 
-		//List<UnitOwnershipEntry> unitOwnerships = selectedZone.GetUnits();
 
 		List<UnitInstance> allUnits = selectedZone.GetUnits();
 
-		//Debug.Log("selected zone: " + currentZone.name);
-
-		float currentOffset = 0.0f;
-		float entrySize = 40.0f;
 
 		Dictionary<string, UnitOwnershipEntry> unitOwnershipDictionary = new Dictionary<string, UnitOwnershipEntry>();	
 
@@ -60,15 +58,12 @@ public class TerritoryPanel : MonoBehaviour {
 		foreach (UnitOwnershipEntry currentOwnershipEntry in unitOwnerships) {
 
             UnitDetailEntry newEntry = Instantiate<UnitDetailEntry>(unitEntry, unitEntryStartMount);
-			//newEntry.transform.localPosition = new Vector3(0, -currentOffset, 0);
 
-			newEntry.SetUnit(currentOwnershipEntry);
+			newEntry.SetUnit(currentOwnershipEntry, currentZone, targetMoveZone);
 
 			unitEntries.Add(newEntry);
 
-			currentOffset += entrySize;
-
-			//Debug.Log("unit: " + currentOwnershipEntry.unit.name + " x" + currentOwnershipEntry.count + " owned by: " + currentOwnershipEntry.owner.name);
+			//Debug.Log("unit: " + currentOwnershipEntry.unit.unit.name + " x" + currentOwnershipEntry.count + " owned by: " + currentOwnershipEntry.unit.owner.name);
 		}
 
 	}
